@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RMAOverStock.master.cs" Inherits="Solution.UI.Web.RMA.OverStock.RMAOverStock" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script src="/js/popup.js" type="text/javascript"></script>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="doc-width">
+            <div id="header-part" style="height: 125px;">
+                <div class="header-row2" style="padding: 18px; padding-top: 10px;">
+                    <div>
+                        <img title="" alt="" src="/RMA/OverStock/Images/Store_4.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="content-width" style="margin: 125px 0 0;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

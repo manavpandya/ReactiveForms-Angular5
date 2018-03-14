@@ -1,0 +1,249 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Success />
+  <GetOrders2Response>
+    <Order>
+      <Id>86144941</Id>
+      <Date>2010-02-17T19:03:15</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>nurshad ali</Name>
+        <Address1>7462 Kathryn Dr</Address1>
+        <Address2 />
+        <City>Frisco</City>
+        <State>TX</State>
+        <ZipCode>75035</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436305</Id>
+        <Quantity>1</Quantity>
+        <OptionSku>12221000-000-000</OptionSku>
+        <Name>Signature Oyster Cotton Silk 84-inch Curtain Panel</Name>
+        <ShipCost>3.00</ShipCost>
+        <VendorSku>CSKOY46X84</VendorSku>
+        <Cost>55.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144942</Id>
+      <Date>2010-02-17T19:03:25</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>Ryan Swart</Name>
+        <Address1>1104 Village Dr</Address1>
+        <Address2 />
+        <City>Marysville</City>
+        <State>OH</State>
+        <ZipCode>43040</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436306</Id>
+        <Quantity>1</Quantity>
+        <OptionSku>12221000-000-000</OptionSku>
+        <Name>Signature Oyster Cotton Silk 84-inch Curtain Panel</Name>
+        <ShipCost>1.00</ShipCost>
+        <VendorSku>CSKOY46X84</VendorSku>
+        <Cost>55.00</Cost>
+      </InvoiceLine>
+      <InvoiceLine>
+        <Id>232436307</Id>
+        <Quantity>1</Quantity>
+        <OptionSku>12220998-000-000</OptionSku>
+        <Name>Signature Espresso Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>3.00</ShipCost>
+        <VendorSku>CSKESP46X108</VendorSku>
+        <Cost>40.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144943</Id>
+      <Date>2010-02-17T19:03:31</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>karen broussard</Name>
+        <Address1>459 cr 471</Address1>
+        <Address2 />
+        <City>etoile</City>
+        <State>TX</State>
+        <ZipCode>75944</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436308</Id>
+        <Quantity>3</Quantity>
+        <OptionSku>12220998-000-000</OptionSku>
+        <Name>Signature Espresso Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>1.00</ShipCost>
+        <VendorSku>CSKESP46X108</VendorSku>
+        <Cost>40.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144944</Id>
+      <Date>2010-02-17T19:03:47</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>Ann Yorty</Name>
+        <Address1>9365 Meadowbrook Drive</Address1>
+        <Address2 />
+        <City>Waynesboro</City>
+        <State>PA</State>
+        <ZipCode>17268</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436309</Id>
+        <Quantity>2</Quantity>
+        <OptionSku>12220998-000-000</OptionSku>
+        <Name>Signature Espresso Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>3.00</ShipCost>
+        <VendorSku>CSKESP46X108</VendorSku>
+        <Cost>40.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144944-1</Id>
+      <Date>2013-04-26T10:49:18</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>2D</ShipMethod>
+      <Address>
+        <Name>Overstock End Customer</Name>
+        <Address1>788 Timbercreek Way</Address1>
+        <Address2>Apt 612</Address2>
+        <City>Salt Lake City</City>
+        <State>UT</State>
+        <ZipCode>84119</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436310</Id>
+        <Quantity>3</Quantity>
+        <OptionSku>12221002-000-000</OptionSku>
+        <Name>Signature Oyster Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>2.00</ShipCost>
+        <VendorSku>CSKOY46X108</VendorSku>
+        <Cost>65.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144946</Id>
+      <Date>2010-02-17T19:04:13</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>Samantha Coleman</Name>
+        <Address1>141 Kamm Ln</Address1>
+        <Address2 />
+        <City>Sudlersville</City>
+        <State>MD</State>
+        <ZipCode>21668</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436311</Id>
+        <Quantity>3</Quantity>
+        <OptionSku>12221002-000-000</OptionSku>
+        <Name>Signature Oyster Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>1.00</ShipCost>
+        <VendorSku>CSKOY46X108</VendorSku>
+        <Cost>65.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144947</Id>
+      <Date>2013-04-26T10:49:18</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>Overstock End Customer</Name>
+        <Address1>788 Timbercreek Way</Address1>
+        <Address2>Apt 612</Address2>
+        <City>Salt Lake City</City>
+        <State>UT</State>
+        <ZipCode>84119</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436312</Id>
+        <Quantity>1</Quantity>
+        <OptionSku>12221002-000-000</OptionSku>
+        <Name>Signature Oyster Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>2.00</ShipCost>
+        <VendorSku>CSKOY46X108</VendorSku>
+        <Cost>65.00</Cost>
+      </InvoiceLine>
+      <InvoiceLine>
+        <Id>232436313</Id>
+        <Quantity>1</Quantity>
+        <OptionSku>12221003-000-000</OptionSku>
+        <Name>Signature Oyster Cotton 120-inch Curtain Panel</Name>
+        <ShipCost>2.00</ShipCost>
+        <VendorSku>CSKOY46X120</VendorSku>
+        <Cost>70.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144948</Id>
+      <Date>2010-02-17T19:04:26</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>Teresa Gross</Name>
+        <Address1>1913 Linglestown Rd</Address1>
+        <Address2 />
+        <City>Harrisburg</City>
+        <State>PA</State>
+        <ZipCode>17110</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436314</Id>
+        <Quantity>3</Quantity>
+        <OptionSku>12221002-000-000</OptionSku>
+        <Name>Signature Oyster Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>1.00</ShipCost>
+        <VendorSku>CSKOY46X108</VendorSku>
+        <Cost>65.00</Cost>
+      </InvoiceLine>
+      <InvoiceLine>
+        <Id>232436315</Id>
+        <Quantity>1</Quantity>
+        <OptionSku>12221003-000-000</OptionSku>
+        <Name>Signature Oyster Cotton 120-inch Curtain Panel</Name>
+        <ShipCost>1.00</ShipCost>
+        <VendorSku>CSKOY46X120</VendorSku>
+        <Cost>70.00</Cost>
+      </InvoiceLine>
+    </Order>
+    <Order>
+      <Id>86144949</Id>
+      <Date>2010-02-17T19:04:30</Date>
+      <Carrier>BEST</Carrier>
+      <ShipMethod>GRND</ShipMethod>
+      <Address>
+        <Name>Jenny Mendez</Name>
+        <Address1>2770 Briggs Avenue -</Address1>
+        <Address2>Apt.3B</Address2>
+        <City>Bronx</City>
+        <State>NY</State>
+        <ZipCode>10458</ZipCode>
+        <CountryCode>US</CountryCode>
+      </Address>
+      <InvoiceLine>
+        <Id>232436316</Id>
+        <Quantity>2</Quantity>
+        <OptionSku>12220998-000-000</OptionSku>
+        <Name>Signature Espresso Cotton Silk 108-inch Curtain Panel</Name>
+        <ShipCost>3.00</ShipCost>
+        <VendorSku>CSKESP46X108</VendorSku>
+        <Cost>40.00</Cost>
+      </InvoiceLine>
+    </Order>
+  </GetOrders2Response>
+</Response>

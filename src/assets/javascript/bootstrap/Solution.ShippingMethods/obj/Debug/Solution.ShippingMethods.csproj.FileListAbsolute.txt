@@ -1,0 +1,1339 @@
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\obj\Debug\ResolveAssemblyReference.cache
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPD\17-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPD\05-march-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPD\05-march-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPD\05-march-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPD\05-may-2014-1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\Live\01-april-2015\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-Apr-2015-Admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+C:\Hitendra\Projects\HPD\HPD-Current-Live\HPD-Admin\06062017\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\bin\Debug\Newtonsoft.Json.xml
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll.config
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.dll
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.ShippingMethods.pdb
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.dll
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.dll
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Data.dll
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\LinkPointTransaction.dll
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Components.pdb
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Bussines.Entities.pdb
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\bin\Debug\Solution.Data.pdb
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.csprojResolveAssemblyReference.cache
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.dll
+D:\Naresh Singhal\HPDAdmin\Solution.ShippingMethods\obj\Debug\Solution.ShippingMethods.pdb

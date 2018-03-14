@@ -1,0 +1,20 @@
+﻿.tooltip {
+            background: url("/images/black_arrow.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+            color: #EEEEEE;
+            display: none;
+            font-size: 12px;
+            height: 370px;
+            padding: 11px;
+            width: 230px;
+        }
+
+        .divtooltipover a {
+            color: #FFFFFF;
+        }
+
+        .divtooltipover {
+            width: 96%;
+            padding: 5px 2%;
+            font-size: 14px;
+            font-weight: bold;
+        }

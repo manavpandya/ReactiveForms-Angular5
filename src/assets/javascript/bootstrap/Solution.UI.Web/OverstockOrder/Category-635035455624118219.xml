@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Failure>
+    <Error>
+      <Message>
+Invalid Request (Error):
+   Problem: cvc-complex-type.2.4.a: Invalid content was found starting with element 'GetCategories'. One of '{"http://www.overstock.com/shoppingApi":SubmitNewProduct, "http://www.overstock.com/shoppingApi":ResubmitProduct, "http://www.overstock.com/shoppingApi":GetProductStatus, "http://www.overstock.com/shoppingApi":GetProductStatus2, "http://www.overstock.com/shoppingApi":GetChangedProducts, "http://www.overstock.com/shoppingApi":GetSourceability, "http://www.overstock.com/shoppingApi":GetProduct, "http://www.overstock.com/shoppingApi":GetProduct2, "http://www.overstock.com/shoppingApi":AddOption, "http://www.overstock.com/shoppingApi":UpdateQuantity, "http://www.overstock.com/shoppingApi":UpdateProduct, "http://www.overstock.com/shoppingApi":GetReturns, "http://www.overstock.com/shoppingApi":GetOrders, "http://www.overstock.com/shoppingApi":GetOrders2, "http://www.overstock.com/shoppingApi":ProcessingOrders, "http://www.overstock.com/shoppingApi":ProcessingReturns, "http://www.overstock.com/shoppingApi":SubmitReturnRma, "http://www.overstock.com/shoppingApi":SubmitReturnClosure, "http://www.overstock.com/shoppingApi":ConfirmShipment, "http://www.overstock.com/shoppingApi":ShortshipLine}' is expected.
+      </Message>
+      <Type>INVALID_REQUEST</Type>
+    </Error>
+  </Failure>
+</Response>

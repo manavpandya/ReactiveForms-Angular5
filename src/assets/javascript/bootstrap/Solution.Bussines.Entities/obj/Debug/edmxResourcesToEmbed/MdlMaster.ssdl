@@ -1,0 +1,3781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RedTag_CCTV_Ecomm_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityType Name="a_Test_Delete">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="ProductNumber" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="Company" Type="varchar" MaxLength="100" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="Address2" Type="varchar" MaxLength="500" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="State" Type="varchar" MaxLength="100" />
+    <Property Name="Suite" Type="varchar" MaxLength="100" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="20" />
+    <Property Name="Country" Type="int" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Fax" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="PaymentMethodIDLastUsed" Type="varchar" MaxLength="100" />
+    <Property Name="AddressType" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_Admin">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmailID" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="AdminType" Type="tinyint" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="Rights" Type="varchar" MaxLength="100" />
+    <Property Name="LastActiveDate" Type="datetime" />
+    <Property Name="isSalesManager" Type="bit" />
+    <Property Name="TemplateName" Type="varchar" MaxLength="500" />
+    <Property Name="VendorId" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_admin_Templaterights">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="InnerRightsID" Type="int" />
+    <Property Name="isListed" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdateOn" Type="datetime" />
+    <Property Name="Rights" Type="varchar" MaxLength="500" />
+    <Property Name="TemplateID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_AdminChat">
+    <Key>
+      <PropertyRef Name="ChatID" />
+    </Key>
+    <Property Name="ChatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SenderID" Type="int" />
+    <Property Name="ReceiverID" Type="int" />
+    <Property Name="MessageText" Type="varchar(max)" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_AdminInnerRights">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminID" Type="int" />
+    <Property Name="InnerRightsID" Type="int" />
+    <Property Name="isListed" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdateOn" Type="datetime" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="TemplateName" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_AdminInnerRightsMaster">
+    <Key>
+      <PropertyRef Name="InnerRightsID" />
+    </Key>
+    <Property Name="InnerRightsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PageName" Type="varchar" MaxLength="50" />
+    <Property Name="TabName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_AdminRights">
+    <Key>
+      <PropertyRef Name="RightsID" />
+    </Key>
+    <Property Name="RightsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_AppConfig">
+    <Key>
+      <PropertyRef Name="AppConfigID" />
+    </Key>
+    <Property Name="AppConfigID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="ConfigName" Type="varchar" MaxLength="200" />
+    <Property Name="ConfigValue" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_AppConfig_Live">
+    <Key>
+      <PropertyRef Name="AppConfigID" />
+    </Key>
+    <Property Name="AppConfigID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="ConfigName" Type="varchar" MaxLength="200" />
+    <Property Name="ConfigValue" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_AvailabilityNotification">
+    <Key>
+      <PropertyRef Name="AvailabilityID" />
+    </Key>
+    <Property Name="AvailabilityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="100" />
+    <Property Name="LastName" Type="varchar" MaxLength="100" />
+    <Property Name="Telephone" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="200" />
+    <Property Name="MailSent" Type="bit" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="MailID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_BreadCrumbPath">
+    <Key>
+      <PropertyRef Name="BreadCrumbID" />
+    </Key>
+    <Property Name="BreadCrumbID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="ID" Type="int" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Path" Type="varchar(max)" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Summary" Type="varchar(max)" />
+    <Property Name="SEName" Type="varchar" MaxLength="500" />
+    <Property Name="SETitle" Type="varchar" MaxLength="500" />
+    <Property Name="SEKeywords" Type="varchar(max)" />
+    <Property Name="SEDescription" Type="varchar(max)" />
+    <Property Name="ToolTip" Type="varchar" MaxLength="500" />
+    <Property Name="ImageName" Type="varchar" MaxLength="500" />
+    <Property Name="BannerImageName" Type="varchar" MaxLength="500" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="HeaderText" Type="varchar" MaxLength="500" />
+    <Property Name="ShowOnHeader" Type="bit" />
+    <Property Name="ShortName" Type="varchar" MaxLength="50" />
+    <Property Name="OldCatId" Type="int" />
+    <Property Name="SearsCategoryID" Type="int" />
+    <Property Name="FeatureID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_CategoryMapping">
+    <Key>
+      <PropertyRef Name="CategoryMappingID" />
+    </Key>
+    <Property Name="CategoryMappingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ParentCategoryID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_ChangeOrderedShoppingCart' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_ChangeOrderedShoppingCart">
+    <Key>
+      <PropertyRef Name="OrderNumber" />
+    </Key>
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="subTotal" Type="money" />
+    <Property Name="DiscountAmount" Type="money" />
+    <Property Name="ShippingAmount" Type="money" />
+    <Property Name="ShippingMethodID" Type="int" />
+    <Property Name="Total" Type="money" />
+    <Property Name="ShippingMethod" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReturnedStarck" Type="money" />
+    <Property Name="ReturnedFee" Type="money" />
+    <Property Name="OrderTax" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_ChangeOrderShoppingCartItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_ChangeOrderShoppingCartItems">
+    <Key>
+      <PropertyRef Name="InventoryWasReduced" />
+    </Key>
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="OrderedShoppingCartID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ChosenColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChosenSize" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="money" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="VariantNames" Type="nvarchar" MaxLength="500" />
+    <Property Name="VariantValues" Type="nvarchar" MaxLength="500" />
+    <Property Name="InventoryWasReduced" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Direction" Type="nvarchar" MaxLength="50" />
+    <Property Name="Avail" Type="nvarchar" MaxLength="500" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="400" />
+    <Property Name="VariantPrice" Type="money" />
+    <Property Name="DiscountPrice" Type="money" />
+    <Property Name="RelatedproductID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_CheckoutProblems">
+    <Key>
+      <PropertyRef Name="ProblemID" />
+    </Key>
+    <Property Name="ProblemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="BrowserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ErrorPage" Type="nvarchar" MaxLength="100" />
+    <Property Name="ErrorMessage" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ContactEmail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="250" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_ContactUs">
+    <Key>
+      <PropertyRef Name="ContactUsID" />
+    </Key>
+    <Property Name="ContactUsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Subject" Type="varchar" MaxLength="1000" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Message" Type="varchar(max)" />
+    <Property Name="Country" Type="varchar" MaxLength="100" />
+    <Property Name="State" Type="varchar" MaxLength="100" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="ContactDate" Type="datetime" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="20" />
+    <Property Name="Quoteid" Type="int" />
+    <Property Name="SubjectStatus" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_Country' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="TwoLetterISOCode" Type="varchar" MaxLength="2" />
+    <Property Name="ThreeLetterISOCode" Type="varchar" MaxLength="3" />
+    <Property Name="NumericISOCode" Type="varchar" MaxLength="3" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Image" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_Coupons">
+    <Key>
+      <PropertyRef Name="CouponID" />
+    </Key>
+    <Property Name="CouponID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CouponCode" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="ExpirationDate" Type="datetime" />
+    <Property Name="ExpiresonFirstUseByAnyCustomer" Type="bit" />
+    <Property Name="ExpiresAfterOneUsageByEachCustomer" Type="bit" />
+    <Property Name="ExpiredAfterNUses" Type="int" />
+    <Property Name="OrderTotal" Type="money" />
+    <Property Name="DiscountPercent" Type="money" />
+    <Property Name="DiscountAmount" Type="money" />
+    <Property Name="DiscountAllowIncludeFreeShipping" Type="bit" />
+    <Property Name="RequiredMinimumOrderTotal" Type="money" />
+    <Property Name="ValidforCustomer" Type="varchar(max)" />
+    <Property Name="ValidforProduct" Type="varchar(max)" />
+    <Property Name="ValidForCategory" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="RMANumber" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_CouponUsage">
+    <Key>
+      <PropertyRef Name="CouponUsageID" />
+    </Key>
+    <Property Name="CouponUsageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CouponCode" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_CreditCardDetails">
+    <Key>
+      <PropertyRef Name="CardID" />
+    </Key>
+    <Property Name="CardID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="NameOnCard" Type="varchar" MaxLength="100" />
+    <Property Name="CardNumber" Type="varchar" MaxLength="500" />
+    <Property Name="CardTypeID" Type="int" />
+    <Property Name="CardVerificationCode" Type="varchar" MaxLength="50" />
+    <Property Name="CardExpirationMonth" Type="int" />
+    <Property Name="CardExpirationYear" Type="int" />
+    <Property Name="DefaultBillingAddressID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_CreditCardTypes">
+    <Key>
+      <PropertyRef Name="CardTypeID" />
+    </Key>
+    <Property Name="CardTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CardType" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="100" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="BillingEqualShippingbit" Type="bit" />
+    <Property Name="BillingAddressID" Type="int" />
+    <Property Name="ShippingAddressID" Type="int" />
+    <Property Name="CreditCardID" Type="int" />
+    <Property Name="IsRegistered" Type="bit" />
+    <Property Name="CustomerLevelID" Type="int" />
+    <Property Name="DocFile" Type="varchar" MaxLength="500" />
+    <Property Name="IsLockedOut" Type="bit" />
+    <Property Name="FailedPasswordAttemptCount" Type="int" />
+    <Property Name="FailedPasswordAttemptDate" Type="datetime" />
+    <Property Name="LastIPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="isfbuser" Type="bit" />
+    <Property Name="TwitterScreen" Type="varchar" MaxLength="500" />
+    <Property Name="TwitterId" Type="int" />
+    <Property Name="iPhoneUser" Type="bit" />
+    <Property Name="Phone" Type="varchar" MaxLength="250" />
+    <Property Name="NoDiscount" Type="bit" />
+    <Property Name="CouponCode" Type="varchar" MaxLength="50" />
+    <Property Name="FromDate" Type="datetime" />
+    <Property Name="ToDate" Type="datetime" />
+    <Property Name="DiscountPercent" Type="money" />
+    <Property Name="Customertype" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tb_CustomerLevel">
+    <Key>
+      <PropertyRef Name="CustomerLevelID" />
+    </Key>
+    <Property Name="CustomerLevelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="LevelDiscountPercent" Type="money" />
+    <Property Name="LevelDiscountAmount" Type="money" />
+    <Property Name="LevelHasFreeShipping" Type="bit" />
+    <Property Name="LevelHasnoTax" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_CustomerQuote">
+    <Key>
+      <PropertyRef Name="CustomerQuoteID" />
+    </Key>
+    <Property Name="CustomerQuoteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="QuoteNumber" Type="varchar" MaxLength="50" />
+    <Property Name="IsRevised" Type="bit" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="GeneralNote" Type="varchar(max)" />
+    <Property Name="IsHTML" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_CustomerQuoteItems">
+    <Key>
+      <PropertyRef Name="CustomerQuoteItemID" />
+    </Key>
+    <Property Name="CustomerQuoteItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerQuoteID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="SKU" Type="varchar" MaxLength="500" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="Options" Type="varchar" MaxLength="500" />
+    <Property Name="Price" Type="money" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Notes" Type="varchar" MaxLength="500" />
+    <Property Name="VariantNames" Type="varchar(max)" />
+    <Property Name="VariantValues" Type="varchar(max)" />
+    <Property Name="CustomerId" Type="varchar(max)" />
+    <Property Name="IsProductType" Type="int" />
+    <Property Name="YardQuantity" Type="int" />
+    <Property Name="Actualyard" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="DiscountPrice" Type="money" />
+    <Property Name="RelatedproductID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_DashboardSettings">
+    <Key>
+      <PropertyRef Name="SettingID" />
+    </Key>
+    <Property Name="SettingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Position" Type="varchar" MaxLength="50" />
+    <Property Name="SectionName" Type="varchar" MaxLength="100" />
+    <Property Name="ControlName" Type="varchar" MaxLength="100" />
+    <Property Name="IsDisplay" Type="bit" />
+    <Property Name="DisplayPosition" Type="int" />
+    <Property Name="StoreID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_DashboardUserRights">
+    <Key>
+      <PropertyRef Name="RightsID" />
+    </Key>
+    <Property Name="RightsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SettingID" Type="int" />
+    <Property Name="AdminID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Distributor">
+    <Key>
+      <PropertyRef Name="DistributorID" />
+    </Key>
+    <Property Name="DistributorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_eBayCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ParentCategoryID" Type="bigint" />
+    <Property Name="eBayCategoryID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tb_eBayStoreCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ParentStoreCategoryID" Type="bigint" />
+    <Property Name="eBayStoreCategoryID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="tb_EmailFolderRelation">
+    <Key>
+      <PropertyRef Name="FolderRelID" />
+    </Key>
+    <Property Name="FolderRelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentFolderID" Type="int" />
+    <Property Name="ChildFolderID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_EmailFolders">
+    <Key>
+      <PropertyRef Name="FolderID" />
+    </Key>
+    <Property Name="FolderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FolderName" Type="varchar" MaxLength="100" />
+    <Property Name="FolderEmail" Type="varchar" MaxLength="200" />
+    <Property Name="ParentFolderID" Type="int" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Createdon" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_EmailList">
+    <Key>
+      <PropertyRef Name="MailID" />
+    </Key>
+    <Property Name="MailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="AgentID" Type="int" />
+    <Property Name="FolderID" Type="int" />
+    <Property Name="From" Type="varchar" MaxLength="100" />
+    <Property Name="To" Type="varchar" MaxLength="100" />
+    <Property Name="Subject" Type="varchar(max)" />
+    <Property Name="Body" Type="varchar(max)" />
+    <Property Name="SentOn" Type="datetime" />
+    <Property Name="IsAttachment" Type="bit" />
+    <Property Name="IsIncomming" Type="bit" />
+    <Property Name="AttachmentName" Type="varchar(max)" />
+    <Property Name="Createdon" Type="datetime" />
+    <Property Name="MessageID" Type="varchar" MaxLength="500" />
+    <Property Name="Cc" Type="varchar(max)" />
+    <Property Name="Bcc" Type="varchar(max)" />
+    <Property Name="IsRead" Type="bit" />
+    <Property Name="IsReadAgent" Type="bit" />
+    <Property Name="isDeleted" Type="bit" />
+    <Property Name="isSpam" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_EmailTemplate">
+    <Key>
+      <PropertyRef Name="TemplateID" />
+    </Key>
+    <Property Name="TemplateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Label" Type="varchar" MaxLength="50" />
+    <Property Name="EmailTo" Type="varchar" MaxLength="300" />
+    <Property Name="EmailFrom" Type="varchar" MaxLength="300" />
+    <Property Name="EmailCC" Type="varchar" MaxLength="300" />
+    <Property Name="EmailBCC" Type="varchar" MaxLength="300" />
+    <Property Name="Subject" Type="varchar" MaxLength="500" />
+    <Property Name="EmailBody" Type="varchar(max)" />
+    <Property Name="EmailType" Type="tinyint" />
+    <Property Name="IsPOTemplate" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_FailedTransaction">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="PaymentGateway" Type="varchar" MaxLength="100" />
+    <Property Name="Paymentmethod" Type="varchar" MaxLength="100" />
+    <Property Name="TransactionCommand" Type="varchar(max)" />
+    <Property Name="TransactionResult" Type="varchar(max)" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="IsEmailAlert" Type="bit" />
+    <Property Name="FailedTxnNote" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_FeedCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Description" Type="ntext" />
+    <Property Name="SEKeywords" Type="nvarchar(max)" />
+    <Property Name="SEDescription" Type="nvarchar(max)" />
+    <Property Name="SETitle" Type="nvarchar(max)" />
+    <Property Name="SEName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ParentCategoryID" Type="int" />
+    <Property Name="QuantityDiscountID" Type="int" />
+    <Property Name="TaxClassID" Type="int" />
+    <Property Name="Summary" Type="nvarchar(max)" />
+    <Property Name="DisplayOrder" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="ToolTip" Type="nvarchar" MaxLength="100" />
+    <Property Name="Att_Id" Type="nvarchar(max)" />
+    <Property Name="ImageName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ProductCount" Type="int" />
+    <Property Name="PriceRange" Type="varchar(max)" />
+    <Property Name="CategoryIDt" Type="nvarchar(max)" />
+    <Property Name="DisplayType" Type="int" />
+    <Property Name="RootCategoryID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_FeedCategoryMapping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_FeedCategoryMapping">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="ParentCategoryID" />
+      <PropertyRef Name="StoreID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ParentCategoryID" Type="int" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_FeedFieldMapping">
+    <Key>
+      <PropertyRef Name="MappingID" />
+    </Key>
+    <Property Name="MappingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BaseFeedID" Type="int" />
+    <Property Name="BaseFieldID" Type="int" />
+    <Property Name="RelatedFeedID" Type="int" />
+    <Property Name="RelatedFieldID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_FeedFieldMaster">
+    <Key>
+      <PropertyRef Name="FieldID" />
+    </Key>
+    <Property Name="FieldID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreId" Type="int" />
+    <Property Name="FeedID" Type="int" />
+    <Property Name="FieldTypeID" Type="int" />
+    <Property Name="FieldName" Type="varchar" MaxLength="200" />
+    <Property Name="FieldDescription" Type="varchar(max)" />
+    <Property Name="FieldLimit" Type="int" />
+    <Property Name="FieldHeight" Type="int" />
+    <Property Name="FieldWidth" Type="int" />
+    <Property Name="isRequired" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="DefautValue" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_FeedFieldTypeMaster">
+    <Key>
+      <PropertyRef Name="FieldTypeID" />
+    </Key>
+    <Property Name="FieldTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_FeedFieldTypeValues">
+    <Key>
+      <PropertyRef Name="ValueID" />
+    </Key>
+    <Property Name="ValueID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="FieldValues" Type="nvarchar" MaxLength="50" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_FeedFieldValues' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_FeedFieldValues">
+    <Key>
+      <PropertyRef Name="ValueID" />
+    </Key>
+    <Property Name="ValueID" Type="int" Nullable="false" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="FieldValue" Type="varchar(max)" />
+    <Property Name="ProductID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_FeedFieldValues_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_FeedFieldValues_1">
+    <Key>
+      <PropertyRef Name="ValueID" />
+    </Key>
+    <Property Name="ValueID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="FieldValue" Type="varchar(max)" />
+    <Property Name="ProductID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_FeedMaster">
+    <Key>
+      <PropertyRef Name="FeedID" />
+    </Key>
+    <Property Name="FeedID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="FeedName" Type="varchar" MaxLength="100" />
+    <Property Name="FeedType" Type="varchar" MaxLength="100" />
+    <Property Name="IsBase" Type="bit" />
+    <Property Name="ImageName" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_FeedProductBaseMapping">
+    <Key>
+      <PropertyRef Name="ProductMappingID" />
+    </Key>
+    <Property Name="ProductMappingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FeedID" Type="int" />
+    <Property Name="FieldID" Type="int" />
+    <Property Name="ProductField" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_FontProduct' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_FontProduct">
+    <Key>
+      <PropertyRef Name="ProductId" />
+      <PropertyRef Name="FontId" />
+      <PropertyRef Name="CreationOn" />
+    </Key>
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="FontId" Type="int" Nullable="false" />
+    <Property Name="CreationOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_FontTable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_FontTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="FontName" Type="nvarchar" MaxLength="500" />
+    <Property Name="FontDesc" Type="nvarchar" MaxLength="500" />
+    <Property Name="FontUse" Type="nvarchar" MaxLength="500" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_FooterContent' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_FooterContent">
+    <Key>
+      <PropertyRef Name="FooterContentID" />
+    </Key>
+    <Property Name="FooterContentID" Type="int" Nullable="false" />
+    <Property Name="ContentDescriptionBottom" Type="varchar(max)" />
+    <Property Name="ContentDescriptionRight" Type="varchar(max)" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="StoreID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_GiftCard">
+    <Key>
+      <PropertyRef Name="GiftCardID" />
+    </Key>
+    <Property Name="GiftCardID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="SerialNumber" Type="varchar" MaxLength="200" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="InitialAmount" Type="money" />
+    <Property Name="Balance" Type="money" />
+    <Property Name="ExpirationDate" Type="datetime" />
+    <Property Name="EmailTo" Type="varchar" MaxLength="100" />
+    <Property Name="EmailFrom" Type="varchar" MaxLength="100" />
+    <Property Name="EmaiMessage" Type="varchar(max)" />
+    <Property Name="RecipientName" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="RMANumber" Type="int" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_GiftCardProduct">
+    <Key>
+      <PropertyRef Name="GiftCardProductID" />
+    </Key>
+    <Property Name="GiftCardProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="StoreID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_GiftCardUsage">
+    <Key>
+      <PropertyRef Name="GiftCardUsageID" />
+    </Key>
+    <Property Name="GiftCardUsageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="GiftCardID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="Amount" Type="money" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_GiftShoppingCart">
+    <Key>
+      <PropertyRef Name="ShoppingCartID" />
+    </Key>
+    <Property Name="ShoppingCartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CouponDiscountAmount" Type="money" />
+    <Property Name="Type" Type="int" />
+    <Property Name="CustomDiscount" Type="money" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_GiftShoppingCartItems">
+    <Key>
+      <PropertyRef Name="CustomCartID" />
+    </Key>
+    <Property Name="CustomCartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShoppingCartID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ChosenColor" Type="varchar" MaxLength="100" />
+    <Property Name="ChosenSize" Type="varchar" MaxLength="100" />
+    <Property Name="Price" Type="money" />
+    <Property Name="VariantNames" Type="varchar" MaxLength="500" />
+    <Property Name="VariantValues" Type="varchar" MaxLength="500" />
+    <Property Name="Weight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Requested" Type="int" />
+    <Property Name="StillNeeds" Type="int" />
+    <Property Name="Completed" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_HeaderLinks">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PageName" Type="varchar" MaxLength="400" />
+    <Property Name="PageURL" Type="varchar" MaxLength="400" />
+    <Property Name="StoreId" Type="int" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_HeaderText">
+    <Key>
+      <PropertyRef Name="HeaderID" />
+    </Key>
+    <Property Name="HeaderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HeaderText" Type="nvarchar(max)" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_HomeBanner">
+    <Key>
+      <PropertyRef Name="BannerID" />
+    </Key>
+    <Property Name="BannerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupBannerId" Type="int" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Title" Type="varchar" MaxLength="200" />
+    <Property Name="BannerURL" Type="varchar(max)" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="FileName" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_HomeBannerGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupID" Type="int" />
+    <Property Name="Title" Type="varchar" MaxLength="300" />
+    <Property Name="Displayorder" Type="int" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_HtmlText">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreId" Type="int" />
+    <Property Name="HtmlText" Type="ntext" />
+    <Property Name="HtmlType" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ImageSizes">
+    <Key>
+      <PropertyRef Name="ImageSizeID" />
+    </Key>
+    <Property Name="ImageSizeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="ImageName" Type="varchar" MaxLength="50" />
+    <Property Name="ImageSize" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_ItemBanners">
+    <Key>
+      <PropertyRef Name="ItemBannerID" />
+    </Key>
+    <Property Name="ItemBannerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemBannerTypeID" Type="int" />
+    <Property Name="BannerTitle" Type="varchar" MaxLength="200" />
+    <Property Name="BannerUrl" Type="varchar(max)" />
+    <Property Name="BannerImage" Type="varchar" MaxLength="150" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="Products" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_ItemBannerType">
+    <Key>
+      <PropertyRef Name="ItemBannerTypeID" />
+    </Key>
+    <Property Name="ItemBannerTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BannerTypeName" Type="varchar" MaxLength="100" />
+    <Property Name="BannerDescription" Type="varchar(max)" />
+    <Property Name="ImageSizeDescription" Type="varchar" MaxLength="100" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="StoreID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_LockProducts">
+    <Key>
+      <PropertyRef Name="LockProductID" />
+    </Key>
+    <Property Name="LockProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="MarryProducts" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsCompleted" Type="bit" />
+    <Property Name="MarkQuantity" Type="int" Nullable="false" />
+    <Property Name="UpgradeQuantity" Type="int" />
+    <Property Name="UpgradePrice" Type="money" />
+    <Property Name="MarkUpgradeQuantity" Type="int" />
+    <Property Name="IsPO" Type="bit" />
+    <Property Name="ordercustomcartId" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_MailLog">
+    <Key>
+      <PropertyRef Name="MailID" />
+    </Key>
+    <Property Name="MailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="ToEmail" Type="varchar" MaxLength="100" />
+    <Property Name="FromMail" Type="varchar" MaxLength="100" />
+    <Property Name="Subject" Type="varchar" MaxLength="1000" />
+    <Property Name="Body" Type="varchar(max)" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="ReplyTo" Type="int" />
+    <Property Name="MailDate" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_Manufacture">
+    <Key>
+      <PropertyRef Name="ManufactureID" />
+    </Key>
+    <Property Name="ManufactureID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="SEKeywords" Type="varchar(max)" />
+    <Property Name="SEDescription" Type="varchar(max)" />
+    <Property Name="SEName" Type="varchar" MaxLength="500" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="ImageName" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="tb_MembershipDiscount">
+    <Key>
+      <PropertyRef Name="MembershipDiscountID" />
+    </Key>
+    <Property Name="MembershipDiscountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustID" Type="int" />
+    <Property Name="Discount" Type="money" />
+    <Property Name="DiscountObjectID" Type="int" />
+    <Property Name="DiscountType" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="StoreID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Memo">
+    <Key>
+      <PropertyRef Name="MemoID" />
+    </Key>
+    <Property Name="MemoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="AssignedTo" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_MemoReply">
+    <Key>
+      <PropertyRef Name="ReplyID" />
+    </Key>
+    <Property Name="ReplyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemoID" Type="int" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="FileName" Type="varchar" MaxLength="500" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_NewsSubscription">
+    <Key>
+      <PropertyRef Name="NewsSubscriptionID" />
+    </Key>
+    <Property Name="NewsSubscriptionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Order">
+    <Key>
+      <PropertyRef Name="OrderNumber" />
+    </Key>
+    <Property Name="OrderNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="OrderGUID" Type="varchar" MaxLength="50" />
+    <Property Name="IsNew" Type="bit" />
+    <Property Name="ShoppingCardID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="GiftPackNote" Type="varchar(max)" />
+    <Property Name="BillingEqualsShipping" Type="bit" />
+    <Property Name="BillingEmail" Type="varchar" MaxLength="100" />
+    <Property Name="BillingFirstName" Type="varchar" MaxLength="50" />
+    <Property Name="BillingLastName" Type="varchar" MaxLength="50" />
+    <Property Name="BillingCompany" Type="varchar" MaxLength="100" />
+    <Property Name="BillingAddress1" Type="varchar" MaxLength="500" />
+    <Property Name="BillingAddress2" Type="varchar" MaxLength="500" />
+    <Property Name="BillingSuite" Type="varchar" MaxLength="50" />
+    <Property Name="BillingCity" Type="varchar" MaxLength="50" />
+    <Property Name="BillingState" Type="varchar" MaxLength="50" />
+    <Property Name="BillingZip" Type="varchar" MaxLength="10" />
+    <Property Name="BillingCountry" Type="varchar" MaxLength="50" />
+    <Property Name="BillingPhone" Type="varchar" MaxLength="20" />
+    <Property Name="ShippingEmail" Type="varchar" MaxLength="100" />
+    <Property Name="ShippingLastName" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingFirstName" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingCompany" Type="varchar" MaxLength="100" />
+    <Property Name="ShippingAddress1" Type="varchar" MaxLength="500" />
+    <Property Name="ShippingAddress2" Type="varchar" MaxLength="500" />
+    <Property Name="ShippingSuite" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingCity" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingState" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingZip" Type="varchar" MaxLength="20" />
+    <Property Name="ShippingCountry" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingPhone" Type="varchar" MaxLength="20" />
+    <Property Name="ShippingMethod" Type="varchar" MaxLength="300" />
+    <Property Name="OkToEmail" Type="bit" />
+    <Property Name="CardName" Type="varchar" MaxLength="100" />
+    <Property Name="CardType" Type="varchar" MaxLength="20" />
+    <Property Name="CardNumber" Type="varchar" MaxLength="250" />
+    <Property Name="CardVarificationCode" Type="varchar" MaxLength="10" />
+    <Property Name="CardExpirationMonth" Type="varchar" MaxLength="50" />
+    <Property Name="CardExpirationYear" Type="varchar" MaxLength="50" />
+    <Property Name="CouponCode" Type="varchar" MaxLength="100" />
+    <Property Name="CouponDiscountAmount" Type="money" />
+    <Property Name="GiftCertiSerialNumber" Type="varchar" MaxLength="100" />
+    <Property Name="GiftCertificateDiscountAmount" Type="money" />
+    <Property Name="QuantityDiscountAmount" Type="money" />
+    <Property Name="LevelDiscountPercent" Type="money" />
+    <Property Name="LevelDiscountAmount" Type="money" />
+    <Property Name="CustomDiscount" Type="money" />
+    <Property Name="OrderSubtotal" Type="money" />
+    <Property Name="OrderTax" Type="money" />
+    <Property Name="OrderShippingCosts" Type="money" />
+    <Property Name="OrderTotal" Type="money" />
+    <Property Name="AuthorizationCode" Type="varchar" MaxLength="100" />
+    <Property Name="AuthorizationResult" Type="varchar(max)" />
+    <Property Name="AuthorizationPNREF" Type="varchar" MaxLength="200" />
+    <Property Name="TransactionCommand" Type="varchar(max)" />
+    <Property Name="LastIPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="PaymentGateway" Type="varchar" MaxLength="100" />
+    <Property Name="PaymentMethod" Type="varchar" MaxLength="100" />
+    <Property Name="ShippingTrackingNumber" Type="varchar" MaxLength="100" />
+    <Property Name="ShippedVIA" Type="varchar" MaxLength="100" />
+    <Property Name="OrderStatus" Type="varchar" MaxLength="200" />
+    <Property Name="TransactionStatus" Type="varchar" MaxLength="200" />
+    <Property Name="AVSResult" Type="varchar" MaxLength="500" />
+    <Property Name="Cvc2Response" Type="varchar" MaxLength="50" />
+    <Property Name="CaptureTxCommand" Type="varchar(max)" />
+    <Property Name="CaptureTXResult" Type="varchar(max)" />
+    <Property Name="VoidTXCommand" Type="varchar(max)" />
+    <Property Name="VoidTXResult" Type="varchar(max)" />
+    <Property Name="RefundTXCommand" Type="varchar(max)" />
+    <Property Name="RefundTXResult" Type="varchar(max)" />
+    <Property Name="RefundReason" Type="varchar(max)" />
+    <Property Name="CartType" Type="varchar" MaxLength="100" />
+    <Property Name="Last4" Type="varchar" MaxLength="10" />
+    <Property Name="AuthorizedOn" Type="datetime" />
+    <Property Name="CapturedOn" Type="datetime" />
+    <Property Name="RefundedOn" Type="datetime" />
+    <Property Name="VoidedOn" Type="datetime" />
+    <Property Name="FraudedOn" Type="datetime" />
+    <Property Name="ShippedOn" Type="datetime" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="ReferralLink" Type="varchar" MaxLength="200" />
+    <Property Name="Referrer" Type="varchar" MaxLength="100" />
+    <Property Name="RefundedAmount" Type="money" />
+    <Property Name="ChargeAmount" Type="money" />
+    <Property Name="AuthorizedAmount" Type="money" />
+    <Property Name="AdjustmentAmount" Type="money" />
+    <Property Name="AdjustmentCapturedOn" Type="datetime" />
+    <Property Name="OrderNotes" Type="varchar(max)" />
+    <Property Name="isGiftWrap" Type="bit" />
+    <Property Name="GiftWrapAmt" Type="money" />
+    <Property Name="SalesRepName" Type="varchar" MaxLength="100" />
+    <Property Name="THUB_POSTED_TO_ACCOUNTING" Type="char" MaxLength="1" />
+    <Property Name="THUB_POSTED_DATE" Type="datetime" />
+    <Property Name="THUB_ACCOUNTING_REF" Type="char" MaxLength="25" />
+    <Property Name="InventoryWasReduced" Type="bit" />
+    <Property Name="RefOrderID" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsPhoneOrder" Type="bit" />
+    <Property Name="SalesAgentID" Type="int" />
+    <Property Name="IsPrinted" Type="bit" />
+    <Property Name="isfullFillment" Type="bit" />
+    <Property Name="ReviewReminderSentOn" Type="bit" />
+    <Property Name="CouponCodeDescription" Type="nvarchar" MaxLength="200" />
+    <Property Name="RefStoreID" Type="nvarchar" MaxLength="50" />
+    <Property Name="StoreName" Type="nvarchar" MaxLength="50" />
+    <Property Name="BillName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShipName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ItemCount" Type="int" />
+    <Property Name="IsYahooOrder" Type="bit" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="IsOverStockProcess" Type="int" />
+    <Property Name="EbayTransactionID" Type="varchar" MaxLength="100" />
+    <Property Name="ExportedDate" Type="datetime" />
+    <Property Name="IsBackEnd" Type="int" />
+    <Property Name="BackEndGUID" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IsBackShip" Type="int" />
+    <Property Name="PartnerNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Callreference" Type="varchar" MaxLength="200" />
+    <Property Name="Storecreaditno" Type="varchar" MaxLength="200" />
+    <Property Name="StorecreaditAmont" Type="money" />
+  </EntityType>
+  <EntityType Name="tb_OrderComment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="250" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="NotifyCustomer" Type="bit" />
+    <Property Name="IsVisibleFrontEnd" Type="bit" />
+    <Property Name="ColorName" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_OrderedShoppingCart">
+    <Key>
+      <PropertyRef Name="OrderedShoppingCartID" />
+    </Key>
+    <Property Name="OrderedShoppingCartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_OrderedShoppingCart_backup">
+    <Key>
+      <PropertyRef Name="OrderedShoppingCart_backup_Id" />
+    </Key>
+    <Property Name="OrderedShoppingCart_backup_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="subTotal" Type="money" />
+    <Property Name="DiscountAmount" Type="money" />
+    <Property Name="ShippingAmount" Type="money" />
+    <Property Name="ShippingMethodID" Type="int" />
+    <Property Name="Total" Type="money" />
+    <Property Name="ShippingMethod" Type="nvarchar" MaxLength="100" />
+    <Property Name="LevelDiscountAmount" Type="money" />
+    <Property Name="CouponDiscountAmount" Type="money" />
+    <Property Name="QuantityDiscountAmount" Type="money" />
+    <Property Name="GiftCertificateDiscountAmount" Type="money" />
+    <Property Name="OrderTax" Type="money" />
+    <Property Name="RepeatOrderNo" Type="int" />
+    <Property Name="ReturnedStarck" Type="money" />
+    <Property Name="ReturnedFee" Type="money" />
+  </EntityType>
+  <EntityType Name="tb_OrderedShoppingCartItems">
+    <Key>
+      <PropertyRef Name="OrderedCustomCartID" />
+    </Key>
+    <Property Name="OrderedCustomCartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderedShoppingCartID" Type="int" />
+    <Property Name="RefProductID" Type="int" />
+    <Property Name="ProductName" Type="varchar" MaxLength="500" />
+    <Property Name="SKU" Type="varchar" MaxLength="500" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Price" Type="money" />
+    <Property Name="VariantNames" Type="varchar" MaxLength="500" />
+    <Property Name="VariantValues" Type="varchar" MaxLength="500" />
+    <Property Name="Weight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsRefunded" Type="bit" />
+    <Property Name="RefundAmount" Type="money" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="TrackingNumber" Type="varchar" MaxLength="500" />
+    <Property Name="ShippedVia" Type="varchar" MaxLength="5000" />
+    <Property Name="ShippedOn" Type="datetime" />
+    <Property Name="ShippedQty" Type="int" />
+    <Property Name="WareHouseID" Type="int" />
+    <Property Name="InventoryUpdated" Type="bit" />
+    <Property Name="Tax" Type="money" />
+    <Property Name="Shipping" Type="money" />
+    <Property Name="LastTrackingNumber" Type="varchar" MaxLength="500" />
+    <Property Name="LastShippedVia" Type="varchar" MaxLength="500" />
+    <Property Name="PackId" Type="int" />
+    <Property Name="YahooID" Type="nvarchar(max)" />
+    <Property Name="ProductURL" Type="nvarchar(max)" />
+    <Property Name="MarryProducts" Type="nvarchar" MaxLength="500" />
+    <Property Name="MarryWithtotalQuantity" Type="int" />
+    <Property Name="MarryproductQuantity" Type="int" />
+    <Property Name="upgradeprice" Type="money" />
+    <Property Name="IsManualShipped" Type="bit" />
+    <Property Name="OrderItemID" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsAccepted" Type="bit" />
+    <Property Name="Receipt_Item_ID" Type="nvarchar" MaxLength="500" />
+    <Property Name="RelatedproductID" Type="int" />
+    <Property Name="IsProductType" Type="int" />
+    <Property Name="YardQuantity" Type="int" />
+    <Property Name="Actualyard" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="DiscountPrice" Type="money" />
+    <Property Name="SKUupgrade" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_OrderedShoppingCartItems_backup' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_OrderedShoppingCartItems_backup">
+    <Key>
+      <PropertyRef Name="InventoryWasReduced" />
+    </Key>
+    <Property Name="OrderedShoppingCart_backup_Id" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="OrderedShoppingCartID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ChosenColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChosenSize" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="money" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="VariantNames" Type="nvarchar" MaxLength="500" />
+    <Property Name="VariantValues" Type="nvarchar" MaxLength="500" />
+    <Property Name="InventoryWasReduced" Type="bit" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Direction" Type="nvarchar" MaxLength="50" />
+    <Property Name="Avail" Type="nvarchar" MaxLength="500" />
+    <Property Name="RepeatOrderNo" Type="int" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="400" />
+    <Property Name="Variantprice" Type="money" />
+    <Property Name="DiscountPrice" Type="money" />
+    <Property Name="RelatedproductID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_OrderLog">
+    <Key>
+      <PropertyRef Name="OrderLogID" />
+    </Key>
+    <Property Name="OrderLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusID" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="LogDate" Type="datetime" />
+    <Property Name="LogBy" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_OrderLogStatus">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tb_OrderShoppingCart">
+    <Key>
+      <PropertyRef Name="OrderShoppingCartID" />
+    </Key>
+    <Property Name="OrderShoppingCartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="OrderedShoppingCartID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_OrderStatusColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="500" />
+    <Property Name="ColorName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_PageRedirect">
+    <Key>
+      <PropertyRef Name="RedirectID" />
+    </Key>
+    <Property Name="RedirectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="OldUrl" Type="varchar(max)" />
+    <Property Name="NewUrl" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="PaymentType" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_PaymentServices">
+    <Key>
+      <PropertyRef Name="PaymentServiceID" />
+    </Key>
+    <Property Name="PaymentServiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="PaymentService" Type="varchar" MaxLength="50" />
+    <Property Name="PaymentType" Type="varchar" MaxLength="50" />
+    <Property Name="InitialPaymentStatus" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_PriceRange">
+    <Key>
+      <PropertyRef Name="PriceRangeId" />
+    </Key>
+    <Property Name="PriceRangeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PriceRangeName" Type="nvarchar" MaxLength="200" />
+    <Property Name="SEName" Type="varchar" MaxLength="500" />
+    <Property Name="MinPrice" Type="money" />
+    <Property Name="MaxPrice" Type="money" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="ProductCount" Type="int" />
+    <Property Name="StoreID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="ManufactureID" Type="int" />
+    <Property Name="DistributorID" Type="int" />
+    <Property Name="TaxClassID" Type="int" />
+    <Property Name="ProductTypeID" Type="int" />
+    <Property Name="ProductTypeDeliveryID" Type="int" />
+    <Property Name="QuantityDiscountID" Type="int" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="SEName" Type="varchar(max)" />
+    <Property Name="SKU" Type="varchar" MaxLength="500" />
+    <Property Name="Price" Type="money" />
+    <Property Name="SalePrice" Type="money" />
+    <Property Name="OurPrice" Type="money" />
+    <Property Name="SurCharge" Type="money" />
+    <Property Name="Inventory" Type="int" />
+    <Property Name="Weight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Size" Type="varchar" MaxLength="100" />
+    <Property Name="Color" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="UPC" Type="varchar" MaxLength="100" />
+    <Property Name="Height" Type="varchar" MaxLength="20" />
+    <Property Name="Width" Type="varchar" MaxLength="20" />
+    <Property Name="Length" Type="varchar" MaxLength="20" />
+    <Property Name="Avail" Type="varchar" MaxLength="500" />
+    <Property Name="AvaliableStartDate" Type="datetime" />
+    <Property Name="AvailableEndDate" Type="datetime" />
+    <Property Name="ImageName" Type="varchar" MaxLength="500" />
+    <Property Name="PDFName" Type="varchar" MaxLength="500" />
+    <Property Name="Discontinue" Type="bit" />
+    <Property Name="MainCategory" Type="varchar" MaxLength="100" />
+    <Property Name="IsKit" Type="bit" />
+    <Property Name="IsPack" Type="bit" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="IsFreeShipping" Type="bit" />
+    <Property Name="IsNewArrival" Type="bit" />
+    <Property Name="IsSaleclearance" Type="bit" />
+    <Property Name="IsAuthorizeRefund" Type="bit" />
+    <Property Name="IsBestSeller" Type="bit" />
+    <Property Name="OptionalAccessories" Type="varchar" MaxLength="500" />
+    <Property Name="OutOfStockMessage" Type="varchar(max)" />
+    <Property Name="SEKeywords" Type="varchar(max)" />
+    <Property Name="SEDescription" Type="varchar(max)" />
+    <Property Name="SETitle" Type="varchar(max)" />
+    <Property Name="ToolTip" Type="varchar" MaxLength="500" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="GiftWrap" Type="bit" />
+    <Property Name="CallUsForPrice" Type="bit" />
+    <Property Name="isSatisfactionGuaranteed" Type="bit" />
+    <Property Name="isTabbingDisplay" Type="bit" />
+    <Property Name="TabTitle1" Type="varchar" MaxLength="50" />
+    <Property Name="TabTitle2" Type="varchar" MaxLength="50" />
+    <Property Name="TabDesc2" Type="varchar(max)" />
+    <Property Name="TabTitle3" Type="varchar" MaxLength="50" />
+    <Property Name="TabDesc3" Type="varchar(max)" />
+    <Property Name="TabTitle4" Type="varchar" MaxLength="50" />
+    <Property Name="TabDesc4" Type="varchar(max)" />
+    <Property Name="TabTitle5" Type="varchar" MaxLength="50" />
+    <Property Name="TabDesc5" Type="varchar(max)" />
+    <Property Name="ViewCount" Type="int" />
+    <Property Name="LastViewDate" Type="datetime" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="RelatedProduct" Type="varchar(max)" />
+    <Property Name="TagName" Type="varchar" MaxLength="50" />
+    <Property Name="eBayListingType" Type="bit" />
+    <Property Name="eBayListingDay" Type="int" />
+    <Property Name="eBayCreatedOn" Type="datetime" />
+    <Property Name="eBayLastUpdated" Type="datetime" />
+    <Property Name="eBayListingFee" Type="money" />
+    <Property Name="eBayProductID" Type="varchar" MaxLength="100" />
+    <Property Name="eBayCategoryID" Type="bigint" />
+    <Property Name="eBayStoreCategoryID" Type="bigint" />
+    <Property Name="IsRestricted" Type="bit" />
+    <Property Name="Perishable" Type="bit" />
+    <Property Name="RequiresRefrigeration" Type="bit" />
+    <Property Name="RequiresFreezing" Type="bit" />
+    <Property Name="ContainsAlcohol" Type="bit" />
+    <Property Name="MapPriceIndicator" Type="nvarchar" MaxLength="200" />
+    <Property Name="ShippingStartDate" Type="datetime" />
+    <Property Name="ShippingEndDate" Type="datetime" />
+    <Property Name="ManufacturePartNo" Type="varchar" MaxLength="50" />
+    <Property Name="Summary" Type="ntext" />
+    <Property Name="SellerID" Type="int" />
+    <Property Name="Isbn" Type="varchar" MaxLength="50" />
+    <Property Name="ASIN" Type="varchar" MaxLength="255" />
+    <Property Name="Srno" Type="int" />
+    <Property Name="ProductSetID" Type="varchar" MaxLength="50" />
+    <Property Name="BuyListingID" Type="int" />
+    <Property Name="Features" Type="varchar(max)" />
+    <Property Name="Extended-warranty" Type="varchar" MaxLength="1000" />
+    <Property Name="BuyCategoryID" Type="int" />
+    <Property Name="Location" Type="varchar" MaxLength="500" />
+    <Property Name="Condition" Type="varchar" MaxLength="50" />
+    <Property Name="IsShipSeparately" Type="bit" />
+    <Property Name="ManuItemURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="WebSiteShortTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="WebSiteLongTitle" Type="nvarchar" MaxLength="200" />
+    <Property Name="ItemPackage" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActivationMark" Type="bit" />
+    <Property Name="Prop65" Type="bit" />
+    <Property Name="Pro65Motherboard" Type="bit" />
+    <Property Name="Age18Verification" Type="bit" />
+    <Property Name="ChokingHazard1" Type="nvarchar" MaxLength="100" />
+    <Property Name="ChokingHazard2" Type="nvarchar" MaxLength="100" />
+    <Property Name="ChokingHazard3" Type="nvarchar" MaxLength="100" />
+    <Property Name="ChokingHazard4" Type="nvarchar" MaxLength="100" />
+    <Property Name="SellerPartNo" Type="nvarchar" MaxLength="40" />
+    <Property Name="Shipping" Type="ntext" />
+    <Property Name="BuyKeywords" Type="varchar" MaxLength="500" />
+    <Property Name="Options" Type="nvarchar(max)" />
+    <Property Name="IsFreeEngraving" Type="bit" />
+    <Property Name="EngravingSize" Type="int" />
+    <Property Name="OldProductID" Type="varchar" MaxLength="500" />
+    <Property Name="IsSpecials" Type="bit" />
+    <Property Name="ReturnPolicy" Type="varchar(max)" />
+    <Property Name="amazonproductid" Type="nvarchar" MaxLength="500" />
+    <Property Name="ManufactureCatalogNo" Type="nvarchar" MaxLength="500" />
+    <Property Name="Brand" Type="nvarchar" MaxLength="500" />
+    <Property Name="Bulletpoint1" Type="nvarchar(max)" />
+    <Property Name="Bulletpoint2" Type="nvarchar(max)" />
+    <Property Name="Bulletpoint3" Type="nvarchar(max)" />
+    <Property Name="Bulletpoint4" Type="nvarchar(max)" />
+    <Property Name="Bulletpoint5" Type="nvarchar(max)" />
+    <Property Name="ProductURL" Type="nvarchar(max)" />
+    <Property Name="YahooID" Type="nvarchar(max)" />
+    <Property Name="Dimension" Type="nvarchar" MaxLength="500" />
+    <Property Name="Taxable" Type="bit" />
+    <Property Name="Ypath" Type="nvarchar" MaxLength="500" />
+    <Property Name="LowInventory" Type="int" />
+    <Property Name="MarryProducts" Type="nvarchar" MaxLength="2000" />
+    <Property Name="InventoryUpdatedOn" Type="datetime" />
+    <Property Name="DiscontinuedOn" Type="datetime" />
+    <Property Name="ImageOrg" Type="varchar(max)" />
+    <Property Name="Visualproperties" Type="varchar" MaxLength="10" />
+    <Property Name="Image1" Type="varchar(max)" />
+    <Property Name="Image2" Type="varchar(max)" />
+    <Property Name="Image3" Type="varchar(max)" />
+    <Property Name="Image4" Type="varchar(max)" />
+    <Property Name="Image5" Type="varchar(max)" />
+    <Property Name="overstockproductid" Type="varchar" MaxLength="250" />
+    <Property Name="OptionSku" Type="varchar" MaxLength="500" />
+    <Property Name="EbayCreated" Type="datetime" />
+    <Property Name="ContainsTobacco" Type="bit" />
+    <Property Name="Sizes" Type="varchar" MaxLength="500" />
+    <Property Name="ShortName" Type="varchar" MaxLength="500" />
+    <Property Name="PartNumber" Type="varchar" MaxLength="500" />
+    <Property Name="Materials" Type="varchar" MaxLength="500" />
+    <Property Name="WarrantyProvider" Type="varchar" MaxLength="500" />
+    <Property Name="WarrantyDescription" Type="varchar(max)" />
+    <Property Name="WarrantyContactPhoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="ProductSummary" Type="varchar(max)" />
+    <Property Name="ProductCondition" Type="varchar" MaxLength="50" />
+    <Property Name="SourceZipCode" Type="varchar" MaxLength="20" />
+    <Property Name="NeweggItemNumber" Type="nvarchar" MaxLength="500" />
+    <Property Name="BuyReferenceID" Type="nvarchar" MaxLength="500" />
+    <Property Name="PerInchPrice" Type="money" />
+    <Property Name="AdditionalCharge" Type="money" />
+    <Property Name="YardHeaderandhem" Type="int" />
+    <Property Name="FabricInch" Type="int" />
+    <Property Name="Isfreefabricswatch" Type="bit" />
+    <Property Name="IspriceQuote" Type="bit" />
+    <Property Name="ProductSwatchid" Type="int" />
+    <Property Name="Isproperty" Type="bit" />
+    <Property Name="LightControl" Type="int" />
+    <Property Name="Privacy" Type="int" />
+    <Property Name="Efficiency" Type="int" />
+    <Property Name="Pattern" Type="varchar" MaxLength="200" />
+    <Property Name="Colors" Type="varchar" MaxLength="200" />
+    <Property Name="Fabric" Type="varchar" MaxLength="200" />
+    <Property Name="Style" Type="varchar(max)" />
+    <Property Name="SecondaryColor" Type="varchar(max)" />
+    <Property Name="SwatchDescription" Type="varchar(max)" />
+    <Property Name="ShippingTime" Type="varchar(max)" />
+    <Property Name="FabricType" Type="varchar" MaxLength="200" />
+    <Property Name="FabricCode" Type="varchar" MaxLength="200" />
+    <Property Name="IsCustom" Type="bit" />
+    <Property Name="Header" Type="varchar(max)" />
+    <Property Name="PageURL" Type="varchar(max)" />
+    <Property Name="ColorSku" Type="varchar(max)" />
+    <Property Name="Ismadetoorder" Type="bit" />
+    <Property Name="Ismadetomeasure" Type="bit" />
+    <Property Name="IsRoman" Type="bit" />
+    <Property Name="RomanShadeId" Type="int" />
+    <Property Name="SalePriceTag" Type="varchar" MaxLength="200" />
+    <Property Name="IsNewArrivalFromDate" Type="datetime" />
+    <Property Name="IsNewArrivalToDate" Type="datetime" />
+    <Property Name="IsBestSellerFromDate" Type="datetime" />
+    <Property Name="IsBestSellerToDate" Type="datetime" />
+    <Property Name="IsFreeShippingFromDate" Type="datetime" />
+    <Property Name="IsFreeShippingToDate" Type="datetime" />
+    <Property Name="IsFeaturedFromDate" Type="datetime" />
+    <Property Name="IsFeaturedToDate" Type="datetime" />
+    <Property Name="FeatureID" Type="int" />
+    <Property Name="ImageDescription" Type="varchar(max)" />
+    <Property Name="Ismadetoready" Type="bit" />
+    <Property Name="Ismadetoorderswatch" Type="bit" />
+    <Property Name="IsdropshipProduct" Type="bit" />
+    <Property Name="IsDataVerify" Type="int" />
+    <Property Name="DataVerifyBy" Type="int" />
+    <Property Name="IsDataVerifyOn" Type="datetime" />
+    <Property Name="ItemType" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsHamming" Type="bit" />
+    <Property Name="HammingSafetyQty" Type="int" />
+    <Property Name="HammingSafetyper" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="FabricVendor" Type="int" />
+    <Property Name="FabricVendorIds" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Coloroption" Type="varchar(max)" />
+    <Property Name="Coloroptintitle" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_ProductAmazon">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AmazonRefID" Type="int" />
+    <Property Name="StandardProductID" Type="varchar" MaxLength="20" />
+    <Property Name="ProductIDType" Type="varchar" MaxLength="100" />
+    <Property Name="Brand" Type="varchar" MaxLength="50" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModelName" Type="varchar" MaxLength="50" />
+    <Property Name="ModelNumber" Type="varchar" MaxLength="50" />
+    <Property Name="MfrPartNumber" Type="varchar" MaxLength="40" />
+    <Property Name="MerchantCatalogNumber" Type="varchar" MaxLength="40" />
+    <Property Name="BulletPoint1" Type="varchar" MaxLength="100" />
+    <Property Name="BulletPoint2" Type="varchar" MaxLength="100" />
+    <Property Name="BulletPoint3" Type="varchar" MaxLength="100" />
+    <Property Name="BulletPoint4" Type="varchar" MaxLength="100" />
+    <Property Name="BulletPoint5" Type="varchar" MaxLength="100" />
+    <Property Name="ProductDescription" Type="varchar(max)" />
+    <Property Name="ProductType" Type="varchar" MaxLength="100" />
+    <Property Name="ItemType" Type="varchar" MaxLength="100" />
+    <Property Name="Prop65" Type="bit" />
+    <Property Name="CPSIAWarning1" Type="varchar" MaxLength="100" />
+    <Property Name="CPSIAWarning2" Type="varchar" MaxLength="100" />
+    <Property Name="CPSIAWarning3" Type="varchar" MaxLength="100" />
+    <Property Name="CPSIAWarning4" Type="varchar" MaxLength="100" />
+    <Property Name="CPSIAWarningDescription" Type="varchar" MaxLength="250" />
+    <Property Name="Keyword1" Type="varchar" MaxLength="100" />
+    <Property Name="Keyword2" Type="varchar" MaxLength="100" />
+    <Property Name="Keyword3" Type="varchar" MaxLength="100" />
+    <Property Name="PlatinumKeywords1" Type="varchar" MaxLength="50" />
+    <Property Name="PlatinumKeywords2" Type="varchar" MaxLength="50" />
+    <Property Name="PlatinumKeywords3" Type="varchar" MaxLength="50" />
+    <Property Name="PlatinumKeywords4" Type="varchar" MaxLength="50" />
+    <Property Name="PlatinumKeywords5" Type="varchar" MaxLength="50" />
+    <Property Name="MainImageURL" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL1" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL2" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL3" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL4" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL5" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL6" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL7" Type="varchar" MaxLength="500" />
+    <Property Name="OtherImageURL8" Type="varchar" MaxLength="500" />
+    <Property Name="ParentSKU" Type="varchar" MaxLength="100" />
+    <Property Name="RelationshipType" Type="varchar" MaxLength="100" />
+    <Property Name="ProductTaxCode" Type="varchar" MaxLength="100" />
+    <Property Name="LaunchDate" Type="datetime" />
+    <Property Name="ReleaseDate" Type="datetime" />
+    <Property Name="MAP" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="MSRP" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Currency" Type="varchar" MaxLength="100" />
+    <Property Name="FulfillmentCenterID" Type="varchar" MaxLength="100" />
+    <Property Name="SaleStartDate" Type="datetime" />
+    <Property Name="SaleEndDate" Type="datetime" />
+    <Property Name="RebateStartDate1" Type="datetime" />
+    <Property Name="RebateStartDate2" Type="datetime" />
+    <Property Name="RebateEndDate1" Type="datetime" />
+    <Property Name="RebateEndDate2" Type="datetime" />
+    <Property Name="RebateMessage1" Type="varchar" MaxLength="250" />
+    <Property Name="RebateMessage2" Type="varchar" MaxLength="250" />
+    <Property Name="RebateName1" Type="varchar" MaxLength="40" />
+    <Property Name="RebateName2" Type="varchar" MaxLength="40" />
+    <Property Name="MaxOrderQuantity" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="LeadtimeToShip" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="RestockDate" Type="datetime" />
+    <Property Name="ItemsIncluded" Type="varchar" MaxLength="100" />
+    <Property Name="shipping_weight_unit_of_measure" Type="varchar" MaxLength="100" />
+    <Property Name="shipping-weight" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="ConditionType" Type="varchar" MaxLength="100" />
+    <Property Name="ConditionNote" Type="varchar" MaxLength="1000" />
+    <Property Name="MaxAggregateShipQuantity" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="IsGiftWrapAvailable" Type="bit" />
+    <Property Name="IsGiftMessageAvailable" Type="bit" />
+    <Property Name="IsDiscontinuedByManufacturer" Type="bit" />
+    <Property Name="RegisteredParameter" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateDelete" Type="varchar" MaxLength="100" />
+    <Property Name="SS_SurveillanceSystemType" Type="varchar" MaxLength="100" />
+    <Property Name="SS_CameraType" Type="varchar" MaxLength="100" />
+    <Property Name="SS_Features1" Type="varchar" MaxLength="100" />
+    <Property Name="SS_Features2" Type="varchar" MaxLength="100" />
+    <Property Name="SS_Features3" Type="varchar" MaxLength="100" />
+    <Property Name="SS_Features4" Type="varchar" MaxLength="100" />
+    <Property Name="SS_Features5" Type="varchar" MaxLength="100" />
+    <Property Name="SS_CameraAccessories" Type="varchar" MaxLength="100" />
+    <Property Name="PoS_ForUseWith" Type="varchar" MaxLength="100" />
+    <Property Name="PoS_BatteryChemicalType" Type="varchar" MaxLength="100" />
+    <Property Name="PoS_CameraPowerSupplyType" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_ProductAssembly">
+    <Key>
+      <PropertyRef Name="ProductAssemblyID" />
+    </Key>
+    <Property Name="ProductAssemblyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RefProductID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ProductBuy">
+    <Key>
+      <PropertyRef Name="ProductBuyID" />
+    </Key>
+    <Property Name="ProductBuyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ShippingRateExpedited" Type="money" />
+    <Property Name="ShippingRateStandard" Type="money" />
+    <Property Name="OfferExpeditedShipping" Type="varchar" MaxLength="50" />
+    <Property Name="Ass_Type" Type="varchar" MaxLength="500" />
+    <Property Name="Board_Type" Type="varchar" MaxLength="500" />
+    <Property Name="Brightness" Type="varchar" MaxLength="500" />
+    <Property Name="Card_Type" Type="varchar" MaxLength="500" />
+    <Property Name="Closure" Type="varchar" MaxLength="500" />
+    <Property Name="Dispenser_Type" Type="varchar" MaxLength="500" />
+    <Property Name="Easel_Type" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_ProductCategory">
+    <Key>
+      <PropertyRef Name="ProductCategoryID" />
+    </Key>
+    <Property Name="ProductCategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ProductColor">
+    <Key>
+      <PropertyRef Name="ColorID" />
+    </Key>
+    <Property Name="ColorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ColorName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ImagePath" Type="varchar" MaxLength="200" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ProductFabricCode">
+    <Key>
+      <PropertyRef Name="FabricCodeId" />
+    </Key>
+    <Property Name="FabricCodeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FabricTypeID" Type="int" />
+    <Property Name="Code" Type="varchar" MaxLength="500" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="FabricVendorIds" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="tb_ProductFabricDylot">
+    <Key>
+      <PropertyRef Name="FebricDylotId" />
+    </Key>
+    <Property Name="FebricDylotId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FebricCodeId" Type="int" />
+    <Property Name="Dylot" Type="varchar" MaxLength="500" />
+    <Property Name="QtyonHand" Type="int" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ProductFabricType">
+    <Key>
+      <PropertyRef Name="FabricTypeID" />
+    </Key>
+    <Property Name="FabricTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FabricTypename" Type="varchar" MaxLength="500" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ProductFabricWidth">
+    <Key>
+      <PropertyRef Name="FabricWidthID" />
+    </Key>
+    <Property Name="FabricWidthID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FabricCodeID" Type="int" />
+    <Property Name="Width" Type="varchar" MaxLength="500" />
+    <Property Name="QtyOnHand" Type="int" />
+    <Property Name="NextOrderQty" Type="int" />
+    <Property Name="AlertQty" Type="int" />
+    <Property Name="AvailableDate" Type="datetime" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="AllowQty" Type="int" />
+    <Property Name="NoOfDays" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ProductFeature">
+    <Key>
+      <PropertyRef Name="FeatureId" />
+    </Key>
+    <Property Name="FeatureId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Body" Type="varchar(max)" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Createdon" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ProductOptionsPrice">
+    <Key>
+      <PropertyRef Name="ProductOptionsId" />
+    </Key>
+    <Property Name="ProductOptionsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Options" Type="varchar" MaxLength="500" />
+    <Property Name="Createdon" Type="datetime" />
+    <Property Name="AdditionalPrice" Type="money" />
+    <Property Name="AdditionalPricePercentage" Type="money" />
+  </EntityType>
+  <EntityType Name="tb_ProductRomanShadeYardage">
+    <Key>
+      <PropertyRef Name="RomanShadeId" />
+    </Key>
+    <Property Name="RomanShadeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShadeName" Type="varchar" MaxLength="500" />
+    <Property Name="StoreId" Type="int" />
+    <Property Name="WidthStandardAllowance" Type="money" />
+    <Property Name="LengthStandardAllowance" Type="money" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="FabricPerYardCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="ManufuacturingCost" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="MechanismOption" Type="money" />
+    <Property Name="Duties" Type="money" />
+    <Property Name="Lined" Type="money" />
+    <Property Name="LinedInterlined" Type="money" />
+    <Property Name="BlackoutLining" Type="money" />
+  </EntityType>
+  <EntityType Name="tb_ProductSearchType">
+    <Key>
+      <PropertyRef Name="SearchId" />
+    </Key>
+    <Property Name="SearchId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SearchValue" Type="varchar" MaxLength="500" />
+    <Property Name="SearchType" Type="int" />
+    <Property Name="Price" Type="money" />
+    <Property Name="PerInch" Type="money" />
+    <Property Name="ImageName" Type="varchar" MaxLength="500" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="Createdon" Type="datetime" />
+    <Property Name="StoreId" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ProductStylePrice">
+    <Key>
+      <PropertyRef Name="ProductStyleId" />
+    </Key>
+    <Property Name="ProductStyleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Style" Type="varchar" MaxLength="500" />
+    <Property Name="AdditionalPrice" Type="money" />
+    <Property Name="PerInch" Type="money" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Createdon" Type="datetime" />
+    <Property Name="YardHeaderandhem" Type="int" />
+    <Property Name="FabricInch" Type="int" />
+    <Property Name="FabricWidth" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="DividedWidth" Type="numeric" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tb_ProductType">
+    <Key>
+      <PropertyRef Name="ProductTypeID" />
+    </Key>
+    <Property Name="ProductTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_ProductTypeDelivery">
+    <Key>
+      <PropertyRef Name="ProductTypeDeliveryID" />
+    </Key>
+    <Property Name="ProductTypeDeliveryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="SupportedProductType" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_ProductVariant">
+    <Key>
+      <PropertyRef Name="VariantID" />
+    </Key>
+    <Property Name="VariantID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="VariantName" Type="varchar" MaxLength="100" />
+    <Property Name="OldVariantId" Type="varchar" MaxLength="500" />
+    <Property Name="IsParent" Type="bit" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ProductVariantValue">
+    <Key>
+      <PropertyRef Name="VariantValueID" />
+    </Key>
+    <Property Name="VariantValueID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VariantID" Type="int" />
+    <Property Name="VariantValue" Type="varchar" MaxLength="100" />
+    <Property Name="VariantPrice" Type="money" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="SKU" Type="varchar" MaxLength="500" />
+    <Property Name="UPC" Type="varchar" MaxLength="50" />
+    <Property Name="Header" Type="varchar" MaxLength="500" />
+    <Property Name="Inventory" Type="int" />
+    <Property Name="RelatedProductid" Type="nvarchar" MaxLength="500" />
+    <Property Name="AllowQuantity" Type="int" />
+    <Property Name="LockQuantity" Type="int" />
+    <Property Name="AllowQuantityAvail" Type="varchar" MaxLength="1000" />
+    <Property Name="LockQuantityAvail" Type="varchar" MaxLength="1000" />
+    <Property Name="VariImageName" Type="varchar" MaxLength="500" />
+    <Property Name="AddiHemingQty" Type="int" />
+    <Property Name="BasecustomPrice" Type="money" />
+    <Property Name="Buy1Get1" Type="bit" />
+    <Property Name="OnSale" Type="bit" />
+    <Property Name="Buy1Fromdate" Type="datetime" />
+    <Property Name="Buy1Todate" Type="datetime" />
+    <Property Name="OnSaleFromdate" Type="datetime" />
+    <Property Name="OnSaleTodate" Type="datetime" />
+    <Property Name="OnSalePrice" Type="money" />
+    <Property Name="FabricCode" Type="nvarchar" MaxLength="500" />
+    <Property Name="FabricType" Type="nvarchar" MaxLength="500" />
+    <Property Name="BackOrderdate" Type="datetime" />
+    <Property Name="Weight" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tb_ProductVendorSKU">
+    <Key>
+      <PropertyRef Name="ProductVendorSKUID" />
+    </Key>
+    <Property Name="ProductVendorSKUID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="VendorSKUID" Type="int" />
+    <Property Name="VendorSKU" Type="varchar" MaxLength="100" />
+    <Property Name="Priority" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_PurchaseOrder">
+    <Key>
+      <PropertyRef Name="PONumber" />
+    </Key>
+    <Property Name="PONumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="PODate" Type="datetime" />
+    <Property Name="AdditionalCost" Type="money" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="4000" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="PoAmount" Type="money" />
+    <Property Name="PaymentComplete" Type="bit" />
+    <Property Name="Adjustments" Type="money" />
+    <Property Name="Tax" Type="money" />
+    <Property Name="Shipping" Type="money" />
+    <Property Name="IsProblem" Type="bit" />
+    <Property Name="ProblemType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProblemDesc" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_QauntityDiscount">
+    <Key>
+      <PropertyRef Name="QuantityDiscountID" />
+    </Key>
+    <Property Name="QuantityDiscountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="LowQuantity" Type="int" />
+    <Property Name="HighQuantity" Type="int" />
+    <Property Name="DiscountPercent" Type="money" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_QuantityDiscountTable">
+    <Key>
+      <PropertyRef Name="QuantityDiscountTableID" />
+    </Key>
+    <Property Name="QuantityDiscountTableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="QuantityDiscountID" Type="int" />
+    <Property Name="LowQuantity" Type="int" />
+    <Property Name="HighQuantity" Type="int" />
+    <Property Name="DiscountPercent" Type="money" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Rating">
+    <Key>
+      <PropertyRef Name="RatingID" />
+    </Key>
+    <Property Name="RatingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="EmailID" Type="varchar" MaxLength="100" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="Rating" Type="int" />
+    <Property Name="Comments" Type="varchar(max)" />
+    <Property Name="IsApproved" Type="int" />
+    <Property Name="ApprovedDate" Type="datetime" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_RestrictedIP">
+    <Key>
+      <PropertyRef Name="RestrictedIPID" />
+    </Key>
+    <Property Name="RestrictedIPID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_ReturnItem">
+    <Key>
+      <PropertyRef Name="ReturnItemID" />
+    </Key>
+    <Property Name="ReturnItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderedCustomerID" Type="int" Nullable="false" />
+    <Property Name="OrderedNumber" Type="int" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerEMail" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="ReturnReason" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="AdditionalInformation" Type="nvarchar" MaxLength="500" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="isArrived" Type="bit" />
+    <Property Name="ReturnNotes" Type="nvarchar(max)" />
+    <Property Name="ReturnImages" Type="nvarchar" MaxLength="500" />
+    <Property Name="ReturnFee" Type="varchar" MaxLength="50" />
+    <Property Name="IsReturn" Type="bit" />
+    <Property Name="ReturnType" Type="varchar" MaxLength="20" />
+    <Property Name="RetunitemNotes" Type="nvarchar(max)" />
+    <Property Name="isReturnrequest" Type="bit" />
+    <Property Name="MailLogID" Type="int" />
+    <Property Name="CustomCartID" Type="int" />
+    <Property Name="OrderedCustomCartID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ReviewCount">
+    <Key>
+      <PropertyRef Name="RatingCountID" />
+    </Key>
+    <Property Name="RatingCountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RatingID" Type="int" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Yes" Type="int" />
+    <Property Name="No" Type="int" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ReviewInappropriateRaring">
+    <Key>
+      <PropertyRef Name="InappropriateRaringID" />
+    </Key>
+    <Property Name="InappropriateRaringID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="1000" />
+    <Property Name="Email" Type="varchar" MaxLength="1000" />
+    <Property Name="LinkContent" Type="varchar" MaxLength="1000" />
+    <Property Name="Message" Type="varchar(max)" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_RMAmapping">
+    <Key>
+      <PropertyRef Name="RmaMapping" />
+    </Key>
+    <Property Name="RmaMapping" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rmaid" Type="int" />
+    <Property Name="OldorderNumber" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="StoreId" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_RotatorHomebanner">
+    <Key>
+      <PropertyRef Name="HomeRotatorId" />
+    </Key>
+    <Property Name="HomeRotatorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="BannerTypeId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_RotatorHomeBannerDetail">
+    <Key>
+      <PropertyRef Name="BannerID" />
+    </Key>
+    <Property Name="BannerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Title" Type="varchar" MaxLength="200" />
+    <Property Name="BannerURL" Type="varchar(max)" />
+    <Property Name="ImageName" Type="varchar(max)" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="HomeRotatorId" Type="int" />
+    <Property Name="Pagination" Type="varchar" MaxLength="50" />
+    <Property Name="IsMain" Type="int" />
+    <Property Name="LinkTarget" Type="varchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_SearchLog">
+    <Key>
+      <PropertyRef Name="SearchLogID" />
+    </Key>
+    <Property Name="SearchLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="SearchTerm" Type="ntext" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ShippingMethods">
+    <Key>
+      <PropertyRef Name="ShippingMethodID" />
+    </Key>
+    <Property Name="ShippingMethodID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShippingServiceID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="AdditionalPrice" Type="money" />
+    <Property Name="FixedPrice" Type="money" />
+    <Property Name="isRTShipping" Type="bit" />
+    <Property Name="ShowOnClient" Type="bit" />
+    <Property Name="ShowOnAdmin" Type="bit" />
+    <Property Name="IsInternational" Type="bit" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="EstimatedDays" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ShippingServices">
+    <Key>
+      <PropertyRef Name="ShippingServiceID" />
+    </Key>
+    <Property Name="ShippingServiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="ShippingService" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_ShoppingCart">
+    <Key>
+      <PropertyRef Name="ShoppingCartID" />
+    </Key>
+    <Property Name="ShoppingCartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_ShoppingCartItems">
+    <Key>
+      <PropertyRef Name="CustomCartID" />
+    </Key>
+    <Property Name="CustomCartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShoppingCartID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Price" Type="money" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Weight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="VariantNames" Type="varchar" MaxLength="500" />
+    <Property Name="VariantValues" Type="varchar" MaxLength="500" />
+    <Property Name="RelatedproductID" Type="int" />
+    <Property Name="IsProductType" Type="int" />
+    <Property Name="YardQuantity" Type="int" />
+    <Property Name="Actualyard" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="DiscountPrice" Type="money" />
+  </EntityType>
+  <EntityType Name="tb_spBoxDetails">
+    <Key>
+      <PropertyRef Name="SPBoxID" />
+    </Key>
+    <Property Name="SPBoxID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="SPBoxNumber" Type="varchar" MaxLength="50" />
+    <Property Name="SPBoxType" Type="varchar" MaxLength="50" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="IsProofProvided" Type="bit" />
+    <Property Name="ProofType" Type="varchar" MaxLength="50" />
+    <Property Name="ProofNumber" Type="varchar" MaxLength="50" />
+    <Property Name="IssueDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_State">
+    <Key>
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="StateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="CountryID" Type="int" />
+    <Property Name="Abbreviation" Type="varchar" MaxLength="50" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_StateTax">
+    <Key>
+      <PropertyRef Name="StateTaxID" />
+    </Key>
+    <Property Name="StateTaxID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxClassID" Type="int" />
+    <Property Name="StateID" Type="int" />
+    <Property Name="TaxRate" Type="money" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Store">
+    <Key>
+      <PropertyRef Name="StoreID" />
+    </Key>
+    <Property Name="StoreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentStoreID" Type="int" />
+    <Property Name="StoreName" Type="varchar" MaxLength="100" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_StoreCredit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreCredit" Type="nvarchar" MaxLength="50" />
+    <Property Name="StoreCreditAmount" Type="money" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_StoreThemes">
+    <Key>
+      <PropertyRef Name="StoreThemID" />
+    </Key>
+    <Property Name="StoreThemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="ThemeID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_TaxClass">
+    <Key>
+      <PropertyRef Name="TaxClassID" />
+    </Key>
+    <Property Name="TaxClassID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="TaxCode" Type="varchar" MaxLength="50" />
+    <Property Name="TaxName" Type="varchar" MaxLength="50" />
+    <Property Name="DisplayOrder" Type="int" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Testimonials">
+    <Key>
+      <PropertyRef Name="TestimonialsID" />
+    </Key>
+    <Property Name="TestimonialsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="EmailID" Type="varchar" MaxLength="200" />
+    <Property Name="Site" Type="varchar" MaxLength="100" />
+    <Property Name="Message" Type="varchar(max)" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="Approved" Type="int" />
+    <Property Name="Company" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Rating" Type="int" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="YesCount" Type="int" />
+    <Property Name="NoCount" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Themes">
+    <Key>
+      <PropertyRef Name="ThemeID" />
+    </Key>
+    <Property Name="ThemeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="Color" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_Timestamplog">
+    <Key>
+      <PropertyRef Name="TimeStampId" />
+    </Key>
+    <Property Name="TimeStampId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Createdby" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="type" Type="int" />
+    <Property Name="refnumber" Type="int" />
+    <Property Name="orderNumber" Type="int" />
+    <Property Name="Apptype" Type="int" />
+    <Property Name="Description" Type="ntext" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Color" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_Tool_Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Tool_Shape">
+    <Key>
+      <PropertyRef Name="ShapeID" />
+    </Key>
+    <Property Name="ShapeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Topic">
+    <Key>
+      <PropertyRef Name="TopicID" />
+    </Key>
+    <Property Name="TopicID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreID" Type="int" />
+    <Property Name="Title" Type="varchar" MaxLength="500" />
+    <Property Name="TopicName" Type="varchar" MaxLength="500" />
+    <Property Name="ShowOnSiteMap" Type="bit" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="SEKeywords" Type="varchar(max)" />
+    <Property Name="SEDescription" Type="varchar(max)" />
+    <Property Name="SETitle" Type="varchar" MaxLength="500" />
+    <Property Name="SEName" Type="varchar" MaxLength="500" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_UPCMaster">
+    <Key>
+      <PropertyRef Name="UPCID" />
+    </Key>
+    <Property Name="UPCID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UPC" Type="varchar" MaxLength="100" />
+    <Property Name="SKU" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_UPCMasterReal">
+    <Key>
+      <PropertyRef Name="UPCID" />
+    </Key>
+    <Property Name="UPCID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UPC" Type="varchar" MaxLength="100" />
+    <Property Name="SKU" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_userrights">
+    <Key>
+      <PropertyRef Name="UserRightsId" />
+    </Key>
+    <Property Name="UserRightsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="moduleid" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="UserType" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Vendor">
+    <Key>
+      <PropertyRef Name="VendorID" />
+    </Key>
+    <Property Name="VendorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="400" />
+    <Property Name="Email" Type="varchar" MaxLength="200" />
+    <Property Name="Address" Type="varchar" MaxLength="400" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="Country" Type="int" />
+    <Property Name="State" Type="varchar" MaxLength="100" />
+    <Property Name="Zipcode" Type="varchar" MaxLength="20" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CustomerCode" Type="varchar" MaxLength="50" />
+    <Property Name="EMailTemplate" Type="int" />
+    <Property Name="VendorType" Type="bit" />
+    <Property Name="Rating" Type="int" />
+    <Property Name="IsDropshipper" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_VendorPayment">
+    <Key>
+      <PropertyRef Name="VendorPaymentID" />
+    </Key>
+    <Property Name="VendorPaymentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="PaidBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="TransactionReference" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TransactionDate" Type="datetime" />
+    <Property Name="PurchaseOrders" Type="nvarchar" MaxLength="500" />
+    <Property Name="Note" Type="varchar(max)" />
+    <Property Name="POAmount" Type="money" />
+    <Property Name="PaidAmount" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_VendorPaymentPurchaseOrder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_VendorPaymentPurchaseOrder">
+    <Key>
+      <PropertyRef Name="VendorPaymentID" />
+      <PropertyRef Name="PONumber" />
+    </Key>
+    <Property Name="VendorPaymentID" Type="int" Nullable="false" />
+    <Property Name="PONumber" Type="int" Nullable="false" />
+    <Property Name="PaidAmount" Type="money" />
+  </EntityType>
+  <EntityType Name="tb_VendorQuoteReply">
+    <Key>
+      <PropertyRef Name="VendorQuoteReplyID" />
+    </Key>
+    <Property Name="VendorQuoteReplyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="RefProductID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Price" Type="money" />
+    <Property Name="QuoteGivenOn" Type="datetime" />
+    <Property Name="AvailableDays" Type="int" />
+    <Property Name="IsShipped" Type="bit" />
+    <Property Name="ProductName" Type="varchar" MaxLength="1000" />
+    <Property Name="ProductOption" Type="varchar" MaxLength="1000" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="Location" Type="varchar(max)" />
+    <Property Name="VendorQuoteRequestID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_VendorQuoteRequest">
+    <Key>
+      <PropertyRef Name="VendorQuoteRequestID" />
+    </Key>
+    <Property Name="VendorQuoteRequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RequestedOn" Type="datetime" />
+    <Property Name="MailLogid" Type="int" />
+    <Property Name="Notes" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_VendorQuoteRequestDetails">
+    <Key>
+      <PropertyRef Name="VendorQuoteReqDetailsID" />
+    </Key>
+    <Property Name="VendorQuoteReqDetailsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorQuoteRequestID" Type="int" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ProductName" Type="varchar" MaxLength="1000" />
+    <Property Name="ProductOption" Type="varchar" MaxLength="1000" />
+    <Property Name="MailLogid" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_VendorSKU">
+    <Key>
+      <PropertyRef Name="VendorSKUID" />
+    </Key>
+    <Property Name="VendorSKUID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="VendorSKU" Type="varchar" MaxLength="100" />
+    <Property Name="ProductName" Type="varchar" MaxLength="500" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_WareHouse">
+    <Key>
+      <PropertyRef Name="WareHouseID" />
+    </Key>
+    <Property Name="WareHouseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Address1" Type="varchar" MaxLength="500" />
+    <Property Name="Address2" Type="varchar" MaxLength="500" />
+    <Property Name="Suite" Type="varchar" MaxLength="100" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="State" Type="varchar" MaxLength="100" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="20" />
+    <Property Name="Country" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Deleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_WareHouseMail">
+    <Key>
+      <PropertyRef Name="WareHouseMailID" />
+    </Key>
+    <Property Name="WareHouseMailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PONumber" Type="int" />
+    <Property Name="EmailTo" Type="nvarchar" MaxLength="500" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="500" />
+    <Property Name="Body" Type="nvarchar(max)" />
+    <Property Name="Filepath" Type="nvarchar" MaxLength="250" />
+    <Property Name="Createdon" Type="datetime" />
+    <Property Name="EmailFrom" Type="nvarchar" MaxLength="250" />
+    <Property Name="EmailCC" Type="nvarchar" MaxLength="250" />
+    <Property Name="EMailBCC" Type="nvarchar" MaxLength="250" />
+    <Property Name="VendorAddress" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tb_WareHouseProduct">
+    <Key>
+      <PropertyRef Name="WareHouseID" />
+    </Key>
+    <Property Name="WareHouseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Inventory" Type="int" />
+    <Property Name="Price" Type="money" />
+    <Property Name="SKU" Type="nvarchar" MaxLength="250" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="StoreID" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_WareHouseProductInventory">
+    <Key>
+      <PropertyRef Name="ProductInventoryID" />
+    </Key>
+    <Property Name="ProductInventoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WareHouseID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Inventory" Type="int" />
+    <Property Name="PreferredLocation" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_WareHouseProductVariantInventory">
+    <Key>
+      <PropertyRef Name="ProductVariantInventoryID" />
+    </Key>
+    <Property Name="ProductVariantInventoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WareHouseID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="VariantID" Type="int" />
+    <Property Name="VariantValueID" Type="int" />
+    <Property Name="Inventory" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="PreferredLocation" Type="bit" />
+  </EntityType>
+  <EntityType Name="tb_WishListItems">
+    <Key>
+      <PropertyRef Name="WishListID" />
+    </Key>
+    <Property Name="WishListID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Price" Type="money" />
+    <Property Name="VariantNames" Type="varchar" MaxLength="500" />
+    <Property Name="VariantValues" Type="varchar" MaxLength="500" />
+    <Property Name="PackProductId" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Z_Catalog">
+    <Key>
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Name="PID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Item_Id" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="code" Type="varchar" MaxLength="500" />
+    <Property Name="MetaTags" Type="varchar(max)" />
+    <Property Name="taxable" Type="varchar" MaxLength="100" />
+    <Property Name="availability" Type="varchar" MaxLength="100" />
+    <Property Name="caption" Type="varchar(max)" />
+    <Property Name="manufacturer" Type="varchar" MaxLength="500" />
+    <Property Name="price" Type="money" />
+    <Property Name="saleprice" Type="money" />
+    <Property Name="color" Type="varchar" MaxLength="500" />
+    <Property Name="image" Type="varchar(max)" />
+    <Property Name="weight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="isbn" Type="varchar" MaxLength="50" />
+    <Property Name="upc" Type="varchar" MaxLength="100" />
+    <Property Name="dimensions" Type="varchar" MaxLength="100" />
+    <Property Name="orderable" Type="varchar" MaxLength="50" />
+    <Property Name="giftcertificate" Type="varchar" MaxLength="500" />
+    <Property Name="YahooID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_Z_Catalog1">
+    <Key>
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Name="PID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Item_Id" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="500" />
+    <Property Name="code" Type="varchar" MaxLength="500" />
+    <Property Name="MetaTags" Type="varchar(max)" />
+    <Property Name="taxable" Type="varchar" MaxLength="100" />
+    <Property Name="availability" Type="varchar" MaxLength="100" />
+    <Property Name="caption" Type="varchar(max)" />
+    <Property Name="manufacturer" Type="varchar" MaxLength="500" />
+    <Property Name="price" Type="money" />
+    <Property Name="saleprice" Type="money" />
+    <Property Name="color" Type="varchar" MaxLength="500" />
+    <Property Name="image" Type="varchar(max)" />
+    <Property Name="weight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="isbn" Type="varchar" MaxLength="50" />
+    <Property Name="upc" Type="varchar" MaxLength="100" />
+    <Property Name="dimensions" Type="varchar" MaxLength="100" />
+    <Property Name="orderable" Type="varchar" MaxLength="50" />
+    <Property Name="giftcertificate" Type="varchar" MaxLength="500" />
+    <Property Name="YahooID" Type="varchar(max)" />
+    <Property Name="featuresCaption" Type="varchar(max)" />
+    <Property Name="Visualproperties" Type="varchar" MaxLength="10" />
+    <Property Name="CaptionMain" Type="varchar(max)" />
+    <Property Name="Image1" Type="varchar(max)" />
+    <Property Name="Image2" Type="varchar(max)" />
+    <Property Name="Image3" Type="varchar(max)" />
+    <Property Name="Image4" Type="varchar(max)" />
+    <Property Name="Image5" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_Z_Product_Cat_march' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_Z_Product_Cat_march">
+    <Key>
+      <PropertyRef Name="ID1" />
+    </Key>
+    <Property Name="ID1" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="nvarchar" MaxLength="255" />
+    <Property Name="Category1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Category2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Category3" Type="nvarchar" MaxLength="255" />
+    <Property Name="CatID1" Type="int" />
+    <Property Name="CatID2" Type="int" />
+    <Property Name="CatID3" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HPD_Ecomm_DB.dbo.tb_ZCatSheet1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tb_ZCatSheet1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Category2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Category3" Type="nvarchar" MaxLength="255" />
+    <Property Name="CatID1" Type="int" />
+    <Property Name="CatID2" Type="int" />
+    <Property Name="CatID3" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_ZipTax">
+    <Key>
+      <PropertyRef Name="ZipTaxID" />
+    </Key>
+    <Property Name="ZipTaxID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxClassID" Type="int" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="50" />
+    <Property Name="TaxRate" Type="money" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_tb_AppConfig_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_AppConfig" Type="Self.tb_AppConfig" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_AppConfig">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Category_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Category" Type="Self.tb_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Category">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Coupons_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Coupons" Type="Self.tb_Coupons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Coupons">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_CreditCardDetails_tb_Customer">
+    <End Role="tb_Customer" Type="Self.tb_Customer" Multiplicity="0..1" />
+    <End Role="tb_CreditCardDetails" Type="Self.tb_CreditCardDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="tb_CreditCardDetails">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_CreditCardTypes_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_CreditCardTypes" Type="Self.tb_CreditCardTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_CreditCardTypes">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Customer_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Customer" Type="Self.tb_Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Customer">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_CustomerLevel_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_CustomerLevel" Type="Self.tb_CustomerLevel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_CustomerLevel">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Distributor_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Distributor" Type="Self.tb_Distributor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Distributor">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_EmailTemplate_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_EmailTemplate" Type="Self.tb_EmailTemplate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_EmailTemplate">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_FailedTransaction_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_FailedTransaction" Type="Self.tb_FailedTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_FailedTransaction">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_FeedFieldMaster_tb_FeedFieldTypeMaster">
+    <End Role="tb_FeedFieldTypeMaster" Type="Self.tb_FeedFieldTypeMaster" Multiplicity="0..1" />
+    <End Role="tb_FeedFieldMaster" Type="Self.tb_FeedFieldMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_FeedFieldTypeMaster">
+        <PropertyRef Name="FieldTypeID" />
+      </Principal>
+      <Dependent Role="tb_FeedFieldMaster">
+        <PropertyRef Name="FieldTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_FeedFieldMaster_tb_FeedMaster">
+    <End Role="tb_FeedMaster" Type="Self.tb_FeedMaster" Multiplicity="0..1" />
+    <End Role="tb_FeedFieldMaster" Type="Self.tb_FeedFieldMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_FeedMaster">
+        <PropertyRef Name="FeedID" />
+      </Principal>
+      <Dependent Role="tb_FeedFieldMaster">
+        <PropertyRef Name="FeedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_FeedMaster_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_FeedMaster" Type="Self.tb_FeedMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_FeedMaster">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_FeedProductBaseMapping_tb_FeedMaster">
+    <End Role="tb_FeedMaster" Type="Self.tb_FeedMaster" Multiplicity="0..1" />
+    <End Role="tb_FeedProductBaseMapping" Type="Self.tb_FeedProductBaseMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_FeedMaster">
+        <PropertyRef Name="FeedID" />
+      </Principal>
+      <Dependent Role="tb_FeedProductBaseMapping">
+        <PropertyRef Name="FeedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_GiftCard_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_GiftCard" Type="Self.tb_GiftCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_GiftCard">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_GiftCardProduct_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_GiftCardProduct" Type="Self.tb_GiftCardProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_GiftCardProduct">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_HeaderLinks_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_HeaderLinks" Type="Self.tb_HeaderLinks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_HeaderLinks">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_HomeBanner_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_HomeBanner" Type="Self.tb_HomeBanner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_HomeBanner">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ImageSizes_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_ImageSizes" Type="Self.tb_ImageSizes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_ImageSizes">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_MailLog_tb_Customer">
+    <End Role="tb_Customer" Type="Self.tb_Customer" Multiplicity="0..1" />
+    <End Role="tb_MailLog" Type="Self.tb_MailLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="tb_MailLog">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_MailLog_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_MailLog" Type="Self.tb_MailLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_MailLog">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_NewsSubscription_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_NewsSubscription" Type="Self.tb_NewsSubscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_NewsSubscription">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Order_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Order" Type="Self.tb_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Order">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_PageRedirect_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_PageRedirect" Type="Self.tb_PageRedirect" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_PageRedirect">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Payment_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Payment" Type="Self.tb_Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Payment">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Product_tb_Distributor">
+    <End Role="tb_Distributor" Type="Self.tb_Distributor" Multiplicity="0..1" />
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Distributor">
+        <PropertyRef Name="DistributorID" />
+      </Principal>
+      <Dependent Role="tb_Product">
+        <PropertyRef Name="DistributorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Product_tb_Manufacture">
+    <End Role="tb_Manufacture" Type="Self.tb_Manufacture" Multiplicity="0..1" />
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Manufacture">
+        <PropertyRef Name="ManufactureID" />
+      </Principal>
+      <Dependent Role="tb_Product">
+        <PropertyRef Name="ManufactureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Product_tb_ProductType">
+    <End Role="tb_ProductType" Type="Self.tb_ProductType" Multiplicity="0..1" />
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductType">
+        <PropertyRef Name="ProductTypeID" />
+      </Principal>
+      <Dependent Role="tb_Product">
+        <PropertyRef Name="ProductTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Product_tb_QauntityDiscount">
+    <End Role="tb_QauntityDiscount" Type="Self.tb_QauntityDiscount" Multiplicity="0..1" />
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_QauntityDiscount">
+        <PropertyRef Name="QuantityDiscountID" />
+      </Principal>
+      <Dependent Role="tb_Product">
+        <PropertyRef Name="QuantityDiscountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Product_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Product">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Product_tb_TaxClass">
+    <End Role="tb_TaxClass" Type="Self.tb_TaxClass" Multiplicity="0..1" />
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TaxClass">
+        <PropertyRef Name="TaxClassID" />
+      </Principal>
+      <Dependent Role="tb_Product">
+        <PropertyRef Name="TaxClassID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ProductFabricCode_tb_ProductFabricType">
+    <End Role="tb_ProductFabricType" Type="Self.tb_ProductFabricType" Multiplicity="0..1" />
+    <End Role="tb_ProductFabricCode" Type="Self.tb_ProductFabricCode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductFabricType">
+        <PropertyRef Name="FabricTypeID" />
+      </Principal>
+      <Dependent Role="tb_ProductFabricCode">
+        <PropertyRef Name="FabricTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ProductFeature_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="1" />
+    <End Role="tb_ProductFeature" Type="Self.tb_ProductFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_ProductFeature">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ProductType_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_ProductType" Type="Self.tb_ProductType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_ProductType">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ProductVariant_tb_Product">
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="0..1" />
+    <End Role="tb_ProductVariant" Type="Self.tb_ProductVariant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="tb_ProductVariant">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ProductVariantValue_tb_ProductVariant">
+    <End Role="tb_ProductVariant" Type="Self.tb_ProductVariant" Multiplicity="0..1" />
+    <End Role="tb_ProductVariantValue" Type="Self.tb_ProductVariantValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_ProductVariant">
+        <PropertyRef Name="VariantID" />
+      </Principal>
+      <Dependent Role="tb_ProductVariantValue">
+        <PropertyRef Name="VariantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_QauntityDiscount_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_QauntityDiscount" Type="Self.tb_QauntityDiscount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_QauntityDiscount">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Rating_tb_Product">
+    <End Role="tb_Product" Type="Self.tb_Product" Multiplicity="0..1" />
+    <End Role="tb_Rating" Type="Self.tb_Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="tb_Rating">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Rating_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Rating" Type="Self.tb_Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Rating">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_RestrictedIP_tb_Customer">
+    <End Role="tb_Customer" Type="Self.tb_Customer" Multiplicity="0..1" />
+    <End Role="tb_RestrictedIP" Type="Self.tb_RestrictedIP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="tb_RestrictedIP">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ShippingServices_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_ShippingServices" Type="Self.tb_ShippingServices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_ShippingServices">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_StateTax_tb_State">
+    <End Role="tb_State" Type="Self.tb_State" Multiplicity="0..1" />
+    <End Role="tb_StateTax" Type="Self.tb_StateTax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_State">
+        <PropertyRef Name="StateID" />
+      </Principal>
+      <Dependent Role="tb_StateTax">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_StateTax_tb_TaxClass">
+    <End Role="tb_TaxClass" Type="Self.tb_TaxClass" Multiplicity="0..1" />
+    <End Role="tb_StateTax" Type="Self.tb_StateTax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TaxClass">
+        <PropertyRef Name="TaxClassID" />
+      </Principal>
+      <Dependent Role="tb_StateTax">
+        <PropertyRef Name="TaxClassID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_StoreThemes_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_StoreThemes" Type="Self.tb_StoreThemes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_StoreThemes">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_StoreThemes_tb_Themes">
+    <End Role="tb_Themes" Type="Self.tb_Themes" Multiplicity="0..1" />
+    <End Role="tb_StoreThemes" Type="Self.tb_StoreThemes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Themes">
+        <PropertyRef Name="ThemeID" />
+      </Principal>
+      <Dependent Role="tb_StoreThemes">
+        <PropertyRef Name="ThemeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_TaxClass_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_TaxClass" Type="Self.tb_TaxClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_TaxClass">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Topic_tb_Store">
+    <End Role="tb_Store" Type="Self.tb_Store" Multiplicity="0..1" />
+    <End Role="tb_Topic" Type="Self.tb_Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Store">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="tb_Topic">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_ZipTax_tb_TaxClass">
+    <End Role="tb_TaxClass" Type="Self.tb_TaxClass" Multiplicity="0..1" />
+    <End Role="tb_ZipTax" Type="Self.tb_ZipTax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TaxClass">
+        <PropertyRef Name="TaxClassID" />
+      </Principal>
+      <Dependent Role="tb_ZipTax">
+        <PropertyRef Name="TaxClassID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="usp_Admin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pageIndex" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+    <Parameter Name="sortBy" Type="varchar" Mode="In" />
+    <Parameter Name="filtering" Type="varchar(max)" Mode="In" />
+    <Parameter Name="count" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_AdminLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_Category" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pageIndex" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+    <Parameter Name="sortBy" Type="varchar" Mode="In" />
+    <Parameter Name="filtering" Type="varchar(max)" Mode="In" />
+    <Parameter Name="count" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_Country" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pageIndex" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+    <Parameter Name="sortBy" Type="varchar" Mode="In" />
+    <Parameter Name="filtering" Type="varchar(max)" Mode="In" />
+    <Parameter Name="count" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_FooterContent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContentDescriptionbottom" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ContentDescriptionRight" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Mode" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_HeaderLinks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StoreID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_State" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pageIndex" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+    <Parameter Name="sortBy" Type="varchar" Mode="In" />
+    <Parameter Name="filtering" Type="varchar(max)" Mode="In" />
+    <Parameter Name="count" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_StoreList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Mode" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_TaxClass" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pageIndex" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+    <Parameter Name="sortBy" Type="varchar" Mode="In" />
+    <Parameter Name="filtering" Type="varchar(max)" Mode="In" />
+    <Parameter Name="count" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_Topic" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TopicName" Type="varchar" Mode="In" />
+    <Parameter Name="Mode" Type="int" Mode="In" />
+    <Parameter Name="StoreID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="RedTag_CCTV_Ecomm_DBModelStoreContainer">
+    <EntitySet Name="a_Test_Delete" EntityType="Self.a_Test_Delete" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Address" EntityType="Self.tb_Address" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Admin" EntityType="Self.tb_Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_admin_Templaterights" EntityType="Self.tb_admin_Templaterights" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_AdminChat" EntityType="Self.tb_AdminChat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_AdminInnerRights" EntityType="Self.tb_AdminInnerRights" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_AdminInnerRightsMaster" EntityType="Self.tb_AdminInnerRightsMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_AdminRights" EntityType="Self.tb_AdminRights" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_AppConfig" EntityType="Self.tb_AppConfig" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_AppConfig_Live" EntityType="Self.tb_AppConfig_Live" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_AvailabilityNotification" EntityType="Self.tb_AvailabilityNotification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_BreadCrumbPath" EntityType="Self.tb_BreadCrumbPath" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Category" EntityType="Self.tb_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CategoryMapping" EntityType="Self.tb_CategoryMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CheckoutProblems" EntityType="Self.tb_CheckoutProblems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ContactEmail" EntityType="Self.tb_ContactEmail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ContactUs" EntityType="Self.tb_ContactUs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Coupons" EntityType="Self.tb_Coupons" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CouponUsage" EntityType="Self.tb_CouponUsage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CreditCardDetails" EntityType="Self.tb_CreditCardDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CreditCardTypes" EntityType="Self.tb_CreditCardTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Customer" EntityType="Self.tb_Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CustomerLevel" EntityType="Self.tb_CustomerLevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CustomerQuote" EntityType="Self.tb_CustomerQuote" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_CustomerQuoteItems" EntityType="Self.tb_CustomerQuoteItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_DashboardSettings" EntityType="Self.tb_DashboardSettings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_DashboardUserRights" EntityType="Self.tb_DashboardUserRights" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Distributor" EntityType="Self.tb_Distributor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_eBayCategory" EntityType="Self.tb_eBayCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_eBayStoreCategory" EntityType="Self.tb_eBayStoreCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_EmailFolderRelation" EntityType="Self.tb_EmailFolderRelation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_EmailFolders" EntityType="Self.tb_EmailFolders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_EmailList" EntityType="Self.tb_EmailList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_EmailTemplate" EntityType="Self.tb_EmailTemplate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FailedTransaction" EntityType="Self.tb_FailedTransaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FeedCategory" EntityType="Self.tb_FeedCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FeedFieldMapping" EntityType="Self.tb_FeedFieldMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FeedFieldMaster" EntityType="Self.tb_FeedFieldMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FeedFieldTypeMaster" EntityType="Self.tb_FeedFieldTypeMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FeedFieldTypeValues" EntityType="Self.tb_FeedFieldTypeValues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FeedMaster" EntityType="Self.tb_FeedMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_FeedProductBaseMapping" EntityType="Self.tb_FeedProductBaseMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_GiftCard" EntityType="Self.tb_GiftCard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_GiftCardProduct" EntityType="Self.tb_GiftCardProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_GiftCardUsage" EntityType="Self.tb_GiftCardUsage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_GiftShoppingCart" EntityType="Self.tb_GiftShoppingCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_GiftShoppingCartItems" EntityType="Self.tb_GiftShoppingCartItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_HeaderLinks" EntityType="Self.tb_HeaderLinks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_HeaderText" EntityType="Self.tb_HeaderText" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_HomeBanner" EntityType="Self.tb_HomeBanner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_HomeBannerGroup" EntityType="Self.tb_HomeBannerGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_HtmlText" EntityType="Self.tb_HtmlText" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ImageSizes" EntityType="Self.tb_ImageSizes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ItemBanners" EntityType="Self.tb_ItemBanners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ItemBannerType" EntityType="Self.tb_ItemBannerType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_LockProducts" EntityType="Self.tb_LockProducts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_MailLog" EntityType="Self.tb_MailLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Manufacture" EntityType="Self.tb_Manufacture" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_MembershipDiscount" EntityType="Self.tb_MembershipDiscount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Memo" EntityType="Self.tb_Memo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_MemoReply" EntityType="Self.tb_MemoReply" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_NewsSubscription" EntityType="Self.tb_NewsSubscription" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Order" EntityType="Self.tb_Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderComment" EntityType="Self.tb_OrderComment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderedShoppingCart" EntityType="Self.tb_OrderedShoppingCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderedShoppingCart_backup" EntityType="Self.tb_OrderedShoppingCart_backup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderedShoppingCartItems" EntityType="Self.tb_OrderedShoppingCartItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderLog" EntityType="Self.tb_OrderLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderLogStatus" EntityType="Self.tb_OrderLogStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderShoppingCart" EntityType="Self.tb_OrderShoppingCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_OrderStatusColor" EntityType="Self.tb_OrderStatusColor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_PageRedirect" EntityType="Self.tb_PageRedirect" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Payment" EntityType="Self.tb_Payment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_PaymentServices" EntityType="Self.tb_PaymentServices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_PriceRange" EntityType="Self.tb_PriceRange" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Product" EntityType="Self.tb_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductAmazon" EntityType="Self.tb_ProductAmazon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductAssembly" EntityType="Self.tb_ProductAssembly" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductBuy" EntityType="Self.tb_ProductBuy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductCategory" EntityType="Self.tb_ProductCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductColor" EntityType="Self.tb_ProductColor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductFabricCode" EntityType="Self.tb_ProductFabricCode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductFabricDylot" EntityType="Self.tb_ProductFabricDylot" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductFabricType" EntityType="Self.tb_ProductFabricType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductFabricWidth" EntityType="Self.tb_ProductFabricWidth" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductFeature" EntityType="Self.tb_ProductFeature" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductOptionsPrice" EntityType="Self.tb_ProductOptionsPrice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductRomanShadeYardage" EntityType="Self.tb_ProductRomanShadeYardage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductSearchType" EntityType="Self.tb_ProductSearchType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductStylePrice" EntityType="Self.tb_ProductStylePrice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductType" EntityType="Self.tb_ProductType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductTypeDelivery" EntityType="Self.tb_ProductTypeDelivery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductVariant" EntityType="Self.tb_ProductVariant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductVariantValue" EntityType="Self.tb_ProductVariantValue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ProductVendorSKU" EntityType="Self.tb_ProductVendorSKU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_PurchaseOrder" EntityType="Self.tb_PurchaseOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_QauntityDiscount" EntityType="Self.tb_QauntityDiscount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_QuantityDiscountTable" EntityType="Self.tb_QuantityDiscountTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Rating" EntityType="Self.tb_Rating" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_RestrictedIP" EntityType="Self.tb_RestrictedIP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ReturnItem" EntityType="Self.tb_ReturnItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ReviewCount" EntityType="Self.tb_ReviewCount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ReviewInappropriateRaring" EntityType="Self.tb_ReviewInappropriateRaring" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_RMAmapping" EntityType="Self.tb_RMAmapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_RotatorHomebanner" EntityType="Self.tb_RotatorHomebanner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_RotatorHomeBannerDetail" EntityType="Self.tb_RotatorHomeBannerDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_SearchLog" EntityType="Self.tb_SearchLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ShippingMethods" EntityType="Self.tb_ShippingMethods" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ShippingServices" EntityType="Self.tb_ShippingServices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ShoppingCart" EntityType="Self.tb_ShoppingCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ShoppingCartItems" EntityType="Self.tb_ShoppingCartItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_spBoxDetails" EntityType="Self.tb_spBoxDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_State" EntityType="Self.tb_State" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_StateTax" EntityType="Self.tb_StateTax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Store" EntityType="Self.tb_Store" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_StoreCredit" EntityType="Self.tb_StoreCredit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_StoreThemes" EntityType="Self.tb_StoreThemes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_TaxClass" EntityType="Self.tb_TaxClass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Testimonials" EntityType="Self.tb_Testimonials" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Themes" EntityType="Self.tb_Themes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Timestamplog" EntityType="Self.tb_Timestamplog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Tool_Category" EntityType="Self.tb_Tool_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Tool_Shape" EntityType="Self.tb_Tool_Shape" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Topic" EntityType="Self.tb_Topic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_UPCMaster" EntityType="Self.tb_UPCMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_UPCMasterReal" EntityType="Self.tb_UPCMasterReal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_userrights" EntityType="Self.tb_userrights" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Users" EntityType="Self.tb_Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Vendor" EntityType="Self.tb_Vendor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_VendorPayment" EntityType="Self.tb_VendorPayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_VendorQuoteReply" EntityType="Self.tb_VendorQuoteReply" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_VendorQuoteRequest" EntityType="Self.tb_VendorQuoteRequest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_VendorQuoteRequestDetails" EntityType="Self.tb_VendorQuoteRequestDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_VendorSKU" EntityType="Self.tb_VendorSKU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_WareHouse" EntityType="Self.tb_WareHouse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_WareHouseMail" EntityType="Self.tb_WareHouseMail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_WareHouseProduct" EntityType="Self.tb_WareHouseProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_WareHouseProductInventory" EntityType="Self.tb_WareHouseProductInventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_WareHouseProductVariantInventory" EntityType="Self.tb_WareHouseProductVariantInventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_WishListItems" EntityType="Self.tb_WishListItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Z_Catalog" EntityType="Self.tb_Z_Catalog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Z_Catalog1" EntityType="Self.tb_Z_Catalog1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ZipTax" EntityType="Self.tb_ZipTax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_ChangeOrderedShoppingCart" EntityType="Self.tb_ChangeOrderedShoppingCart" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_ChangeOrderedShoppingCart].[OrderNumber] AS [OrderNumber], 
+[tb_ChangeOrderedShoppingCart].[CustomerID] AS [CustomerID], 
+[tb_ChangeOrderedShoppingCart].[CreatedOn] AS [CreatedOn], 
+[tb_ChangeOrderedShoppingCart].[subTotal] AS [subTotal], 
+[tb_ChangeOrderedShoppingCart].[DiscountAmount] AS [DiscountAmount], 
+[tb_ChangeOrderedShoppingCart].[ShippingAmount] AS [ShippingAmount], 
+[tb_ChangeOrderedShoppingCart].[ShippingMethodID] AS [ShippingMethodID], 
+[tb_ChangeOrderedShoppingCart].[Total] AS [Total], 
+[tb_ChangeOrderedShoppingCart].[ShippingMethod] AS [ShippingMethod], 
+[tb_ChangeOrderedShoppingCart].[ReturnedStarck] AS [ReturnedStarck], 
+[tb_ChangeOrderedShoppingCart].[ReturnedFee] AS [ReturnedFee], 
+[tb_ChangeOrderedShoppingCart].[OrderTax] AS [OrderTax]
+FROM [dbo].[tb_ChangeOrderedShoppingCart] AS [tb_ChangeOrderedShoppingCart]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_ChangeOrderShoppingCartItems" EntityType="Self.tb_ChangeOrderShoppingCartItems" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_ChangeOrderShoppingCartItems].[OrderNumber] AS [OrderNumber], 
+[tb_ChangeOrderShoppingCartItems].[OrderedShoppingCartID] AS [OrderedShoppingCartID], 
+[tb_ChangeOrderShoppingCartItems].[ProductID] AS [ProductID], 
+[tb_ChangeOrderShoppingCartItems].[Quantity] AS [Quantity], 
+[tb_ChangeOrderShoppingCartItems].[ChosenColor] AS [ChosenColor], 
+[tb_ChangeOrderShoppingCartItems].[ChosenSize] AS [ChosenSize], 
+[tb_ChangeOrderShoppingCartItems].[Price] AS [Price], 
+[tb_ChangeOrderShoppingCartItems].[CategoryID] AS [CategoryID], 
+[tb_ChangeOrderShoppingCartItems].[VariantNames] AS [VariantNames], 
+[tb_ChangeOrderShoppingCartItems].[VariantValues] AS [VariantValues], 
+[tb_ChangeOrderShoppingCartItems].[InventoryWasReduced] AS [InventoryWasReduced], 
+[tb_ChangeOrderShoppingCartItems].[CreatedOn] AS [CreatedOn], 
+[tb_ChangeOrderShoppingCartItems].[Direction] AS [Direction], 
+[tb_ChangeOrderShoppingCartItems].[Avail] AS [Avail], 
+[tb_ChangeOrderShoppingCartItems].[ProductName] AS [ProductName], 
+[tb_ChangeOrderShoppingCartItems].[VariantPrice] AS [VariantPrice], 
+[tb_ChangeOrderShoppingCartItems].[DiscountPrice] AS [DiscountPrice], 
+[tb_ChangeOrderShoppingCartItems].[RelatedproductID] AS [RelatedproductID]
+FROM [dbo].[tb_ChangeOrderShoppingCartItems] AS [tb_ChangeOrderShoppingCartItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_Country" EntityType="Self.tb_Country" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_Country].[CountryID] AS [CountryID], 
+[tb_Country].[Name] AS [Name], 
+[tb_Country].[TwoLetterISOCode] AS [TwoLetterISOCode], 
+[tb_Country].[ThreeLetterISOCode] AS [ThreeLetterISOCode], 
+[tb_Country].[NumericISOCode] AS [NumericISOCode], 
+[tb_Country].[Deleted] AS [Deleted], 
+[tb_Country].[DisplayOrder] AS [DisplayOrder], 
+[tb_Country].[CreatedBy] AS [CreatedBy], 
+[tb_Country].[CreatedOn] AS [CreatedOn], 
+[tb_Country].[UpdatedBy] AS [UpdatedBy], 
+[tb_Country].[UpdatedOn] AS [UpdatedOn], 
+[tb_Country].[Image] AS [Image]
+FROM [dbo].[tb_Country] AS [tb_Country]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_FeedCategoryMapping" EntityType="Self.tb_FeedCategoryMapping" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_FeedCategoryMapping].[CategoryID] AS [CategoryID], 
+[tb_FeedCategoryMapping].[ParentCategoryID] AS [ParentCategoryID], 
+[tb_FeedCategoryMapping].[StoreID] AS [StoreID]
+FROM [dbo].[tb_FeedCategoryMapping] AS [tb_FeedCategoryMapping]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_FeedFieldValues" EntityType="Self.tb_FeedFieldValues" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_FeedFieldValues].[ValueID] AS [ValueID], 
+[tb_FeedFieldValues].[FieldID] AS [FieldID], 
+[tb_FeedFieldValues].[FieldValue] AS [FieldValue], 
+[tb_FeedFieldValues].[ProductID] AS [ProductID]
+FROM [dbo].[tb_FeedFieldValues] AS [tb_FeedFieldValues]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_FeedFieldValues_1" EntityType="Self.tb_FeedFieldValues_1" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_FeedFieldValues_1].[ValueID] AS [ValueID], 
+[tb_FeedFieldValues_1].[FieldID] AS [FieldID], 
+[tb_FeedFieldValues_1].[FieldValue] AS [FieldValue], 
+[tb_FeedFieldValues_1].[ProductID] AS [ProductID]
+FROM [dbo].[tb_FeedFieldValues_1] AS [tb_FeedFieldValues_1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_FontProduct" EntityType="Self.tb_FontProduct" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_FontProduct].[ProductId] AS [ProductId], 
+[tb_FontProduct].[FontId] AS [FontId], 
+[tb_FontProduct].[CreationOn] AS [CreationOn]
+FROM [dbo].[tb_FontProduct] AS [tb_FontProduct]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_FontTable" EntityType="Self.tb_FontTable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_FontTable].[id] AS [id], 
+[tb_FontTable].[FontName] AS [FontName], 
+[tb_FontTable].[FontDesc] AS [FontDesc], 
+[tb_FontTable].[FontUse] AS [FontUse], 
+[tb_FontTable].[Status] AS [Status]
+FROM [dbo].[tb_FontTable] AS [tb_FontTable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_FooterContent" EntityType="Self.tb_FooterContent" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_FooterContent].[FooterContentID] AS [FooterContentID], 
+[tb_FooterContent].[ContentDescriptionBottom] AS [ContentDescriptionBottom], 
+[tb_FooterContent].[ContentDescriptionRight] AS [ContentDescriptionRight], 
+[tb_FooterContent].[IsActive] AS [IsActive], 
+[tb_FooterContent].[StoreID] AS [StoreID]
+FROM [dbo].[tb_FooterContent] AS [tb_FooterContent]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_OrderedShoppingCartItems_backup" EntityType="Self.tb_OrderedShoppingCartItems_backup" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_OrderedShoppingCartItems_backup].[OrderedShoppingCart_backup_Id] AS [OrderedShoppingCart_backup_Id], 
+[tb_OrderedShoppingCartItems_backup].[OrderNumber] AS [OrderNumber], 
+[tb_OrderedShoppingCartItems_backup].[OrderedShoppingCartID] AS [OrderedShoppingCartID], 
+[tb_OrderedShoppingCartItems_backup].[ProductID] AS [ProductID], 
+[tb_OrderedShoppingCartItems_backup].[Quantity] AS [Quantity], 
+[tb_OrderedShoppingCartItems_backup].[ChosenColor] AS [ChosenColor], 
+[tb_OrderedShoppingCartItems_backup].[ChosenSize] AS [ChosenSize], 
+[tb_OrderedShoppingCartItems_backup].[Price] AS [Price], 
+[tb_OrderedShoppingCartItems_backup].[CategoryID] AS [CategoryID], 
+[tb_OrderedShoppingCartItems_backup].[VariantNames] AS [VariantNames], 
+[tb_OrderedShoppingCartItems_backup].[VariantValues] AS [VariantValues], 
+[tb_OrderedShoppingCartItems_backup].[InventoryWasReduced] AS [InventoryWasReduced], 
+[tb_OrderedShoppingCartItems_backup].[CreatedOn] AS [CreatedOn], 
+[tb_OrderedShoppingCartItems_backup].[Direction] AS [Direction], 
+[tb_OrderedShoppingCartItems_backup].[Avail] AS [Avail], 
+[tb_OrderedShoppingCartItems_backup].[RepeatOrderNo] AS [RepeatOrderNo], 
+[tb_OrderedShoppingCartItems_backup].[ProductName] AS [ProductName], 
+[tb_OrderedShoppingCartItems_backup].[Variantprice] AS [Variantprice], 
+[tb_OrderedShoppingCartItems_backup].[DiscountPrice] AS [DiscountPrice], 
+[tb_OrderedShoppingCartItems_backup].[RelatedproductID] AS [RelatedproductID]
+FROM [dbo].[tb_OrderedShoppingCartItems_backup] AS [tb_OrderedShoppingCartItems_backup]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_VendorPaymentPurchaseOrder" EntityType="Self.tb_VendorPaymentPurchaseOrder" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_VendorPaymentPurchaseOrder].[VendorPaymentID] AS [VendorPaymentID], 
+[tb_VendorPaymentPurchaseOrder].[PONumber] AS [PONumber], 
+[tb_VendorPaymentPurchaseOrder].[PaidAmount] AS [PaidAmount]
+FROM [dbo].[tb_VendorPaymentPurchaseOrder] AS [tb_VendorPaymentPurchaseOrder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_Z_Product_Cat_march" EntityType="Self.tb_Z_Product_Cat_march" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_Z_Product_Cat_march].[ID1] AS [ID1], 
+[tb_Z_Product_Cat_march].[id] AS [id], 
+[tb_Z_Product_Cat_march].[Category1] AS [Category1], 
+[tb_Z_Product_Cat_march].[Category2] AS [Category2], 
+[tb_Z_Product_Cat_march].[Category3] AS [Category3], 
+[tb_Z_Product_Cat_march].[CatID1] AS [CatID1], 
+[tb_Z_Product_Cat_march].[CatID2] AS [CatID2], 
+[tb_Z_Product_Cat_march].[CatID3] AS [CatID3]
+FROM [dbo].[tb_Z_Product_Cat_march] AS [tb_Z_Product_Cat_march]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tb_ZCatSheet1" EntityType="Self.tb_ZCatSheet1" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[tb_ZCatSheet1].[ID] AS [ID], 
+[tb_ZCatSheet1].[Category1] AS [Category1], 
+[tb_ZCatSheet1].[Category2] AS [Category2], 
+[tb_ZCatSheet1].[Category3] AS [Category3], 
+[tb_ZCatSheet1].[CatID1] AS [CatID1], 
+[tb_ZCatSheet1].[CatID2] AS [CatID2], 
+[tb_ZCatSheet1].[CatID3] AS [CatID3]
+FROM [dbo].[tb_ZCatSheet1] AS [tb_ZCatSheet1]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_tb_AppConfig_tb_Store" Association="Self.FK_tb_AppConfig_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_AppConfig" EntitySet="tb_AppConfig" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Category_tb_Store" Association="Self.FK_tb_Category_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Category" EntitySet="tb_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Coupons_tb_Store" Association="Self.FK_tb_Coupons_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Coupons" EntitySet="tb_Coupons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_CreditCardDetails_tb_Customer" Association="Self.FK_tb_CreditCardDetails_tb_Customer">
+      <End Role="tb_Customer" EntitySet="tb_Customer" />
+      <End Role="tb_CreditCardDetails" EntitySet="tb_CreditCardDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_CreditCardTypes_tb_Store" Association="Self.FK_tb_CreditCardTypes_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_CreditCardTypes" EntitySet="tb_CreditCardTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Customer_tb_Store" Association="Self.FK_tb_Customer_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Customer" EntitySet="tb_Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_CustomerLevel_tb_Store" Association="Self.FK_tb_CustomerLevel_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_CustomerLevel" EntitySet="tb_CustomerLevel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Distributor_tb_Store" Association="Self.FK_tb_Distributor_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Distributor" EntitySet="tb_Distributor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_EmailTemplate_tb_Store" Association="Self.FK_tb_EmailTemplate_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_EmailTemplate" EntitySet="tb_EmailTemplate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_FailedTransaction_tb_Store" Association="Self.FK_tb_FailedTransaction_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_FailedTransaction" EntitySet="tb_FailedTransaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_FeedFieldMaster_tb_FeedFieldTypeMaster" Association="Self.FK_tb_FeedFieldMaster_tb_FeedFieldTypeMaster">
+      <End Role="tb_FeedFieldTypeMaster" EntitySet="tb_FeedFieldTypeMaster" />
+      <End Role="tb_FeedFieldMaster" EntitySet="tb_FeedFieldMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_FeedFieldMaster_tb_FeedMaster" Association="Self.FK_tb_FeedFieldMaster_tb_FeedMaster">
+      <End Role="tb_FeedMaster" EntitySet="tb_FeedMaster" />
+      <End Role="tb_FeedFieldMaster" EntitySet="tb_FeedFieldMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_FeedMaster_tb_Store" Association="Self.FK_tb_FeedMaster_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_FeedMaster" EntitySet="tb_FeedMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_FeedProductBaseMapping_tb_FeedMaster" Association="Self.FK_tb_FeedProductBaseMapping_tb_FeedMaster">
+      <End Role="tb_FeedMaster" EntitySet="tb_FeedMaster" />
+      <End Role="tb_FeedProductBaseMapping" EntitySet="tb_FeedProductBaseMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_GiftCard_tb_Store" Association="Self.FK_tb_GiftCard_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_GiftCard" EntitySet="tb_GiftCard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_GiftCardProduct_tb_Store" Association="Self.FK_tb_GiftCardProduct_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_GiftCardProduct" EntitySet="tb_GiftCardProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_HeaderLinks_tb_Store" Association="Self.FK_tb_HeaderLinks_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_HeaderLinks" EntitySet="tb_HeaderLinks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_HomeBanner_tb_Store" Association="Self.FK_tb_HomeBanner_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_HomeBanner" EntitySet="tb_HomeBanner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ImageSizes_tb_Store" Association="Self.FK_tb_ImageSizes_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_ImageSizes" EntitySet="tb_ImageSizes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_MailLog_tb_Customer" Association="Self.FK_tb_MailLog_tb_Customer">
+      <End Role="tb_Customer" EntitySet="tb_Customer" />
+      <End Role="tb_MailLog" EntitySet="tb_MailLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_MailLog_tb_Store" Association="Self.FK_tb_MailLog_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_MailLog" EntitySet="tb_MailLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_NewsSubscription_tb_Store" Association="Self.FK_tb_NewsSubscription_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_NewsSubscription" EntitySet="tb_NewsSubscription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Order_tb_Store" Association="Self.FK_tb_Order_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Order" EntitySet="tb_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_PageRedirect_tb_Store" Association="Self.FK_tb_PageRedirect_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_PageRedirect" EntitySet="tb_PageRedirect" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Payment_tb_Store" Association="Self.FK_tb_Payment_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Payment" EntitySet="tb_Payment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Product_tb_Distributor" Association="Self.FK_tb_Product_tb_Distributor">
+      <End Role="tb_Distributor" EntitySet="tb_Distributor" />
+      <End Role="tb_Product" EntitySet="tb_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Product_tb_Manufacture" Association="Self.FK_tb_Product_tb_Manufacture">
+      <End Role="tb_Manufacture" EntitySet="tb_Manufacture" />
+      <End Role="tb_Product" EntitySet="tb_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Product_tb_ProductType" Association="Self.FK_tb_Product_tb_ProductType">
+      <End Role="tb_ProductType" EntitySet="tb_ProductType" />
+      <End Role="tb_Product" EntitySet="tb_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Product_tb_QauntityDiscount" Association="Self.FK_tb_Product_tb_QauntityDiscount">
+      <End Role="tb_QauntityDiscount" EntitySet="tb_QauntityDiscount" />
+      <End Role="tb_Product" EntitySet="tb_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Product_tb_Store" Association="Self.FK_tb_Product_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Product" EntitySet="tb_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Product_tb_TaxClass" Association="Self.FK_tb_Product_tb_TaxClass">
+      <End Role="tb_TaxClass" EntitySet="tb_TaxClass" />
+      <End Role="tb_Product" EntitySet="tb_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ProductFabricCode_tb_ProductFabricType" Association="Self.FK_tb_ProductFabricCode_tb_ProductFabricType">
+      <End Role="tb_ProductFabricType" EntitySet="tb_ProductFabricType" />
+      <End Role="tb_ProductFabricCode" EntitySet="tb_ProductFabricCode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ProductFeature_tb_Store" Association="Self.FK_tb_ProductFeature_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_ProductFeature" EntitySet="tb_ProductFeature" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ProductType_tb_Store" Association="Self.FK_tb_ProductType_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_ProductType" EntitySet="tb_ProductType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ProductVariant_tb_Product" Association="Self.FK_tb_ProductVariant_tb_Product">
+      <End Role="tb_Product" EntitySet="tb_Product" />
+      <End Role="tb_ProductVariant" EntitySet="tb_ProductVariant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ProductVariantValue_tb_ProductVariant" Association="Self.FK_tb_ProductVariantValue_tb_ProductVariant">
+      <End Role="tb_ProductVariant" EntitySet="tb_ProductVariant" />
+      <End Role="tb_ProductVariantValue" EntitySet="tb_ProductVariantValue" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_QauntityDiscount_tb_Store" Association="Self.FK_tb_QauntityDiscount_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_QauntityDiscount" EntitySet="tb_QauntityDiscount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Rating_tb_Product" Association="Self.FK_tb_Rating_tb_Product">
+      <End Role="tb_Product" EntitySet="tb_Product" />
+      <End Role="tb_Rating" EntitySet="tb_Rating" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Rating_tb_Store" Association="Self.FK_tb_Rating_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Rating" EntitySet="tb_Rating" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_RestrictedIP_tb_Customer" Association="Self.FK_tb_RestrictedIP_tb_Customer">
+      <End Role="tb_Customer" EntitySet="tb_Customer" />
+      <End Role="tb_RestrictedIP" EntitySet="tb_RestrictedIP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ShippingServices_tb_Store" Association="Self.FK_tb_ShippingServices_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_ShippingServices" EntitySet="tb_ShippingServices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_StateTax_tb_State" Association="Self.FK_tb_StateTax_tb_State">
+      <End Role="tb_State" EntitySet="tb_State" />
+      <End Role="tb_StateTax" EntitySet="tb_StateTax" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_StateTax_tb_TaxClass" Association="Self.FK_tb_StateTax_tb_TaxClass">
+      <End Role="tb_TaxClass" EntitySet="tb_TaxClass" />
+      <End Role="tb_StateTax" EntitySet="tb_StateTax" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_StoreThemes_tb_Store" Association="Self.FK_tb_StoreThemes_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_StoreThemes" EntitySet="tb_StoreThemes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_StoreThemes_tb_Themes" Association="Self.FK_tb_StoreThemes_tb_Themes">
+      <End Role="tb_Themes" EntitySet="tb_Themes" />
+      <End Role="tb_StoreThemes" EntitySet="tb_StoreThemes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_TaxClass_tb_Store" Association="Self.FK_tb_TaxClass_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_TaxClass" EntitySet="tb_TaxClass" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Topic_tb_Store" Association="Self.FK_tb_Topic_tb_Store">
+      <End Role="tb_Store" EntitySet="tb_Store" />
+      <End Role="tb_Topic" EntitySet="tb_Topic" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_ZipTax_tb_TaxClass" Association="Self.FK_tb_ZipTax_tb_TaxClass">
+      <End Role="tb_TaxClass" EntitySet="tb_TaxClass" />
+      <End Role="tb_ZipTax" EntitySet="tb_ZipTax" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

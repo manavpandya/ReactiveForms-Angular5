@@ -1,0 +1,10 @@
+﻿ #ContentPlaceHolder1_rdoShippingMethod input {
+            margin: 0 5px 0 0;
+            float: left;
+        }
+
+        #ContentPlaceHolder1_rdlPaymentType input {
+            margin: 2px 5px 0 0;
+            float: left;
+            font-weight: bold;
+        }

@@ -1,0 +1,71 @@
+﻿.membership-box
+        {
+            border: 1px solid #E6E6E6;
+            float: left;
+            margin: 5px 0;
+            padding: 0 5px;
+            width: 728px;
+        }
+        .membership-box-bt1
+        {
+            border-right: 1px solid #E6E6E6;
+            float: left;
+            margin: 0 9px 0 0;
+            padding: 5px 0;
+            width: 236px;
+        }
+        .membership-box-bt1-row
+        {
+            float: left;
+            padding: 3px 0;
+        }
+        .membership-box-bt1-row span
+        {
+            color: #6C6D71;
+            float: left;
+            font-size: 12px;
+            line-height: 20px;
+            width: 86px;
+        }
+        .membership-box-textbox
+        {
+            border: 1px solid #CDC8C4;
+            float: left;
+            height: 18px;
+            width: 140px;
+            color: #6C6D71;
+        }
+        .membership-box-bt2
+        {
+            float: left;
+            margin: 0;
+            padding: 5px 0;
+            width: 236px;
+        }
+        .static_content p
+        {
+            color: #3B3B3B;
+            float: left;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 5px 0;
+            width: 940px;
+        }
+        .static_content ul
+        {
+            float: left;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0 10px;
+            width: 920px;
+        }
+        .static_content ul li
+        {
+            background: url("../images/bullet-features.gif") no-repeat scroll left top transparent;
+            float: left;
+            font-size: 12px;
+            list-style: none outside none;
+            margin: 0;
+            padding: 2px 15px;
+            width: 890px;
+        }

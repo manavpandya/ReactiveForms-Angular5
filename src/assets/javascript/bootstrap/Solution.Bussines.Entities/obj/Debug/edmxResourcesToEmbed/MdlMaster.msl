@@ -1,0 +1,3192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="RedTag_CCTV_Ecomm_DBModelStoreContainer" CdmEntityContainer="RedTag_CCTV_Ecomm_DBEntities">
+    <EntitySetMapping Name="tb_Country">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Country">
+        <MappingFragment StoreEntitySet="tb_Country">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TwoLetterISOCode" ColumnName="TwoLetterISOCode" />
+          <ScalarProperty Name="ThreeLetterISOCode" ColumnName="ThreeLetterISOCode" />
+          <ScalarProperty Name="NumericISOCode" ColumnName="NumericISOCode" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_State">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_State">
+        <MappingFragment StoreEntitySet="tb_State">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Store">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Store">
+        <MappingFragment StoreEntitySet="tb_Store">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="ParentStoreID" ColumnName="ParentStoreID" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Admin">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Admin">
+        <MappingFragment StoreEntitySet="tb_Admin">
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="isSalesManager" ColumnName="isSalesManager" />
+          <ScalarProperty Name="LastActiveDate" ColumnName="LastActiveDate" />
+          <ScalarProperty Name="Rights" ColumnName="Rights" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="AdminType" ColumnName="AdminType" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_Country" FunctionName="RedTag_CCTV_Ecomm_DBModel.Store.usp_Country" />
+    <EntitySetMapping Name="tb_AdminRights">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_AdminRights">
+        <MappingFragment StoreEntitySet="tb_AdminRights">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RightsID" ColumnName="RightsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_AppConfig">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_AppConfig">
+        <MappingFragment StoreEntitySet="tb_AppConfig">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+          <ScalarProperty Name="ConfigName" ColumnName="ConfigName" />
+          <ScalarProperty Name="AppConfigID" ColumnName="AppConfigID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ContactUs">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ContactUs">
+        <MappingFragment StoreEntitySet="tb_ContactUs">
+          <ScalarProperty Name="SubjectStatus" ColumnName="SubjectStatus" />
+          <ScalarProperty Name="Quoteid" ColumnName="Quoteid" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="ContactDate" ColumnName="ContactDate" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="ContactUsID" ColumnName="ContactUsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CouponUsage">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CouponUsage">
+        <MappingFragment StoreEntitySet="tb_CouponUsage">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="CouponUsageID" ColumnName="CouponUsageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CreditCardTypes">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CreditCardTypes">
+        <MappingFragment StoreEntitySet="tb_CreditCardTypes">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="CardTypeID" ColumnName="CardTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Distributor">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Distributor">
+        <MappingFragment StoreEntitySet="tb_Distributor">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DistributorID" ColumnName="DistributorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_EmailFolderRelation">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_EmailFolderRelation">
+        <MappingFragment StoreEntitySet="tb_EmailFolderRelation">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ChildFolderID" ColumnName="ChildFolderID" />
+          <ScalarProperty Name="ParentFolderID" ColumnName="ParentFolderID" />
+          <ScalarProperty Name="FolderRelID" ColumnName="FolderRelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_EmailFolders">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_EmailFolders">
+        <MappingFragment StoreEntitySet="tb_EmailFolders">
+          <ScalarProperty Name="Createdon" ColumnName="Createdon" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ParentFolderID" ColumnName="ParentFolderID" />
+          <ScalarProperty Name="FolderEmail" ColumnName="FolderEmail" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="FolderID" ColumnName="FolderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_EmailList">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_EmailList">
+        <MappingFragment StoreEntitySet="tb_EmailList">
+          <ScalarProperty Name="IsReadAgent" ColumnName="IsReadAgent" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="isSpam" ColumnName="isSpam" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="Bcc" ColumnName="Bcc" />
+          <ScalarProperty Name="Cc" ColumnName="Cc" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="Createdon" ColumnName="Createdon" />
+          <ScalarProperty Name="AttachmentName" ColumnName="AttachmentName" />
+          <ScalarProperty Name="IsIncomming" ColumnName="IsIncomming" />
+          <ScalarProperty Name="IsAttachment" ColumnName="IsAttachment" />
+          <ScalarProperty Name="SentOn" ColumnName="SentOn" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="MailID" ColumnName="MailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_EmailTemplate">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_EmailTemplate">
+        <MappingFragment StoreEntitySet="tb_EmailTemplate">
+          <ScalarProperty Name="IsPOTemplate" ColumnName="IsPOTemplate" />
+          <ScalarProperty Name="EmailType" ColumnName="EmailType" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="EmailBCC" ColumnName="EmailBCC" />
+          <ScalarProperty Name="EmailCC" ColumnName="EmailCC" />
+          <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+          <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="TemplateID" ColumnName="TemplateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FailedTransaction">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FailedTransaction">
+        <MappingFragment StoreEntitySet="tb_FailedTransaction">
+          <ScalarProperty Name="FailedTxnNote" ColumnName="FailedTxnNote" />
+          <ScalarProperty Name="IsEmailAlert" ColumnName="IsEmailAlert" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="TransactionResult" ColumnName="TransactionResult" />
+          <ScalarProperty Name="TransactionCommand" ColumnName="TransactionCommand" />
+          <ScalarProperty Name="Paymentmethod" ColumnName="Paymentmethod" />
+          <ScalarProperty Name="PaymentGateway" ColumnName="PaymentGateway" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedFieldMapping">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedFieldMapping">
+        <MappingFragment StoreEntitySet="tb_FeedFieldMapping">
+          <ScalarProperty Name="RelatedFieldID" ColumnName="RelatedFieldID" />
+          <ScalarProperty Name="RelatedFeedID" ColumnName="RelatedFeedID" />
+          <ScalarProperty Name="BaseFieldID" ColumnName="BaseFieldID" />
+          <ScalarProperty Name="BaseFeedID" ColumnName="BaseFeedID" />
+          <ScalarProperty Name="MappingID" ColumnName="MappingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedFieldMaster">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedFieldMaster">
+        <MappingFragment StoreEntitySet="tb_FeedFieldMaster">
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="DefautValue" ColumnName="DefautValue" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="isRequired" ColumnName="isRequired" />
+          <ScalarProperty Name="FieldWidth" ColumnName="FieldWidth" />
+          <ScalarProperty Name="FieldHeight" ColumnName="FieldHeight" />
+          <ScalarProperty Name="FieldLimit" ColumnName="FieldLimit" />
+          <ScalarProperty Name="FieldDescription" ColumnName="FieldDescription" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedFieldTypeMaster">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedFieldTypeMaster">
+        <MappingFragment StoreEntitySet="tb_FeedFieldTypeMaster">
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="FieldTypeID" ColumnName="FieldTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedFieldTypeValues">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedFieldTypeValues">
+        <MappingFragment StoreEntitySet="tb_FeedFieldTypeValues">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="FieldValues" ColumnName="FieldValues" />
+          <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="ValueID" ColumnName="ValueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedFieldValues">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedFieldValues">
+        <MappingFragment StoreEntitySet="tb_FeedFieldValues">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="FieldValue" ColumnName="FieldValue" />
+          <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+          <ScalarProperty Name="ValueID" ColumnName="ValueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedMaster">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedMaster">
+        <MappingFragment StoreEntitySet="tb_FeedMaster">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="IsBase" ColumnName="IsBase" />
+          <ScalarProperty Name="FeedType" ColumnName="FeedType" />
+          <ScalarProperty Name="FeedName" ColumnName="FeedName" />
+          <ScalarProperty Name="FeedID" ColumnName="FeedID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedProductBaseMapping">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedProductBaseMapping">
+        <MappingFragment StoreEntitySet="tb_FeedProductBaseMapping">
+          <ScalarProperty Name="ProductField" ColumnName="ProductField" />
+          <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+          <ScalarProperty Name="ProductMappingID" ColumnName="ProductMappingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FooterContent">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FooterContent">
+        <MappingFragment StoreEntitySet="tb_FooterContent">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ContentDescriptionRight" ColumnName="ContentDescriptionRight" />
+          <ScalarProperty Name="ContentDescriptionBottom" ColumnName="ContentDescriptionBottom" />
+          <ScalarProperty Name="FooterContentID" ColumnName="FooterContentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_GiftCard">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_GiftCard">
+        <MappingFragment StoreEntitySet="tb_GiftCard">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RMANumber" ColumnName="RMANumber" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="RecipientName" ColumnName="RecipientName" />
+          <ScalarProperty Name="EmaiMessage" ColumnName="EmaiMessage" />
+          <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+          <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="InitialAmount" ColumnName="InitialAmount" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="GiftCardID" ColumnName="GiftCardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_GiftCardUsage">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_GiftCardUsage">
+        <MappingFragment StoreEntitySet="tb_GiftCardUsage">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="GiftCardID" ColumnName="GiftCardID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="GiftCardUsageID" ColumnName="GiftCardUsageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_GiftShoppingCart">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_GiftShoppingCart">
+        <MappingFragment StoreEntitySet="tb_GiftShoppingCart">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CustomDiscount" ColumnName="CustomDiscount" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CouponDiscountAmount" ColumnName="CouponDiscountAmount" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_GiftShoppingCartItems">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_GiftShoppingCartItems">
+        <MappingFragment StoreEntitySet="tb_GiftShoppingCartItems">
+          <ScalarProperty Name="Completed" ColumnName="Completed" />
+          <ScalarProperty Name="StillNeeds" ColumnName="StillNeeds" />
+          <ScalarProperty Name="Requested" ColumnName="Requested" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="VariantValues" ColumnName="VariantValues" />
+          <ScalarProperty Name="VariantNames" ColumnName="VariantNames" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ChosenSize" ColumnName="ChosenSize" />
+          <ScalarProperty Name="ChosenColor" ColumnName="ChosenColor" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+          <ScalarProperty Name="CustomCartID" ColumnName="CustomCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_MailLog">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_MailLog">
+        <MappingFragment StoreEntitySet="tb_MailLog">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="MailDate" ColumnName="MailDate" />
+          <ScalarProperty Name="ReplyTo" ColumnName="ReplyTo" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="FromMail" ColumnName="FromMail" />
+          <ScalarProperty Name="ToEmail" ColumnName="ToEmail" />
+          <ScalarProperty Name="MailID" ColumnName="MailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Manufacture">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Manufacture">
+        <MappingFragment StoreEntitySet="tb_Manufacture">
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="SEName" ColumnName="SEName" />
+          <ScalarProperty Name="SEDescription" ColumnName="SEDescription" />
+          <ScalarProperty Name="SEKeywords" ColumnName="SEKeywords" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ManufactureID" ColumnName="ManufactureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderedShoppingCart">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderedShoppingCart">
+        <MappingFragment StoreEntitySet="tb_OrderedShoppingCart">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderedShoppingCartID" ColumnName="OrderedShoppingCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderShoppingCart">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderShoppingCart">
+        <MappingFragment StoreEntitySet="tb_OrderShoppingCart">
+          <ScalarProperty Name="OrderedShoppingCartID" ColumnName="OrderedShoppingCartID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderShoppingCartID" ColumnName="OrderShoppingCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_PageRedirect">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_PageRedirect">
+        <MappingFragment StoreEntitySet="tb_PageRedirect">
+          <ScalarProperty Name="NewUrl" ColumnName="NewUrl" />
+          <ScalarProperty Name="OldUrl" ColumnName="OldUrl" />
+          <ScalarProperty Name="RedirectID" ColumnName="RedirectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Payment">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Payment">
+        <MappingFragment StoreEntitySet="tb_Payment">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UdatedBy" ColumnName="UdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductType">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductType">
+        <MappingFragment StoreEntitySet="tb_ProductType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_RestrictedIP">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_RestrictedIP">
+        <MappingFragment StoreEntitySet="tb_RestrictedIP">
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="RestrictedIPID" ColumnName="RestrictedIPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ShoppingCart">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ShoppingCart">
+        <MappingFragment StoreEntitySet="tb_ShoppingCart">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ShoppingCartItems">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ShoppingCartItems">
+        <MappingFragment StoreEntitySet="tb_ShoppingCartItems">
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Actualyard" ColumnName="Actualyard" />
+          <ScalarProperty Name="YardQuantity" ColumnName="YardQuantity" />
+          <ScalarProperty Name="IsProductType" ColumnName="IsProductType" />
+          <ScalarProperty Name="RelatedproductID" ColumnName="RelatedproductID" />
+          <ScalarProperty Name="VariantValues" ColumnName="VariantValues" />
+          <ScalarProperty Name="VariantNames" ColumnName="VariantNames" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ShoppingCartID" ColumnName="ShoppingCartID" />
+          <ScalarProperty Name="CustomCartID" ColumnName="CustomCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_StateTax">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_StateTax">
+        <MappingFragment StoreEntitySet="tb_StateTax">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="StateTaxID" ColumnName="StateTaxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_StoreThemes">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_StoreThemes">
+        <MappingFragment StoreEntitySet="tb_StoreThemes">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="StoreThemID" ColumnName="StoreThemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_TaxClass">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_TaxClass">
+        <MappingFragment StoreEntitySet="tb_TaxClass">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="TaxClassID" ColumnName="TaxClassID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Themes">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Themes">
+        <MappingFragment StoreEntitySet="tb_Themes">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ThemeID" ColumnName="ThemeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Topic">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Topic">
+        <MappingFragment StoreEntitySet="tb_Topic">
+          <ScalarProperty Name="ShowOnSiteMap" ColumnName="ShowOnSiteMap" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="SEName" ColumnName="SEName" />
+          <ScalarProperty Name="SETitle" ColumnName="SETitle" />
+          <ScalarProperty Name="SEDescription" ColumnName="SEDescription" />
+          <ScalarProperty Name="SEKeywords" ColumnName="SEKeywords" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_WishListItems">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_WishListItems">
+        <MappingFragment StoreEntitySet="tb_WishListItems">
+          <ScalarProperty Name="PackProductId" ColumnName="PackProductId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="VariantValues" ColumnName="VariantValues" />
+          <ScalarProperty Name="VariantNames" ColumnName="VariantNames" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="WishListID" ColumnName="WishListID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_AppConfig_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_AppConfig_tb_Store" StoreEntitySet="tb_AppConfig">
+      <EndProperty Name="tb_AppConfig">
+        <ScalarProperty Name="AppConfigID" ColumnName="AppConfigID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_CreditCardTypes_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_CreditCardTypes_tb_Store" StoreEntitySet="tb_CreditCardTypes">
+      <EndProperty Name="tb_CreditCardTypes">
+        <ScalarProperty Name="CardTypeID" ColumnName="CardTypeID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Distributor_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Distributor_tb_Store" StoreEntitySet="tb_Distributor">
+      <EndProperty Name="tb_Distributor">
+        <ScalarProperty Name="DistributorID" ColumnName="DistributorID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_EmailList_tb_EmailFolders" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_EmailList_tb_EmailFolders" StoreEntitySet="tb_EmailList">
+      <EndProperty Name="tb_EmailList">
+        <ScalarProperty Name="MailID" ColumnName="MailID" />
+      </EndProperty>
+      <EndProperty Name="tb_EmailFolders">
+        <ScalarProperty Name="FolderID" ColumnName="FolderID" />
+      </EndProperty>
+      <Condition ColumnName="FolderID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_EmailTemplate_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_EmailTemplate_tb_Store" StoreEntitySet="tb_EmailTemplate">
+      <EndProperty Name="tb_EmailTemplate">
+        <ScalarProperty Name="TemplateID" ColumnName="TemplateID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_FailedTransaction_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_FailedTransaction_tb_Store" StoreEntitySet="tb_FailedTransaction">
+      <EndProperty Name="tb_FailedTransaction">
+        <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_FeedFieldMaster_tb_FeedFieldTypeMaster" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_FeedFieldMaster_tb_FeedFieldTypeMaster" StoreEntitySet="tb_FeedFieldMaster">
+      <EndProperty Name="tb_FeedFieldMaster">
+        <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+      </EndProperty>
+      <EndProperty Name="tb_FeedFieldTypeMaster">
+        <ScalarProperty Name="FieldTypeID" ColumnName="FieldTypeID" />
+      </EndProperty>
+      <Condition ColumnName="FieldTypeID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_FeedFieldMaster_tb_FeedMaster" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_FeedFieldMaster_tb_FeedMaster" StoreEntitySet="tb_FeedFieldMaster">
+      <EndProperty Name="tb_FeedFieldMaster">
+        <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+      </EndProperty>
+      <EndProperty Name="tb_FeedMaster">
+        <ScalarProperty Name="FeedID" ColumnName="FeedID" />
+      </EndProperty>
+      <Condition ColumnName="FeedID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_FeedMaster_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_FeedMaster_tb_Store" StoreEntitySet="tb_FeedMaster">
+      <EndProperty Name="tb_FeedMaster">
+        <ScalarProperty Name="FeedID" ColumnName="FeedID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_FeedProductBaseMapping_tb_FeedMaster" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_FeedProductBaseMapping_tb_FeedMaster" StoreEntitySet="tb_FeedProductBaseMapping">
+      <EndProperty Name="tb_FeedProductBaseMapping">
+        <ScalarProperty Name="ProductMappingID" ColumnName="ProductMappingID" />
+      </EndProperty>
+      <EndProperty Name="tb_FeedMaster">
+        <ScalarProperty Name="FeedID" ColumnName="FeedID" />
+      </EndProperty>
+      <Condition ColumnName="FeedID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_GiftCard_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_GiftCard_tb_Store" StoreEntitySet="tb_GiftCard">
+      <EndProperty Name="tb_GiftCard">
+        <ScalarProperty Name="GiftCardID" ColumnName="GiftCardID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_MailLog_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_MailLog_tb_Store" StoreEntitySet="tb_MailLog">
+      <EndProperty Name="tb_MailLog">
+        <ScalarProperty Name="MailID" ColumnName="MailID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Manufacture_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Manufacture_tb_Store" StoreEntitySet="tb_Manufacture">
+      <EndProperty Name="tb_Manufacture">
+        <ScalarProperty Name="ManufactureID" ColumnName="ManufactureID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_PageRedirect_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_PageRedirect_tb_Store" StoreEntitySet="tb_PageRedirect">
+      <EndProperty Name="tb_PageRedirect">
+        <ScalarProperty Name="RedirectID" ColumnName="RedirectID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_ProductType_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ProductType_tb_Store" StoreEntitySet="tb_ProductType">
+      <EndProperty Name="tb_ProductType">
+        <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_StateTax_tb_State" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_StateTax_tb_State" StoreEntitySet="tb_StateTax">
+      <EndProperty Name="tb_StateTax">
+        <ScalarProperty Name="StateTaxID" ColumnName="StateTaxID" />
+      </EndProperty>
+      <EndProperty Name="tb_State">
+        <ScalarProperty Name="StateID" ColumnName="StateID" />
+      </EndProperty>
+      <Condition ColumnName="StateID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_StateTax_tb_TaxClass" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_StateTax_tb_TaxClass" StoreEntitySet="tb_StateTax">
+      <EndProperty Name="tb_StateTax">
+        <ScalarProperty Name="StateTaxID" ColumnName="StateTaxID" />
+      </EndProperty>
+      <EndProperty Name="tb_TaxClass">
+        <ScalarProperty Name="TaxClassID" ColumnName="TaxClassID" />
+      </EndProperty>
+      <Condition ColumnName="TaxClassID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_StoreThemes_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_StoreThemes_tb_Store" StoreEntitySet="tb_StoreThemes">
+      <EndProperty Name="tb_StoreThemes">
+        <ScalarProperty Name="StoreThemID" ColumnName="StoreThemID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_TaxClass_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_TaxClass_tb_Store" StoreEntitySet="tb_TaxClass">
+      <EndProperty Name="tb_TaxClass">
+        <ScalarProperty Name="TaxClassID" ColumnName="TaxClassID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Topic_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Topic_tb_Store" StoreEntitySet="tb_Topic">
+      <EndProperty Name="tb_Topic">
+        <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_StoreThemes_tb_Themes" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_StoreThemes_tb_Themes" StoreEntitySet="tb_StoreThemes">
+      <EndProperty Name="tb_StoreThemes">
+        <ScalarProperty Name="StoreThemID" ColumnName="StoreThemID" />
+      </EndProperty>
+      <EndProperty Name="tb_Themes">
+        <ScalarProperty Name="ThemeID" ColumnName="ThemeID" />
+      </EndProperty>
+      <Condition ColumnName="ThemeID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_CategoryMapping">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CategoryMapping">
+        <MappingFragment StoreEntitySet="tb_CategoryMapping">
+          <ScalarProperty Name="ParentCategoryID" ColumnName="ParentCategoryID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryMappingID" ColumnName="CategoryMappingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_Admin" FunctionName="RedTag_CCTV_Ecomm_DBModel.Store.usp_Admin" />
+    <EntitySetMapping Name="tb_OrderComment">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderComment">
+        <MappingFragment StoreEntitySet="tb_OrderComment">
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsVisibleFrontEnd" ColumnName="IsVisibleFrontEnd" />
+          <ScalarProperty Name="NotifyCustomer" ColumnName="NotifyCustomer" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_QauntityDiscount">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_QauntityDiscount">
+        <MappingFragment StoreEntitySet="tb_QauntityDiscount">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="HighQuantity" ColumnName="HighQuantity" />
+          <ScalarProperty Name="LowQuantity" ColumnName="LowQuantity" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="QuantityDiscountID" ColumnName="QuantityDiscountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_QauntityDiscount_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_QauntityDiscount_tb_Store" StoreEntitySet="tb_QauntityDiscount">
+      <EndProperty Name="tb_QauntityDiscount">
+        <ScalarProperty Name="QuantityDiscountID" ColumnName="QuantityDiscountID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_ImageSizes">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ImageSizes">
+        <MappingFragment StoreEntitySet="tb_ImageSizes">
+          <ScalarProperty Name="ImageSize" ColumnName="ImageSize" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="ImageSizeID" ColumnName="ImageSizeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_ImageSizes_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ImageSizes_tb_Store" StoreEntitySet="tb_ImageSizes">
+      <EndProperty Name="tb_ImageSizes">
+        <ScalarProperty Name="ImageSizeID" ColumnName="ImageSizeID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="usp_Category" FunctionName="RedTag_CCTV_Ecomm_DBModel.Store.usp_Category" />
+    <EntitySetMapping Name="tb_BreadCrumbPath">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_BreadCrumbPath">
+        <MappingFragment StoreEntitySet="tb_BreadCrumbPath">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="BreadCrumbID" ColumnName="BreadCrumbID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CustomerLevel">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CustomerLevel">
+        <MappingFragment StoreEntitySet="tb_CustomerLevel">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="LevelHasnoTax" ColumnName="LevelHasnoTax" />
+          <ScalarProperty Name="LevelHasFreeShipping" ColumnName="LevelHasFreeShipping" />
+          <ScalarProperty Name="LevelDiscountAmount" ColumnName="LevelDiscountAmount" />
+          <ScalarProperty Name="LevelDiscountPercent" ColumnName="LevelDiscountPercent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CustomerLevelID" ColumnName="CustomerLevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_CustomerLevel_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_CustomerLevel_tb_Store" StoreEntitySet="tb_CustomerLevel">
+      <EndProperty Name="tb_CustomerLevel">
+        <ScalarProperty Name="CustomerLevelID" ColumnName="CustomerLevelID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Payment_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Payment_tb_Store" StoreEntitySet="tb_Payment">
+      <EndProperty Name="tb_Payment">
+        <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_ProductVariant">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductVariant">
+        <MappingFragment StoreEntitySet="tb_ProductVariant">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="IsParent" ColumnName="IsParent" />
+          <ScalarProperty Name="OldVariantId" ColumnName="OldVariantId" />
+          <ScalarProperty Name="VariantName" ColumnName="VariantName" />
+          <ScalarProperty Name="VariantID" ColumnName="VariantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductCategory">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductCategory">
+        <MappingFragment StoreEntitySet="tb_ProductCategory">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CreditCardDetails">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CreditCardDetails">
+        <MappingFragment StoreEntitySet="tb_CreditCardDetails">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="DefaultBillingAddressID" ColumnName="DefaultBillingAddressID" />
+          <ScalarProperty Name="CardExpirationYear" ColumnName="CardExpirationYear" />
+          <ScalarProperty Name="CardExpirationMonth" ColumnName="CardExpirationMonth" />
+          <ScalarProperty Name="CardVerificationCode" ColumnName="CardVerificationCode" />
+          <ScalarProperty Name="CardTypeID" ColumnName="CardTypeID" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="NameOnCard" ColumnName="NameOnCard" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Coupons">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Coupons">
+        <MappingFragment StoreEntitySet="tb_Coupons">
+          <ScalarProperty Name="RMANumber" ColumnName="RMANumber" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ValidForCategory" ColumnName="ValidForCategory" />
+          <ScalarProperty Name="ValidforProduct" ColumnName="ValidforProduct" />
+          <ScalarProperty Name="ValidforCustomer" ColumnName="ValidforCustomer" />
+          <ScalarProperty Name="RequiredMinimumOrderTotal" ColumnName="RequiredMinimumOrderTotal" />
+          <ScalarProperty Name="DiscountAllowIncludeFreeShipping" ColumnName="DiscountAllowIncludeFreeShipping" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="OrderTotal" ColumnName="OrderTotal" />
+          <ScalarProperty Name="ExpiredAfterNUses" ColumnName="ExpiredAfterNUses" />
+          <ScalarProperty Name="ExpiresAfterOneUsageByEachCustomer" ColumnName="ExpiresAfterOneUsageByEachCustomer" />
+          <ScalarProperty Name="ExpiresonFirstUseByAnyCustomer" ColumnName="ExpiresonFirstUseByAnyCustomer" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_Coupons_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Coupons_tb_Store" StoreEntitySet="tb_Coupons">
+      <EndProperty Name="tb_Coupons">
+        <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_ShippingServices">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ShippingServices">
+        <MappingFragment StoreEntitySet="tb_ShippingServices">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ShippingService" ColumnName="ShippingService" />
+          <ScalarProperty Name="ShippingServiceID" ColumnName="ShippingServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ZipTax">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ZipTax">
+        <MappingFragment StoreEntitySet="tb_ZipTax">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="ZipTaxID" ColumnName="ZipTaxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_ShippingServices_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ShippingServices_tb_Store" StoreEntitySet="tb_ShippingServices">
+      <EndProperty Name="tb_ShippingServices">
+        <ScalarProperty Name="ShippingServiceID" ColumnName="ShippingServiceID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_ZipTax_tb_TaxClass" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ZipTax_tb_TaxClass" StoreEntitySet="tb_ZipTax">
+      <EndProperty Name="tb_ZipTax">
+        <ScalarProperty Name="ZipTaxID" ColumnName="ZipTaxID" />
+      </EndProperty>
+      <EndProperty Name="tb_TaxClass">
+        <ScalarProperty Name="TaxClassID" ColumnName="TaxClassID" />
+      </EndProperty>
+      <Condition ColumnName="TaxClassID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_PaymentServices">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_PaymentServices">
+        <MappingFragment StoreEntitySet="tb_PaymentServices">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="InitialPaymentStatus" ColumnName="InitialPaymentStatus" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="PaymentService" ColumnName="PaymentService" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="PaymentServiceID" ColumnName="PaymentServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ShippingMethods">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ShippingMethods">
+        <MappingFragment StoreEntitySet="tb_ShippingMethods">
+          <ScalarProperty Name="IsInternational" ColumnName="IsInternational" />
+          <ScalarProperty Name="EstimatedDays" ColumnName="EstimatedDays" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ShowOnAdmin" ColumnName="ShowOnAdmin" />
+          <ScalarProperty Name="ShowOnClient" ColumnName="ShowOnClient" />
+          <ScalarProperty Name="isRTShipping" ColumnName="isRTShipping" />
+          <ScalarProperty Name="FixedPrice" ColumnName="FixedPrice" />
+          <ScalarProperty Name="AdditionalPrice" ColumnName="AdditionalPrice" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_ShippingMethods_tb_ShippingServices" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ShippingMethods_tb_ShippingServices" StoreEntitySet="tb_ShippingMethods">
+      <EndProperty Name="tb_ShippingMethods">
+        <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+      </EndProperty>
+      <EndProperty Name="tb_ShippingServices">
+        <ScalarProperty Name="ShippingServiceID" ColumnName="ShippingServiceID" />
+      </EndProperty>
+      <Condition ColumnName="ShippingServiceID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_AvailabilityNotification">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_AvailabilityNotification">
+        <MappingFragment StoreEntitySet="tb_AvailabilityNotification">
+          <ScalarProperty Name="MailID" ColumnName="MailID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="MailSent" ColumnName="MailSent" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="AvailabilityID" ColumnName="AvailabilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_HomeBanner">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_HomeBanner">
+        <MappingFragment StoreEntitySet="tb_HomeBanner">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="GroupBannerId" ColumnName="GroupBannerId" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="BannerURL" ColumnName="BannerURL" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="BannerID" ColumnName="BannerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_HomeBanner_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_HomeBanner_tb_Store" StoreEntitySet="tb_HomeBanner">
+      <EndProperty Name="tb_HomeBanner">
+        <ScalarProperty Name="BannerID" ColumnName="BannerID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_Category">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Category">
+        <MappingFragment StoreEntitySet="tb_Category">
+          <ScalarProperty Name="FeatureID" ColumnName="FeatureID" />
+          <ScalarProperty Name="SearsCategoryID" ColumnName="SearsCategoryID" />
+          <ScalarProperty Name="OldCatId" ColumnName="OldCatId" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="ShowOnHeader" ColumnName="ShowOnHeader" />
+          <ScalarProperty Name="HeaderText" ColumnName="HeaderText" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="IsFeatured" ColumnName="IsFeatured" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="BannerImageName" ColumnName="BannerImageName" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="ToolTip" ColumnName="ToolTip" />
+          <ScalarProperty Name="SEDescription" ColumnName="SEDescription" />
+          <ScalarProperty Name="SEKeywords" ColumnName="SEKeywords" />
+          <ScalarProperty Name="SETitle" ColumnName="SETitle" />
+          <ScalarProperty Name="SEName" ColumnName="SEName" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_Category_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Category_tb_Store" StoreEntitySet="tb_Category">
+      <EndProperty Name="tb_Category">
+        <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_HeaderLinks">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_HeaderLinks">
+        <MappingFragment StoreEntitySet="tb_HeaderLinks">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="PageURL" ColumnName="PageURL" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_HeaderLinks_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_HeaderLinks_tb_Store" StoreEntitySet="tb_HeaderLinks">
+      <EndProperty Name="tb_HeaderLinks">
+        <ScalarProperty Name="PageId" ColumnName="PageId" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreId" />
+      </EndProperty>
+      <Condition ColumnName="StoreId" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_DashboardSettings">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_DashboardSettings">
+        <MappingFragment StoreEntitySet="tb_DashboardSettings">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="DisplayPosition" ColumnName="DisplayPosition" />
+          <ScalarProperty Name="IsDisplay" ColumnName="IsDisplay" />
+          <ScalarProperty Name="ControlName" ColumnName="ControlName" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Address">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Address">
+        <MappingFragment StoreEntitySet="tb_Address">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="PaymentMethodIDLastUsed" ColumnName="PaymentMethodIDLastUsed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Suite" ColumnName="Suite" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Customer">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Customer">
+        <MappingFragment StoreEntitySet="tb_Customer">
+          <ScalarProperty Name="Customertype" ColumnName="Customertype" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="NoDiscount" ColumnName="NoDiscount" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="DocFile" ColumnName="DocFile" />
+          <ScalarProperty Name="iPhoneUser" ColumnName="iPhoneUser" />
+          <ScalarProperty Name="TwitterId" ColumnName="TwitterId" />
+          <ScalarProperty Name="TwitterScreen" ColumnName="TwitterScreen" />
+          <ScalarProperty Name="isfbuser" ColumnName="isfbuser" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+          <ScalarProperty Name="FailedPasswordAttemptDate" ColumnName="FailedPasswordAttemptDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CustomerLevelID" ColumnName="CustomerLevelID" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="CreditCardID" ColumnName="CreditCardID" />
+          <ScalarProperty Name="ShippingAddressID" ColumnName="ShippingAddressID" />
+          <ScalarProperty Name="BillingAddressID" ColumnName="BillingAddressID" />
+          <ScalarProperty Name="BillingEqualShippingbit" ColumnName="BillingEqualShippingbit" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_CreditCardDetails_tb_Customer" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_CreditCardDetails_tb_Customer" StoreEntitySet="tb_CreditCardDetails">
+      <EndProperty Name="tb_CreditCardDetails">
+        <ScalarProperty Name="CardID" ColumnName="CardID" />
+      </EndProperty>
+      <EndProperty Name="tb_Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+      <Condition ColumnName="CustomerID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Customer_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Customer_tb_Store" StoreEntitySet="tb_Customer">
+      <EndProperty Name="tb_Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_MailLog_tb_Customer" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_MailLog_tb_Customer" StoreEntitySet="tb_MailLog">
+      <EndProperty Name="tb_MailLog">
+        <ScalarProperty Name="MailID" ColumnName="MailID" />
+      </EndProperty>
+      <EndProperty Name="tb_Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+      <Condition ColumnName="CustomerID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_RestrictedIP_tb_Customer" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_RestrictedIP_tb_Customer" StoreEntitySet="tb_RestrictedIP">
+      <EndProperty Name="tb_RestrictedIP">
+        <ScalarProperty Name="RestrictedIPID" ColumnName="RestrictedIPID" />
+      </EndProperty>
+      <EndProperty Name="tb_Customer">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+      </EndProperty>
+      <Condition ColumnName="CustomerID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_NewsSubscription">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_NewsSubscription">
+        <MappingFragment StoreEntitySet="tb_NewsSubscription">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NewsSubscriptionID" ColumnName="NewsSubscriptionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_NewsSubscription_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_NewsSubscription_tb_Store" StoreEntitySet="tb_NewsSubscription">
+      <EndProperty Name="tb_NewsSubscription">
+        <ScalarProperty Name="NewsSubscriptionID" ColumnName="NewsSubscriptionID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_Rating">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Rating">
+        <MappingFragment StoreEntitySet="tb_Rating">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_Rating_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Rating_tb_Store" StoreEntitySet="tb_Rating">
+      <EndProperty Name="tb_Rating">
+        <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_SearchLog">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_SearchLog">
+        <MappingFragment StoreEntitySet="tb_SearchLog">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="SearchTerm" ColumnName="SearchTerm" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="SearchLogID" ColumnName="SearchLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductAmazon">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductAmazon">
+        <MappingFragment StoreEntitySet="tb_ProductAmazon">
+          <ScalarProperty Name="PoS_CameraPowerSupplyType" ColumnName="PoS_CameraPowerSupplyType" />
+          <ScalarProperty Name="PoS_BatteryChemicalType" ColumnName="PoS_BatteryChemicalType" />
+          <ScalarProperty Name="PoS_ForUseWith" ColumnName="PoS_ForUseWith" />
+          <ScalarProperty Name="SS_CameraAccessories" ColumnName="SS_CameraAccessories" />
+          <ScalarProperty Name="SS_Features5" ColumnName="SS_Features5" />
+          <ScalarProperty Name="SS_Features4" ColumnName="SS_Features4" />
+          <ScalarProperty Name="SS_Features3" ColumnName="SS_Features3" />
+          <ScalarProperty Name="SS_Features2" ColumnName="SS_Features2" />
+          <ScalarProperty Name="SS_Features1" ColumnName="SS_Features1" />
+          <ScalarProperty Name="SS_CameraType" ColumnName="SS_CameraType" />
+          <ScalarProperty Name="SS_SurveillanceSystemType" ColumnName="SS_SurveillanceSystemType" />
+          <ScalarProperty Name="UpdateDelete" ColumnName="UpdateDelete" />
+          <ScalarProperty Name="RegisteredParameter" ColumnName="RegisteredParameter" />
+          <ScalarProperty Name="IsDiscontinuedByManufacturer" ColumnName="IsDiscontinuedByManufacturer" />
+          <ScalarProperty Name="IsGiftMessageAvailable" ColumnName="IsGiftMessageAvailable" />
+          <ScalarProperty Name="IsGiftWrapAvailable" ColumnName="IsGiftWrapAvailable" />
+          <ScalarProperty Name="MaxAggregateShipQuantity" ColumnName="MaxAggregateShipQuantity" />
+          <ScalarProperty Name="ConditionNote" ColumnName="ConditionNote" />
+          <ScalarProperty Name="ConditionType" ColumnName="ConditionType" />
+          <ScalarProperty Name="shipping_weight" ColumnName="shipping-weight" />
+          <ScalarProperty Name="shipping_weight_unit_of_measure" ColumnName="shipping_weight_unit_of_measure" />
+          <ScalarProperty Name="ItemsIncluded" ColumnName="ItemsIncluded" />
+          <ScalarProperty Name="RestockDate" ColumnName="RestockDate" />
+          <ScalarProperty Name="LeadtimeToShip" ColumnName="LeadtimeToShip" />
+          <ScalarProperty Name="MaxOrderQuantity" ColumnName="MaxOrderQuantity" />
+          <ScalarProperty Name="RebateName2" ColumnName="RebateName2" />
+          <ScalarProperty Name="RebateName1" ColumnName="RebateName1" />
+          <ScalarProperty Name="RebateMessage2" ColumnName="RebateMessage2" />
+          <ScalarProperty Name="RebateMessage1" ColumnName="RebateMessage1" />
+          <ScalarProperty Name="RebateEndDate2" ColumnName="RebateEndDate2" />
+          <ScalarProperty Name="RebateEndDate1" ColumnName="RebateEndDate1" />
+          <ScalarProperty Name="RebateStartDate2" ColumnName="RebateStartDate2" />
+          <ScalarProperty Name="RebateStartDate1" ColumnName="RebateStartDate1" />
+          <ScalarProperty Name="SaleEndDate" ColumnName="SaleEndDate" />
+          <ScalarProperty Name="SaleStartDate" ColumnName="SaleStartDate" />
+          <ScalarProperty Name="FulfillmentCenterID" ColumnName="FulfillmentCenterID" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+          <ScalarProperty Name="MAP" ColumnName="MAP" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+          <ScalarProperty Name="LaunchDate" ColumnName="LaunchDate" />
+          <ScalarProperty Name="ProductTaxCode" ColumnName="ProductTaxCode" />
+          <ScalarProperty Name="RelationshipType" ColumnName="RelationshipType" />
+          <ScalarProperty Name="ParentSKU" ColumnName="ParentSKU" />
+          <ScalarProperty Name="OtherImageURL8" ColumnName="OtherImageURL8" />
+          <ScalarProperty Name="OtherImageURL7" ColumnName="OtherImageURL7" />
+          <ScalarProperty Name="OtherImageURL6" ColumnName="OtherImageURL6" />
+          <ScalarProperty Name="OtherImageURL5" ColumnName="OtherImageURL5" />
+          <ScalarProperty Name="OtherImageURL4" ColumnName="OtherImageURL4" />
+          <ScalarProperty Name="OtherImageURL3" ColumnName="OtherImageURL3" />
+          <ScalarProperty Name="OtherImageURL2" ColumnName="OtherImageURL2" />
+          <ScalarProperty Name="OtherImageURL1" ColumnName="OtherImageURL1" />
+          <ScalarProperty Name="MainImageURL" ColumnName="MainImageURL" />
+          <ScalarProperty Name="PlatinumKeywords5" ColumnName="PlatinumKeywords5" />
+          <ScalarProperty Name="PlatinumKeywords4" ColumnName="PlatinumKeywords4" />
+          <ScalarProperty Name="PlatinumKeywords3" ColumnName="PlatinumKeywords3" />
+          <ScalarProperty Name="PlatinumKeywords2" ColumnName="PlatinumKeywords2" />
+          <ScalarProperty Name="PlatinumKeywords1" ColumnName="PlatinumKeywords1" />
+          <ScalarProperty Name="Keyword3" ColumnName="Keyword3" />
+          <ScalarProperty Name="Keyword2" ColumnName="Keyword2" />
+          <ScalarProperty Name="Keyword1" ColumnName="Keyword1" />
+          <ScalarProperty Name="CPSIAWarningDescription" ColumnName="CPSIAWarningDescription" />
+          <ScalarProperty Name="CPSIAWarning4" ColumnName="CPSIAWarning4" />
+          <ScalarProperty Name="CPSIAWarning3" ColumnName="CPSIAWarning3" />
+          <ScalarProperty Name="CPSIAWarning2" ColumnName="CPSIAWarning2" />
+          <ScalarProperty Name="CPSIAWarning1" ColumnName="CPSIAWarning1" />
+          <ScalarProperty Name="Prop65" ColumnName="Prop65" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="BulletPoint5" ColumnName="BulletPoint5" />
+          <ScalarProperty Name="BulletPoint4" ColumnName="BulletPoint4" />
+          <ScalarProperty Name="BulletPoint3" ColumnName="BulletPoint3" />
+          <ScalarProperty Name="BulletPoint2" ColumnName="BulletPoint2" />
+          <ScalarProperty Name="BulletPoint1" ColumnName="BulletPoint1" />
+          <ScalarProperty Name="MerchantCatalogNumber" ColumnName="MerchantCatalogNumber" />
+          <ScalarProperty Name="MfrPartNumber" ColumnName="MfrPartNumber" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="ProductIDType" ColumnName="ProductIDType" />
+          <ScalarProperty Name="StandardProductID" ColumnName="StandardProductID" />
+          <ScalarProperty Name="AmazonRefID" ColumnName="AmazonRefID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductBuy">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductBuy">
+        <MappingFragment StoreEntitySet="tb_ProductBuy">
+          <ScalarProperty Name="Easel_Type" ColumnName="Easel_Type" />
+          <ScalarProperty Name="Dispenser_Type" ColumnName="Dispenser_Type" />
+          <ScalarProperty Name="Closure" ColumnName="Closure" />
+          <ScalarProperty Name="Card_Type" ColumnName="Card_Type" />
+          <ScalarProperty Name="Brightness" ColumnName="Brightness" />
+          <ScalarProperty Name="Board_Type" ColumnName="Board_Type" />
+          <ScalarProperty Name="Ass_Type" ColumnName="Ass_Type" />
+          <ScalarProperty Name="OfferExpeditedShipping" ColumnName="OfferExpeditedShipping" />
+          <ScalarProperty Name="ShippingRateStandard" ColumnName="ShippingRateStandard" />
+          <ScalarProperty Name="ShippingRateExpedited" ColumnName="ShippingRateExpedited" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductBuyID" ColumnName="ProductBuyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_QuantityDiscountTable">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_QuantityDiscountTable">
+        <MappingFragment StoreEntitySet="tb_QuantityDiscountTable">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="HighQuantity" ColumnName="HighQuantity" />
+          <ScalarProperty Name="LowQuantity" ColumnName="LowQuantity" />
+          <ScalarProperty Name="QuantityDiscountID" ColumnName="QuantityDiscountID" />
+          <ScalarProperty Name="QuantityDiscountTableID" ColumnName="QuantityDiscountTableID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderedShoppingCartItems">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderedShoppingCartItems">
+        <MappingFragment StoreEntitySet="tb_OrderedShoppingCartItems">
+          <ScalarProperty Name="SKUupgrade" ColumnName="SKUupgrade" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Actualyard" ColumnName="Actualyard" />
+          <ScalarProperty Name="YardQuantity" ColumnName="YardQuantity" />
+          <ScalarProperty Name="IsProductType" ColumnName="IsProductType" />
+          <ScalarProperty Name="RelatedproductID" ColumnName="RelatedproductID" />
+          <ScalarProperty Name="Receipt_Item_ID" ColumnName="Receipt_Item_ID" />
+          <ScalarProperty Name="IsAccepted" ColumnName="IsAccepted" />
+          <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
+          <ScalarProperty Name="IsManualShipped" ColumnName="IsManualShipped" />
+          <ScalarProperty Name="upgradeprice" ColumnName="upgradeprice" />
+          <ScalarProperty Name="MarryproductQuantity" ColumnName="MarryproductQuantity" />
+          <ScalarProperty Name="MarryWithtotalQuantity" ColumnName="MarryWithtotalQuantity" />
+          <ScalarProperty Name="MarryProducts" ColumnName="MarryProducts" />
+          <ScalarProperty Name="ProductURL" ColumnName="ProductURL" />
+          <ScalarProperty Name="YahooID" ColumnName="YahooID" />
+          <ScalarProperty Name="PackId" ColumnName="PackId" />
+          <ScalarProperty Name="LastShippedVia" ColumnName="LastShippedVia" />
+          <ScalarProperty Name="LastTrackingNumber" ColumnName="LastTrackingNumber" />
+          <ScalarProperty Name="Shipping" ColumnName="Shipping" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="InventoryUpdated" ColumnName="InventoryUpdated" />
+          <ScalarProperty Name="WareHouseID" ColumnName="WareHouseID" />
+          <ScalarProperty Name="ShippedQty" ColumnName="ShippedQty" />
+          <ScalarProperty Name="ShippedOn" ColumnName="ShippedOn" />
+          <ScalarProperty Name="ShippedVia" ColumnName="ShippedVia" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="TrackingNumber" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="RefundAmount" ColumnName="RefundAmount" />
+          <ScalarProperty Name="IsRefunded" ColumnName="IsRefunded" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="VariantValues" ColumnName="VariantValues" />
+          <ScalarProperty Name="VariantNames" ColumnName="VariantNames" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="RefProductID" ColumnName="RefProductID" />
+          <ScalarProperty Name="OrderedShoppingCartID" ColumnName="OrderedShoppingCartID" />
+          <ScalarProperty Name="OrderedCustomCartID" ColumnName="OrderedCustomCartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductVariantValue">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductVariantValue">
+        <MappingFragment StoreEntitySet="tb_ProductVariantValue">
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="BackOrderdate" ColumnName="BackOrderdate" />
+          <ScalarProperty Name="FabricType" ColumnName="FabricType" />
+          <ScalarProperty Name="FabricCode" ColumnName="FabricCode" />
+          <ScalarProperty Name="OnSalePrice" ColumnName="OnSalePrice" />
+          <ScalarProperty Name="OnSaleTodate" ColumnName="OnSaleTodate" />
+          <ScalarProperty Name="OnSaleFromdate" ColumnName="OnSaleFromdate" />
+          <ScalarProperty Name="Buy1Todate" ColumnName="Buy1Todate" />
+          <ScalarProperty Name="Buy1Fromdate" ColumnName="Buy1Fromdate" />
+          <ScalarProperty Name="OnSale" ColumnName="OnSale" />
+          <ScalarProperty Name="Buy1Get1" ColumnName="Buy1Get1" />
+          <ScalarProperty Name="BasecustomPrice" ColumnName="BasecustomPrice" />
+          <ScalarProperty Name="AddiHemingQty" ColumnName="AddiHemingQty" />
+          <ScalarProperty Name="VariImageName" ColumnName="VariImageName" />
+          <ScalarProperty Name="LockQuantityAvail" ColumnName="LockQuantityAvail" />
+          <ScalarProperty Name="AllowQuantityAvail" ColumnName="AllowQuantityAvail" />
+          <ScalarProperty Name="LockQuantity" ColumnName="LockQuantity" />
+          <ScalarProperty Name="AllowQuantity" ColumnName="AllowQuantity" />
+          <ScalarProperty Name="RelatedProductid" ColumnName="RelatedProductid" />
+          <ScalarProperty Name="Inventory" ColumnName="Inventory" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="UPC" ColumnName="UPC" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="VariantPrice" ColumnName="VariantPrice" />
+          <ScalarProperty Name="VariantValue" ColumnName="VariantValue" />
+          <ScalarProperty Name="VariantValueID" ColumnName="VariantValueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_ProductVariantValue_tb_ProductVariant" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ProductVariantValue_tb_ProductVariant" StoreEntitySet="tb_ProductVariantValue">
+      <EndProperty Name="tb_ProductVariantValue">
+        <ScalarProperty Name="VariantValueID" ColumnName="VariantValueID" />
+      </EndProperty>
+      <EndProperty Name="tb_ProductVariant">
+        <ScalarProperty Name="VariantID" ColumnName="VariantID" />
+      </EndProperty>
+      <Condition ColumnName="VariantID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_Product">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Product">
+        <MappingFragment StoreEntitySet="tb_Product">
+          <ScalarProperty Name="Coloroptintitle" ColumnName="Coloroptintitle" />
+          <ScalarProperty Name="Coloroption" ColumnName="Coloroption" />
+          <ScalarProperty Name="FabricVendorIds" ColumnName="FabricVendorIds" />
+          <ScalarProperty Name="FabricVendor" ColumnName="FabricVendor" />
+          <ScalarProperty Name="HammingSafetyper" ColumnName="HammingSafetyper" />
+          <ScalarProperty Name="HammingSafetyQty" ColumnName="HammingSafetyQty" />
+          <ScalarProperty Name="IsHamming" ColumnName="IsHamming" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="IsDataVerifyOn" ColumnName="IsDataVerifyOn" />
+          <ScalarProperty Name="DataVerifyBy" ColumnName="DataVerifyBy" />
+          <ScalarProperty Name="IsDataVerify" ColumnName="IsDataVerify" />
+          <ScalarProperty Name="IsdropshipProduct" ColumnName="IsdropshipProduct" />
+          <ScalarProperty Name="Ismadetoorderswatch" ColumnName="Ismadetoorderswatch" />
+          <ScalarProperty Name="Ismadetoready" ColumnName="Ismadetoready" />
+          <ScalarProperty Name="ImageDescription" ColumnName="ImageDescription" />
+          <ScalarProperty Name="FeatureID" ColumnName="FeatureID" />
+          <ScalarProperty Name="IsFeaturedToDate" ColumnName="IsFeaturedToDate" />
+          <ScalarProperty Name="IsFeaturedFromDate" ColumnName="IsFeaturedFromDate" />
+          <ScalarProperty Name="IsFreeShippingToDate" ColumnName="IsFreeShippingToDate" />
+          <ScalarProperty Name="IsFreeShippingFromDate" ColumnName="IsFreeShippingFromDate" />
+          <ScalarProperty Name="IsBestSellerToDate" ColumnName="IsBestSellerToDate" />
+          <ScalarProperty Name="IsBestSellerFromDate" ColumnName="IsBestSellerFromDate" />
+          <ScalarProperty Name="IsNewArrivalToDate" ColumnName="IsNewArrivalToDate" />
+          <ScalarProperty Name="IsNewArrivalFromDate" ColumnName="IsNewArrivalFromDate" />
+          <ScalarProperty Name="SalePriceTag" ColumnName="SalePriceTag" />
+          <ScalarProperty Name="RomanShadeId" ColumnName="RomanShadeId" />
+          <ScalarProperty Name="IsRoman" ColumnName="IsRoman" />
+          <ScalarProperty Name="Ismadetomeasure" ColumnName="Ismadetomeasure" />
+          <ScalarProperty Name="Ismadetoorder" ColumnName="Ismadetoorder" />
+          <ScalarProperty Name="ColorSku" ColumnName="ColorSku" />
+          <ScalarProperty Name="PageURL" ColumnName="PageURL" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="IsCustom" ColumnName="IsCustom" />
+          <ScalarProperty Name="FabricCode" ColumnName="FabricCode" />
+          <ScalarProperty Name="FabricType" ColumnName="FabricType" />
+          <ScalarProperty Name="ShippingTime" ColumnName="ShippingTime" />
+          <ScalarProperty Name="SwatchDescription" ColumnName="SwatchDescription" />
+          <ScalarProperty Name="SecondaryColor" ColumnName="SecondaryColor" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="Fabric" ColumnName="Fabric" />
+          <ScalarProperty Name="Colors" ColumnName="Colors" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="Efficiency" ColumnName="Efficiency" />
+          <ScalarProperty Name="Privacy" ColumnName="Privacy" />
+          <ScalarProperty Name="LightControl" ColumnName="LightControl" />
+          <ScalarProperty Name="Isproperty" ColumnName="Isproperty" />
+          <ScalarProperty Name="ProductSwatchid" ColumnName="ProductSwatchid" />
+          <ScalarProperty Name="IspriceQuote" ColumnName="IspriceQuote" />
+          <ScalarProperty Name="Isfreefabricswatch" ColumnName="Isfreefabricswatch" />
+          <ScalarProperty Name="FabricInch" ColumnName="FabricInch" />
+          <ScalarProperty Name="YardHeaderandhem" ColumnName="YardHeaderandhem" />
+          <ScalarProperty Name="AdditionalCharge" ColumnName="AdditionalCharge" />
+          <ScalarProperty Name="PerInchPrice" ColumnName="PerInchPrice" />
+          <ScalarProperty Name="BuyReferenceID" ColumnName="BuyReferenceID" />
+          <ScalarProperty Name="NeweggItemNumber" ColumnName="NeweggItemNumber" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="SourceZipCode" ColumnName="SourceZipCode" />
+          <ScalarProperty Name="ProductCondition" ColumnName="ProductCondition" />
+          <ScalarProperty Name="ProductSummary" ColumnName="ProductSummary" />
+          <ScalarProperty Name="WarrantyContactPhoneNumber" ColumnName="WarrantyContactPhoneNumber" />
+          <ScalarProperty Name="WarrantyDescription" ColumnName="WarrantyDescription" />
+          <ScalarProperty Name="WarrantyProvider" ColumnName="WarrantyProvider" />
+          <ScalarProperty Name="Materials" ColumnName="Materials" />
+          <ScalarProperty Name="PartNumber" ColumnName="PartNumber" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Sizes" ColumnName="Sizes" />
+          <ScalarProperty Name="ContainsTobacco" ColumnName="ContainsTobacco" />
+          <ScalarProperty Name="EbayCreated" ColumnName="EbayCreated" />
+          <ScalarProperty Name="OptionSku" ColumnName="OptionSku" />
+          <ScalarProperty Name="overstockproductid" ColumnName="overstockproductid" />
+          <ScalarProperty Name="Visualproperties" ColumnName="Visualproperties" />
+          <ScalarProperty Name="ImageOrg" ColumnName="ImageOrg" />
+          <ScalarProperty Name="DiscontinuedOn" ColumnName="DiscontinuedOn" />
+          <ScalarProperty Name="InventoryUpdatedOn" ColumnName="InventoryUpdatedOn" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="MarryProducts" ColumnName="MarryProducts" />
+          <ScalarProperty Name="ProductTypeDeliveryID" ColumnName="ProductTypeDeliveryID" />
+          <ScalarProperty Name="LowInventory" ColumnName="LowInventory" />
+          <ScalarProperty Name="Ypath" ColumnName="Ypath" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="Dimension" ColumnName="Dimension" />
+          <ScalarProperty Name="YahooID" ColumnName="YahooID" />
+          <ScalarProperty Name="ProductURL" ColumnName="ProductURL" />
+          <ScalarProperty Name="Bulletpoint5" ColumnName="Bulletpoint5" />
+          <ScalarProperty Name="Bulletpoint4" ColumnName="Bulletpoint4" />
+          <ScalarProperty Name="Bulletpoint3" ColumnName="Bulletpoint3" />
+          <ScalarProperty Name="Bulletpoint2" ColumnName="Bulletpoint2" />
+          <ScalarProperty Name="Bulletpoint1" ColumnName="Bulletpoint1" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="ManufactureCatalogNo" ColumnName="ManufactureCatalogNo" />
+          <ScalarProperty Name="amazonproductid" ColumnName="amazonproductid" />
+          <ScalarProperty Name="ReturnPolicy" ColumnName="ReturnPolicy" />
+          <ScalarProperty Name="OptionalAccessories" ColumnName="OptionalAccessories" />
+          <ScalarProperty Name="IsSpecials" ColumnName="IsSpecials" />
+          <ScalarProperty Name="OldProductID" ColumnName="OldProductID" />
+          <ScalarProperty Name="EngravingSize" ColumnName="EngravingSize" />
+          <ScalarProperty Name="IsFreeEngraving" ColumnName="IsFreeEngraving" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="BuyKeywords" ColumnName="BuyKeywords" />
+          <ScalarProperty Name="Shipping" ColumnName="Shipping" />
+          <ScalarProperty Name="SellerPartNo" ColumnName="SellerPartNo" />
+          <ScalarProperty Name="ChokingHazard4" ColumnName="ChokingHazard4" />
+          <ScalarProperty Name="ChokingHazard3" ColumnName="ChokingHazard3" />
+          <ScalarProperty Name="ChokingHazard2" ColumnName="ChokingHazard2" />
+          <ScalarProperty Name="ChokingHazard1" ColumnName="ChokingHazard1" />
+          <ScalarProperty Name="Age18Verification" ColumnName="Age18Verification" />
+          <ScalarProperty Name="Pro65Motherboard" ColumnName="Pro65Motherboard" />
+          <ScalarProperty Name="Prop65" ColumnName="Prop65" />
+          <ScalarProperty Name="ActivationMark" ColumnName="ActivationMark" />
+          <ScalarProperty Name="ItemPackage" ColumnName="ItemPackage" />
+          <ScalarProperty Name="WebSiteLongTitle" ColumnName="WebSiteLongTitle" />
+          <ScalarProperty Name="WebSiteShortTitle" ColumnName="WebSiteShortTitle" />
+          <ScalarProperty Name="ManuItemURL" ColumnName="ManuItemURL" />
+          <ScalarProperty Name="IsShipSeparately" ColumnName="IsShipSeparately" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="BuyCategoryID" ColumnName="BuyCategoryID" />
+          <ScalarProperty Name="Extended_warranty" ColumnName="Extended-warranty" />
+          <ScalarProperty Name="Features" ColumnName="Features" />
+          <ScalarProperty Name="BuyListingID" ColumnName="BuyListingID" />
+          <ScalarProperty Name="ProductSetID" ColumnName="ProductSetID" />
+          <ScalarProperty Name="Srno" ColumnName="Srno" />
+          <ScalarProperty Name="ASIN" ColumnName="ASIN" />
+          <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+          <ScalarProperty Name="SellerID" ColumnName="SellerID" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="ManufacturePartNo" ColumnName="ManufacturePartNo" />
+          <ScalarProperty Name="ShippingEndDate" ColumnName="ShippingEndDate" />
+          <ScalarProperty Name="ShippingStartDate" ColumnName="ShippingStartDate" />
+          <ScalarProperty Name="MapPriceIndicator" ColumnName="MapPriceIndicator" />
+          <ScalarProperty Name="ContainsAlcohol" ColumnName="ContainsAlcohol" />
+          <ScalarProperty Name="RequiresFreezing" ColumnName="RequiresFreezing" />
+          <ScalarProperty Name="RequiresRefrigeration" ColumnName="RequiresRefrigeration" />
+          <ScalarProperty Name="Perishable" ColumnName="Perishable" />
+          <ScalarProperty Name="IsRestricted" ColumnName="IsRestricted" />
+          <ScalarProperty Name="eBayStoreCategoryID" ColumnName="eBayStoreCategoryID" />
+          <ScalarProperty Name="eBayCategoryID" ColumnName="eBayCategoryID" />
+          <ScalarProperty Name="eBayProductID" ColumnName="eBayProductID" />
+          <ScalarProperty Name="eBayListingFee" ColumnName="eBayListingFee" />
+          <ScalarProperty Name="eBayLastUpdated" ColumnName="eBayLastUpdated" />
+          <ScalarProperty Name="eBayCreatedOn" ColumnName="eBayCreatedOn" />
+          <ScalarProperty Name="eBayListingDay" ColumnName="eBayListingDay" />
+          <ScalarProperty Name="eBayListingType" ColumnName="eBayListingType" />
+          <ScalarProperty Name="TagName" ColumnName="TagName" />
+          <ScalarProperty Name="RelatedProduct" ColumnName="RelatedProduct" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="LastViewDate" ColumnName="LastViewDate" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="TabDesc5" ColumnName="TabDesc5" />
+          <ScalarProperty Name="TabTitle5" ColumnName="TabTitle5" />
+          <ScalarProperty Name="TabDesc4" ColumnName="TabDesc4" />
+          <ScalarProperty Name="TabTitle4" ColumnName="TabTitle4" />
+          <ScalarProperty Name="TabDesc3" ColumnName="TabDesc3" />
+          <ScalarProperty Name="TabTitle3" ColumnName="TabTitle3" />
+          <ScalarProperty Name="TabDesc2" ColumnName="TabDesc2" />
+          <ScalarProperty Name="TabTitle2" ColumnName="TabTitle2" />
+          <ScalarProperty Name="TabTitle1" ColumnName="TabTitle1" />
+          <ScalarProperty Name="isTabbingDisplay" ColumnName="isTabbingDisplay" />
+          <ScalarProperty Name="isSatisfactionGuaranteed" ColumnName="isSatisfactionGuaranteed" />
+          <ScalarProperty Name="CallUsForPrice" ColumnName="CallUsForPrice" />
+          <ScalarProperty Name="GiftWrap" ColumnName="GiftWrap" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ToolTip" ColumnName="ToolTip" />
+          <ScalarProperty Name="SETitle" ColumnName="SETitle" />
+          <ScalarProperty Name="SEDescription" ColumnName="SEDescription" />
+          <ScalarProperty Name="SEKeywords" ColumnName="SEKeywords" />
+          <ScalarProperty Name="OutOfStockMessage" ColumnName="OutOfStockMessage" />
+          <ScalarProperty Name="IsBestSeller" ColumnName="IsBestSeller" />
+          <ScalarProperty Name="IsAuthorizeRefund" ColumnName="IsAuthorizeRefund" />
+          <ScalarProperty Name="IsSaleclearance" ColumnName="IsSaleclearance" />
+          <ScalarProperty Name="IsNewArrival" ColumnName="IsNewArrival" />
+          <ScalarProperty Name="IsFreeShipping" ColumnName="IsFreeShipping" />
+          <ScalarProperty Name="IsFeatured" ColumnName="IsFeatured" />
+          <ScalarProperty Name="IsPack" ColumnName="IsPack" />
+          <ScalarProperty Name="IsKit" ColumnName="IsKit" />
+          <ScalarProperty Name="MainCategory" ColumnName="MainCategory" />
+          <ScalarProperty Name="Discontinue" ColumnName="Discontinue" />
+          <ScalarProperty Name="PDFName" ColumnName="PDFName" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="AvailableEndDate" ColumnName="AvailableEndDate" />
+          <ScalarProperty Name="AvaliableStartDate" ColumnName="AvaliableStartDate" />
+          <ScalarProperty Name="Avail" ColumnName="Avail" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="UPC" ColumnName="UPC" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Inventory" ColumnName="Inventory" />
+          <ScalarProperty Name="SurCharge" ColumnName="SurCharge" />
+          <ScalarProperty Name="OurPrice" ColumnName="OurPrice" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="SEName" ColumnName="SEName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_Product_tb_Distributor" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Product_tb_Distributor" StoreEntitySet="tb_Product">
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="tb_Distributor">
+        <ScalarProperty Name="DistributorID" ColumnName="DistributorID" />
+      </EndProperty>
+      <Condition ColumnName="DistributorID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Product_tb_Manufacture" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Product_tb_Manufacture" StoreEntitySet="tb_Product">
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="tb_Manufacture">
+        <ScalarProperty Name="ManufactureID" ColumnName="ManufactureID" />
+      </EndProperty>
+      <Condition ColumnName="ManufactureID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Product_tb_ProductType" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Product_tb_ProductType" StoreEntitySet="tb_Product">
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="tb_ProductType">
+        <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+      </EndProperty>
+      <Condition ColumnName="ProductTypeID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Product_tb_QauntityDiscount" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Product_tb_QauntityDiscount" StoreEntitySet="tb_Product">
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="tb_QauntityDiscount">
+        <ScalarProperty Name="QuantityDiscountID" ColumnName="QuantityDiscountID" />
+      </EndProperty>
+      <Condition ColumnName="QuantityDiscountID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Product_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Product_tb_Store" StoreEntitySet="tb_Product">
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Product_tb_TaxClass" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Product_tb_TaxClass" StoreEntitySet="tb_Product">
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <EndProperty Name="tb_TaxClass">
+        <ScalarProperty Name="TaxClassID" ColumnName="TaxClassID" />
+      </EndProperty>
+      <Condition ColumnName="TaxClassID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_ProductVariant_tb_Product" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ProductVariant_tb_Product" StoreEntitySet="tb_ProductVariant">
+      <EndProperty Name="tb_ProductVariant">
+        <ScalarProperty Name="VariantID" ColumnName="VariantID" />
+      </EndProperty>
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <Condition ColumnName="ProductID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_Rating_tb_Product" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Rating_tb_Product" StoreEntitySet="tb_Rating">
+      <EndProperty Name="tb_Rating">
+        <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+      </EndProperty>
+      <EndProperty Name="tb_Product">
+        <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+      </EndProperty>
+      <Condition ColumnName="ProductID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_WareHouse">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_WareHouse">
+        <MappingFragment StoreEntitySet="tb_WareHouse">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Suite" ColumnName="Suite" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WareHouseID" ColumnName="WareHouseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CustomerQuote">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CustomerQuote">
+        <MappingFragment StoreEntitySet="tb_CustomerQuote">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsHTML" ColumnName="IsHTML" />
+          <ScalarProperty Name="GeneralNote" ColumnName="GeneralNote" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="IsRevised" ColumnName="IsRevised" />
+          <ScalarProperty Name="QuoteNumber" ColumnName="QuoteNumber" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerQuoteID" ColumnName="CustomerQuoteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CustomerQuoteItems">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CustomerQuoteItems">
+        <MappingFragment StoreEntitySet="tb_CustomerQuoteItems">
+          <ScalarProperty Name="RelatedproductID" ColumnName="RelatedproductID" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
+          <ScalarProperty Name="Actualyard" ColumnName="Actualyard" />
+          <ScalarProperty Name="YardQuantity" ColumnName="YardQuantity" />
+          <ScalarProperty Name="IsProductType" ColumnName="IsProductType" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="VariantValues" ColumnName="VariantValues" />
+          <ScalarProperty Name="VariantNames" ColumnName="VariantNames" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CustomerQuoteID" ColumnName="CustomerQuoteID" />
+          <ScalarProperty Name="CustomerQuoteItemID" ColumnName="CustomerQuoteItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Vendor">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Vendor">
+        <MappingFragment StoreEntitySet="tb_Vendor">
+          <ScalarProperty Name="IsDropshipper" ColumnName="IsDropshipper" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="VendorType" ColumnName="VendorType" />
+          <ScalarProperty Name="EMailTemplate" ColumnName="EMailTemplate" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Zipcode" ColumnName="Zipcode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_VendorPayment">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_VendorPayment">
+        <MappingFragment StoreEntitySet="tb_VendorPayment">
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="POAmount" ColumnName="POAmount" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="PurchaseOrders" ColumnName="PurchaseOrders" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="TransactionReference" ColumnName="TransactionReference" />
+          <ScalarProperty Name="PaidBy" ColumnName="PaidBy" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="VendorPaymentID" ColumnName="VendorPaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Testimonials">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Testimonials">
+        <MappingFragment StoreEntitySet="tb_Testimonials">
+          <ScalarProperty Name="NoCount" ColumnName="NoCount" />
+          <ScalarProperty Name="YesCount" ColumnName="YesCount" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="TestimonialsID" ColumnName="TestimonialsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_DashboardUserRights">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_DashboardUserRights">
+        <MappingFragment StoreEntitySet="tb_DashboardUserRights">
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="SettingID" ColumnName="SettingID" />
+          <ScalarProperty Name="RightsID" ColumnName="RightsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_VendorSKU">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_VendorSKU">
+        <MappingFragment StoreEntitySet="tb_VendorSKU">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="VendorSKU" ColumnName="VendorSKU" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="VendorSKUID" ColumnName="VendorSKUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Memo">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Memo">
+        <MappingFragment StoreEntitySet="tb_Memo">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="MemoID" ColumnName="MemoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_MemoReply">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_MemoReply">
+        <MappingFragment StoreEntitySet="tb_MemoReply">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MemoID" ColumnName="MemoID" />
+          <ScalarProperty Name="ReplyID" ColumnName="ReplyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_RotatorHomebanner">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_RotatorHomebanner">
+        <MappingFragment StoreEntitySet="tb_RotatorHomebanner">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BannerTypeId" ColumnName="BannerTypeId" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="HomeRotatorId" ColumnName="HomeRotatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_RotatorHomeBannerDetail">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_RotatorHomeBannerDetail">
+        <MappingFragment StoreEntitySet="tb_RotatorHomeBannerDetail">
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="LinkTarget" ColumnName="LinkTarget" />
+          <ScalarProperty Name="IsMain" ColumnName="IsMain" />
+          <ScalarProperty Name="Pagination" ColumnName="Pagination" />
+          <ScalarProperty Name="HomeRotatorId" ColumnName="HomeRotatorId" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="BannerURL" ColumnName="BannerURL" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="BannerID" ColumnName="BannerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Order">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Order">
+        <MappingFragment StoreEntitySet="tb_Order">
+          <ScalarProperty Name="StorecreaditAmont" ColumnName="StorecreaditAmont" />
+          <ScalarProperty Name="Storecreaditno" ColumnName="Storecreaditno" />
+          <ScalarProperty Name="Callreference" ColumnName="Callreference" />
+          <ScalarProperty Name="PartnerNumber" ColumnName="PartnerNumber" />
+          <ScalarProperty Name="IsBackShip" ColumnName="IsBackShip" />
+          <ScalarProperty Name="BackEndGUID" ColumnName="BackEndGUID" />
+          <ScalarProperty Name="IsBackEnd" ColumnName="IsBackEnd" />
+          <ScalarProperty Name="ExportedDate" ColumnName="ExportedDate" />
+          <ScalarProperty Name="EbayTransactionID" ColumnName="EbayTransactionID" />
+          <ScalarProperty Name="IsOverStockProcess" ColumnName="IsOverStockProcess" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsYahooOrder" ColumnName="IsYahooOrder" />
+          <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+          <ScalarProperty Name="ShipName" ColumnName="ShipName" />
+          <ScalarProperty Name="BillName" ColumnName="BillName" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="RefStoreID" ColumnName="RefStoreID" />
+          <ScalarProperty Name="CouponCodeDescription" ColumnName="CouponCodeDescription" />
+          <ScalarProperty Name="ReviewReminderSentOn" ColumnName="ReviewReminderSentOn" />
+          <ScalarProperty Name="isfullFillment" ColumnName="isfullFillment" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="SalesAgentID" ColumnName="SalesAgentID" />
+          <ScalarProperty Name="IsPhoneOrder" ColumnName="IsPhoneOrder" />
+          <ScalarProperty Name="RefOrderID" ColumnName="RefOrderID" />
+          <ScalarProperty Name="InventoryWasReduced" ColumnName="InventoryWasReduced" />
+          <ScalarProperty Name="THUB_ACCOUNTING_REF" ColumnName="THUB_ACCOUNTING_REF" />
+          <ScalarProperty Name="THUB_POSTED_DATE" ColumnName="THUB_POSTED_DATE" />
+          <ScalarProperty Name="THUB_POSTED_TO_ACCOUNTING" ColumnName="THUB_POSTED_TO_ACCOUNTING" />
+          <ScalarProperty Name="SalesRepName" ColumnName="SalesRepName" />
+          <ScalarProperty Name="GiftWrapAmt" ColumnName="GiftWrapAmt" />
+          <ScalarProperty Name="isGiftWrap" ColumnName="isGiftWrap" />
+          <ScalarProperty Name="OrderNotes" ColumnName="OrderNotes" />
+          <ScalarProperty Name="AdjustmentCapturedOn" ColumnName="AdjustmentCapturedOn" />
+          <ScalarProperty Name="AdjustmentAmount" ColumnName="AdjustmentAmount" />
+          <ScalarProperty Name="AuthorizedAmount" ColumnName="AuthorizedAmount" />
+          <ScalarProperty Name="ChargeAmount" ColumnName="ChargeAmount" />
+          <ScalarProperty Name="RefundedAmount" ColumnName="RefundedAmount" />
+          <ScalarProperty Name="Referrer" ColumnName="Referrer" />
+          <ScalarProperty Name="ReferralLink" ColumnName="ReferralLink" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="ShippedOn" ColumnName="ShippedOn" />
+          <ScalarProperty Name="FraudedOn" ColumnName="FraudedOn" />
+          <ScalarProperty Name="VoidedOn" ColumnName="VoidedOn" />
+          <ScalarProperty Name="RefundedOn" ColumnName="RefundedOn" />
+          <ScalarProperty Name="CapturedOn" ColumnName="CapturedOn" />
+          <ScalarProperty Name="AuthorizedOn" ColumnName="AuthorizedOn" />
+          <ScalarProperty Name="Last4" ColumnName="Last4" />
+          <ScalarProperty Name="CartType" ColumnName="CartType" />
+          <ScalarProperty Name="RefundReason" ColumnName="RefundReason" />
+          <ScalarProperty Name="RefundTXResult" ColumnName="RefundTXResult" />
+          <ScalarProperty Name="RefundTXCommand" ColumnName="RefundTXCommand" />
+          <ScalarProperty Name="VoidTXResult" ColumnName="VoidTXResult" />
+          <ScalarProperty Name="VoidTXCommand" ColumnName="VoidTXCommand" />
+          <ScalarProperty Name="CaptureTXResult" ColumnName="CaptureTXResult" />
+          <ScalarProperty Name="CaptureTxCommand" ColumnName="CaptureTxCommand" />
+          <ScalarProperty Name="Cvc2Response" ColumnName="Cvc2Response" />
+          <ScalarProperty Name="AVSResult" ColumnName="AVSResult" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="ShippedVIA" ColumnName="ShippedVIA" />
+          <ScalarProperty Name="ShippingTrackingNumber" ColumnName="ShippingTrackingNumber" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="PaymentGateway" ColumnName="PaymentGateway" />
+          <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+          <ScalarProperty Name="TransactionCommand" ColumnName="TransactionCommand" />
+          <ScalarProperty Name="AuthorizationPNREF" ColumnName="AuthorizationPNREF" />
+          <ScalarProperty Name="AuthorizationResult" ColumnName="AuthorizationResult" />
+          <ScalarProperty Name="AuthorizationCode" ColumnName="AuthorizationCode" />
+          <ScalarProperty Name="OrderTotal" ColumnName="OrderTotal" />
+          <ScalarProperty Name="OrderShippingCosts" ColumnName="OrderShippingCosts" />
+          <ScalarProperty Name="OrderTax" ColumnName="OrderTax" />
+          <ScalarProperty Name="OrderSubtotal" ColumnName="OrderSubtotal" />
+          <ScalarProperty Name="CustomDiscount" ColumnName="CustomDiscount" />
+          <ScalarProperty Name="LevelDiscountAmount" ColumnName="LevelDiscountAmount" />
+          <ScalarProperty Name="LevelDiscountPercent" ColumnName="LevelDiscountPercent" />
+          <ScalarProperty Name="QuantityDiscountAmount" ColumnName="QuantityDiscountAmount" />
+          <ScalarProperty Name="GiftCertificateDiscountAmount" ColumnName="GiftCertificateDiscountAmount" />
+          <ScalarProperty Name="GiftCertiSerialNumber" ColumnName="GiftCertiSerialNumber" />
+          <ScalarProperty Name="CouponDiscountAmount" ColumnName="CouponDiscountAmount" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="CardExpirationYear" ColumnName="CardExpirationYear" />
+          <ScalarProperty Name="CardExpirationMonth" ColumnName="CardExpirationMonth" />
+          <ScalarProperty Name="CardVarificationCode" ColumnName="CardVarificationCode" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="CardName" ColumnName="CardName" />
+          <ScalarProperty Name="OkToEmail" ColumnName="OkToEmail" />
+          <ScalarProperty Name="ShippingMethod" ColumnName="ShippingMethod" />
+          <ScalarProperty Name="ShippingPhone" ColumnName="ShippingPhone" />
+          <ScalarProperty Name="ShippingCountry" ColumnName="ShippingCountry" />
+          <ScalarProperty Name="ShippingZip" ColumnName="ShippingZip" />
+          <ScalarProperty Name="ShippingState" ColumnName="ShippingState" />
+          <ScalarProperty Name="ShippingCity" ColumnName="ShippingCity" />
+          <ScalarProperty Name="ShippingSuite" ColumnName="ShippingSuite" />
+          <ScalarProperty Name="ShippingAddress2" ColumnName="ShippingAddress2" />
+          <ScalarProperty Name="ShippingAddress1" ColumnName="ShippingAddress1" />
+          <ScalarProperty Name="ShippingCompany" ColumnName="ShippingCompany" />
+          <ScalarProperty Name="ShippingFirstName" ColumnName="ShippingFirstName" />
+          <ScalarProperty Name="ShippingLastName" ColumnName="ShippingLastName" />
+          <ScalarProperty Name="ShippingEmail" ColumnName="ShippingEmail" />
+          <ScalarProperty Name="BillingPhone" ColumnName="BillingPhone" />
+          <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+          <ScalarProperty Name="BillingZip" ColumnName="BillingZip" />
+          <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+          <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+          <ScalarProperty Name="BillingSuite" ColumnName="BillingSuite" />
+          <ScalarProperty Name="BillingAddress2" ColumnName="BillingAddress2" />
+          <ScalarProperty Name="BillingAddress1" ColumnName="BillingAddress1" />
+          <ScalarProperty Name="BillingCompany" ColumnName="BillingCompany" />
+          <ScalarProperty Name="BillingLastName" ColumnName="BillingLastName" />
+          <ScalarProperty Name="BillingFirstName" ColumnName="BillingFirstName" />
+          <ScalarProperty Name="BillingEmail" ColumnName="BillingEmail" />
+          <ScalarProperty Name="BillingEqualsShipping" ColumnName="BillingEqualsShipping" />
+          <ScalarProperty Name="GiftPackNote" ColumnName="GiftPackNote" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ShoppingCardID" ColumnName="ShoppingCardID" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="OrderGUID" ColumnName="OrderGUID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_Order_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_Order_tb_Store" StoreEntitySet="tb_Order">
+      <EndProperty Name="tb_Order">
+        <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_ItemBanners">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ItemBanners">
+        <MappingFragment StoreEntitySet="tb_ItemBanners">
+          <ScalarProperty Name="Products" ColumnName="Products" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="BannerImage" ColumnName="BannerImage" />
+          <ScalarProperty Name="BannerUrl" ColumnName="BannerUrl" />
+          <ScalarProperty Name="BannerTitle" ColumnName="BannerTitle" />
+          <ScalarProperty Name="ItemBannerTypeID" ColumnName="ItemBannerTypeID" />
+          <ScalarProperty Name="ItemBannerID" ColumnName="ItemBannerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ItemBannerType">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ItemBannerType">
+        <MappingFragment StoreEntitySet="tb_ItemBannerType">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ImageSizeDescription" ColumnName="ImageSizeDescription" />
+          <ScalarProperty Name="BannerDescription" ColumnName="BannerDescription" />
+          <ScalarProperty Name="BannerTypeName" ColumnName="BannerTypeName" />
+          <ScalarProperty Name="ItemBannerTypeID" ColumnName="ItemBannerTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_MembershipDiscount">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_MembershipDiscount">
+        <MappingFragment StoreEntitySet="tb_MembershipDiscount">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+          <ScalarProperty Name="DiscountObjectID" ColumnName="DiscountObjectID" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="MembershipDiscountID" ColumnName="MembershipDiscountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_admin_Templaterights">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_admin_Templaterights">
+        <MappingFragment StoreEntitySet="tb_admin_Templaterights">
+          <ScalarProperty Name="TemplateID" ColumnName="TemplateID" />
+          <ScalarProperty Name="Rights" ColumnName="Rights" />
+          <ScalarProperty Name="UpdateOn" ColumnName="UpdateOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="isListed" ColumnName="isListed" />
+          <ScalarProperty Name="InnerRightsID" ColumnName="InnerRightsID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductFeature">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductFeature">
+        <MappingFragment StoreEntitySet="tb_ProductFeature">
+          <ScalarProperty Name="Createdon" ColumnName="Createdon" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FeatureId" ColumnName="FeatureId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_ProductFeature_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ProductFeature_tb_Store" StoreEntitySet="tb_ProductFeature">
+      <EndProperty Name="tb_ProductFeature">
+        <ScalarProperty Name="FeatureId" ColumnName="FeatureId" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="a_Test_Delete">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.a_Test_Delete">
+        <MappingFragment StoreEntitySet="a_Test_Delete">
+          <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_AdminChat">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_AdminChat">
+        <MappingFragment StoreEntitySet="tb_AdminChat">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="ReceiverID" ColumnName="ReceiverID" />
+          <ScalarProperty Name="SenderID" ColumnName="SenderID" />
+          <ScalarProperty Name="ChatID" ColumnName="ChatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_AdminInnerRights">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_AdminInnerRights">
+        <MappingFragment StoreEntitySet="tb_AdminInnerRights">
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="UpdateOn" ColumnName="UpdateOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="isListed" ColumnName="isListed" />
+          <ScalarProperty Name="InnerRightsID" ColumnName="InnerRightsID" />
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_AdminInnerRightsMaster">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_AdminInnerRightsMaster">
+        <MappingFragment StoreEntitySet="tb_AdminInnerRightsMaster">
+          <ScalarProperty Name="TabName" ColumnName="TabName" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="InnerRightsID" ColumnName="InnerRightsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_AppConfig_Live">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_AppConfig_Live">
+        <MappingFragment StoreEntitySet="tb_AppConfig_Live">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ConfigValue" ColumnName="ConfigValue" />
+          <ScalarProperty Name="ConfigName" ColumnName="ConfigName" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="AppConfigID" ColumnName="AppConfigID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ChangeOrderedShoppingCart">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ChangeOrderedShoppingCart">
+        <MappingFragment StoreEntitySet="tb_ChangeOrderedShoppingCart">
+          <ScalarProperty Name="OrderTax" ColumnName="OrderTax" />
+          <ScalarProperty Name="ReturnedFee" ColumnName="ReturnedFee" />
+          <ScalarProperty Name="ReturnedStarck" ColumnName="ReturnedStarck" />
+          <ScalarProperty Name="ShippingMethod" ColumnName="ShippingMethod" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+          <ScalarProperty Name="ShippingAmount" ColumnName="ShippingAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="subTotal" ColumnName="subTotal" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ChangeOrderShoppingCartItems">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ChangeOrderShoppingCartItems">
+        <MappingFragment StoreEntitySet="tb_ChangeOrderShoppingCartItems">
+          <ScalarProperty Name="RelatedproductID" ColumnName="RelatedproductID" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
+          <ScalarProperty Name="VariantPrice" ColumnName="VariantPrice" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Avail" ColumnName="Avail" />
+          <ScalarProperty Name="Direction" ColumnName="Direction" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="InventoryWasReduced" ColumnName="InventoryWasReduced" />
+          <ScalarProperty Name="VariantValues" ColumnName="VariantValues" />
+          <ScalarProperty Name="VariantNames" ColumnName="VariantNames" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ChosenSize" ColumnName="ChosenSize" />
+          <ScalarProperty Name="ChosenColor" ColumnName="ChosenColor" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderedShoppingCartID" ColumnName="OrderedShoppingCartID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_CheckoutProblems">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_CheckoutProblems">
+        <MappingFragment StoreEntitySet="tb_CheckoutProblems">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="ErrorPage" ColumnName="ErrorPage" />
+          <ScalarProperty Name="BrowserName" ColumnName="BrowserName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProblemID" ColumnName="ProblemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_eBayCategory">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_eBayCategory">
+        <MappingFragment StoreEntitySet="tb_eBayCategory">
+          <ScalarProperty Name="eBayCategoryID" ColumnName="eBayCategoryID" />
+          <ScalarProperty Name="ParentCategoryID" ColumnName="ParentCategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_eBayStoreCategory">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_eBayStoreCategory">
+        <MappingFragment StoreEntitySet="tb_eBayStoreCategory">
+          <ScalarProperty Name="eBayStoreCategoryID" ColumnName="eBayStoreCategoryID" />
+          <ScalarProperty Name="ParentStoreCategoryID" ColumnName="ParentStoreCategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedCategory">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedCategory">
+        <MappingFragment StoreEntitySet="tb_FeedCategory">
+          <ScalarProperty Name="RootCategoryID" ColumnName="RootCategoryID" />
+          <ScalarProperty Name="DisplayType" ColumnName="DisplayType" />
+          <ScalarProperty Name="CategoryIDt" ColumnName="CategoryIDt" />
+          <ScalarProperty Name="PriceRange" ColumnName="PriceRange" />
+          <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="Att_Id" ColumnName="Att_Id" />
+          <ScalarProperty Name="ToolTip" ColumnName="ToolTip" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="TaxClassID" ColumnName="TaxClassID" />
+          <ScalarProperty Name="QuantityDiscountID" ColumnName="QuantityDiscountID" />
+          <ScalarProperty Name="ParentCategoryID" ColumnName="ParentCategoryID" />
+          <ScalarProperty Name="SEName" ColumnName="SEName" />
+          <ScalarProperty Name="SETitle" ColumnName="SETitle" />
+          <ScalarProperty Name="SEDescription" ColumnName="SEDescription" />
+          <ScalarProperty Name="SEKeywords" ColumnName="SEKeywords" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedCategoryMapping">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedCategoryMapping">
+        <MappingFragment StoreEntitySet="tb_FeedCategoryMapping">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="ParentCategoryID" ColumnName="ParentCategoryID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FeedFieldValues_1">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FeedFieldValues_1">
+        <MappingFragment StoreEntitySet="tb_FeedFieldValues_1">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="FieldValue" ColumnName="FieldValue" />
+          <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+          <ScalarProperty Name="ValueID" ColumnName="ValueID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FontProduct">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FontProduct">
+        <MappingFragment StoreEntitySet="tb_FontProduct">
+          <ScalarProperty Name="CreationOn" ColumnName="CreationOn" />
+          <ScalarProperty Name="FontId" ColumnName="FontId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_FontTable">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_FontTable">
+        <MappingFragment StoreEntitySet="tb_FontTable">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="FontUse" ColumnName="FontUse" />
+          <ScalarProperty Name="FontDesc" ColumnName="FontDesc" />
+          <ScalarProperty Name="FontName" ColumnName="FontName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_GiftCardProduct">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_GiftCardProduct">
+        <MappingFragment StoreEntitySet="tb_GiftCardProduct">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="GiftCardProductID" ColumnName="GiftCardProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_HomeBannerGroup">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_HomeBannerGroup">
+        <MappingFragment StoreEntitySet="tb_HomeBannerGroup">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="Displayorder" ColumnName="Displayorder" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_HtmlText">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_HtmlText">
+        <MappingFragment StoreEntitySet="tb_HtmlText">
+          <ScalarProperty Name="HtmlType" ColumnName="HtmlType" />
+          <ScalarProperty Name="HtmlText" ColumnName="HtmlText" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_LockProducts">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_LockProducts">
+        <MappingFragment StoreEntitySet="tb_LockProducts">
+          <ScalarProperty Name="ordercustomcartId" ColumnName="ordercustomcartId" />
+          <ScalarProperty Name="IsPO" ColumnName="IsPO" />
+          <ScalarProperty Name="MarkUpgradeQuantity" ColumnName="MarkUpgradeQuantity" />
+          <ScalarProperty Name="UpgradePrice" ColumnName="UpgradePrice" />
+          <ScalarProperty Name="UpgradeQuantity" ColumnName="UpgradeQuantity" />
+          <ScalarProperty Name="MarkQuantity" ColumnName="MarkQuantity" />
+          <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+          <ScalarProperty Name="MarryProducts" ColumnName="MarryProducts" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="LockProductID" ColumnName="LockProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderedShoppingCart_backup">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderedShoppingCart_backup">
+        <MappingFragment StoreEntitySet="tb_OrderedShoppingCart_backup">
+          <ScalarProperty Name="ReturnedFee" ColumnName="ReturnedFee" />
+          <ScalarProperty Name="ReturnedStarck" ColumnName="ReturnedStarck" />
+          <ScalarProperty Name="RepeatOrderNo" ColumnName="RepeatOrderNo" />
+          <ScalarProperty Name="OrderTax" ColumnName="OrderTax" />
+          <ScalarProperty Name="GiftCertificateDiscountAmount" ColumnName="GiftCertificateDiscountAmount" />
+          <ScalarProperty Name="QuantityDiscountAmount" ColumnName="QuantityDiscountAmount" />
+          <ScalarProperty Name="CouponDiscountAmount" ColumnName="CouponDiscountAmount" />
+          <ScalarProperty Name="LevelDiscountAmount" ColumnName="LevelDiscountAmount" />
+          <ScalarProperty Name="ShippingMethod" ColumnName="ShippingMethod" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+          <ScalarProperty Name="ShippingAmount" ColumnName="ShippingAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="subTotal" ColumnName="subTotal" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderedShoppingCart_backup_Id" ColumnName="OrderedShoppingCart_backup_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderedShoppingCartItems_backup">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderedShoppingCartItems_backup">
+        <MappingFragment StoreEntitySet="tb_OrderedShoppingCartItems_backup">
+          <ScalarProperty Name="RelatedproductID" ColumnName="RelatedproductID" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
+          <ScalarProperty Name="Variantprice" ColumnName="Variantprice" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="RepeatOrderNo" ColumnName="RepeatOrderNo" />
+          <ScalarProperty Name="Avail" ColumnName="Avail" />
+          <ScalarProperty Name="Direction" ColumnName="Direction" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="InventoryWasReduced" ColumnName="InventoryWasReduced" />
+          <ScalarProperty Name="VariantValues" ColumnName="VariantValues" />
+          <ScalarProperty Name="VariantNames" ColumnName="VariantNames" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ChosenSize" ColumnName="ChosenSize" />
+          <ScalarProperty Name="ChosenColor" ColumnName="ChosenColor" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderedShoppingCartID" ColumnName="OrderedShoppingCartID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OrderedShoppingCart_backup_Id" ColumnName="OrderedShoppingCart_backup_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderLog">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderLog">
+        <MappingFragment StoreEntitySet="tb_OrderLog">
+          <ScalarProperty Name="LogBy" ColumnName="LogBy" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="OrderLogID" ColumnName="OrderLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderLogStatus">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderLogStatus">
+        <MappingFragment StoreEntitySet="tb_OrderLogStatus">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_OrderStatusColor">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_OrderStatusColor">
+        <MappingFragment StoreEntitySet="tb_OrderStatusColor">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_PriceRange">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_PriceRange">
+        <MappingFragment StoreEntitySet="tb_PriceRange">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="ProductCount" ColumnName="ProductCount" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
+          <ScalarProperty Name="SEName" ColumnName="SEName" />
+          <ScalarProperty Name="PriceRangeName" ColumnName="PriceRangeName" />
+          <ScalarProperty Name="PriceRangeId" ColumnName="PriceRangeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductAssembly">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductAssembly">
+        <MappingFragment StoreEntitySet="tb_ProductAssembly">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="RefProductID" ColumnName="RefProductID" />
+          <ScalarProperty Name="ProductAssemblyID" ColumnName="ProductAssemblyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductColor">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductColor">
+        <MappingFragment StoreEntitySet="tb_ProductColor">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductFabricCode">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductFabricCode">
+        <MappingFragment StoreEntitySet="tb_ProductFabricCode">
+          <ScalarProperty Name="FabricVendorIds" ColumnName="FabricVendorIds" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="FabricCodeId" ColumnName="FabricCodeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductFabricDylot">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductFabricDylot">
+        <MappingFragment StoreEntitySet="tb_ProductFabricDylot">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="QtyonHand" ColumnName="QtyonHand" />
+          <ScalarProperty Name="Dylot" ColumnName="Dylot" />
+          <ScalarProperty Name="FebricCodeId" ColumnName="FebricCodeId" />
+          <ScalarProperty Name="FebricDylotId" ColumnName="FebricDylotId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductFabricType">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductFabricType">
+        <MappingFragment StoreEntitySet="tb_ProductFabricType">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="FabricTypename" ColumnName="FabricTypename" />
+          <ScalarProperty Name="FabricTypeID" ColumnName="FabricTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductFabricWidth">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductFabricWidth">
+        <MappingFragment StoreEntitySet="tb_ProductFabricWidth">
+          <ScalarProperty Name="NoOfDays" ColumnName="NoOfDays" />
+          <ScalarProperty Name="AllowQty" ColumnName="AllowQty" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="AvailableDate" ColumnName="AvailableDate" />
+          <ScalarProperty Name="AlertQty" ColumnName="AlertQty" />
+          <ScalarProperty Name="NextOrderQty" ColumnName="NextOrderQty" />
+          <ScalarProperty Name="QtyOnHand" ColumnName="QtyOnHand" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="FabricCodeID" ColumnName="FabricCodeID" />
+          <ScalarProperty Name="FabricWidthID" ColumnName="FabricWidthID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductOptionsPrice">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductOptionsPrice">
+        <MappingFragment StoreEntitySet="tb_ProductOptionsPrice">
+          <ScalarProperty Name="AdditionalPricePercentage" ColumnName="AdditionalPricePercentage" />
+          <ScalarProperty Name="AdditionalPrice" ColumnName="AdditionalPrice" />
+          <ScalarProperty Name="Createdon" ColumnName="Createdon" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductOptionsId" ColumnName="ProductOptionsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductRomanShadeYardage">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductRomanShadeYardage">
+        <MappingFragment StoreEntitySet="tb_ProductRomanShadeYardage">
+          <ScalarProperty Name="BlackoutLining" ColumnName="BlackoutLining" />
+          <ScalarProperty Name="LinedInterlined" ColumnName="LinedInterlined" />
+          <ScalarProperty Name="Lined" ColumnName="Lined" />
+          <ScalarProperty Name="Duties" ColumnName="Duties" />
+          <ScalarProperty Name="MechanismOption" ColumnName="MechanismOption" />
+          <ScalarProperty Name="ManufuacturingCost" ColumnName="ManufuacturingCost" />
+          <ScalarProperty Name="FabricPerYardCost" ColumnName="FabricPerYardCost" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="LengthStandardAllowance" ColumnName="LengthStandardAllowance" />
+          <ScalarProperty Name="WidthStandardAllowance" ColumnName="WidthStandardAllowance" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="ShadeName" ColumnName="ShadeName" />
+          <ScalarProperty Name="RomanShadeId" ColumnName="RomanShadeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductSearchType">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductSearchType">
+        <MappingFragment StoreEntitySet="tb_ProductSearchType">
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="Createdon" ColumnName="Createdon" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="PerInch" ColumnName="PerInch" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="SearchType" ColumnName="SearchType" />
+          <ScalarProperty Name="SearchValue" ColumnName="SearchValue" />
+          <ScalarProperty Name="SearchId" ColumnName="SearchId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductStylePrice">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductStylePrice">
+        <MappingFragment StoreEntitySet="tb_ProductStylePrice">
+          <ScalarProperty Name="DividedWidth" ColumnName="DividedWidth" />
+          <ScalarProperty Name="FabricWidth" ColumnName="FabricWidth" />
+          <ScalarProperty Name="FabricInch" ColumnName="FabricInch" />
+          <ScalarProperty Name="YardHeaderandhem" ColumnName="YardHeaderandhem" />
+          <ScalarProperty Name="Createdon" ColumnName="Createdon" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="PerInch" ColumnName="PerInch" />
+          <ScalarProperty Name="AdditionalPrice" ColumnName="AdditionalPrice" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductStyleId" ColumnName="ProductStyleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductTypeDelivery">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductTypeDelivery">
+        <MappingFragment StoreEntitySet="tb_ProductTypeDelivery">
+          <ScalarProperty Name="SupportedProductType" ColumnName="SupportedProductType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="ProductTypeDeliveryID" ColumnName="ProductTypeDeliveryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ProductVendorSKU">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ProductVendorSKU">
+        <MappingFragment StoreEntitySet="tb_ProductVendorSKU">
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="VendorSKU" ColumnName="VendorSKU" />
+          <ScalarProperty Name="VendorSKUID" ColumnName="VendorSKUID" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductVendorSKUID" ColumnName="ProductVendorSKUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_PurchaseOrder">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_PurchaseOrder">
+        <MappingFragment StoreEntitySet="tb_PurchaseOrder">
+          <ScalarProperty Name="ProblemDesc" ColumnName="ProblemDesc" />
+          <ScalarProperty Name="ProblemType" ColumnName="ProblemType" />
+          <ScalarProperty Name="IsProblem" ColumnName="IsProblem" />
+          <ScalarProperty Name="Shipping" ColumnName="Shipping" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Adjustments" ColumnName="Adjustments" />
+          <ScalarProperty Name="PaymentComplete" ColumnName="PaymentComplete" />
+          <ScalarProperty Name="PoAmount" ColumnName="PoAmount" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="AdditionalCost" ColumnName="AdditionalCost" />
+          <ScalarProperty Name="PODate" ColumnName="PODate" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ReturnItem">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ReturnItem">
+        <MappingFragment StoreEntitySet="tb_ReturnItem">
+          <ScalarProperty Name="OrderedCustomCartID" ColumnName="OrderedCustomCartID" />
+          <ScalarProperty Name="CustomCartID" ColumnName="CustomCartID" />
+          <ScalarProperty Name="MailLogID" ColumnName="MailLogID" />
+          <ScalarProperty Name="isReturnrequest" ColumnName="isReturnrequest" />
+          <ScalarProperty Name="RetunitemNotes" ColumnName="RetunitemNotes" />
+          <ScalarProperty Name="ReturnType" ColumnName="ReturnType" />
+          <ScalarProperty Name="IsReturn" ColumnName="IsReturn" />
+          <ScalarProperty Name="ReturnFee" ColumnName="ReturnFee" />
+          <ScalarProperty Name="ReturnImages" ColumnName="ReturnImages" />
+          <ScalarProperty Name="ReturnNotes" ColumnName="ReturnNotes" />
+          <ScalarProperty Name="isArrived" ColumnName="isArrived" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="AdditionalInformation" ColumnName="AdditionalInformation" />
+          <ScalarProperty Name="ReturnReason" ColumnName="ReturnReason" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="CustomerEMail" ColumnName="CustomerEMail" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="OrderedNumber" ColumnName="OrderedNumber" />
+          <ScalarProperty Name="OrderedCustomerID" ColumnName="OrderedCustomerID" />
+          <ScalarProperty Name="ReturnItemID" ColumnName="ReturnItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ReviewCount">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ReviewCount">
+        <MappingFragment StoreEntitySet="tb_ReviewCount">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="Yes" ColumnName="Yes" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+          <ScalarProperty Name="RatingCountID" ColumnName="RatingCountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ReviewInappropriateRaring">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ReviewInappropriateRaring">
+        <MappingFragment StoreEntitySet="tb_ReviewInappropriateRaring">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="LinkContent" ColumnName="LinkContent" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="InappropriateRaringID" ColumnName="InappropriateRaringID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_RMAmapping">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_RMAmapping">
+        <MappingFragment StoreEntitySet="tb_RMAmapping">
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="OldorderNumber" ColumnName="OldorderNumber" />
+          <ScalarProperty Name="Rmaid" ColumnName="Rmaid" />
+          <ScalarProperty Name="RmaMapping" ColumnName="RmaMapping" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_spBoxDetails">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_spBoxDetails">
+        <MappingFragment StoreEntitySet="tb_spBoxDetails">
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="ProofNumber" ColumnName="ProofNumber" />
+          <ScalarProperty Name="ProofType" ColumnName="ProofType" />
+          <ScalarProperty Name="IsProofProvided" ColumnName="IsProofProvided" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SPBoxType" ColumnName="SPBoxType" />
+          <ScalarProperty Name="SPBoxNumber" ColumnName="SPBoxNumber" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="SPBoxID" ColumnName="SPBoxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Timestamplog">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Timestamplog">
+        <MappingFragment StoreEntitySet="tb_Timestamplog">
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Apptype" ColumnName="Apptype" />
+          <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+          <ScalarProperty Name="refnumber" ColumnName="refnumber" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Createdby" ColumnName="Createdby" />
+          <ScalarProperty Name="TimeStampId" ColumnName="TimeStampId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Tool_Category">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Tool_Category">
+        <MappingFragment StoreEntitySet="tb_Tool_Category">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Tool_Shape">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Tool_Shape">
+        <MappingFragment StoreEntitySet="tb_Tool_Shape">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShapeID" ColumnName="ShapeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_UPCMaster">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_UPCMaster">
+        <MappingFragment StoreEntitySet="tb_UPCMaster">
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="UPC" ColumnName="UPC" />
+          <ScalarProperty Name="UPCID" ColumnName="UPCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_UPCMasterReal">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_UPCMasterReal">
+        <MappingFragment StoreEntitySet="tb_UPCMasterReal">
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="UPC" ColumnName="UPC" />
+          <ScalarProperty Name="UPCID" ColumnName="UPCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_userrights">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_userrights">
+        <MappingFragment StoreEntitySet="tb_userrights">
+          <ScalarProperty Name="moduleid" ColumnName="moduleid" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserRightsId" ColumnName="UserRightsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Users">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Users">
+        <MappingFragment StoreEntitySet="tb_Users">
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_VendorPaymentPurchaseOrder">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_VendorPaymentPurchaseOrder">
+        <MappingFragment StoreEntitySet="tb_VendorPaymentPurchaseOrder">
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+          <ScalarProperty Name="VendorPaymentID" ColumnName="VendorPaymentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_VendorQuoteReply">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_VendorQuoteReply">
+        <MappingFragment StoreEntitySet="tb_VendorQuoteReply">
+          <ScalarProperty Name="VendorQuoteRequestID" ColumnName="VendorQuoteRequestID" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="ProductOption" ColumnName="ProductOption" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="IsShipped" ColumnName="IsShipped" />
+          <ScalarProperty Name="AvailableDays" ColumnName="AvailableDays" />
+          <ScalarProperty Name="QuoteGivenOn" ColumnName="QuoteGivenOn" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="RefProductID" ColumnName="RefProductID" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="VendorQuoteReplyID" ColumnName="VendorQuoteReplyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_VendorQuoteRequest">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_VendorQuoteRequest">
+        <MappingFragment StoreEntitySet="tb_VendorQuoteRequest">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="MailLogid" ColumnName="MailLogid" />
+          <ScalarProperty Name="RequestedOn" ColumnName="RequestedOn" />
+          <ScalarProperty Name="VendorQuoteRequestID" ColumnName="VendorQuoteRequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_VendorQuoteRequestDetails">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_VendorQuoteRequestDetails">
+        <MappingFragment StoreEntitySet="tb_VendorQuoteRequestDetails">
+          <ScalarProperty Name="MailLogid" ColumnName="MailLogid" />
+          <ScalarProperty Name="ProductOption" ColumnName="ProductOption" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="VendorQuoteRequestID" ColumnName="VendorQuoteRequestID" />
+          <ScalarProperty Name="VendorQuoteReqDetailsID" ColumnName="VendorQuoteReqDetailsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_WareHouseMail">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_WareHouseMail">
+        <MappingFragment StoreEntitySet="tb_WareHouseMail">
+          <ScalarProperty Name="VendorAddress" ColumnName="VendorAddress" />
+          <ScalarProperty Name="EMailBCC" ColumnName="EMailBCC" />
+          <ScalarProperty Name="EmailCC" ColumnName="EmailCC" />
+          <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+          <ScalarProperty Name="Createdon" ColumnName="Createdon" />
+          <ScalarProperty Name="Filepath" ColumnName="Filepath" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+          <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+          <ScalarProperty Name="WareHouseMailID" ColumnName="WareHouseMailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_WareHouseProduct">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_WareHouseProduct">
+        <MappingFragment StoreEntitySet="tb_WareHouseProduct">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Inventory" ColumnName="Inventory" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="WareHouseID" ColumnName="WareHouseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_WareHouseProductInventory">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_WareHouseProductInventory">
+        <MappingFragment StoreEntitySet="tb_WareHouseProductInventory">
+          <ScalarProperty Name="PreferredLocation" ColumnName="PreferredLocation" />
+          <ScalarProperty Name="Inventory" ColumnName="Inventory" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="WareHouseID" ColumnName="WareHouseID" />
+          <ScalarProperty Name="ProductInventoryID" ColumnName="ProductInventoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_WareHouseProductVariantInventory">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_WareHouseProductVariantInventory">
+        <MappingFragment StoreEntitySet="tb_WareHouseProductVariantInventory">
+          <ScalarProperty Name="PreferredLocation" ColumnName="PreferredLocation" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Inventory" ColumnName="Inventory" />
+          <ScalarProperty Name="VariantValueID" ColumnName="VariantValueID" />
+          <ScalarProperty Name="VariantID" ColumnName="VariantID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="WareHouseID" ColumnName="WareHouseID" />
+          <ScalarProperty Name="ProductVariantInventoryID" ColumnName="ProductVariantInventoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Z_Catalog">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Z_Catalog">
+        <MappingFragment StoreEntitySet="tb_Z_Catalog">
+          <ScalarProperty Name="YahooID" ColumnName="YahooID" />
+          <ScalarProperty Name="giftcertificate" ColumnName="giftcertificate" />
+          <ScalarProperty Name="orderable" ColumnName="orderable" />
+          <ScalarProperty Name="dimensions" ColumnName="dimensions" />
+          <ScalarProperty Name="upc" ColumnName="upc" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="saleprice" ColumnName="saleprice" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="availability" ColumnName="availability" />
+          <ScalarProperty Name="taxable" ColumnName="taxable" />
+          <ScalarProperty Name="MetaTags" ColumnName="MetaTags" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Z_Catalog1">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Z_Catalog1">
+        <MappingFragment StoreEntitySet="tb_Z_Catalog1">
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="CaptionMain" ColumnName="CaptionMain" />
+          <ScalarProperty Name="Visualproperties" ColumnName="Visualproperties" />
+          <ScalarProperty Name="featuresCaption" ColumnName="featuresCaption" />
+          <ScalarProperty Name="YahooID" ColumnName="YahooID" />
+          <ScalarProperty Name="giftcertificate" ColumnName="giftcertificate" />
+          <ScalarProperty Name="orderable" ColumnName="orderable" />
+          <ScalarProperty Name="dimensions" ColumnName="dimensions" />
+          <ScalarProperty Name="upc" ColumnName="upc" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="saleprice" ColumnName="saleprice" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="availability" ColumnName="availability" />
+          <ScalarProperty Name="taxable" ColumnName="taxable" />
+          <ScalarProperty Name="MetaTags" ColumnName="MetaTags" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Z_Product_Cat_march">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_Z_Product_Cat_march">
+        <MappingFragment StoreEntitySet="tb_Z_Product_Cat_march">
+          <ScalarProperty Name="CatID3" ColumnName="CatID3" />
+          <ScalarProperty Name="CatID2" ColumnName="CatID2" />
+          <ScalarProperty Name="CatID1" ColumnName="CatID1" />
+          <ScalarProperty Name="Category3" ColumnName="Category3" />
+          <ScalarProperty Name="Category2" ColumnName="Category2" />
+          <ScalarProperty Name="Category1" ColumnName="Category1" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ID1" ColumnName="ID1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ZCatSheet1">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ZCatSheet1">
+        <MappingFragment StoreEntitySet="tb_ZCatSheet1">
+          <ScalarProperty Name="CatID3" ColumnName="CatID3" />
+          <ScalarProperty Name="CatID2" ColumnName="CatID2" />
+          <ScalarProperty Name="CatID1" ColumnName="CatID1" />
+          <ScalarProperty Name="Category3" ColumnName="Category3" />
+          <ScalarProperty Name="Category2" ColumnName="Category2" />
+          <ScalarProperty Name="Category1" ColumnName="Category1" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tb_GiftCardProduct_tb_Store" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_GiftCardProduct_tb_Store" StoreEntitySet="tb_GiftCardProduct">
+      <EndProperty Name="tb_GiftCardProduct">
+        <ScalarProperty Name="GiftCardProductID" ColumnName="GiftCardProductID" />
+      </EndProperty>
+      <EndProperty Name="tb_Store">
+        <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+      </EndProperty>
+      <Condition ColumnName="StoreID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_tb_ProductFabricCode_tb_ProductFabricType" TypeName="RedTag_CCTV_Ecomm_DBModel.FK_tb_ProductFabricCode_tb_ProductFabricType" StoreEntitySet="tb_ProductFabricCode">
+      <EndProperty Name="tb_ProductFabricCode">
+        <ScalarProperty Name="FabricCodeId" ColumnName="FabricCodeId" />
+      </EndProperty>
+      <EndProperty Name="tb_ProductFabricType">
+        <ScalarProperty Name="FabricTypeID" ColumnName="FabricTypeID" />
+      </EndProperty>
+      <Condition ColumnName="FabricTypeID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tb_HeaderText">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_HeaderText">
+        <MappingFragment StoreEntitySet="tb_HeaderText">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="HeaderText" ColumnName="HeaderText" />
+          <ScalarProperty Name="HeaderID" ColumnName="HeaderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ContactEmail">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_ContactEmail">
+        <MappingFragment StoreEntitySet="tb_ContactEmail">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_StoreCredit">
+      <EntityTypeMapping TypeName="RedTag_CCTV_Ecomm_DBModel.tb_StoreCredit">
+        <MappingFragment StoreEntitySet="tb_StoreCredit">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="StoreCreditAmount" ColumnName="StoreCreditAmount" />
+          <ScalarProperty Name="StoreCredit" ColumnName="StoreCredit" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

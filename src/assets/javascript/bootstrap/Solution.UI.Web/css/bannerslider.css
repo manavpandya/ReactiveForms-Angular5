@@ -1,0 +1,57 @@
+.pgwSlider{width:100%;}
+.pgwSlider .ps-current{float:right;width:74%;overflow:hidden;height:inherit;position:relative;}
+.pgwSlider .ps-current img{max-width:100%;min-width:100%;height:auto;display:block;}
+ul.pgwSlider, .pgwSlider > ul{float:left;width:25%;padding:0;list-style:none;margin:0;}
+ul.pgwSlider > li, .pgwSlider > ul > li{height:50px;padding:5px;margin-bottom:6px;overflow:hidden;position:relative;}
+ul.pgwSlider > li:last-child, .pgwSlider > ul > li:last-child{margin-bottom:0;}
+ul.pgwSlider > li img, .pgwSlider > ul > li img{width:100%;min-height:100%;display:block;}
+.opacity{float:left;width:100%;height:100%;background:url(/images/active-transperant.png) repeat left top;font-size:18px;color:#fff;text-align:center;font-family:Arial, Helvetica, sans-serif;}
+.opacity label{float:left;width:100%;text-align:center;color:#464646 !important;font-size:20px !important;line-height:20px;overflow:hidden;max-height:20px;}
+.opacity span{float:left;width:100%;text-align:center;color:#464646 !important;font-size:20px !important;padding:2% 0 0 0;line-height:25px;max-height:50px;overflow:hidden;}
+.opacity strong{float:left;width:100%;font-weight:normal;text-align:center;color:#848484 !important;font-size:36px !important;line-height:60px;max-height:60px;overflow:hidden;}
+@media screen and (max-width:1024px) and (min-width:1000px){.opacity span{font-size:15px !important;padding:2% 0 0 0;line-height:15px !important;}
+.opacity strong{font-size:30px !important;line-height:32px !important;}
+}
+@media screen and (max-width:999px) and (min-width:980px){.opacity span{font-size:15px !important;padding:2% 0 0 0;line-height:15px !important;}
+.opacity strong{font-size:30px !important;line-height:32px !important;}
+}
+@media screen and (max-width:979px) and (min-width:920px){.opacity label{font-size:16px !important;}
+.opacity span{font-size:17px !important;padding:2% 0 0 0;line-height:15px !important;}
+.opacity strong{font-size:20px !important;line-height:16px !important;}
+}
+@media screen and (max-width:919px) and (min-width:768px){.opacity label{font-size:12px !important;}
+.opacity span{font-size:14px !important;padding:2% 0 0 0;line-height:15px !important;}
+.opacity strong{font-size:16px !important;line-height:16px !important;}
+}
+@media screen and (max-width:767px) and (min-width:668px){.opacity label{font-size:12px !important;}
+.opacity span{font-size:13px !important;padding:5% 0 0 0;line-height:15px !important;}
+.opacity strong{font-size:15px !important;line-height:15px !important;}
+}
+@media screen and (max-width:667px) and (min-width:568px){.opacity label{font-size:13px !important;}
+.opacity span{font-size:14px !important;padding:5% 0 0 0;line-height:15px !important;}
+.opacity strong{font-size:25px !important;line-height:25px !important;}
+}
+@media screen and (max-width:567px) and (min-width:481px){.opacity label{font-size:12px !important;}
+.opacity span{font-size:12px !important;padding:0;line-height:15px !important;}
+.opacity strong{font-size:20px !important;line-height:20px !important;}
+}
+@media (max-width:480px){.pgwSlider .ps-current{margin-bottom:6px;}
+.pgwSlider .ps-current img{width:100%;min-height:inherit;}
+.pgwSlider .ps-current, ul.pgwSlider, .pgwSlider > ul{width:100%;}
+ul.pgwSlider > li, .pgwSlider > ul > li{float:left;min-height:50px;max-height:70px;min-width:20%;}
+ul.pgwSlider > li span, .pgwSlider > ul > li span{white-space:nowrap;}
+.opacity label{font-size:14px !important;}
+.opacity span{font-size:14px !important;padding:0;line-height:15px !important;}
+.opacity strong{font-size:24px !important;line-height:20px !important;}
+}
+@media (min-width:481px){ul.pgwSlider > li, .pgwSlider > ul > li{width:95% !important;}
+}
+@media (max-width:430px){.pgwSlider .ps-current{margin-bottom:6px;}
+.pgwSlider .ps-current img{width:100%;min-height:inherit;}
+.pgwSlider .ps-current, ul.pgwSlider, .pgwSlider > ul{width:100%;}
+ul.pgwSlider > li, .pgwSlider > ul > li{float:left;min-height:50px;max-height:70px;min-width:20%;}
+ul.pgwSlider > li span, .pgwSlider > ul > li span{white-space:nowrap;}
+.opacity label{font-size:9px !important;}
+.opacity span{font-size:10px !important;padding:0;line-height:12px !important;}
+.opacity strong{font-size:16px !important;line-height:16px !important;}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <GetProductResponse />
+  <PartialFailure>
+    <Error id="VCCH-VET1203">
+      <Message>The product you submitted does not exist</Message>
+      <Type>INVALID_DATA</Type>
+    </Error>
+  </PartialFailure>
+</Response>

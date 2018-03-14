@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Failure>
+    <Error>
+      <Message>Could not find authenticator with key: 6C206CF4-D2D5-4E5D-A935-378511E3B058 for merchant: 1710</Message>
+      <Type>INVALID_REQUEST</Type>
+    </Error>
+  </Failure>
+</Response>

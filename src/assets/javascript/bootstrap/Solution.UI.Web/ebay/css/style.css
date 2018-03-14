@@ -1,0 +1,72 @@
+body{margin:0 auto; padding:0; color:#000; font-family:Arial, Helvetica, sans-serif; background:#fff; font-size:12px;}
+h1, h2, h3, h4, h5, h6, p{margin:0 auto; padding:0; text-align:left; font-weight:normal;}
+img, form, input{border:none; margin:0 auto; padding:0; outline:none;}
+a{text-decoration:none; cursor:pointer; outline:none;}
+.img-left{float:left; padding:0;}
+.img-right{float:right; padding:0;}
+#doc-width{width:1000px; margin:0 auto; padding:0;}
+#header-part{float:left; margin:0; padding:0; width:1000px;}
+.header-row1{float:left; margin:0; padding:0; width:1000px; height:113px;}
+.logo{float:left; margin:0; padding:15px 0 0 15px;}
+.affordable-luxury{float:left; margin:0; padding:40px 0 0; width:730px; color:#777; font-family:'Ropa Sans', sans-serif; font-size:30px; text-transform:uppercase; text-align:center;}
+.money-back-logo{float:right; margin:0; padding:12px 0 0; width:100px;}
+.header-row2{float:left; margin:0; padding:0; width:1000px; height:42px; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd;}
+.header-row2 ul{float:left; margin:0; padding:0 250px; list-style:none; width:500px;}
+.header-row2 ul li{float:left; margin:0; padding:0; font-family:'Ropa Sans', sans-serif; list-style:none; font-size:16px; text-transform:uppercase; font-weight:bold; line-height:42px;}
+.header-row2 ul li a{float:left; margin:0 15px; padding:0; color:#333333;}
+#content-width{float:left; margin:0; padding:10px 0; width:1000px;}
+.content-left{float:left; margin:0; padding:0 0 0 10px; width:220px;}
+.content-left-title{float:left; margin:0; padding:0; width:218px; border:1px solid #ddd;}
+.content-left-title h2{float:left; margin:0; padding:10px 0 10px 10px; font-size:13px; color:#333333; text-transform:uppercase; font-weight:bold;}
+.content-left-menu{float:left; margin:0; padding:0; width:220px;}
+.content-left-menu ul{float:left; margin:0; padding:0; list-style:none; width:220px;}
+.content-left-menu ul li{float:left; margin:0; padding:10px 0 5px 10px; list-style:none; font-size:13px; text-transform:uppercase; width:200px;}
+.content-left-menu ul li a{float:left; margin:0; padding:0 0 0 12px; color:#777; background:url(../images/bullet.jpg) no-repeat left 3px;}
+.content-left-menu ul li a:hover{color:#777; text-decoration:underline;}
+ .add-to-cart a:hover{color:#b92127;}
+ .add-to-cart a{color:#848383;}
+ 
+.content-right{float:right; margin:0; padding:0; width:750px;}
+.item-page{float:left; margin:0; padding:0; width:750px;}
+.item-page-left{float:left; margin:0; padding:0; width:350px;}
+.item-page-right{float:right; margin:0; padding:0 10px 10px; width:380px;}
+.item-page-title{float:left; margin:0; padding:0; width:380px;}
+.item-page-title h1{float:left; margin:0; padding:0; color:#b92127; font-size:24px; text-transform:uppercase; font-weight:bold;}
+
+.item-page-right-title{float:left; margin:10px 0 0; padding:0; width:378px; border:1px solid #ddd;}
+.item-page-right-title h2{float:left; margin:0; padding:10px 0 10px 10px; font-size:13px; color:#333333; text-transform:uppercase; font-weight:bold;}
+.item-page-right p{float:left; margin:0; padding:10px; color:#777; font-size:13px; width:360px;}
+.item-page-right ul{float:left; margin:0; padding:0 10px; list-style:none; width:360px;}
+.item-page-right ul li{float:left; margin:0; padding:4px 0 0 12px; color:#777; font-size:13px; width:348px; background:url(../images/bullet.jpg) no-repeat left 8px;}
+.item-page-right ul li a{color:#777; text-decoration:underline;}
+.item-page-right ul li a:hover{color:#777; text-decoration:none;}
+
+.content-width-tabs{float:left; margin:20px 10px 0; padding:0; width:980px;}
+.tabing {float:left; height:30px;}
+.tabing ul {list-style:none; padding:0; margin:0; float:left;}
+.tabing ul li {list-style:none; float:left; background:url(../images/tab_left.jpg) left -34px no-repeat; padding-left:8px; height:30px; padding:0 0 0 3px; margin:0 10px 0 0;}
+.tabing ul li:hover {background:url(../images/tab_left.jpg) left top no-repeat;}
+.tabing ul li a {float:left; outline:none; margin-right:0px; text-decoration:none; background:url(../images/tab_right.jpg) right -34px no-repeat; padding:9px 15px 5px 10px; font-size:13px; text-transform:uppercase; font-weight:bold; color:#777; height:17px;}
+.tabing ul li a:hover {background:url(../images/tab_right.jpg) right 0 no-repeat; font-size:13px; color:#777; padding:9px 15px 5px 10px; text-transform:uppercase; font-weight:bold;}
+.tabing ul li:hover a {background:url(../images/tab_right.jpg) right 0 no-repeat; font-size:13px; color:#333; padding:9px 15px 5px 10px; text-transform:uppercase; font-weight:bold;}
+.tabing ul li.tabberactive {background:url(../images/tab_left.jpg) left top no-repeat;}
+.tabing ul li.tabberactive a {background:url(../images/tab_right.jpg) right 0 no-repeat; font-size:13px; color:#333; padding:9px 15px 5px 10px; text-transform:uppercase; font-weight:bold;}
+.tabberactive ul {list-style:none; padding:0; margin:0; float:left;}
+.tabberactive ul li {list-style:none; padding:0; margin:0;}
+.tabberactive a {background:url(../images/tab_left.jpg) no-repeat left 0px; padding:0 0 0 0px; float:left; color:#333; font-weight:bold;}
+.tabberactive a:hover {background:url(../images/tab_right.jpg) no-repeat right 0px; padding:0 5px 0 10px; float:left; color:#333; font-weight:bold;}
+.tabberlive .tabbertabhide {display:none;}
+.tabberlive .tabbertab {width:100%; float:left; position:relative; padding:5px 0; border-top:1px solid #eeeeee; min-height:360px;}
+.tabberlive .tabbertab h6 {display:none;}
+.tabberlive .tabbertabhide {display:none;}
+.tabberlive .tabbertab {width:100%; float:left; position:relative; padding:5px 0;}
+.tabberlive .tabbertab h6 {display:none;}
+.tabberlive .tabbertab p {font-size:13px; color:#777; margin:0; line-height:16px; padding:5px 0;}
+.tabberlive .tabbertab p span {font-size:13px; color:#333; margin:0; line-height:16px; padding:5px 0; font-weight:bold;}
+.tabbertab ul {padding:0px 0px 0px 10px; width:500px; margin:0px; float:left; list-style:none; font-size:11px; color:#000;}
+.tabbertab ul li {padding:5px 0px 3px 15px; float:left; width:500px; background:url(images/left_bullet.gif) no-repeat left 9px;}
+.tabbertab ul li ul {padding:0px; margin:0px;}
+.tabbertab ul li ul li {float:left; width:300px; padding-bottom:0px;}
+
+
+

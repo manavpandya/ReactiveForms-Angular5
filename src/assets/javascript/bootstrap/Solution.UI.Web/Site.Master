@@ -1,0 +1,980 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Solution.UI.Web.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/Controls/LeftMenu.ascx" TagName="LeftMenu" TagPrefix="uc1" %>
+<%@ Register Src="~/Controls/MiniCart.ascx" TagName="MiniCart" TagPrefix="ucMiniCart" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <%-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>--%>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <%-- <link rel="shortcut icon" href="/images/favicon.ico" />--%>
+    <%--    <script src="js/general.js?34344" type="text/javascript"></script>--%>
+    <%-- <script type="text/javascript" src="js/iepngfix_tilebg.js"></script>--%>
+    <%--<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic|Telex|Oxygen' rel='stylesheet'
+        type='text/css' />--%>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="msvalidate.01" content="282128F51A9978AD8936B2243A5D5E1B" />
+    <meta name="p:domain_verify" content="682603a315f35972f601852e86ff7606" />
+    <meta name="google-site-verification" content="R3F4fr_mDQAyDz3fjpdtjwPi6L8ba_SkbRV0zMMLL2E" />
+    <link href="/css/style.css?787823" rel="stylesheet" type="text/css" />
+<meta name='language' content='English' />
+  
+    
+    <link href="/css/menucss-new.css?66688" rel="stylesheet" type="text/css" />
+    <link rel="canonical" href="" runat="server" id="canonical" />
+    <%-- <script type="text/javascript" src="/js/menucore.js"></script>--%>
+
+    <%-- <script type="text/javascript" src="/js/contentslider.js"></script> --%>
+    <script language="javascript" src="/js/bubbletooltips.js" type="text/javascript" async></script>
+      <script type="text/javascript" src="/js/jquery.min.js" async></script>
+       <%--  <script type="text/javascript" src="/js/jquery-homebanner.js?444"></script>
+    <script type="text/javascript" src="/js/homebannerslider.js?333"></script> --%>
+    
+    <%--<script src="/js/jquery-1.3.2.js" type="text/javascript"></script>--%>
+    <style type="text/css">
+        #divInventoryCart {
+            color: #393939;
+            font-family: "museo_sans_300",Helvetica, "Helvetica Neue",Arial,sans-serif;
+            font-size: 12px;
+        }
+    </style>
+<script async="true" src="//17836.tctm.co/t.js"></script>
+    <script type="text/javascript">
+       // var $k = jQuery.noConflict(); $k(document).ready(function () { $k('.pgwSlider').pgwSlider(); });
+        
+        function hideshowdiv(id, id2) {
+            for (var i = 1; i < 90; i++) {
+                if (document.getElementById('divsubcat' + i) != null && i != id) {
+                    document.getElementById('divsubcat' + i).style.display = 'none';
+                }
+                else if (document.getElementById('divsubcat' + i) != null && i == id) {
+                    document.getElementById('divsubcat' + i).style.display = '';
+                }
+            }
+
+            var alllianchor = document.getElementById('menu_detail' + id2).getElementsByTagName('a');
+
+            for (var k = 0; k < alllianchor.length; k++) {
+                var alllianchor1 = alllianchor[k];
+                alllianchor1.removeAttribute("style");
+                alllianchor1.setAttribute('style', 'color:#000000');
+            }
+
+            var allli = document.getElementById('menu_detail' + id2).getElementsByTagName('li');
+            for (var j = 0; j < allli.length; j++) {
+                if (allli[j].id.toString() == 'lisub' + id.toString()) {
+                    var litag = allli[j];
+                    litag.className = 'liselectedhover';
+                    var alll = litag.getElementsByTagName('a');
+                    var tttt = alll[0];
+
+                    tttt.style.color = '#ffffff';
+
+                }
+                else {
+                    var litag = allli[j];
+                    litag.removeAttribute("class");
+                    litag.style.backgroundColor = '#fff';
+                    litag.className = '';
+                    var alll = litag.getElementsByTagName('a');
+                    var tttt = alll[0];
+                    tttt.style.color = '#000000 !important;';
+                    tttt.style.backgroundColor = '#fff';
+
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        /*  function jqueryfadeinout(id) {
+              $("#menu_detail" + id).fadeIn();
+              $("#menu_detail" + id).mouseleave(function () {
+                  $("#menu_detail" + id).fadeOut();
+              });
+              for (var i = 1; i < 12; i++) {
+                  if (document.getElementById('menu_detail' + i) != null && i != id) {
+                      $("#menu_detail" + i).fadeOut();
+                  }
+              }
+          }
+          function jqueryfadeout() {
+              for (var i = 1; i < 12; i++) {
+                  if (document.getElementById('menu_detail' + i) != null) {
+                      $("#menu_detail" + i).fadeOut();
+                  }
+              }
+          }*/
+    </script>
+    <script type="text/javascript">
+
+
+
+        function ShowModelSearch() {
+
+            // document.getElementById('header').style.zIndex = -1;
+
+
+            document.getElementById("diviframecontactus").style.display = 'none';
+            document.getElementById("diviframesearch").style.display = 'block';
+
+            if (document.getElementById("diviframesearch") != null) { document.getElementById("diviframesearch").innerHTML = ''; }
+            var link = "/SearchControl.aspx"
+            var iframe = document.createElement('iframe');
+            iframe.frameBorder = 0;
+            iframe.width = "730px";
+            iframe.height = "560px";
+            iframe.id = "frmsearch";
+            iframe.scrolling = "no";
+            iframe.frameborder = "0"
+            //iframe.setAttribute("src", link);
+            document.getElementById("diviframesearch").appendChild(iframe);
+            document.getElementById("diviframesearch").style.display = 'block';
+            document.getElementById("diviframecontactus").style.display = 'none';
+            iframe.src = "/SearchControl.aspx";
+
+
+            document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 1000001; top: 30px; padding: 0px;width:730px;height:560px;border:solid 1px #7d7d7d;");
+            document.getElementById('popupContactpricequote1').style.width = '730px';
+            document.getElementById('popupContactpricequote1').style.height = '560px';
+            //document.getElementById("frmsearch").style.width = '1440px';
+            //document.getElementById("frmsearch").style.height = '296px';
+
+            //document.getElementById("frmsearch").src = "/SearchControl.aspx";
+            //var ifr = document.getElementById("frmsearch");
+
+            //ifr.contentWindow.document.getElementById('mycarousel2').style.width = '92px';
+            //ifr.contentWindow.document.getElementById('mycarousel3').style.width = '180px';
+            //ifr.contentWindow.document.getElementById('mycarousel4').style.width = '180px';
+            //ifr.contentWindow.document.getElementById('mycarousel5').style.width = '180px';
+            //ifr.contentWindow.document.getElementById('mycarousel6').style.width = '180px';
+            //ifr.contentWindow.document.getElementById('mycarousel7').style.width = '185px';
+
+
+            //if(document.getElementById('ContentPlaceHolder1_hideIndexOptionDiv').innerHTML != "")
+            //{
+            //    document.getElementById('divcolorhtml').innerHTML = document.getElementById('ContentPlaceHolder1_hideIndexOptionDiv').innerHTML;
+            //}
+            //document.getElementById('ContentPlaceHolder1_hideIndexOptionDiv').innerHTML='';
+
+
+            window.scrollTo(0, 0);
+            centerPopupmaster(); loadPopupmaster();
+            // document.getElementById('btnreadmore').click();
+
+
+        }
+        function ShowModelSearchContactus() {
+
+
+            if (document.getElementById("diviframecontactus") != null) { $('#diviframecontactus').html(''); }
+            var link = "/Contactuspopup.aspx"
+            var iframe = document.createElement('iframe');
+            iframe.frameBorder = 0;
+            iframe.width = "1440px";
+            iframe.height = "296px";
+            iframe.id = "frmContactus";
+            iframe.scrolling = "no";
+            iframe.frameborder = "0"
+            //iframe.setAttribute("src", link);
+            document.getElementById("diviframecontactus").appendChild(iframe);
+            document.getElementById("diviframecontactus").style.display = 'block';
+            document.getElementById("diviframesearch").style.display = 'none';
+
+
+            // document.getElementById('header').style.zIndex = -1;
+            document.getElementById('popupContactpricequote1').removeAttribute("style");
+            document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 2000001; top: 0px; padding: 0px;width:600px;height:680px;background: none repeat scroll 0 0 rgba(3, 3, 3, 0.3) !important; padding: 10px !important;border:none !important;");
+            //document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 1000001; top: 30px; padding: 0px;width:1440px;height:800px;border:solid 1px #7d7d7d;");
+            document.getElementById('popupContactpricequote1').style.width = '600px';
+            document.getElementById('popupContactpricequote1').style.height = '680px';
+            document.getElementById('frmContactus').height = '680px';
+            document.getElementById('frmContactus').width = '625px';
+            document.getElementById("frmContactus").contentWindow.document.body.innerHTML = '';
+            document.getElementById("frmContactus").src = "/Contactuspopup.aspx";
+
+
+
+
+            //if(document.getElementById('ContentPlaceHolder1_hideIndexOptionDiv').innerHTML != "")
+            //{
+            //    document.getElementById('divcolorhtml').innerHTML = document.getElementById('ContentPlaceHolder1_hideIndexOptionDiv').innerHTML;
+            //}
+            //document.getElementById('ContentPlaceHolder1_hideIndexOptionDiv').innerHTML='';
+
+
+            window.scrollTo(0, 0);
+            centerPopupmaster(); loadPopupmaster();
+            // document.getElementById('btnreadmore').click();
+
+
+        }
+        function showfreeshipping() {
+            
+            var iframe = document.createElement('iframe');
+            iframe.frameBorder = 0;
+            iframe.width = "1440px";
+            iframe.height = "296px";
+            iframe.id = "frmfreeshipp";
+            iframe.scrolling = "auto";
+            iframe.frameborder = "0"
+            //iframe.setAttribute("src", link);
+            
+            if (document.getElementById("diviframesearch") != null) { $("#diviframesearch").html(''); }
+            document.getElementById("diviframesearch").appendChild(iframe);
+
+            document.getElementById("diviframesearch").style.display = 'block';
+            document.getElementById("diviframecontactus").style.display = 'none';
+           
+
+            document.getElementById('popupContactpricequote1').removeAttribute("style");
+            document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 2000001; top: 0px; padding: 0px;width:800px;height:680px;background: none repeat scroll 0 0 rgba(3, 3, 3, 0.3) !important; padding: 10px !important;border:none !important;");
+            //document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 1000001; top: 30px; padding: 0px;width:1440px;height:800px;border:solid 1px #7d7d7d;");
+            document.getElementById('popupContactpricequote1').style.width = '800px';
+            document.getElementById('popupContactpricequote1').style.height = '680px';
+            document.getElementById('frmfreeshipp').height = '680px';
+            document.getElementById('frmfreeshipp').width = '800px';
+            document.getElementById("frmfreeshipp").contentWindow.document.open();
+            document.getElementById("frmfreeshipp").contentWindow.document.close();
+            document.getElementById("frmfreeshipp").contentWindow.document.body.innerHTML = '';
+            document.getElementById("frmfreeshipp").contentWindow.document.body.innerHTML = '<link href="/css/style.css" rel="stylesheet" type="text/css" />' + document.getElementById('divfreehtml').innerHTML;
+             
+            window.scrollTo(0, 0);
+            centerPopupmaster(); loadPopupmaster();
+           // tabheaderhide('lifreeshipp', 'litradepartner');
+
+        }
+        function showtradeshipping() {
+            //if (document.getElementById('divtradepartner') != null) {
+
+            //    document.getElementById('backgroundfree').style.display = '';
+            //    document.getElementById('divtradepartner').style.display = '';
+
+            //}
+            //tabheaderhide('litradepartner', 'lifreeshipp');
+
+            if (document.getElementById("diviframesearch") != null) { $("#diviframesearch").html(''); }
+            var iframe = document.createElement('iframe');
+            iframe.frameBorder = 0;
+            iframe.width = "600px";
+            iframe.height = "680px";
+            iframe.id = "frmtrade";
+            iframe.scrolling = "auto";
+            iframe.frameborder = "0"
+            
+            document.getElementById("diviframesearch").appendChild(iframe);
+
+            document.getElementById("diviframesearch").style.display = 'block';
+            document.getElementById("diviframecontactus").style.display = 'none';
+
+
+            document.getElementById('popupContactpricequote1').removeAttribute("style");
+            document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 2000001; top: 0px; padding: 0px;width:600px;height:680px;background: none repeat scroll 0 0 rgba(3, 3, 3, 0.3) !important; padding: 10px !important;border:none !important;");
+            //document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 1000001; top: 30px; padding: 0px;width:1440px;height:800px;border:solid 1px #7d7d7d;");
+
+            document.getElementById('popupContactpricequote1').style.width = '600px';
+            document.getElementById('popupContactpricequote1').style.height = '680px';
+            document.getElementById('frmtrade').height = '680px';
+            document.getElementById('frmtrade').width = '600px';
+
+          
+
+            document.getElementById("frmtrade").contentWindow.document.open();
+            document.getElementById("frmtrade").contentWindow.document.close();
+            document.getElementById("frmtrade").contentWindow.document.body.innerHTML = '';
+            document.getElementById("frmtrade").contentWindow.document.body.innerHTML = '<link href="/css/style.css" rel="stylesheet" type="text/css" />' + document.getElementById('divtradehtml').innerHTML;
+            window.scrollTo(0, 0);
+            centerPopupmaster(); loadPopupmaster();
+        }
+
+        function tabheaderhide(id, id1) {
+
+            if (document.getElementById(id) != null) {
+
+                document.getElementById(id).className = 'active';
+            }
+            if (document.getElementById(id1) != null) {
+
+                document.getElementById(id1).className = '';
+            }
+
+        }
+        function OpenCenterWindow(pid, wi, he) {
+            var w = wi;
+            var h = he;
+            var left = (screen.width / 2) - (w / 2);
+            var top = (screen.height / 2) - (h / 2);
+            window.open(pid, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+        }
+    </script>
+    <script type="text/javascript">
+        function ChkInventoryUpdate(result) {
+            if (document.getElementById('divInventoryCart') != null) {
+                document.getElementById('divInventoryCart').innerHTML = result;
+                document.getElementById('divInventoryCart').style.display = '';
+            }
+        }
+
+        //$(document).ready(function () {
+        // // setupRotator();
+        //});
+        function setupRotator() {
+            setInterval('textRotate()', 5000);
+        }
+        function textRotate() {
+
+            var irota = document.getElementById('hdnrotator').value;
+            var alltext = document.getElementById('rotatebannertextall').getElementsByTagName('div');
+
+            if ((parseInt(irota) + 1) > alltext.length) {
+                $('#rotatebannertext').fadeOut();
+                irota = 0;
+                if (document.getElementById('divheder' + irota.toString()) != null) {
+                    document.getElementById('rotatebannertext').innerHTML = document.getElementById('divheder' + irota.toString()).innerHTML;
+                    $('#rotatebannertext').fadeIn();
+                }
+                irota = parseInt(irota) + 1;
+                document.getElementById('hdnrotator').value = irota;
+
+            }
+            else {
+                $('#rotatebannertext').fadeOut();
+
+                if (document.getElementById('divheder' + irota.toString()) != null) {
+
+
+                    document.getElementById('rotatebannertext').innerHTML = document.getElementById('divheder' + irota.toString()).innerHTML;
+                    $('#rotatebannertext').fadeIn();
+                }
+
+                irota = parseInt(irota) + 1;
+                document.getElementById('hdnrotator').value = irota;
+
+
+            }
+
+        }
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var bs = document.createElement('script');
+            bs.type = 'text/javascript';
+            bs.async = true;
+            bs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://d2so4705rl485y.cloudfront.net/widgets/tracker/tracker.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(bs, s);
+        })();
+    </script>
+
+ <script type="text/javascript">
+                
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-2756708-1', 'halfpricedrapes.com');
+                ga('require', 'displayfeatures');
+                ga('send', 'pageview');
+
+
+            </script>
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWMXP9" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-NWMXP9');</script>
+    <!-- End Google Tag Manager -->
+    <form id="form1" runat="server" defaultbutton="btnTemp">
+        <div id="wrapper">
+            <div id="doc-width">
+                <div id="content-width">
+                    <div id="hidehomebanner" runat="server">
+
+                        <asp:Literal ID="ltBanner" runat="server"></asp:Literal>
+                          <div class="banner-right">
+        	<%--<div class="banner-right-pt1"><a href="#" title=""><img src="/images/banner-right-1.jpg" alt="" title=""></a></div>
+            <div class="banner-right-pt2"><a href="#" title=""><img src="/images/banner-right-2.jpg" alt="" title=""></a></div>--%>
+                               <asp:Literal ID="ltrightBanner" runat="server"></asp:Literal>
+        </div>
+                          
+                        <input type="hidden" id="hdndesc1" runat="server" value="" />
+                        <input type="hidden" id="hdndesc2" runat="server" value="" />
+                        <input type="hidden" id="hdndesc3" runat="server" value="" />
+
+                        <div class="small-banner" id="hidesmallBanner" runat="server">
+
+
+
+                            <div class="index-banner-left">
+                                <a href="/NewArrival.aspx" title="New Arrivals">
+                                    <img src="images/index-banner-left.jpg" alt="New Arrivals" title="New Arrivals"></a>
+                            </div>
+                            <div class="index-banner-right">
+                                <a href="/BestSeller.aspx" title="Finest Selection of Curtains">
+                                    <img src="images/index-banner-right.jpg" alt="Finest Selection of Curtains" title="Finest Selection of Curtains"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <div id="header-part" style="left: 0;">
+                    <div class="header-row2">
+                        <div class="header-top-link">
+                            <div class="header-row2-right-pt0" id="hidePhone" runat="server">
+                                <p>
+                                    Call Toll Free: <span style="font-size: 20px; font-weight: bold; color: #FFFFFF !important;">
+                                        <%=Solution.Bussines.Components.Common.AppLogic.AppConfigs("StorePhoneNumber")%></span> <span style="color: #393939; text-transform: none; font-size: 12px; padding-left: 5px;" class="display-none"><%=Solution.Bussines.Components.Common.AppLogic.AppConfigs("HeaderContent")%></span>
+                                </p>
+                            </div>
+                            <ul>
+                                <%--  <li id="lifreeshipp" onclick="showfreeshipping();"><a href="javascript:void(0);">Free
+                            Shipping</a></li>--%>
+                                <li id="litradepartner" onclick="showtradeshipping();"><a href="javascript:void(0);">Trade &amp; Partner Program</a></li>
+                            </ul>
+                            <%--    <a href="/free-swatch.html" style="cursor:pointer;">
+                        <img src="/images/free-swatch.png" border="0" class="img-right" alt="FREE SWATCH"
+                            title="Free Swatch"/></a>--%>
+                        </div>
+                        
+                        <div class="logo">
+                            <a href="/index.aspx" title='Half Price Drapes'>
+                                <img src="/images/logo.png" alt='Half Price Drapes'
+                                    title='Half Price Drapes'></a>
+                        </div>
+                        <div class="header-row2-right">
+                            
+                          
+                            <div class="header-right-pt1">
+                                <div class="header-right-pt1-right">
+                                    <div class="header-row1-text" style="width: 83%; float: right;">
+
+
+                            <div class="header-row2-right-pt1" style="width: 290px !important;">
+                                <ul>
+                                    <li style="background: none;" id="MyAccount" runat="server"><a title="Register" id="ltregister"
+                                        runat="server">Register</a></li>
+                                    <li><a id="ltLogin" runat="server" href="/login.aspx" title="Sign In">Sign In</a><asp:LinkButton
+                                        Visible="false" ToolTip="Sign Out" ID="lkbLogout" runat="server" OnClick="lkbLogout_Click">Sign Out</asp:LinkButton></li>
+                                    <li><a title="Contact Us" href="javascript:void(0);" onclick="ShowModelSearchContactus();">Contact Us</a></li>
+                                    <li><a href="/index.aspx" title="Home" class="active">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                                      <div class="header-row2-right-pt4" id="divShoppingCart" runat="server">
+                                <div onmouseover="javascript:ShowHideCart();">
+                                    <a href="/CheckoutCommon.aspx" title="Checkout" class="checkout-btn">
+                                        <img class="img-right" title="Checkout" alt="Checkout" src="/images/spacer.png" /></a>
+                                    <a id="cartlink" runat="server" href="javascript:void(0);" title="Shopping Cart"></a>
+                                    <div id="divMiniCart" style="background-color: White;">
+                                        <ucMiniCart:MiniCart runat="server" ID="MiniCart" />
+                                    </div>
+                                    <input type="hidden" id="hiddenTotalItems" runat="server" value="0.00" />
+                                    <input type="hidden" id="hdnrotator" value="1" />
+                                    <input type="hidden" id="hdnColorSelection" runat="server" value="" />
+                                </div>
+                            </div>
+                                    </div>
+                                <div class="header-right-pt1-left">
+                                    <div onclick="showfreeshipping();" class="free-shipping-new">
+                                $<asp:Literal ID="ltfreeamount" runat="server"></asp:Literal>
+                            </div>
+                                    <div>
+                                         <a class="free-swatch" href="/free-swatch.html" title="Free Swatch">
+                                    <img src="/images/spacer.png" border="0" style="float: right; margin-left: 10px;" /></a>
+
+                                    </div>
+                                    </div>
+                                </div>
+                           <%-- <div class="header-row2-right-pro2">
+                                </div>--%>
+                             
+                               
+                                <div class="header-row2-right-pro2">
+
+                                    <div class="header-row2-right-pt2">
+                                        <div class="search-box-bg">
+                                            <asp:Panel ID="pnlSearch" runat="server">
+                                                <asp:TextBox ID="txtSearch" runat="server" class="textfield" Style="height: 33px; font-size: 12px; width: 272px;" onfocus="clear_Search(this)" onblur="if(this.value==''){this.value='Enter Search here';this.removeAttribute('style');};" Text="Enter Search here" onkeypress="__defaultFired=false;"></asp:TextBox>
+                                                <asp:ImageButton ID="btnSearch" runat="server" OnClick="btnSearch_Click" ToolTip="Search" ImageUrl="/images/search-btn.jpg"   OnClientClick="return ValidSearchByPage();" />
+                                            </asp:Panel>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <%--<div class="header-row2-right-pt3">
+                            <div class="header-row2-right-pt3-left">
+                                <a title="Affiliate Program" href="/affiliateprogram.aspx">Affiliate Program</a></div>
+                            <div class="header-row2-right-pt3-right">
+                                <a title="Trade and Partner Program" href="/tradepartnerprogram.aspx">Trade &amp; Partner
+                                    Program</a></div>
+                        </div>--%>
+                            </div>
+                            <%-- <div style="float: right; padding-top: 7px; width: 350px; text-align: right;">
+                        <a href="/freeshipping" title="Free Shipping">
+                            <img src="/images/get-free-shipping-new.png" alt="Free Shipping" title="Free Shipping">
+                        </a>
+                    </div>--%>
+                        
+                    </div>
+
+                    <div id="header-row3">
+                        <div class="top-menu">
+                            <a style="display: none;" class="toggleMenu" href="#">Menu</a>
+                            <ul class="header-nav" style="z-index: 11;">
+                                <%=MenuData %>
+                            </ul>
+                            <a class="qmparent link-11" href="/SalesOutlet.aspx">
+                                <img border="0" src="/images/sales-outlet.png" alt="Sales Outlet" title="Sales Outlet" style="float: right;"></a>
+                            <script type="text/javascript">qm_create(0, false, 0, 250, 0, false, false, false);</script>
+                        </div>
+                    </div>
+
+                    <div class="header-banner" style="display:none;">
+
+                        <div class="header-banner" id="rotatebannertext">
+                            <asp:Literal ID="ltrotator" runat="server"></asp:Literal>
+                        </div>
+                        <div id="rotatebannertextall" style="display: none;">
+                            <asp:Literal ID="ltrotator1" runat="server"></asp:Literal></div>
+
+                    </div>
+                </div>
+
+                <div id="footer-part">
+                    <div class="footer-row2" id="divhalfpricedrapes">
+                        <div class="footer-row2-title">
+                            <h1><p>
+                                <asp:Literal ID="ltrhomecontenthead" runat="server"></asp:Literal>
+                            </p></h1>
+                        </div>
+                        <div class="footer-row2-bg">
+                            <asp:Literal ID="ltrhomecontent" runat="server"></asp:Literal>
+                        </div>
+                    </div>
+                    <div class="footer-row1">
+                        <div class="newsletter">
+                            <p class="newsletter-title">
+                                <img src="/images/spacer.png" class="newsletter-icon" alt="News letter" title="News letter"><span>Sign Up
+                            For Emails</span>
+                            </p>
+                            <div class="newsletter-box">
+                                <p>
+                                    Be the first to know about HPD special offers, new product launches.
+                                </p>
+                                <asp:Panel ID="pnlNewsletter" runat="server" DefaultButton="imgSubscribeNews">
+                                    <asp:TextBox ID="txtSubscriber" runat="server" onfocus="clear_text()" class="ematl-input"
+                                        onblur="Change()" Text="Enter your E-Mail Address" onkeypress="__defaultFired=false;"></asp:TextBox>
+                                    <%--  <asp:TextBox ID="txtNewsZipCode" MaxLength="6" runat="server" class="zipcodeinput"
+                                onfocus="clear_Zip(this)" onblur="if(this.value==''){this.value='Enter Zip'};"
+                                Text="Enter Zip" onkeypress="__defaultFired=false;"></asp:TextBox>--%>
+                                    <a href="javascript:void(0);" title="Submit" class="submit">
+                                        <asp:ImageButton Style="margin-left: 3px;" CssClass="submit-btn" ImageUrl="/images/spacer.png" ToolTip="Submit"
+                                            ID="imgSubscribeNews" runat="server" OnClientClick="return ValidNewSletter();"
+                                            OnClick="btnSubscriber_Click" /></a>
+                                </asp:Panel>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <span>Join the Conversation</span>
+                            <div class="social-media-box">
+                                <a href="https://www.facebook.com/halfpricedrapes" target="_blank" class="facebook"
+                                    title="Facebook">Facebook</a> <a href="https://twitter.com/halfpricedrapes" target="_blank"
+                                        class="twitter" title="Twitter">Twitter</a> <a href="http://pinterest.com/halfpricedrapes/"
+                                            target="_blank" class="pinterest" title="Pinterest">Pinterest</a><a href="https://plus.google.com/109269923332391670065/?rel=author"
+                                                target="_blank" class="google-plus" title="Google Plus">Google Plus</a>
+                                <%--<a href="#" class="houzz"
+                                        title="Houzz">Houzz</a>--%>
+                            </div>
+                        </div>
+                        <div class="footer-banner">
+                            <table width="135" border="0" cellpadding="2" cellspacing="0" style="float: right;" title="Click to Verify - This site chose Symantec SSL for secure e-commerce and confidential communications.">
+                                <tr>
+                                    <td width="135" align="center" valign="top">
+                                        <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.halfpricedrapes.com&amp;size=L&amp;use_flash=YES&amp;use_transparent=YES&amp;lang=en"></script>
+                                        <%--<br />
+<a href="http://www.symantec.com/verisign/ssl-certificates" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a>--%></td>
+                                </tr>
+                            </table>
+                            <%--<a title="Free Shipping" href="/freeshipping.html">
+                        <img title="Free Shipping" alt="Free Shipping" src="/images/get-free-shipping.png">
+                    </a>--%>
+                            <div class="AuthorizeNetSeal" style="width: auto !important;">
+                                <script type="text/javascript" language="javascript">var ANS_customer_id = "92ad4910-4a4e-407f-9f0d-a8c3758d6279";</script>
+                                <script type="text/javascript" language="javascript" src="https://verify.authorize.net/anetseal/seal.js"></script>
+                            </div>
+
+                            <a target="_blank" style="margin: 5px 0 0 10px;" href="http://www.bbb.org/greater-san-francisco/business-reviews/draperies-and-curtains-retail-and-custom/half-price-drapes-in-livermore-ca-117386" rel="nofollow">
+                                <img width="135" height="51" src="/images/Better-Business-Bureau-Seal.png" alt="Better Business Bureau Trust Seal" title="Better Business Bureau Trust Seal"></a>
+                          <%--  <a title="30 Day Money Back Guarantee" href="/returnpolicy.html">
+                                <img class="img-left" title="Thirty day Money Back Guarantee" alt="Thirty day Money Back Guarantee"
+                                    src="/images/30-day-banner.jpg"></a>--%>
+                            <!--<a title="Sales Outlet" href="#"><img title="Sales Outlet" alt="Sales Outlet" src="images/sales-outlet.png"></a> -->
+
+                        </div>
+                    </div>
+
+                    <div class="footer-row3">
+                        <div class="footer-quick-links">
+                            <span>Quick Links</span>
+                            <ul>
+                                <li><a href="/measuringguide.html" title="Measuring Guide">Measuring Guide</a></li>
+                                <li><a title="Pleat Guide" href="/pleatguide.html">Pleat Guide</a></li>
+                                <li><a title="Installation &amp; Care" href="/draperyinstallationcare.html">Installation &amp; Care</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-customer-service">
+                            <span>Customer Service</span>
+                            <address>
+                                <asp:Literal ID="ltrCusromerService" runat="server"></asp:Literal>
+                            </address>
+                        </div>
+                        <div class="footer-row3-pt1">
+                            <div class="payment-option">
+                                <span>We Accept</span>
+                                <img src="/images/spacer.png" alt="Visa" title="Visa" class="visa" />
+                                <img src="/images/spacer.png" alt="Master Card" title="Master Card" class="master-card" />
+                                <img src="/images/spacer.png" class="american-express" alt="American Express" title="American Express" />
+                                <img src="/images/spacer.png" alt="Paypal" title="Paypal" class="paypal" />
+                                <img src="/images/spacer.png" alt="Discover" title="Discover" class="discover" />
+
+                            </div>
+                            <div class="footer-shipping-banner">
+                                <a href="javascript:void();" onclick="window.open('http://www.customerlobby.com/reviews/10057/half-price-drapes/' ,'ReviewPage', 'statusbar=no,menubar=no,toolbar=no,scrollbars=yes,resizable=yes,width=540, height=575,left=570,top=200,screenX=570,screenY=200'); return false;"
+                                    target="_blank" title="Customer Review – HPD’s">
+                                    <img src="/images/shipping-banner.png" alt="Customer Review – HPD’s" title="Customer Review – HPD’s" class="img-left"></a>
+                            </div>
+                        </div>
+                        <div class="footer-row3-pt2">
+                            <div class="footer-shipping">
+                                <div class="footer-shipping-left">
+                                    <span>Shipping To</span> <a href="/internationalshipping" title="Canada">
+                                        <img src="/images/spacer.png" alt="Canada" title="Canada" class="canada-icon"></a>
+                                    <a href="/internationalshipping" title="United Kingdom">
+                                        <img src="/images/spacer.png" alt="United Kingdom" title="United Kingdom" class="uk-icon"></a>
+                                    <a href="/internationalshipping" title="Australia">
+                                        <img src="/images/spacer.png" alt="Australia" title="Australia" class="australia-icon"></a>
+                                </div>
+                                <!--<a title="Request an appointment" target="_blank" href="https://www.customerlobby.com/reviews/10057/half-price-drapes/appointment/">
+                            <img class="img-left" title="Request an appointment" alt="Request an appointment" src="/images/request-an-aapointment.jpg"></a>-->
+<a class="tf_upfront_badge" href="http://www.thefind.com/store/about-halfpricedrapes" title="TheFind Upfront"><img  border="0" src="//upfront.thefind.com/images/badges/r/fc/96/fc962c08b1970b63fb17da2179401149.png" alt="halfpricedrapes is an Upfront Merchant on TheFind. Click for info."/></a>
+  <script type="text/javascript">
+    (function() {
+      var upfront = document.createElement('SCRIPT'); upfront.type = "text/javascript"; upfront.async = true;
+      upfront.src = document.location.protocol + "//upfront.thefind.com/scripts/main/utils-init-ajaxlib/upfront-badgeinit.js";
+      upfront.text = "thefind.upfront.init('tf_upfront_badge', 'fc962c08b1970b63fb17da2179401149')";
+      document.getElementsByTagName('HEAD')[0].appendChild(upfront);
+    })();
+  </script>
+                            </div>
+                            <div class="footer-row3-banner">
+                                <a href="/FabricRomancer.html">
+                                    <img src="/images/footer-banner1.jpg" alt="Learn About Curtains &amp; Window Treatments"
+                                        title="Learn About Curtains &amp; Window Treatments" class="img-left"></a>
+                                <a href="http://www.halfpricefabrics.com" target="_blank">
+                                    <img src="/images/footer-banner2.jpg" alt="HalfPriceFabrics.com" title="HalfPriceFabrics.com"
+                                        class="img-left" style="margin: 0;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-row4">
+                        <div class="footer-row4-links">
+                            <ul>
+                                <li><a href="/aboutus.html" title="About Us">About Us</a>|</li>
+                                <li><a href="/termandcondition.html" title="Terms and Conditions" rel="nofollow">Terms and Conditions</a>|</li>
+                                <li><a href="/showroom.html" title="Showroom">Showroom</a>|</li>
+                                <li><a href="http://blog.halfpricedrapes.com/" target="_blank" title="HPD Blog">HPD
+                            Blog</a>|</li>
+                                <li><a href="/press.html" title="Press" rel="nofollow">Press</a>|</li>
+                                <li><a href="javascript:void(0);" onclick="ShowModelSearchContactus();" title="Contact Us" rel="nofollow">Contact Us</a>|</li>
+                                <li><a href="/faq.html" title="FAQ" rel="nofollow">FAQ</a>|</li>
+                                <li><a href="javascript:void();" onclick="window.open('http://www.customerlobby.com/reviews/10057/half-price-drapes/' ,'ReviewPage', 'statusbar=no,menubar=no,toolbar=no,scrollbars=yes,resizable=yes,width=540, height=575,left=570,top=200,screenX=570,screenY=200'); return false;"
+                                    target="_blank" title="Testimonials">Testimonials</a>|</li>
+                                <li><a href="/shippingpolicy.html" title="Shipping Policy" rel="nofollow">Shipping Policy</a>|</li>
+                                <li><a href="/privacypolicy.html" title="Privacy Policy" rel="nofollow">Privacy Policy</a>|</li>
+                                <li><a title="Affiliate Program" href="/affiliateprogram.html" rel="nofollow">Affiliate Program</a>|</li>
+                                <li><a href="/ind.html" title="Sitemap">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <p>
+                            &copy; 2014 <%=Solution.Bussines.Components.Common.AppLogic.AppConfigs("STORENAME")%>, All rights reserved. Designed and Developed by Kaushalam
+                        </p>
+                    </div>
+                </div>
+                <%--<uc1:LeftMenu ID="leftmenu" runat="server" />--%>
+                <%--Old code commented below--%>
+                <%-- <script type="text/javascript"> var mycontent=new Array(<%= hdTestimonial.Value%>);
+    function MM_openBrWindow(theURL,winName,features) { //v2.0 window.open(theURL,winName,features);
+    } </script>--%>
+                <%-- <script src="/js/testimonial.js" type="text/javascript"></script>
+    <div class="testimonial-box" style="width: 921px; min-height: 40px; min-height:
+    40px!important;"> <p class="testimonial-p"> <asp:HiddenField ID="hdTestimonial"
+    runat="server" /> <script type="text/javascript"> new domticker(mycontent, "testimonials",
+    "testimonial-p", 7000, "fadeit") </script> <span style="padding-top: 5px; float:
+    right"><a style="color: White" href="/Testimonials.aspx" title="View All Testimonials">View
+    More</a> </span> </p> </div>--%>
+                <%-- <a id="ProductofMonth" runat="server" title="Product
+    of The Month"> <img src="/images/product-of-the-month.jpg" class="margin-0" width="188"
+    height="108" alt="Product Of The Month" title="Product Of The Month" /></a>--%>
+                <%--<div class="bookmark-site"> <img src="/images/bookmark-icon.png" alt="" title="Bookmark
+    This Site" /><span><asp:Literal ID="ltBookMark" runat="server"></asp:Literal></span>
+    </div> <div class="bookmark-site"> <img src="/images/refer-a-friend.png" alt=""
+    title="Refer a Friend" /><span> <a href="javascript:void(0);" onclick="OpenCenterWindow('/TellAfriendPopup.aspx',700,550)"
+    title="Refer a Friend"> Refer a Friend</a></span> </div> <div class="bookmark-site">
+    <img src="/images/gift-certificate.png" alt="" title="Gift Certificate" /><span>
+    <a href="/GiftCertificate.aspx" title="Gift Certificate">Gift Certificate</a></span>
+    </div>--%>
+                <%--<script language="javascript" type="text/javascript" src="//smarticon.geotrust.com/si.js"></script>--%>
+                <asp:Repeater ID="rptNewArrival" runat="server" Visible="false">
+                    <ItemTemplate>
+                        <div id="ProboxNewArrival" runat="server" class="na-box">
+                            <div id="proDisplay" runat="server">
+                                <div class="na-dispaly">
+                                    <a href="/<%# Convert.ToString(Eval("MainCategory")).ToLower()%>/<%#
+    Convert.ToString(Eval("SEName")).ToLower()%>-<%#Eval("ProductID")%>.aspx">
+                                        <img src='<%# GetIconImageProduct(Convert.ToString(Eval("ImageName"))) %>' width="168"
+                                            alt="<%# SetAttribute(Convert.ToString(DataBinder.Eval(Container.DataItem,"Tooltip")))%>"
+                                            title="<%# SetAttribute(Convert.ToString(DataBinder.Eval(Container.DataItem,"Tooltip")))%>" /></a>
+                                </div>
+                                <h2>
+                                    <a href="/<%# Convert.ToString(Eval("MainCategory")).ToLower()%>/<%#
+    Convert.ToString(Eval("SEName")).ToLower()%>-<%#Eval("ProductID")%>.aspx"
+                                        title="<%#
+    SetAttribute(Convert.ToString(DataBinder.Eval(Container.DataItem,"Tooltip")))%>">
+                                        <%# SetNamenewarrival(Convert.ToString(Eval("Name")))%></a></h2>
+                                <p>
+                                    <a href="/<%#
+    Convert.ToString(Eval("MainCategory")).ToLower()%>/<%# Convert.ToString(Eval("SEName")).ToLower()%>-<%#Eval("ProductID")%>.aspx"
+                                        title="more details">more details</a>
+                                </p>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+                <div id="index" runat="server" visible="false" style="display: none;">
+                    <div id="header-menu">
+                        <asp:Literal ID="litCommonHeader" runat="server"></asp:Literal>
+                    </div>
+                </div>
+                <div style="z-index: 1000001; top: 148px; width: 565px; height: 130px; background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.3) ! important; padding: 10px ! important; border: medium none ! important; position: fixed; bottom: 5px; left: 509px; display: none;"
+                    id="divInventoryCart">
+                    <div style="float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;">
+                        <a title="" onclick="javascript:document.getElementById('divInventoryCart').style.display = 'none';"
+                            href="javascript:void(0);">
+                            <img alt="Close" title="Close" src="/images/popupclose.png"></a>
+                    </div>
+                    <%--<div style="color: #cc0000; display: none;">
+                Not Sufficient Inventory</div>
+            <div style="height: 130px; display: block; width: 100%; background: #fff;">
+                <div style="text-align: center; background: none repeat scroll 0 0 #641114; color: #FFFFFF;
+                    font-weight: bold; height: 20px; padding: 5px;" class="title">
+                    <span style="font-size: 16px;">Stock Info</span><div style="color: #393939;">
+                        <br>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td style="height: 30px;" align="center" valign="middle">
+                                        <div>
+                                            Available in our Warehouse : <span style="color: #641114 !important; font-weight: bold;">
+                                                78</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="middle">
+                                        <div>
+                                            Call us at <span style="color: #641114 !important; font-weight: bold;">888.888.8888</span>
+                                            if you are looking for more than <span style="color: #641114 !important; font-weight: bold;">
+                                                78</span> Quantity(s)</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="middle">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>--%>
+                </div>
+                <div id="divfreeshipping" style="z-index: 1000001; top: 100px; width: 1010px; height: 500px; background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.3) ! important; padding: 10px ! important; border: medium none ! important; position: fixed; bottom: 5px; left: 305px; display: none;">
+                    <div style="float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;">
+                        <a href="javascript:void(0);" onclick="javascript:document.getElementById('divfreeshipping').style.display = 'none';document.getElementById('backgroundfree').style.display = 'none';document.getElementById('lifreeshipp').className = '';"
+                            title="">
+                            <img src="/images/popupclose.png" alt="Close" title="Close"></a>
+                    </div>
+                    <div style="height: 500px; display: block; width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255);" id="divfreehtml">
+                        <div class="title" style="text-align: left; font-weight: bold; padding: 5px; " >
+                            <span style="font-size: 16px;">
+                                <asp:Literal ID="lttitlefree" runat="server"></asp:Literal></span><div style="color: rgb(57, 57, 57);">
+                                    <br />
+                                    <asp:Literal ID="ltfreeshiping" runat="server"></asp:Literal>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="divtradepartner" style="z-index: 1000001; top: 100px; width: 1010px; height: 500px; background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.3) ! important; padding: 10px ! important; border: medium none ! important; position: fixed; bottom: 5px; left: 305px; display: none;">
+                    <div style="float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;">
+                        <a href="javascript:void(0);" onclick="javascript:document.getElementById('divtradepartner').style.display = 'none';document.getElementById('backgroundfree').style.display = 'none';document.getElementById('litradepartner').className = '';"
+                            title="">
+                            <img src="/images/popupclose.png" alt="Close" title="Close"></a>
+                    </div>
+                    <div style="height: 500px; display: block; width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255);" id="divtradehtml">
+                        <div class="title" style="text-align: left; font-weight: bold;  padding: 5px;">
+                            <span style="font-size: 16px;">
+                                <asp:Literal ID="lttradetitle" runat="server"></asp:Literal></span><div style="color: rgb(57, 57, 57);">
+                                    <br />
+                                    <asp:Literal ID="lttradedescription" runat="server"></asp:Literal>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="backgroundfree" style="z-index: 1000; display: none; position: fixed; _position: absolute; height: 100%; width: 100%; top: 0; left: 0; background: #000000; border: 1px solid #cecece; opacity: 0.5; filter: alpha(opacity=50);">
+                </div>
+
+                <div id="popupContactpricequote1" style="z-index: 1000001; top: 30px; padding: 0px; width: 1440px; background: #fff;">
+                    <div style='float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;'>
+                        <a href="javascript:void(0);" onclick="javascript:disablePopupmaster();document.getElementById('frmsearch').src = '/SearchControl.aspx';" title="">
+                            <img src="/images/popupclose.png" alt="Close" title="Close" />
+                        </a>
+                    </div>
+                    <div style="background: none repeat scroll 0 0 white; width: 100%">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td align="left">
+                                    <div id="diviframesearch" style="display: none;">
+                                        <%--<iframe id="frmsearch" src="/SearchControl.aspx" width="1440px" height="296px" scrolling="no" frameborder="0"></iframe>--%>
+                                    </div>
+                                    <div id="diviframecontactus" style="display: none"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <%--
+    <script src="/js/JQueryStoreIndex.js" type="text/javascript"></script>--%>
+            <script type="text/javascript" src="/js/jquery.min.js" async></script>
+            <link href="/css/general.css" rel="stylesheet" type="text/css" />
+            <script src="/js/general.js?4498" type="text/javascript"></script>
+            <script type="text/javascript" src="/js/popup.js"></script>
+            <%=calljavascript%>
+            <%--<script type="text/javascript" src="/js/contentslider.js"></script>--%>
+            <%--<script type="text/javascript" src="/js/jquery.min.js"></script>--%>
+            <script type="text/javascript" src="/js/jquery.jcarousel.pack.js"></script>
+            <%--<script type="text/javascript" src="/js/gallery.js"></script>--%>
+
+
+            <%--<script type="text/javascript" src="/js/script.js"></script>--%>
+            <%-- <script type="text/javascript">
+            ContentSlider("slider1", 7000) </script>--%>
+            <div style="display: none">
+                <asp:Button ID="btnTemp" runat="server" OnClientClick="return false;" />
+            </div>
+            <div class="footer-bottom-btn">
+                <div class="footer-btn"><a href="javascript:void(0);" style="font-style: italic; color: white;" onclick="ShowModelSearchContactus();">Contact US </a></div>
+            </div>
+            <div class="footer-arrow-icon" style="display: none;" id="divscropp">
+                <a onclick="$('html, body').animate({ scrollTop: $('#wrapper').offset().top }, 'slow'); ">
+                    <img src="/images/totop.png" border="0" alt="Top" title="Top" />
+                </a>
+            </div>
+           
+
+            <%--Google Tracking Code--%>
+            <%=SEORemarketingCode%>
+            <%--  <%=SEOGoogleAnalyticCode%>--%>
+            <%--<%=SEOSpringMeterics%>--%>
+            <%=SEOGooglePlus%>
+            <%=SEOSocialLannex%>
+            <%=SEOCretioRemarketingCode%>
+            <%=SEONewsletterCode%>
+            <%=SEOnextopiaCode%>
+
+            <%=jqueryscroll%>
+            <%=jqueryscroll1%>
+            <script>
+
+                var  klevu_apiKey = 'klevu-13939350527231', klevu_analytics_key = 'klevu-139393549851193', searchTextBoxName = 'txtSearch', klevu_lang = 'en', klevu_result_top_margin = '', klevu_result_left_margin = ''; (function () { var ws = document.createElement('script'); ws.type = 'text/javascript'; ws.async = true; ws.src = 'https://box.klevu.com/klevu-js-v1/js/klevu-webstore.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ws, s); })();
+
+
+            </script>
+
+
+            <%--End Google Tracking Code--%>
+            <script type="text/javascript" charset="utf-8">            var ju_num = "1291E94D-66CC-4905-A45E-E98999D45F25"; var asset_host = (("https:" == document.location.protocol) ? "https" : "http") + '://d2j3qa5nc37287.cloudfront.net/'; (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = asset_host + 'coupon_code1.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();</script>
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+                    //setupRotator();
+                    // $('#header-row3').attr("class", "");
+
+                    //$('#header-part').attr("style", "left: -1;");
+                    if ('<%=Request.Url%>' != null && '<%=Request.Url%>'.toString().toLowerCase().indexOf('customerquotecheckout.aspx') <= -1) {
+                   $('#header-part').attr("style", "left: 1;");
+                   $(window).scroll(function () {
+
+                       if ($(window).scrollTop() == 0) {
+
+                           // $('#header-row3').attr("class", "");
+                           // $('#header-row3').attr("style", "display:block;");
+                           // $('#header-part').attr("class", "");
+                           // $('#header-part').attr("style", "left:  1;");
+                           $('#divscropp').attr('style', "display:none;");
+                           // $('.header-top-link').attr("class", "header-top-link");
+                           // $('.header-top-link').attr("class", "");
+                           //$('#header-part').css("left", "-1");
+                           //$('#qm0').css("margin-right", "0");
+                       }
+                           //                    else if ($(window).scrollTop() > 0) {
+
+                           //                        $('#header-row3').attr("class", "");
+                           //                        $('#header-part').attr("class", "");
+                           //                        //$('#qm0').css("margin-right", "0");
+                           //                    }
+                       else {
+
+                           //$('#header-row3').attr("style", "display:none;");
+                           $('#divscropp').attr("style", "display:block;");
+                           //$('#header-part').attr("class", "divfloatingcss");
+                           // $('.header-top-link').attr("class", "header-top-link divfloatingcss");
+
+                           //$('#header-part').removeAttr("style");
+                           //$('#qm0').css("margin-right", "9%");
+
+                       }
+                   });
+               }
+           });
+
+            </script>
+           <script type="text/javascript">
+                var gts = gts || [];
+                gts.push(["id", "195367"]);
+                gts.push(["locale", "en_US"]);
+                gts.push(["google_base_offer_id", "<%=strProductId%>"]);
+                gts.push(["google_base_subaccount_id", "5831867"]);
+                gts.push(["google_base_country", "US"]);
+                gts.push(["google_base_language", "EN"]);
+                (function () {
+                    var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+                    var gts = document.createElement("script");
+                    gts.type = "text/javascript";
+                    gts.async = true;
+                    gts.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(gts, s);
+                })();
+</script> 
+    </form>
+</body>
+</html>

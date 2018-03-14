@@ -1,0 +1,300 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminReplnishment.Master.cs" Inherits="Solution.UI.Web.REPLENISHMENTMANAGEMENT.AdminReplnishment" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="/REPLENISHMENTMANAGEMENT/css/bootstrap.min.css?343" rel="stylesheet" />
+<link href="/REPLENISHMENTMANAGEMENT/js/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" />
+<link href="/REPLENISHMENTMANAGEMENT/css/bootstrap-reset.css" rel="stylesheet" />
+<link href="/REPLENISHMENTMANAGEMENT/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href="/REPLENISHMENTMANAGEMENT/css/table-responsive.css" rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="/REPLENISHMENTMANAGEMENT/css/style.css?343" rel="stylesheet" />
+<link href="/REPLENISHMENTMANAGEMENT/css/style-responsive.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="/REPLENISHMENTMANAGEMENT/js/jquery.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/bootstrap.min.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jquery.dcjqaccordion.2.7.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jquery.scrollTo.min.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jquery.nicescroll.js"></script> 
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]--> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jquery.scrollTo/jquery.scrollTo.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jquery.easing.min.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/dashboard.js"></script> 
+<script src="/REPLENISHMENTMANAGEMENT/js/jquery.customSelect.min.js" ></script> 
+<!--common script init for all pages--> 
+<script src="/REPLENISHMENTMANAGEMENT/js/scripts.js"></script> 
+   
+    
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+       
+        <div class="header fixed-top clearfix"> 
+    <!--logo start-->
+    <div class="brand"> <a href="/REPLENISHMENTMANAGEMENT/dashboard.aspx" class="logo"> <img src="/REPLENISHMENTMANAGEMENT/images/logo.png" title="Half Price Drapes" alt="Half Price Drapes" /> </a>
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+      </div>
+    </div>
+    <!--logo end-->
+    
+    <div class="nav notify-row" id="top_menu"> 
+      <!--  notification start --> 
+      
+      <!--  notification end --> 
+    </div>
+    <div class="top-nav clearfix"> 
+      <!--search & user info start-->
+      <ul class="nav pull-right top-menu">
+        <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <img alt="" src="/REPLENISHMENTMANAGEMENT/images/avatar1_small.jpg"> <span class="username"><%=Session["AdminName"]%></span> <b class="caret"></b> </a>
+          <ul class="dropdown-menu extended logout">
+            <li><a href="javascript:void(0);"><i class="fa fa-suitcase"></i>Profile</a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="/Admin/Logout.aspx"><i class="fa fa-key"></i> Log Out</a></li>
+          </ul>
+        </li>
+        <!-- user login dropdown end -->
+      </ul>
+      <!--search & user info end--> 
+    </div>
+  </div>
+         <div>
+    <div id="sidebar" class="nav-collapse"> 
+      <!-- sidebar menu start-->
+      <div class="leftside-navigation">
+        <ul class="sidebar-menu" id="nav-accordion">
+          <li style="display:none;"><a title="Dashboard" href="/REPLENISHMENTMANAGEMENT/dashboard.aspx" class=""  id="lidashborad" runat="server"> <i class="fa fa-dashboard"></i> <span>Dashboard</span> </a> </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Order" href="javascript:;" class="dcjq-parent"> <i class="fa fa-truck"></i> <span>Order</span> <span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li class="dcjq-parent-li"><a title="Order List" href="#" class="dcjq-parent">Order List<span class="dcjq-icon"></span></a>
+                  <ul class="sub" style="display: none;">
+                  <li><a title="HPD Master" href="/Admin/Orders/OrderList.aspx?Storeid=1" target="_blank">HPD Master</a></li>
+                   <li><a title="Half Price Drapes Amazon" href="/Admin/Orders/OrderList.aspx?Storeid=3" target="_blank">Half Price Drapes Amazon</a></li>
+                        <li><a title="Half Price Drapes OverStock" href="/Admin/Orders/OrderList.aspx?Storeid=4" target="_blank">Half Price Drapes OverStock</a></li>
+                        <li><a title="HPD EBay" href="/Admin/Orders/OrderList.aspx?Storeid=7" target="_blank">HPD EBay</a></li>
+                        <li><a title="HPD Sears" href="/Admin/Orders/OrderList.aspx?Storeid=8" target="_blank">HPD Sears</a></li>
+                        <li><a title="HPD Bellacor" href="/Admin/Orders/OrderList.aspx?Storeid=9" target="_blank">HPD Bellacor</a></li>
+                        <li><a title="HPD LNT" href="/Admin/Orders/OrderList.aspx?Storeid=10" target="_blank">HPD LNT</a></li>
+                        <li><a title="HPD Wayfailr" href="/Admin/Orders/OrderList.aspx?Storeid=11" target="_blank">HPD Wayfailr</a></li>
+                      <li><a title="HPD KOHL" href="/Admin/Orders/OrderList.aspx?Storeid=12" target="_blank">HPD KOHL</a></li>
+                      <li><a title="HPD Houzz" href="/Admin/Orders/OrderList.aspx?Storeid=13" target="_blank">HPD Houzz</a></li>
+       
+                      <li><a title="HPD ATG" href="/Admin/Orders/OrderList.aspx?Storeid=14" target="_blank">HPD ATG</a></li>
+                    
+                </ul>
+
+              </li>
+              <li><a title="Add Customer Quote" href="/Admin/Orders/CustomerQuote.aspx" target="_blank">Add Customer Quote</a></li>
+              <li><a title="Customer Quote List" href="/Admin/Orders/CustomerQuoteList.aspx" target="_blank">Customer Quote List</a></li>
+              <li><a title="Create Sale order" href="/Admin/orders/PhoneOrder.aspx" target="_blank">Create Sale order</a></li>
+              <li><a title="Create Sale order" href="/Admin/orders/OrderIncompleteList.aspx" target="_blank">Incomplete Sales list </a></li>
+              <li><a title="Bulk Order Process" href="/Admin/Orders/BulkAcknowledgment.aspx" target="_blank">Bulk Order Process</a></li>
+              <li><a title="Bulk Sale Order Print" href="/Admin/orders/BulkOrderPrint.aspx" target="_blank">Bulk Sale Order Print</a></li>
+              <li><a title="Bulk Packing Slip Print" href="/Admin/Orders/ListBulkPrinting.aspx" target="_blank">Bulk Packing Slip Print</a></li>
+              <li><a title="Failed Transactions List" href="/Admin/orders/FailedTransaction.aspx" target="_blank">Failed Transactions List</a></li>
+              <li><a title="Order Export Backend" href="/Admin/orders/OrderExporttoBackend.aspx" target="_blank">Order Export Backend</a></li>
+              <li><a title="Manage Product Search Link" href="/Admin/orders/ProductSearchLink.aspx" target="_blank">Manage Product Search Link</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Products" href="javascript:;" class="dcjq-parent"> <i class="fa fa-cube"></i> <span>Products</span> <span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li class="dcjq-parent-li"><a title="Manage Products" href="#"  class="dcjq-parent">Manage Products<span class="dcjq-icon"></span></a>
+                  <ul class="sub" style="display: none;">
+                  <li><a title="HPD Master" href="/Admin/Products/ProductList.aspx?Storeid=1" target="_blank">HPD Master</a></li>
+                   <li><a title="Half Price Drapes Amazon" href="/Admin/Products/ProductList.aspx?Storeid=3" target="_blank">Half Price Drapes Amazon</a></li>
+                        <li><a title="Half Price Drapes OverStock" href="/Admin/Products/ProductList.aspx?Storeid=4" target="_blank">Half Price Drapes OverStock</a></li>
+                        <li><a title="HPD EBay" href="/Admin/Products/ProductList.aspx?Storeid=7" target="_blank">HPD EBay</a></li>
+                        <li><a title="HPD Sears" href="/Admin/Products/ProductList.aspx?Storeid=8" target="_blank">HPD Sears</a></li>
+                        <li><a title="HPD Bellacor" href="/Admin/Products/ProductList.aspx?Storeid=9" target="_blank">HPD Bellacor</a></li>
+                        <li><a title="HPD LNT" href="/Admin/Products/ProductList.aspx?Storeid=10" target="_blank">HPD LNT</a></li>
+                        <li><a title="HPD Wayfailr" href="/Admin/Products/ProductList.aspx?Storeid=11" target="_blank">HPD Wayfailr</a></li>
+                      <li><a title="HPD KOHL" href="/Admin/Products/ProductList.aspx?Storeid=12" target="_blank">HPD KOHL</a></li>
+                      <li><a title="HPD Houzz" href="/Admin/Products/ProductList.aspx?Storeid=13" target="_blank">HPD Houzz</a></li>
+    
+                      <li><a title="HPD ATG" href="/Admin/Products/ProductList.aspx?Storeid=14" target="_blank">HPD ATG</a></li>
+                    
+                </ul>
+
+              </li>
+
+
+              <li><a title="Product Display Order" href="/Admin/Products/Productsdisplayorder.aspx" target="_blank">Product Display Order</a></li>
+              <li><a title="Manage Categories" href="/Admin/Products/Category.aspx" target="_blank">Manage Categories</a></li>
+              <li><a title="Category Display Order" href="/Admin/Products/Categorydisplayorder.aspx" target="_blank">Category Display Order</a></li>
+              <li><a title="Product Features List" href="/Admin/Products/FeatureList.aspx" target="_blank">Product Features List</a></li>
+              <li><a title="Manage Product Brand" href="/Admin/Products/ListManufacturer.aspx" target="_blank">Manage Product Brand</a></li>
+              <li><a title="Manage Vendor/DropShipper List" href="/Admin/Products/VendorList.aspx" target="_blank">Manage Vendor/DropShipper List</a></li>
+              <li><a title="Manage Product Reviews" href="/Admin/Products/ProductRating.aspx" target="_blank">Manage Product Reviews</a></li>
+              <li><a title="Manage Warehouse" href="/Admin/Products/WarehouseList.aspx" target="_blank">Manage Warehouse</a></li>
+              <li class="dcjq-parent-li"><a title="Product Import/Export" href="#" class="dcjq-parent">Product Import/Export<span class="dcjq-icon"></span></a>
+                <ul class="sub" style="display: none;">
+                  <li><a title="Export Products" href="/Admin/Products/ExportProduct.aspx" target="_blank">Export Products</a></li>
+                  <li><a title="Price, Inventory, Weight CSV" href="/Admin/Products/ImportPriceCSV.aspx" target="_blank">Price, Inventory, Weight CSV</a></li>
+                  <li><a title="Generate Yahoo CSV" href="/Admin/Products/GenerateYahooCSV.aspx" target="_blank">Generate Yahoo CSV</a></li>
+                </ul>
+              </li>
+              <li><a title="Manage Product Hemming" href="/Admin/Products/ProductHemmingEdit.aspx" target="_blank">Manage Product Hemming</a></li>
+              <li><a title="Product Hemming List" href="/Admin/Products/ProductHemmingEdit.aspx" target="_blank">Product Hemming List</a></li>
+              <li><a title="Manage Product Search Type" href="/Admin/Products/SearchProductTypeList.aspx" target="_blank">Manage Product Search Type</a></li>
+              <li><a title="Manage Product Color" href="/Admin/Products/ProductVariantColorList.aspx" target="_blank">Manage Product Color</a></li>
+              <li class="dcjq-parent-li"><a title="Manage Vendor Fabric" href="#" class="dcjq-parent" target="_blank">Manage Vendor Fabric<span class="dcjq-icon"></span></a>
+                <ul class="sub" style="display: none;">
+                  <li><a title="Add Vendor Fabric Product" href="/Admin/Products/ProductFabricSettings.aspx" target="_blank">Add Vendor Fabric Product</a></li>
+                  <li><a title="Vendor Fabric Portal" href="/Admin/Products/FabricVendorPortal.aspx" target="_blank">Vendor Fabric Portal</a></li>
+                  <li><a title="Vendor Fabric Order" href="#" >Vendor Fabric Order</a></li>
+                </ul>
+              </li>
+              <li><a title="Manage Yardage Availability" href="/Admin/Products/AddYardageAvailability.aspx" target="_blank">Manage Yardage Availability</a></li>
+              <li class="dcjq-parent-li"><a title="Manage Roman Shades" href="#" class="dcjq-parent">Manage Roman Shades<span class="dcjq-icon"></span></a>
+                <ul class="sub" style="display: none;">
+                  <li><a title="Roman Shade Calculator" href="ProductRomanShadeYardageList.aspx" target="_blank">Roman Shade Calculator</a></li>
+                  <li><a title="Roman Shade Shipping Table" href="/Admin/Products/ProductRomanShipping.aspx" target="_blank">Roman Shade Shipping Table</a></li>
+                </ul>
+              </li>
+              <li><a title="Bulk Image Upload" href="/Admin/Products/BulkImageUpload.aspx" target="_blank">Bulk Image Upload</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="REPLENISHMENT & INVENTORY MGMT" href="javascript:;" class="dcjq-parent" id="liproduct" runat="server"> <i class="fa fa-rss"></i> <span>REPLENISHMENT & INVENTORY MGMT</span><span class="dcjq-icon"></span></a>
+            <ul class="sub"  style="display: none;">
+             
+                 <li><a title="Dashboard" id="dashboardsubmenu" runat="server"  href="/REPLENISHMENTMANAGEMENT/dashboard.aspx">Dashboard</a></li>
+           <li><a title="Generate Feed (On-Demand)" id="GenerateInventoryFeed" runat="server" href="/REPLENISHMENTMANAGEMENT/GenerateInventoryFeed.aspx">Generate Feed For Channel Partner (On-Demand)</a></li>
+             <li><a title="Setup Inventory Feed Data" id="SetupInventoryFeeddata" runat="server" href="/REPLENISHMENTMANAGEMENT/SetupInventoryFeeddata.aspx">Setup Inventory Feed Data</a></li>
+              <li><a title="Import Replenishment" id="ImportReplenishmentData" runat="server"  href="/REPLENISHMENTMANAGEMENT/ImportReplenishmentData.aspx">Import Replenishment Data</a></li>
+              <li><a title="Setup Inventory Feed Scheduler" id="SetupInventoryFeedSchedular" runat="server" href="/REPLENISHMENTMANAGEMENT/SetupInventoryFeedSchedular.aspx">Setup Inventory Feed Scheduler</a></li>
+              <li><a title="Setup Inventory Feed Template" id="SetupInventoryFeedtemplate" runat="server" href="/REPLENISHMENTMANAGEMENT/SetupInventoryFeedtemplate.aspx" >Setup Inventory Feed Template</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Customer" href="javascript:;" class="dcjq-parent"> <i class="fa fa-user"></i> <span>Customer</span><span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li><a title="Manage Customer" href="/Admin/Customers/CustomerList.aspx" target="_blank">Manage Customer</a></li>
+              <li><a title="View Abandoned Shopping Cart" href="/Admin/Customers/AbandonedShoppingCart.aspx" target="_blank">View Abandoned Shopping Cart</a></li>
+              <li><a title="Manage customer Wishlist" href="/Admin/Customers/WishList.aspx" target="_blank">Manage customer Wishlist</a></li>
+              <li><a title="Manage Customer Inquiries" href="/Admin/Customers/TradeInquiries.aspx" target="_blank">Manage Customer Inquiries</a></li>
+              <li><a title="Manage Price Quote Request" href="/Admin/Reports/PricequoteList.aspx" target="_blank">Manage Price Quote Request</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Web Content Management" href="javascript:;" class="dcjq-parent"> <i class="fa fa-pencil-square-o"></i> <span>Web Content Management</span><span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li><a title="Topic List" href="/Admin/Content/TopicList.aspx" target="_blank">Topic List</a></li>
+              <li><a title="Add Topic" href="/Admin/Content/Topic.aspx" target="_blank">Add Topic</a></li>
+              <li><a title="News Letter Subscription" href="/Admin/Content/NewsLetterSubscription.aspx" target="_blank">News Letter Subscription</a></li>
+              <li><a title="Testimonial List" href="#" style="display:none;">Testimonial List</a></li>
+              <li><a title="Index Page Configuration" href="/Admin/Settings/IndexPageConfig.aspx" target="_blank">Index Page Configuration</a></li>
+              <li><a title="Home Page Banner" href="/Admin/Settings/HomePagebannerlist.aspx" target="_blank">Home Page Banner</a></li>
+              <li><a title="Home Page Header Text" href="#" style="display:none;">Home Page Header Text</a></li>
+              <li><a title="Home Page Small Bottom Banner" href="/Admin/Settings/HomePageBottomSmallBanner.aspx?Storeid=1" target="_blank">Home Page Small Bottom Banner</a></li>
+              <li><a title="Home Page Right Banner" href="/Admin/Settings/HomepageRightbanner.aspx?Storeid=1" target="_blank">Home Page Right Banner</a></li>
+              <li><a title="Item Page Banner" href="#" style="display:none;">Item Page Banner</a></li>
+              <li><a title="Header Links" href="#" style="display:none;">Header Links</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Promotion" href="javascript:;" class="dcjq-parent"> <i class="fa fa-bullhorn"></i> <span>Promotion</span><span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li><a title="Quantity Discount" href="/Admin/Promotions/QuantityDiscountList.aspx" target="_blank">Quantity Discount</a></li>
+              <li><a title="Coupon Discount" href="/Admin/Promotions/CouponsList.aspx" target="_blank">Coupon Discount</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Settings" href="javascript:;" class="dcjq-parent"> <i class="fa fa-cog"></i> <span>Settings</span><span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li><a title="Manage Store" href="#" style="display:none;">Manage Store</a></li>
+              <li><a title="Manage System User" href="/Admin/Settings/AdminList.aspx" target="_blank">Manage System User</a></li>
+              <li><a title="Manage User Rights" href="/Admin/Settings/AdminRights.aspx" target="_blank">Manage User Rights</a></li>
+              <li><a title="Manage User Templates" href="/Admin/Settings/AdminTemplateRights.aspx" target="_blank">Manage User Templates</a></li>
+              <li><a title="Dashboard Configuration" href="/Admin/Settings/DashboardSetting.aspx" target="_blank">Dashboard Configuration</a></li>
+              <li class="dcjq-parent-li"><a title="One Page Configuration" href="#" class="dcjq-parent">One Page Configuration<span class="dcjq-icon"></span></a>
+                <ul class="sub" style="display: none;">
+                  <li><a title="Application" href="/Admin/Settings/OnePageAppConfig.aspx" target="_blank">Application</a></li>
+                  <li><a title="Mail Configuration" href="/Admin/Settings/MailConfig.aspx" target="_blank">Mail Configuration</a></li>
+                  <li><a title="Image Configuration" href="/Admin/Settings/ImageSize.aspx" target="_blank">Image Configuration</a></li>
+                  <li><a title="Page Configuration" href="/Admin/Settings/ProductPageConfiguration.aspx" target="_blank">Page Configuration</a></li>
+                </ul>
+              </li>
+              <li><a title="Application Configuration" href="/Admin/Settings/AppConfigList.aspx" target="_blank">Application Configuration</a></li>
+              <li><a title="Email Templates" href="/Admin/Settings/EmailTemplateList.aspx" target="_blank">Email Templates</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Reports" href="javascript:;" class="dcjq-parent"> <i class="fa fa-list-alt"></i> <span>Reports</span><span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li class="dcjq-parent-li"><a title="Customer Reports" href="#" class="dcjq-parent">Customer Reports<span class="dcjq-icon"></span></a>
+                <ul class="sub" style="display: none;">
+                  <li><a title="Customer List with Export functionality" href="/Admin/Reports/CustomerListwithExport.aspx" target="_blank">Customer List with Export functionality</a></li>
+                  <li><a title="Customer Sale Report Product wise" href="#" style="display:none;">Customer Sale Report Product wise</a></li>
+                  <li><a title="Top 10 Customer by Sale" href="#" style="display:none;">Top 10 Customer by Sale</a></li>
+                  <li><a title="Top 10 Customer by Margin" href="#" style="display:none;">op 10 Customer by Margin</a></li>
+                </ul>
+              </li>
+              <li class="dcjq-parent-li"><a title="Inventory Reports" href="#" class="dcjq-parent">Inventory Reports<span class="dcjq-icon"></span></a>
+                <ul class="sub" style="display: none;">
+                  <li><a title="Inventory Analysis by Product" href="#" style="display:none;">Inventory Analysis by Product</a></li>
+                  <li><a title="Business Intelligent Snap Shot" href="#" style="display:none;">Business Intelligent Snap Shot</a></li>
+                  <li><a title="Inventory Lock Quantity" href="#" style="display:none;">Inventory Lock Quantity</a></li>
+                  <li><a title="Inventory Additional Hemming Allowance" href="#" style="display:none;">Inventory Additional Hemming Allowance</a></li>
+                  <li><a title="Inventory Buy 1 Get 1 Report" href="#" style="display:none;">Inventory Buy 1 Get 1 Report</a></li>
+                  <li><a title="Inventory Sale Reports" href="#" style="display:none;">Inventory Sale Reports</a></li>
+                  <li><a title="Low Inventory" href="/Admin/Reports/LowInventory.aspx" target="_blank">Low Inventory</a></li>
+                </ul>
+              </li>
+              <li><a title="Order Statistics" href="/Admin/Reports/OrderStatistic.aspx" target="_blank">Order Statistics</a></li>
+              <li class="dcjq-parent-li"><a title="Log" href="#" class="dcjq-parent">Log<span class="dcjq-icon"></span></a>
+                <ul class="sub" style="display: none;">
+                  <li><a title="Mail Log" href="/Admin/Reports/MaillogList.aspx" target="_blank">Mail Log</a></li>
+                  <li><a title="Search Log" href="/Admin/Reports/SearchlogList.aspx" target="_blank">Search Log</a></li>
+                </ul>
+              </li>
+              <li><a title="Sales Agent Order Statistics" href="/Admin/Reports/SalesAgentOrderStatistic.aspx" target="_blank">Sales Agent Order Statistics</a></li>
+              <li><a title="Sales Order Tax Report" href="/Admin/Reports/OrderTaxReport.aspx" target="_blank">Sales Order Tax Report</a></li>
+              <li><a title="Sales Report" href="/Admin/Reports/ItemwiseSalesReport.aspx" target="_blank">Sales Report</a></li>
+              <li><a title="SKU Sales Channel Report" href="/Admin/Reports/ItemChannelWiseReport.aspx" target="_blank">SKU Sales Channel Report</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Configuration" href="javascript:;" class="dcjq-parent"> <i class="fa fa-cogs"></i> <span>Configuration</span><span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li><a title="Payment Option" href="/Admin/configuration/PaymentTypeList.aspx" target="_blank">Payment Option</a></li>
+              <li><a title="Credit Card Type" href="/Admin/configuration/CreditcardTypeList.aspx" target="_blank">Credit Card Type</a></li>
+              <li><a title="Shipping Services" href="/Admin/configuration/ShippingServicesList.aspx" target="_blank">Shipping Services</a></li>
+              <li><a title="Shipping Methods" href="/Admin/configuration/ShippingMethodList.aspx" target="_blank">Shipping Methods</a></li>
+              <li><a title="Tax Class List" href="/Admin/configuration/TaxClassList.aspx" target="_blank">Tax Class List</a></li>
+              <li><a title="State Tax Rate" href="/Admin/configuration/TaxRatesByState.aspx" target="_blank">State Tax Rate</a></li>
+              <li><a title="Zip Code Tax Rate" href="/Admin/configuration/TaxRatesByZipCode.aspx" target="_blank">Zip Code Tax Rate</a></li>
+              <li><a title="Country List" href="/Admin/configuration/CountryList.aspx" target="_blank">Country List</a></li>
+              <li><a title="State List" href="/Admin/configuration/StateList.aspx" target="_blank">State List</a></li>
+              <li><a title="Email Configuration List" href="/Admin/configuration/SubjectStatusList.aspx" target="_blank">Email Configuration List</a></li>
+              <li><a title="Store Credit List" href="/Admin/configuration/StoreCreditList.aspx" target="_blank">Store Credit List</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu dcjq-parent-li"> <a title="Feed" href="javascript:;" class="dcjq-parent"> <i class="fa fa-rss"></i> <span>Feed</span><span class="dcjq-icon"></span></a>
+            <ul class="sub" style="display: none;">
+              <li><a title="Feed Master List" href="/Admin/FeedManagement/ListFeedMaster.aspx" target="_blank">Feed Master List</a></li>
+              <li><a title="Feed Field Master" href="/Admin/FeedManagement/ListFeedFieldMaster.aspx" target="_blank">Feed Field Master</a></li>
+              <li><a title="Product - Base Mapping" href="/Admin/FeedManagement/ProductBaseMapping.aspx" target="_blank">Product - Base Mapping</a></li>
+              <li><a title="Base - Related Mapping" href="/Admin/FeedManagement/BaseRelatedMapping.aspx" target="_blank">Base - Related Mapping</a></li>
+              <li><a title="Feed Product List" href="/Admin/FeedManagement/ListFeedProduct.aspx" target="_blank">Feed Product List</a></li>
+              <li><a title="Export Data" href="/Admin/FeedManagement/FeedExport.aspx" target="_blank">Export Data</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu"> <a title="Internal Memo" href="/admin/Memo/MemoView.aspx" target="_blank"> <i class="fa fa-newspaper-o"></i> <span>Internal Memo</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+         <div id="main-content">
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             
+        </asp:ContentPlaceHolder>
+  </div>
+  
+        
+    </form>
+</body>
+</html>

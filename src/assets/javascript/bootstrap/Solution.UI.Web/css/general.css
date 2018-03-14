@@ -1,0 +1,25 @@
+#backgroundPopup{display:none;position:fixed;_position:absolute;height:100%;width:100%;top:0;left:0;background:#000000;border:1px solid #cecece;z-index:1;}
+#popupContact{display:none;position:fixed;_position:absolute;width:269px;background:#FFFFFF;border:2px solid #cecece;z-index:2;padding:12px;font-size:13px;}
+#popupContact h1{text-align:left;color:#6FA5FD;font-size:22px;font-weight:700;border-bottom:1px dotted #D3D3D3;padding-bottom:2px;margin-bottom:20px;}
+#popupContactClose{font-size:14px;line-height:14px;right:6px;top:4px;position:absolute;color:#6fa5fd;font-weight:700;display:block;}
+#button{text-align:center;margin:100px;}
+#btnreadmore{text-align:center;margin:100px;}
+#btnhelpdescri{text-align:center;margin:100px;}
+#popupContact1{display:none;position:fixed;_position:absolute;width:750px;background:#FFFFFF;border:2px solid #cecece;z-index:2;padding:12px;font-size:13px;}
+#popupContact1 h1{text-align:left;color:#6FA5FD;font-size:22px;font-weight:700;border-bottom:1px dotted #D3D3D3;padding-bottom:2px;margin-bottom:20px;}
+#popupContactClose1{font-size:14px;line-height:14px;right:6px;top:4px;position:absolute;color:#6fa5fd;font-weight:700;display:block;}
+.blink_me{animation-name:blinker;animation-duration:1s;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-name:blinker;-webkit-animation-duration:1s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;}
+#popupContactpricequote1{display:none;position:fixed;_position:absolute;width:269px;background:#FFFFFF;border:2px solid #cecece;z-index:2;padding:12px;font-size:13px;}
+#popupContactpricequote1 h1{text-align:left;color:#6FA5FD;font-size:22px;font-weight:700;border-bottom:1px dotted #D3D3D3;padding-bottom:2px;margin-bottom:20px;}
+@-moz-keyframes blinker{0%{opacity:1.0;}
+50%{opacity:0.0;}
+100%{opacity:1.0;}
+}
+@-webkit-keyframes blinker{0%{opacity:1.0;}
+50%{opacity:0.0;}
+100%{opacity:1.0;}
+}
+@keyframes blinker{0%{opacity:1.0;}
+50%{opacity:0.0;}
+100%{opacity:1.0;}
+}

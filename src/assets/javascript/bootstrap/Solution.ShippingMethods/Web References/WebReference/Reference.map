@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/2012/TarpsPlus/EverythingsCovers.com/Production/Source Code/Solution.ShippingMethods/common.xsd" filename="common.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///D:/2012/TarpsPlus/EverythingsCovers.com/Production/Source Code/Solution.ShippingMethods/Ship.wsdl" filename="Ship.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/2012/TarpsPlus/EverythingsCovers.com/Production/Source Code/Solution.ShippingMethods/IFWS.xsd" filename="IFWS.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/2012/TarpsPlus/EverythingsCovers.com/Production/Source Code/Solution.ShippingMethods/ShipWebServiceSchema.xsd" filename="ShipWebServiceSchema.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/2012/TarpsPlus/EverythingsCovers.com/Production/Source Code/Solution.ShippingMethods/UPSSecurity.xsd" filename="UPSSecurity.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/2012/TarpsPlus/EverythingsCovers.com/Production/Source Code/Solution.ShippingMethods/Error1.1.xsd" filename="Error1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,3360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Credential" mixed="true">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="StoreNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="APIKey" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ApplicationNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ApplicationVersion" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Credential" type="tns:Credential" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Card">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="CardholderName" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="AccountNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ExpirationMonth" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ExpirationYear" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Track2Data" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Token" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="CardVerificationValue" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="KeySerialNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PINData" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="SetAsDefault" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Card" type="tns:Card" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="ExtraData">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Name" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Value" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="LineItem">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ProductCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Category" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Quantity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitOfMeasure" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitPrice" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineTaxAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineDiscountAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineAmount" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="ExtraData" type="tns:ExtraData" />
+        </sequence>
+      </complexType>
+      <complexType name="TaxLine">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="PrintDescription" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxAmount" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="AppliesTo">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="DocumentNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="PostingDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Amount" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="RemainingAmount" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PaymentTermsDescription" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="DueDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PaymentDiscountDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PaymentDiscountAmount" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Transaction">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="Currency" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Amount" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="FreightAmount" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxAmount" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PurchaseOrderNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PurchaseOrderDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ExternalReferenceNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="AuthorizationNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ConfirmationID" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="LineItem" type="tns:LineItem" />
+          <element minOccurs="0" maxOccurs="unbounded" name="TaxLine" type="tns:TaxLine" />
+          <element minOccurs="0" maxOccurs="unbounded" name="AppliesTo" type="tns:AppliesTo" />
+        </sequence>
+      </complexType>
+      <element name="Transaction" type="tns:Transaction" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Address">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="Name" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="StreetAddress" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="StreetAddress2" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="City" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="State" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PostCode" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Country" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Email" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Address" type="tns:Address" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Response">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ResponseCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="HostResponseCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Message" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ApprovalNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ApprovedAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BalanceAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionTime" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionStatus" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AddressVerificationAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CardVerificationValueAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="MaskedAccountNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Token" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Response" type="tns:Response" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="ExtraDataField">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Name" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Value" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Comment">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="CommentLine" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="HostedPayment">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="RequireCVV" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ReturnURL" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Language" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="LogoURL" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgent" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgentDescription" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgentService" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgentServiceDescription" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ConfirmationID" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PageBackgroundColor" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ButtonBackgroundColor" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="HeaderFontColor" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="FieldLabelFontColor" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="BorderColor" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ErrorColor" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Embedded" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="MerchantResourceURL" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Salesperson" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="VATRegistrationNo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxType" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="WebPaymentGateway" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="WebPaymentTransactionID" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="WebPaymentAmount" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="AllowDefaultPaymentMethod" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Signature" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="ExtraDataField" type="tns:ExtraDataField" />
+          <element minOccurs="0" maxOccurs="unbounded" name="Comment" type="tns:Comment" />
+        </sequence>
+      </complexType>
+      <element name="HostedPayment" type="tns:HostedPayment" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="DemandDepositAccount">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="RoutingNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Token" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="CheckNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CheckType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountType" type="string" />
+        </sequence>
+      </complexType>
+      <element name="DemandDepositAccount" type="tns:DemandDepositAccount" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Identification">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="BirthDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="IdentificationNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="IdentificationState" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxIDNumber" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Identification" type="tns:Identification" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="ReferenceTransaction">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="OriginalReferenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Amount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="ReferenceTransaction" type="tns:ReferenceTransaction" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="QueryParameters" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="ExternalReferenceNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="HostedPaymentID" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TransactionDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TransactionAmount" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TenderType" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="MethodType" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="BillToEmail" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="AccountNumberLastFour" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PageNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="RecordsPerPage" type="string" />
+        </sequence>
+      </complexType>
+      <element name="QueryParameters" type="tns:QueryParameters" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="PurchaseLine">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ItemSequenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemCategory" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemDescription" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemQuantity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemUnitCost" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemDiscountAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemTaxAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ItemTaxRate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ISOUnitOfMeasureCode" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="EFTTransaction">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="AccountName" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ACHApproved" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ACI" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ACIResponseCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="ActivationCount" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="AlternateTaxAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ApprovalNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ApprovedAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AuthorizationNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AuthorizationSourceCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AVSResponseCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BalanceAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BankNETDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BankNETReferenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToAddress" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToAddress2" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCountryRegionCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToEmail" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToName" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToPhoneNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToPostCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCounty" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BirthDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CAPNPOSData" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CardType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CardLevelResults" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CheckNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CheckSettlementCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CheckType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ClientIPAddress" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CreditPrepaidSupportInd" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CurrencyCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CVCErrorCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CVVResponseCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="DefaultAccountNumberUsed" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="DemandDepositAccountType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="DiscountAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="DutyAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="ErrorCount" type="int" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="ErrorRecordLineNo" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="ErrorRecordType" type="string" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="ErrorDataFieldNo" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="ErrorData" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ExpirationMonth" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ExpirationYear" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="FreightAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="GratuityAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="HostMessageIdentifier" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="HostTransactionReference" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="IdentificationNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="IdentificationCounty" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="IdentificationCountyMapCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Industry" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="MerchantNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="MSIResponseCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="MICR" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="NetworkIdentificationCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="OrderDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="OriginalRecordNumber" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="OriginalTransactionAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="OriginalTransactionID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ParsedMICRData" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="PrivateData" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="POSEntryModeChange" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ProcessorData" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="PurchaseOrderNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ReceivingInstitutionID" type="string" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="RecordNumber" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="ReferenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ResponseCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ResultCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ResultMessage" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ReturnedCheckFeeAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="RetrievalReferenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ReturnedCheckMessage" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="RoutingNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SalesTaxAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SalesTaxRate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SettledAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SettlementDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToAddress" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToAddress2" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToCity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToCountryRegionCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToEmail" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToName" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToPhoneNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToPostCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToCounty" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="StoreID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SummaryCommodityCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SystemTraceAuditNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxIDNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TerminalID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="TransactionCount" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionEditErrorCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionTime" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionStatus" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ValidationCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="IssuerIdentificationNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="GiftCardNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountDataSource" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CardholderIdentification" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="OriginalReferenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TotalAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ExternalReferenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="EncryptionSalt" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ProtectedAccountNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountNumberProtectionType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TestMode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AVSAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CVVAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransAmountAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SellToCustomerAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCustomerAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AddressAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountNoVelocityAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SellToCustVelocityAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCustVelocityAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CommercialCardAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="IssuerIDNumberAlert" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="MaskedAccountNumber" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="PurchaseLine" type="tns:PurchaseLine" />
+        </sequence>
+        <attribute name="StoreNo" type="string" use="required" />
+        <attribute name="ReferenceNumber" type="string" use="required" />
+        <attribute name="TenderType" type="string" use="required" />
+        <attribute name="MethodType" type="string" use="required" />
+      </complexType>
+      <complexType name="EFTTransactions" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="EFTTransaction" type="tns:EFTTransaction" />
+          <element minOccurs="1" maxOccurs="unbounded" name="TransactionCount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="EFTTransactions" type="tns:EFTTransactions" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="CardTypes">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="CardType" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Payment">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="TransactionDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ApprovalNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CurrencyCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TransactionAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="AccountType" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="HostedPayment2">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="CurrencySymbol" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="FormattedBillingAddress" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="FormattedShippingAddress" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="FormattedCompanyAddress" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="CardTypes" type="tns:CardTypes" />
+          <element minOccurs="0" maxOccurs="unbounded" name="Payment" type="tns:Payment" />
+        </sequence>
+      </complexType>
+      <element name="HostedPayment2" type="tns:HostedPayment2" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="LineItem">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ProductCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Category" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Quantity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitOfMeasure" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitPrice" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineTaxAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineDiscountAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineAmount" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Shipment">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="HostedPaymentID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipmentNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShipmentDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgent" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgentService" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TrackingNumber" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="LineItem" type="tns:LineItem" />
+        </sequence>
+      </complexType>
+      <element name="Shipment" type="tns:Shipment" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="ExtraDataField">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Name" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Value" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="ExtraDataFieldType">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Name" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Value" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="LineItem">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ProductCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Category" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Quantity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitOfMeasure" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitPrice" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineTaxAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineDiscountAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineAmount" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="ExtraDataField" type="tns:ExtraDataFieldType" />
+        </sequence>
+      </complexType>
+      <complexType name="Comment">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="CommentLine" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="TaxLine">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="PrintDescription" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxAmount" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="AppliesTo">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="DocumentNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="PostingDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PaymentTermsDescription" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="DueDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PaymentDiscountDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PaymentDiscountAmount" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="LineItemType">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ProductCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Category" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Quantity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitOfMeasure" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitPrice" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineTaxAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineDiscountAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="LineAmount" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Shipment">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="HostedPaymentID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipmentNumber" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShipmentDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgent" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ShippingAgentService" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TrackingNumber" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="LineItem" type="tns:LineItemType" />
+        </sequence>
+      </complexType>
+      <complexType name="Order">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToAddress" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToAddress2" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCountry" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToEmail" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToName" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToPhoneNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToPostCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCounty" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToAddress" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToAddress2" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToCity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToCountry" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToEmail" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToName" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToPhoneNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToPostCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShipToCounty" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Currency" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ExternalReferenceNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CreatedDateTime" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="RetrievedDateTime" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Language" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="PurchaseOrderNumber" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="FreightAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShippingAgent" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ShippingAgentService" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="BillToCustomerNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="VATRegistrationNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="WebPaymentGatewayNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="WebPaymentTransactionID" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="WebPaymentAmount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Signature" type="string" />
+          <element minOccurs="1" maxOccurs="1" default="0" name="OrderCounter" type="int" />
+          <element minOccurs="0" maxOccurs="unbounded" name="ExtraDataField" type="tns:ExtraDataField" />
+          <element minOccurs="0" maxOccurs="unbounded" name="LineItem" type="tns:LineItem" />
+          <element minOccurs="0" maxOccurs="unbounded" name="Comment" type="tns:Comment" />
+          <element minOccurs="0" maxOccurs="unbounded" name="TaxLine" type="tns:TaxLine" />
+          <element minOccurs="0" maxOccurs="unbounded" name="AppliesTo" type="tns:AppliesTo" />
+          <element minOccurs="0" maxOccurs="unbounded" name="Shipment" type="tns:Shipment" />
+        </sequence>
+      </complexType>
+      <complexType name="EFTOrders" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="Order" type="tns:Order" />
+          <element minOccurs="1" maxOccurs="unbounded" name="OrderCount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="EFTOrders" type="tns:EFTOrders" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="LedgerEntry">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" default="0" name="EntryNumber" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="Type" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Amount" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Date" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Time" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="GiftCard">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Number" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Balance" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ActivationDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="DeactivationDate" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="LedgerEntry" type="tns:LedgerEntry" />
+        </sequence>
+      </complexType>
+      <complexType name="GiftCards" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="GiftCard" type="tns:GiftCard" />
+          <element minOccurs="1" maxOccurs="1" name="GiftCardCount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="GiftCards" type="tns:GiftCards" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Customer">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Address" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Address2" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="City" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Country" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Email" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Name" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="PhoneNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="PostCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="County" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxArea" type="string" />
+          <element minOccurs="1" maxOccurs="unbounded" name="TaxAreaDescription" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxLaible" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Customers" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="Customer" type="tns:Customer" />
+          <element minOccurs="1" maxOccurs="unbounded" name="CustomerCount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Customers" type="tns:Customers" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Campaign">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Description" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Campaigns" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="Campaign" type="tns:Campaign" />
+          <element minOccurs="1" maxOccurs="unbounded" name="CampaignCount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Campaigns" type="tns:Campaigns" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="TaxAreaType">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Description" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="TaxArea" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="TaxArea" type="tns:TaxAreaType" />
+          <element minOccurs="1" maxOccurs="unbounded" name="TaxAreaCount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="TaxArea" type="tns:TaxArea" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="Item">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="1" maxOccurs="unbounded" name="Price" type="string" />
+          <element minOccurs="1" maxOccurs="unbounded" name="Tax" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitOfMeasure" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="Items" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="Item" type="tns:Item" />
+          <element minOccurs="1" maxOccurs="unbounded" name="ItemCount" type="string" />
+        </sequence>
+      </complexType>
+      <element name="Items" type="tns:Items" />
+    </schema>
+    <schema xmlns:tns="http://www.chargelogic.com/schemas/api2.0" elementFormDefault="qualified" targetNamespace="http://www.chargelogic.com/schemas/api2.0" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="SyncCustomer">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Address" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Address2" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="City" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Country" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Email" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Name" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PhoneNo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="PostCode" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="County" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxArea" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxLiable" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncItem">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="UnitPrice" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxGroupCode" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="SalesUnitOfMeasure" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncTaxArea">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Code" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncTaxAreaLine">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="TaxArea" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxJurisdiction" type="string" />
+          <element minOccurs="0" maxOccurs="1" default="0" name="CalculationOrder" type="int" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncTaxJurisdiction">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Code" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ReportToJurisdiction" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="CalculateTaxOnTax" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncTaxGroup">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Code" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncTaxDetail">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="TaxJurisdiction" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxGroup" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="TaxType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="EffectiveDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="MaximumAmountPerQty" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxBelowMaximum" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="TaxAboveMaximum" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="CalculateTaxOnTax" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncItemBarcode">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ItemNo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="SalesUnitOfMeasure" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncSalesPrice">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="ItemNo" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SalesType" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="SalesCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="StartingDate" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="CurrencyCode" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="UnitOfMeasure" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="MinimumQuantity" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="UnitPrice" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="EndingDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="AllowLineDisc" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="SyncCampaign">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="No" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Description" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="StartingDate" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="EndingDate" type="string" />
+        </sequence>
+        <attribute name="Action" type="string" use="required" />
+      </complexType>
+      <complexType name="Sync" mixed="true">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncCustomer" type="tns:SyncCustomer" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncItem" type="tns:SyncItem" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncTaxArea" type="tns:SyncTaxArea" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncTaxAreaLine" type="tns:SyncTaxAreaLine" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncTaxJurisdiction" type="tns:SyncTaxJurisdiction" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncTaxGroup" type="tns:SyncTaxGroup" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncTaxDetail" type="tns:SyncTaxDetail" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncItemBarcode" type="tns:SyncItemBarcode" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncSalesPrice" type="tns:SyncSalesPrice" />
+          <element minOccurs="0" maxOccurs="unbounded" name="SyncCampaign" type="tns:SyncCampaign" />
+        </sequence>
+      </complexType>
+      <element name="Sync" type="tns:Sync" />
+    </schema>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="CreditCardAuthorize">
+        <complexType>
+          <sequence>
+            <element xmlns:q1="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q1:Credential" />
+            <element xmlns:q2="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q2:Card" />
+            <element xmlns:q3="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q3:Transaction" />
+            <element xmlns:q4="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q4:Address" />
+            <element xmlns:q5="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q5:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardAuthorize_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q6="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q6:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedOrder">
+        <complexType>
+          <sequence>
+            <element xmlns:q7="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q7:Credential" />
+            <element xmlns:q8="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q8:Transaction" />
+            <element xmlns:q9="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q9:Address" />
+            <element xmlns:q10="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q10:Address" />
+            <element xmlns:q11="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q11:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedOrder_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FinalizeOrder">
+        <complexType>
+          <sequence>
+            <element xmlns:q12="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q12:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FinalizeOrder_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="CheckCharge">
+        <complexType>
+          <sequence>
+            <element xmlns:q13="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q13:Credential" />
+            <element xmlns:q14="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="demandDepositAccount" type="q14:DemandDepositAccount" />
+            <element xmlns:q15="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q15:Transaction" />
+            <element xmlns:q16="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="identification" type="q16:Identification" />
+            <element xmlns:q17="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q17:Address" />
+            <element xmlns:q18="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q18:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CheckCharge_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q19="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q19:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CheckRefund">
+        <complexType>
+          <sequence>
+            <element xmlns:q20="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q20:Credential" />
+            <element xmlns:q21="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q21:ReferenceTransaction" />
+            <element xmlns:q22="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q22:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CheckRefund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q23="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q23:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CheckVerify">
+        <complexType>
+          <sequence>
+            <element xmlns:q24="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q24:Credential" />
+            <element xmlns:q25="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="demandDepositAccount" type="q25:DemandDepositAccount" />
+            <element xmlns:q26="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q26:Transaction" />
+            <element xmlns:q27="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="identification" type="q27:Identification" />
+            <element xmlns:q28="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q28:Address" />
+            <element xmlns:q29="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q29:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CheckVerify_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q30="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q30:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardAddressVerify">
+        <complexType>
+          <sequence>
+            <element xmlns:q31="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q31:Credential" />
+            <element xmlns:q32="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q32:Card" />
+            <element xmlns:q33="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q33:Address" />
+            <element xmlns:q34="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q34:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardAddressVerify_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q35="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q35:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardAddressVerify2">
+        <complexType>
+          <sequence>
+            <element xmlns:q36="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q36:Credential" />
+            <element xmlns:q37="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q37:Card" />
+            <element xmlns:q38="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q38:Transaction" />
+            <element xmlns:q39="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q39:Address" />
+            <element xmlns:q40="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q40:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardAddressVerify2_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q41="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q41:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardCapture">
+        <complexType>
+          <sequence>
+            <element xmlns:q42="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q42:Credential" />
+            <element xmlns:q43="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q43:Card" />
+            <element xmlns:q44="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q44:Transaction" />
+            <element xmlns:q45="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q45:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardCapture_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q46="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q46:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardCharge">
+        <complexType>
+          <sequence>
+            <element xmlns:q47="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q47:Credential" />
+            <element xmlns:q48="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q48:Card" />
+            <element xmlns:q49="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q49:Transaction" />
+            <element xmlns:q50="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q50:Address" />
+            <element xmlns:q51="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q51:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardCharge_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q52="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q52:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardCredit">
+        <complexType>
+          <sequence>
+            <element xmlns:q53="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q53:Credential" />
+            <element xmlns:q54="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q54:Card" />
+            <element xmlns:q55="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q55:Transaction" />
+            <element xmlns:q56="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q56:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardCredit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q57="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q57:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardRefund">
+        <complexType>
+          <sequence>
+            <element xmlns:q58="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q58:Credential" />
+            <element xmlns:q59="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q59:ReferenceTransaction" />
+            <element xmlns:q60="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q60:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardRefund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q61="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q61:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardReverse">
+        <complexType>
+          <sequence>
+            <element xmlns:q62="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q62:Credential" />
+            <element xmlns:q63="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q63:ReferenceTransaction" />
+            <element xmlns:q64="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q64:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardReverse_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q65="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q65:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardSettle">
+        <complexType>
+          <sequence>
+            <element xmlns:q66="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q66:Credential" />
+            <element xmlns:q67="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q67:ReferenceTransaction" />
+            <element xmlns:q68="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q68:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardSettle_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q69="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q69:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardVoiceAuthorize">
+        <complexType>
+          <sequence>
+            <element xmlns:q70="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q70:Credential" />
+            <element xmlns:q71="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q71:Card" />
+            <element xmlns:q72="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q72:Transaction" />
+            <element xmlns:q73="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q73:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardVoiceAuthorize_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q74="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q74:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardVoid">
+        <complexType>
+          <sequence>
+            <element xmlns:q75="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q75:Credential" />
+            <element xmlns:q76="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q76:ReferenceTransaction" />
+            <element xmlns:q77="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q77:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreditCardVoid_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q78="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q78:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DebitCardCharge">
+        <complexType>
+          <sequence>
+            <element xmlns:q79="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q79:Credential" />
+            <element xmlns:q80="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q80:Card" />
+            <element xmlns:q81="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q81:Transaction" />
+            <element xmlns:q82="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q82:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DebitCardCharge_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q83="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q83:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DebitCardCredit">
+        <complexType>
+          <sequence>
+            <element xmlns:q84="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q84:Credential" />
+            <element xmlns:q85="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q85:Card" />
+            <element xmlns:q86="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q86:Transaction" />
+            <element xmlns:q87="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q87:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DebitCardCredit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q88="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q88:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardActivate">
+        <complexType>
+          <sequence>
+            <element xmlns:q89="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q89:Credential" />
+            <element xmlns:q90="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q90:Card" />
+            <element xmlns:q91="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q91:Transaction" />
+            <element xmlns:q92="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q92:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardActivate_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q93="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q93:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardAuthorize">
+        <complexType>
+          <sequence>
+            <element xmlns:q94="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q94:Credential" />
+            <element xmlns:q95="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q95:Card" />
+            <element xmlns:q96="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q96:Transaction" />
+            <element xmlns:q97="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q97:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardAuthorize_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q98="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q98:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardBalanceIncrease">
+        <complexType>
+          <sequence>
+            <element xmlns:q99="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q99:Credential" />
+            <element xmlns:q100="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q100:Card" />
+            <element xmlns:q101="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q101:Transaction" />
+            <element xmlns:q102="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q102:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardBalanceIncrease_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q103="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q103:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardBalanceInquiry">
+        <complexType>
+          <sequence>
+            <element xmlns:q104="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q104:Credential" />
+            <element xmlns:q105="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q105:Card" />
+            <element xmlns:q106="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q106:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardBalanceInquiry_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q107="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q107:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardCapture">
+        <complexType>
+          <sequence>
+            <element xmlns:q108="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q108:Credential" />
+            <element xmlns:q109="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q109:Card" />
+            <element xmlns:q110="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q110:Transaction" />
+            <element xmlns:q111="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q111:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardCapture_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q112="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q112:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardCharge">
+        <complexType>
+          <sequence>
+            <element xmlns:q113="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q113:Credential" />
+            <element xmlns:q114="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q114:Card" />
+            <element xmlns:q115="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q115:Transaction" />
+            <element xmlns:q116="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q116:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardCharge_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q117="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q117:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardCredit">
+        <complexType>
+          <sequence>
+            <element xmlns:q118="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q118:Credential" />
+            <element xmlns:q119="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q119:Card" />
+            <element xmlns:q120="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q120:Transaction" />
+            <element xmlns:q121="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q121:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardCredit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q122="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q122:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardDeactivate">
+        <complexType>
+          <sequence>
+            <element xmlns:q123="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q123:Credential" />
+            <element xmlns:q124="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q124:Card" />
+            <element xmlns:q125="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q125:Transaction" />
+            <element xmlns:q126="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q126:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardDeactivate_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q127="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q127:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardRefund">
+        <complexType>
+          <sequence>
+            <element xmlns:q128="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q128:Credential" />
+            <element xmlns:q129="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q129:ReferenceTransaction" />
+            <element xmlns:q130="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q130:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardRefund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q131="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q131:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardReverse">
+        <complexType>
+          <sequence>
+            <element xmlns:q132="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q132:Credential" />
+            <element xmlns:q133="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q133:ReferenceTransaction" />
+            <element xmlns:q134="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q134:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardReverse_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q135="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q135:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardSettle">
+        <complexType>
+          <sequence>
+            <element xmlns:q136="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q136:Credential" />
+            <element xmlns:q137="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q137:ReferenceTransaction" />
+            <element xmlns:q138="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q138:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardSettle_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q139="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q139:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardVoid">
+        <complexType>
+          <sequence>
+            <element xmlns:q140="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q140:Credential" />
+            <element xmlns:q141="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="referenceTransaction" type="q141:ReferenceTransaction" />
+            <element xmlns:q142="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q142:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GiftCardVoid_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q143="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q143:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryTransactions">
+        <complexType>
+          <sequence>
+            <element xmlns:q144="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q144:Credential" />
+            <element xmlns:q145="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="queryParameters" type="q145:QueryParameters" />
+            <element xmlns:q146="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transactions" type="q146:EFTTransactions" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryTransactions_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q147="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transactions" type="q147:EFTTransactions" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="BatchRelease">
+        <complexType>
+          <sequence>
+            <element xmlns:q148="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q148:Credential" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="BatchRelease_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardAVS">
+        <complexType>
+          <sequence>
+            <element xmlns:q149="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q149:Credential" />
+            <element xmlns:q150="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q150:Transaction" />
+            <element xmlns:q151="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q151:Address" />
+            <element xmlns:q152="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q152:Address" />
+            <element xmlns:q153="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q153:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardAVS_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardAuthorize">
+        <complexType>
+          <sequence>
+            <element xmlns:q154="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q154:Credential" />
+            <element xmlns:q155="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q155:Transaction" />
+            <element xmlns:q156="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q156:Address" />
+            <element xmlns:q157="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q157:Address" />
+            <element xmlns:q158="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q158:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardAuthorize_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardCapture">
+        <complexType>
+          <sequence>
+            <element xmlns:q159="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q159:Credential" />
+            <element xmlns:q160="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q160:Transaction" />
+            <element xmlns:q161="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q161:Address" />
+            <element xmlns:q162="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q162:Address" />
+            <element xmlns:q163="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q163:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardCapture_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardCharge">
+        <complexType>
+          <sequence>
+            <element xmlns:q164="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q164:Credential" />
+            <element xmlns:q165="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q165:Transaction" />
+            <element xmlns:q166="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q166:Address" />
+            <element xmlns:q167="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q167:Address" />
+            <element xmlns:q168="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q168:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardCharge_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardCredit">
+        <complexType>
+          <sequence>
+            <element xmlns:q169="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q169:Credential" />
+            <element xmlns:q170="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q170:Transaction" />
+            <element xmlns:q171="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q171:Address" />
+            <element xmlns:q172="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q172:Address" />
+            <element xmlns:q173="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q173:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardCredit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardVoiceAuth">
+        <complexType>
+          <sequence>
+            <element xmlns:q174="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q174:Credential" />
+            <element xmlns:q175="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q175:Transaction" />
+            <element xmlns:q176="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q176:Address" />
+            <element xmlns:q177="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q177:Address" />
+            <element xmlns:q178="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q178:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCreditCardVoiceAuth_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCheckAuthorize">
+        <complexType>
+          <sequence>
+            <element xmlns:q179="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q179:Credential" />
+            <element xmlns:q180="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q180:Transaction" />
+            <element xmlns:q181="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="identification" type="q181:Identification" />
+            <element xmlns:q182="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q182:Address" />
+            <element xmlns:q183="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q183:Address" />
+            <element xmlns:q184="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q184:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCheckAuthorize_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCheckCharge">
+        <complexType>
+          <sequence>
+            <element xmlns:q185="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q185:Credential" />
+            <element xmlns:q186="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q186:Transaction" />
+            <element xmlns:q187="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="identification" type="q187:Identification" />
+            <element xmlns:q188="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q188:Address" />
+            <element xmlns:q189="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q189:Address" />
+            <element xmlns:q190="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q190:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCheckCharge_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCheckCredit">
+        <complexType>
+          <sequence>
+            <element xmlns:q191="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q191:Credential" />
+            <element xmlns:q192="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q192:Transaction" />
+            <element xmlns:q193="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="identification" type="q193:Identification" />
+            <element xmlns:q194="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q194:Address" />
+            <element xmlns:q195="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q195:Address" />
+            <element xmlns:q196="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q196:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedCheckCredit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="RetrieveHostedCreditCardSetup">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q197="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q197:Transaction" />
+            <element xmlns:q198="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q198:Address" />
+            <element xmlns:q199="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q199:Address" />
+            <element xmlns:q200="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q200:HostedPayment" />
+            <element xmlns:q201="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment2" type="q201:HostedPayment2" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="RetrieveHostedCreditCardSetup_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q202="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q202:Transaction" />
+            <element xmlns:q203="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q203:Address" />
+            <element xmlns:q204="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q204:Address" />
+            <element xmlns:q205="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q205:HostedPayment" />
+            <element xmlns:q206="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment2" type="q206:HostedPayment2" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="RetrieveHostedPaymentID">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="token" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="amount" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="RetrieveHostedPaymentID_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCreditCardTran">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q207="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q207:Card" />
+            <element xmlns:q208="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q208:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCreditCardTran_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q209="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q209:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCreditCardTran2">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q210="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q210:Card" />
+            <element xmlns:q211="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q211:Address" />
+            <element xmlns:q212="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q212:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCreditCardTran2_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q213="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q213:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCreditCardTran3">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q214="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q214:Transaction" />
+            <element xmlns:q215="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="card" type="q215:Card" />
+            <element xmlns:q216="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q216:Address" />
+            <element xmlns:q217="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q217:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCreditCardTran3_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q218="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q218:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UnfinalizeOrder">
+        <complexType>
+          <sequence>
+            <element xmlns:q219="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q219:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UnfinalizeOrder_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCheckTran">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q220="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="demandDepositAccount" type="q220:DemandDepositAccount" />
+            <element xmlns:q221="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q221:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCheckTran_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q222="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q222:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCheckTran2">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q223="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="demandDepositAccount" type="q223:DemandDepositAccount" />
+            <element xmlns:q224="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="identification" type="q224:Identification" />
+            <element xmlns:q225="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q225:Address" />
+            <element xmlns:q226="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q226:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCheckTran2_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q227="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q227:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCheckTran3">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q228="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q228:Transaction" />
+            <element xmlns:q229="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="demandDepositAccount" type="q229:DemandDepositAccount" />
+            <element xmlns:q230="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="identification" type="q230:Identification" />
+            <element xmlns:q231="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q231:Address" />
+            <element xmlns:q232="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q232:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CompleteHostedCheckTran3_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+            <element xmlns:q233="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="response" type="q233:Response" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ShipOrder">
+        <complexType>
+          <sequence>
+            <element xmlns:q234="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q234:Credential" />
+            <element xmlns:q235="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shipment" type="q235:Shipment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ShipOrder_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="SetupHostedInvoice">
+        <complexType>
+          <sequence>
+            <element xmlns:q236="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q236:Credential" />
+            <element xmlns:q237="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q237:Transaction" />
+            <element xmlns:q238="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q238:Address" />
+            <element xmlns:q239="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="shippingAddress" type="q239:Address" />
+            <element xmlns:q240="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q240:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedInvoice_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedStatement">
+        <complexType>
+          <sequence>
+            <element xmlns:q241="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q241:Credential" />
+            <element xmlns:q242="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="transaction" type="q242:Transaction" />
+            <element xmlns:q243="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="billingAddress" type="q243:Address" />
+            <element xmlns:q244="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="hostedPayment" type="q244:HostedPayment" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetupHostedStatement_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrders">
+        <complexType>
+          <sequence>
+            <element xmlns:q245="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q245:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="orderCounter" type="int" />
+            <element xmlns:q246="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q246:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrders_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q247="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q247:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrdersByPage">
+        <complexType>
+          <sequence>
+            <element xmlns:q248="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q248:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="pageNumber" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="recordsPerPage" type="int" />
+            <element xmlns:q249="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q249:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrdersByPage_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q250="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q250:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrdersWithParams">
+        <complexType>
+          <sequence>
+            <element xmlns:q251="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q251:Credential" />
+            <element xmlns:q252="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="queryParameters" type="q252:QueryParameters" />
+            <element xmlns:q253="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q253:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrdersWithParams_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q254="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q254:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrder">
+        <complexType>
+          <sequence>
+            <element xmlns:q255="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q255:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="hostedPaymentID" type="string" />
+            <element xmlns:q256="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q256:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryOrder_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q257="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="orders" type="q257:EFTOrders" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryGiftCardsByPage">
+        <complexType>
+          <sequence>
+            <element xmlns:q258="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q258:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="pageNumber" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="recordsPerPage" type="int" />
+            <element xmlns:q259="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="giftCards" type="q259:GiftCards" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryGiftCardsByPage_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q260="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="giftCards" type="q260:GiftCards" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryGiftCard">
+        <complexType>
+          <sequence>
+            <element xmlns:q261="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q261:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="giftCardNumber" type="string" />
+            <element xmlns:q262="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="giftCards" type="q262:GiftCards" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryGiftCard_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q263="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="giftCards" type="q263:GiftCards" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryCustomersByPage">
+        <complexType>
+          <sequence>
+            <element xmlns:q264="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q264:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="pageNumber" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="recordsPerPage" type="int" />
+            <element xmlns:q265="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="customers" type="q265:Customers" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryCustomersByPage_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q266="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="customers" type="q266:Customers" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryCustomersByPageWithFilter">
+        <complexType>
+          <sequence>
+            <element xmlns:q267="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q267:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="_filterBy" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="filterString" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="pageNumber" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="recordsPerPage" type="int" />
+            <element xmlns:q268="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="customers" type="q268:Customers" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryCustomersByPageWithFilter_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q269="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="customers" type="q269:Customers" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryCampaignsByPageWithFilter">
+        <complexType>
+          <sequence>
+            <element xmlns:q270="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q270:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="_filterBy" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="filterString" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="pageNumber" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="recordsPerPage" type="int" />
+            <element xmlns:q271="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="campaigns" type="q271:Campaigns" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryCampaignsByPageWithFilter_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q272="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="campaigns" type="q272:Campaigns" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryTaxAreasByPageWithFilter">
+        <complexType>
+          <sequence>
+            <element xmlns:q273="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q273:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="_filterBy" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="filterString" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="pageNumber" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="recordsPerPage" type="int" />
+            <element xmlns:q274="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="taxareas" type="q274:TaxArea" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryTaxAreasByPageWithFilter_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q275="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="taxareas" type="q275:TaxArea" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryItemsByPageWithFilter">
+        <complexType>
+          <sequence>
+            <element xmlns:q276="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q276:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="_filterBy" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="filterString" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="customerNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="campaignNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="quantity" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="unitOfMeasure" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="currency" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="taxArea" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="taxLiable" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="pageNumber" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="recordsPerPage" type="int" />
+            <element xmlns:q277="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="items" type="q277:Items" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryItemsByPageWithFilter_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q278="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="items" type="q278:Items" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryItemsWithBarcode">
+        <complexType>
+          <sequence>
+            <element xmlns:q279="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q279:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="barcode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="customerNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="campaignNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="quantity" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="currency" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="taxArea" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="taxLiable" type="boolean" />
+            <element xmlns:q280="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="items" type="q280:Items" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="QueryItemsWithBarcode_Result">
+        <complexType>
+          <sequence>
+            <element xmlns:q281="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="items" type="q281:Items" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Sync">
+        <complexType>
+          <sequence>
+            <element xmlns:q282="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q282:Credential" />
+            <element xmlns:q283="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="sync" type="q283:Sync" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Sync_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="PutCreditCardAccountNumber">
+        <complexType>
+          <sequence>
+            <element xmlns:q284="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q284:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="accountNumber" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PutCreditCardAccountNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetCreditCardAccountNumber">
+        <complexType>
+          <sequence>
+            <element xmlns:q285="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q285:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="token" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetCreditCardAccountNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PutDemandDepositAccountNumber">
+        <complexType>
+          <sequence>
+            <element xmlns:q286="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q286:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="accountNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="routingNumber" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PutDemandDepositAccountNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetDemandDepositAccountNumber">
+        <complexType>
+          <sequence>
+            <element xmlns:q287="http://www.chargelogic.com/schemas/api2.0" minOccurs="1" maxOccurs="1" name="credential" type="q287:Credential" />
+            <element minOccurs="1" maxOccurs="1" name="token" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetDemandDepositAccountNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="CreditCardAuthorize">
+    <part name="parameters" element="tns:CreditCardAuthorize" />
+  </message>
+  <message name="CreditCardAuthorize_Result">
+    <part name="parameters" element="tns:CreditCardAuthorize_Result" />
+  </message>
+  <message name="SetupHostedOrder">
+    <part name="parameters" element="tns:SetupHostedOrder" />
+  </message>
+  <message name="SetupHostedOrder_Result">
+    <part name="parameters" element="tns:SetupHostedOrder_Result" />
+  </message>
+  <message name="FinalizeOrder">
+    <part name="parameters" element="tns:FinalizeOrder" />
+  </message>
+  <message name="FinalizeOrder_Result">
+    <part name="parameters" element="tns:FinalizeOrder_Result" />
+  </message>
+  <message name="CheckCharge">
+    <part name="parameters" element="tns:CheckCharge" />
+  </message>
+  <message name="CheckCharge_Result">
+    <part name="parameters" element="tns:CheckCharge_Result" />
+  </message>
+  <message name="CheckRefund">
+    <part name="parameters" element="tns:CheckRefund" />
+  </message>
+  <message name="CheckRefund_Result">
+    <part name="parameters" element="tns:CheckRefund_Result" />
+  </message>
+  <message name="CheckVerify">
+    <part name="parameters" element="tns:CheckVerify" />
+  </message>
+  <message name="CheckVerify_Result">
+    <part name="parameters" element="tns:CheckVerify_Result" />
+  </message>
+  <message name="CreditCardAddressVerify">
+    <part name="parameters" element="tns:CreditCardAddressVerify" />
+  </message>
+  <message name="CreditCardAddressVerify_Result">
+    <part name="parameters" element="tns:CreditCardAddressVerify_Result" />
+  </message>
+  <message name="CreditCardAddressVerify2">
+    <part name="parameters" element="tns:CreditCardAddressVerify2" />
+  </message>
+  <message name="CreditCardAddressVerify2_Result">
+    <part name="parameters" element="tns:CreditCardAddressVerify2_Result" />
+  </message>
+  <message name="CreditCardCapture">
+    <part name="parameters" element="tns:CreditCardCapture" />
+  </message>
+  <message name="CreditCardCapture_Result">
+    <part name="parameters" element="tns:CreditCardCapture_Result" />
+  </message>
+  <message name="CreditCardCharge">
+    <part name="parameters" element="tns:CreditCardCharge" />
+  </message>
+  <message name="CreditCardCharge_Result">
+    <part name="parameters" element="tns:CreditCardCharge_Result" />
+  </message>
+  <message name="CreditCardCredit">
+    <part name="parameters" element="tns:CreditCardCredit" />
+  </message>
+  <message name="CreditCardCredit_Result">
+    <part name="parameters" element="tns:CreditCardCredit_Result" />
+  </message>
+  <message name="CreditCardRefund">
+    <part name="parameters" element="tns:CreditCardRefund" />
+  </message>
+  <message name="CreditCardRefund_Result">
+    <part name="parameters" element="tns:CreditCardRefund_Result" />
+  </message>
+  <message name="CreditCardReverse">
+    <part name="parameters" element="tns:CreditCardReverse" />
+  </message>
+  <message name="CreditCardReverse_Result">
+    <part name="parameters" element="tns:CreditCardReverse_Result" />
+  </message>
+  <message name="CreditCardSettle">
+    <part name="parameters" element="tns:CreditCardSettle" />
+  </message>
+  <message name="CreditCardSettle_Result">
+    <part name="parameters" element="tns:CreditCardSettle_Result" />
+  </message>
+  <message name="CreditCardVoiceAuthorize">
+    <part name="parameters" element="tns:CreditCardVoiceAuthorize" />
+  </message>
+  <message name="CreditCardVoiceAuthorize_Result">
+    <part name="parameters" element="tns:CreditCardVoiceAuthorize_Result" />
+  </message>
+  <message name="CreditCardVoid">
+    <part name="parameters" element="tns:CreditCardVoid" />
+  </message>
+  <message name="CreditCardVoid_Result">
+    <part name="parameters" element="tns:CreditCardVoid_Result" />
+  </message>
+  <message name="DebitCardCharge">
+    <part name="parameters" element="tns:DebitCardCharge" />
+  </message>
+  <message name="DebitCardCharge_Result">
+    <part name="parameters" element="tns:DebitCardCharge_Result" />
+  </message>
+  <message name="DebitCardCredit">
+    <part name="parameters" element="tns:DebitCardCredit" />
+  </message>
+  <message name="DebitCardCredit_Result">
+    <part name="parameters" element="tns:DebitCardCredit_Result" />
+  </message>
+  <message name="GiftCardActivate">
+    <part name="parameters" element="tns:GiftCardActivate" />
+  </message>
+  <message name="GiftCardActivate_Result">
+    <part name="parameters" element="tns:GiftCardActivate_Result" />
+  </message>
+  <message name="GiftCardAuthorize">
+    <part name="parameters" element="tns:GiftCardAuthorize" />
+  </message>
+  <message name="GiftCardAuthorize_Result">
+    <part name="parameters" element="tns:GiftCardAuthorize_Result" />
+  </message>
+  <message name="GiftCardBalanceIncrease">
+    <part name="parameters" element="tns:GiftCardBalanceIncrease" />
+  </message>
+  <message name="GiftCardBalanceIncrease_Result">
+    <part name="parameters" element="tns:GiftCardBalanceIncrease_Result" />
+  </message>
+  <message name="GiftCardBalanceInquiry">
+    <part name="parameters" element="tns:GiftCardBalanceInquiry" />
+  </message>
+  <message name="GiftCardBalanceInquiry_Result">
+    <part name="parameters" element="tns:GiftCardBalanceInquiry_Result" />
+  </message>
+  <message name="GiftCardCapture">
+    <part name="parameters" element="tns:GiftCardCapture" />
+  </message>
+  <message name="GiftCardCapture_Result">
+    <part name="parameters" element="tns:GiftCardCapture_Result" />
+  </message>
+  <message name="GiftCardCharge">
+    <part name="parameters" element="tns:GiftCardCharge" />
+  </message>
+  <message name="GiftCardCharge_Result">
+    <part name="parameters" element="tns:GiftCardCharge_Result" />
+  </message>
+  <message name="GiftCardCredit">
+    <part name="parameters" element="tns:GiftCardCredit" />
+  </message>
+  <message name="GiftCardCredit_Result">
+    <part name="parameters" element="tns:GiftCardCredit_Result" />
+  </message>
+  <message name="GiftCardDeactivate">
+    <part name="parameters" element="tns:GiftCardDeactivate" />
+  </message>
+  <message name="GiftCardDeactivate_Result">
+    <part name="parameters" element="tns:GiftCardDeactivate_Result" />
+  </message>
+  <message name="GiftCardRefund">
+    <part name="parameters" element="tns:GiftCardRefund" />
+  </message>
+  <message name="GiftCardRefund_Result">
+    <part name="parameters" element="tns:GiftCardRefund_Result" />
+  </message>
+  <message name="GiftCardReverse">
+    <part name="parameters" element="tns:GiftCardReverse" />
+  </message>
+  <message name="GiftCardReverse_Result">
+    <part name="parameters" element="tns:GiftCardReverse_Result" />
+  </message>
+  <message name="GiftCardSettle">
+    <part name="parameters" element="tns:GiftCardSettle" />
+  </message>
+  <message name="GiftCardSettle_Result">
+    <part name="parameters" element="tns:GiftCardSettle_Result" />
+  </message>
+  <message name="GiftCardVoid">
+    <part name="parameters" element="tns:GiftCardVoid" />
+  </message>
+  <message name="GiftCardVoid_Result">
+    <part name="parameters" element="tns:GiftCardVoid_Result" />
+  </message>
+  <message name="QueryTransactions">
+    <part name="parameters" element="tns:QueryTransactions" />
+  </message>
+  <message name="QueryTransactions_Result">
+    <part name="parameters" element="tns:QueryTransactions_Result" />
+  </message>
+  <message name="BatchRelease">
+    <part name="parameters" element="tns:BatchRelease" />
+  </message>
+  <message name="BatchRelease_Result">
+    <part name="parameters" element="tns:BatchRelease_Result" />
+  </message>
+  <message name="SetupHostedCreditCardAVS">
+    <part name="parameters" element="tns:SetupHostedCreditCardAVS" />
+  </message>
+  <message name="SetupHostedCreditCardAVS_Result">
+    <part name="parameters" element="tns:SetupHostedCreditCardAVS_Result" />
+  </message>
+  <message name="SetupHostedCreditCardAuthorize">
+    <part name="parameters" element="tns:SetupHostedCreditCardAuthorize" />
+  </message>
+  <message name="SetupHostedCreditCardAuthorize_Result">
+    <part name="parameters" element="tns:SetupHostedCreditCardAuthorize_Result" />
+  </message>
+  <message name="SetupHostedCreditCardCapture">
+    <part name="parameters" element="tns:SetupHostedCreditCardCapture" />
+  </message>
+  <message name="SetupHostedCreditCardCapture_Result">
+    <part name="parameters" element="tns:SetupHostedCreditCardCapture_Result" />
+  </message>
+  <message name="SetupHostedCreditCardCharge">
+    <part name="parameters" element="tns:SetupHostedCreditCardCharge" />
+  </message>
+  <message name="SetupHostedCreditCardCharge_Result">
+    <part name="parameters" element="tns:SetupHostedCreditCardCharge_Result" />
+  </message>
+  <message name="SetupHostedCreditCardCredit">
+    <part name="parameters" element="tns:SetupHostedCreditCardCredit" />
+  </message>
+  <message name="SetupHostedCreditCardCredit_Result">
+    <part name="parameters" element="tns:SetupHostedCreditCardCredit_Result" />
+  </message>
+  <message name="SetupHostedCreditCardVoiceAuth">
+    <part name="parameters" element="tns:SetupHostedCreditCardVoiceAuth" />
+  </message>
+  <message name="SetupHostedCreditCardVoiceAuth_Result">
+    <part name="parameters" element="tns:SetupHostedCreditCardVoiceAuth_Result" />
+  </message>
+  <message name="SetupHostedCheckAuthorize">
+    <part name="parameters" element="tns:SetupHostedCheckAuthorize" />
+  </message>
+  <message name="SetupHostedCheckAuthorize_Result">
+    <part name="parameters" element="tns:SetupHostedCheckAuthorize_Result" />
+  </message>
+  <message name="SetupHostedCheckCharge">
+    <part name="parameters" element="tns:SetupHostedCheckCharge" />
+  </message>
+  <message name="SetupHostedCheckCharge_Result">
+    <part name="parameters" element="tns:SetupHostedCheckCharge_Result" />
+  </message>
+  <message name="SetupHostedCheckCredit">
+    <part name="parameters" element="tns:SetupHostedCheckCredit" />
+  </message>
+  <message name="SetupHostedCheckCredit_Result">
+    <part name="parameters" element="tns:SetupHostedCheckCredit_Result" />
+  </message>
+  <message name="RetrieveHostedCreditCardSetup">
+    <part name="parameters" element="tns:RetrieveHostedCreditCardSetup" />
+  </message>
+  <message name="RetrieveHostedCreditCardSetup_Result">
+    <part name="parameters" element="tns:RetrieveHostedCreditCardSetup_Result" />
+  </message>
+  <message name="RetrieveHostedPaymentID">
+    <part name="parameters" element="tns:RetrieveHostedPaymentID" />
+  </message>
+  <message name="RetrieveHostedPaymentID_Result">
+    <part name="parameters" element="tns:RetrieveHostedPaymentID_Result" />
+  </message>
+  <message name="CompleteHostedCreditCardTran">
+    <part name="parameters" element="tns:CompleteHostedCreditCardTran" />
+  </message>
+  <message name="CompleteHostedCreditCardTran_Result">
+    <part name="parameters" element="tns:CompleteHostedCreditCardTran_Result" />
+  </message>
+  <message name="CompleteHostedCreditCardTran2">
+    <part name="parameters" element="tns:CompleteHostedCreditCardTran2" />
+  </message>
+  <message name="CompleteHostedCreditCardTran2_Result">
+    <part name="parameters" element="tns:CompleteHostedCreditCardTran2_Result" />
+  </message>
+  <message name="CompleteHostedCreditCardTran3">
+    <part name="parameters" element="tns:CompleteHostedCreditCardTran3" />
+  </message>
+  <message name="CompleteHostedCreditCardTran3_Result">
+    <part name="parameters" element="tns:CompleteHostedCreditCardTran3_Result" />
+  </message>
+  <message name="UnfinalizeOrder">
+    <part name="parameters" element="tns:UnfinalizeOrder" />
+  </message>
+  <message name="UnfinalizeOrder_Result">
+    <part name="parameters" element="tns:UnfinalizeOrder_Result" />
+  </message>
+  <message name="CompleteHostedCheckTran">
+    <part name="parameters" element="tns:CompleteHostedCheckTran" />
+  </message>
+  <message name="CompleteHostedCheckTran_Result">
+    <part name="parameters" element="tns:CompleteHostedCheckTran_Result" />
+  </message>
+  <message name="CompleteHostedCheckTran2">
+    <part name="parameters" element="tns:CompleteHostedCheckTran2" />
+  </message>
+  <message name="CompleteHostedCheckTran2_Result">
+    <part name="parameters" element="tns:CompleteHostedCheckTran2_Result" />
+  </message>
+  <message name="CompleteHostedCheckTran3">
+    <part name="parameters" element="tns:CompleteHostedCheckTran3" />
+  </message>
+  <message name="CompleteHostedCheckTran3_Result">
+    <part name="parameters" element="tns:CompleteHostedCheckTran3_Result" />
+  </message>
+  <message name="ShipOrder">
+    <part name="parameters" element="tns:ShipOrder" />
+  </message>
+  <message name="ShipOrder_Result">
+    <part name="parameters" element="tns:ShipOrder_Result" />
+  </message>
+  <message name="SetupHostedInvoice">
+    <part name="parameters" element="tns:SetupHostedInvoice" />
+  </message>
+  <message name="SetupHostedInvoice_Result">
+    <part name="parameters" element="tns:SetupHostedInvoice_Result" />
+  </message>
+  <message name="SetupHostedStatement">
+    <part name="parameters" element="tns:SetupHostedStatement" />
+  </message>
+  <message name="SetupHostedStatement_Result">
+    <part name="parameters" element="tns:SetupHostedStatement_Result" />
+  </message>
+  <message name="QueryOrders">
+    <part name="parameters" element="tns:QueryOrders" />
+  </message>
+  <message name="QueryOrders_Result">
+    <part name="parameters" element="tns:QueryOrders_Result" />
+  </message>
+  <message name="QueryOrdersByPage">
+    <part name="parameters" element="tns:QueryOrdersByPage" />
+  </message>
+  <message name="QueryOrdersByPage_Result">
+    <part name="parameters" element="tns:QueryOrdersByPage_Result" />
+  </message>
+  <message name="QueryOrdersWithParams">
+    <part name="parameters" element="tns:QueryOrdersWithParams" />
+  </message>
+  <message name="QueryOrdersWithParams_Result">
+    <part name="parameters" element="tns:QueryOrdersWithParams_Result" />
+  </message>
+  <message name="QueryOrder">
+    <part name="parameters" element="tns:QueryOrder" />
+  </message>
+  <message name="QueryOrder_Result">
+    <part name="parameters" element="tns:QueryOrder_Result" />
+  </message>
+  <message name="QueryGiftCardsByPage">
+    <part name="parameters" element="tns:QueryGiftCardsByPage" />
+  </message>
+  <message name="QueryGiftCardsByPage_Result">
+    <part name="parameters" element="tns:QueryGiftCardsByPage_Result" />
+  </message>
+  <message name="QueryGiftCard">
+    <part name="parameters" element="tns:QueryGiftCard" />
+  </message>
+  <message name="QueryGiftCard_Result">
+    <part name="parameters" element="tns:QueryGiftCard_Result" />
+  </message>
+  <message name="QueryCustomersByPage">
+    <part name="parameters" element="tns:QueryCustomersByPage" />
+  </message>
+  <message name="QueryCustomersByPage_Result">
+    <part name="parameters" element="tns:QueryCustomersByPage_Result" />
+  </message>
+  <message name="QueryCustomersByPageWithFilter">
+    <part name="parameters" element="tns:QueryCustomersByPageWithFilter" />
+  </message>
+  <message name="QueryCustomersByPageWithFilter_Result">
+    <part name="parameters" element="tns:QueryCustomersByPageWithFilter_Result" />
+  </message>
+  <message name="QueryCampaignsByPageWithFilter">
+    <part name="parameters" element="tns:QueryCampaignsByPageWithFilter" />
+  </message>
+  <message name="QueryCampaignsByPageWithFilter_Result">
+    <part name="parameters" element="tns:QueryCampaignsByPageWithFilter_Result" />
+  </message>
+  <message name="QueryTaxAreasByPageWithFilter">
+    <part name="parameters" element="tns:QueryTaxAreasByPageWithFilter" />
+  </message>
+  <message name="QueryTaxAreasByPageWithFilter_Result">
+    <part name="parameters" element="tns:QueryTaxAreasByPageWithFilter_Result" />
+  </message>
+  <message name="QueryItemsByPageWithFilter">
+    <part name="parameters" element="tns:QueryItemsByPageWithFilter" />
+  </message>
+  <message name="QueryItemsByPageWithFilter_Result">
+    <part name="parameters" element="tns:QueryItemsByPageWithFilter_Result" />
+  </message>
+  <message name="QueryItemsWithBarcode">
+    <part name="parameters" element="tns:QueryItemsWithBarcode" />
+  </message>
+  <message name="QueryItemsWithBarcode_Result">
+    <part name="parameters" element="tns:QueryItemsWithBarcode_Result" />
+  </message>
+  <message name="Sync">
+    <part name="parameters" element="tns:Sync" />
+  </message>
+  <message name="Sync_Result">
+    <part name="parameters" element="tns:Sync_Result" />
+  </message>
+  <message name="PutCreditCardAccountNumber">
+    <part name="parameters" element="tns:PutCreditCardAccountNumber" />
+  </message>
+  <message name="PutCreditCardAccountNumber_Result">
+    <part name="parameters" element="tns:PutCreditCardAccountNumber_Result" />
+  </message>
+  <message name="GetCreditCardAccountNumber">
+    <part name="parameters" element="tns:GetCreditCardAccountNumber" />
+  </message>
+  <message name="GetCreditCardAccountNumber_Result">
+    <part name="parameters" element="tns:GetCreditCardAccountNumber_Result" />
+  </message>
+  <message name="PutDemandDepositAccountNumber">
+    <part name="parameters" element="tns:PutDemandDepositAccountNumber" />
+  </message>
+  <message name="PutDemandDepositAccountNumber_Result">
+    <part name="parameters" element="tns:PutDemandDepositAccountNumber_Result" />
+  </message>
+  <message name="GetDemandDepositAccountNumber">
+    <part name="parameters" element="tns:GetDemandDepositAccountNumber" />
+  </message>
+  <message name="GetDemandDepositAccountNumber_Result">
+    <part name="parameters" element="tns:GetDemandDepositAccountNumber_Result" />
+  </message>
+  <portType name="EFT_API_2_Port">
+    <operation name="CreditCardAuthorize">
+      <input name="CreditCardAuthorize" message="tns:CreditCardAuthorize" />
+      <output name="CreditCardAuthorize_Result" message="tns:CreditCardAuthorize_Result" />
+    </operation>
+    <operation name="SetupHostedOrder">
+      <input name="SetupHostedOrder" message="tns:SetupHostedOrder" />
+      <output name="SetupHostedOrder_Result" message="tns:SetupHostedOrder_Result" />
+    </operation>
+    <operation name="FinalizeOrder">
+      <input name="FinalizeOrder" message="tns:FinalizeOrder" />
+      <output name="FinalizeOrder_Result" message="tns:FinalizeOrder_Result" />
+    </operation>
+    <operation name="CheckCharge">
+      <input name="CheckCharge" message="tns:CheckCharge" />
+      <output name="CheckCharge_Result" message="tns:CheckCharge_Result" />
+    </operation>
+    <operation name="CheckRefund">
+      <input name="CheckRefund" message="tns:CheckRefund" />
+      <output name="CheckRefund_Result" message="tns:CheckRefund_Result" />
+    </operation>
+    <operation name="CheckVerify">
+      <input name="CheckVerify" message="tns:CheckVerify" />
+      <output name="CheckVerify_Result" message="tns:CheckVerify_Result" />
+    </operation>
+    <operation name="CreditCardAddressVerify">
+      <input name="CreditCardAddressVerify" message="tns:CreditCardAddressVerify" />
+      <output name="CreditCardAddressVerify_Result" message="tns:CreditCardAddressVerify_Result" />
+    </operation>
+    <operation name="CreditCardAddressVerify2">
+      <input name="CreditCardAddressVerify2" message="tns:CreditCardAddressVerify2" />
+      <output name="CreditCardAddressVerify2_Result" message="tns:CreditCardAddressVerify2_Result" />
+    </operation>
+    <operation name="CreditCardCapture">
+      <input name="CreditCardCapture" message="tns:CreditCardCapture" />
+      <output name="CreditCardCapture_Result" message="tns:CreditCardCapture_Result" />
+    </operation>
+    <operation name="CreditCardCharge">
+      <input name="CreditCardCharge" message="tns:CreditCardCharge" />
+      <output name="CreditCardCharge_Result" message="tns:CreditCardCharge_Result" />
+    </operation>
+    <operation name="CreditCardCredit">
+      <input name="CreditCardCredit" message="tns:CreditCardCredit" />
+      <output name="CreditCardCredit_Result" message="tns:CreditCardCredit_Result" />
+    </operation>
+    <operation name="CreditCardRefund">
+      <input name="CreditCardRefund" message="tns:CreditCardRefund" />
+      <output name="CreditCardRefund_Result" message="tns:CreditCardRefund_Result" />
+    </operation>
+    <operation name="CreditCardReverse">
+      <input name="CreditCardReverse" message="tns:CreditCardReverse" />
+      <output name="CreditCardReverse_Result" message="tns:CreditCardReverse_Result" />
+    </operation>
+    <operation name="CreditCardSettle">
+      <input name="CreditCardSettle" message="tns:CreditCardSettle" />
+      <output name="CreditCardSettle_Result" message="tns:CreditCardSettle_Result" />
+    </operation>
+    <operation name="CreditCardVoiceAuthorize">
+      <input name="CreditCardVoiceAuthorize" message="tns:CreditCardVoiceAuthorize" />
+      <output name="CreditCardVoiceAuthorize_Result" message="tns:CreditCardVoiceAuthorize_Result" />
+    </operation>
+    <operation name="CreditCardVoid">
+      <input name="CreditCardVoid" message="tns:CreditCardVoid" />
+      <output name="CreditCardVoid_Result" message="tns:CreditCardVoid_Result" />
+    </operation>
+    <operation name="DebitCardCharge">
+      <input name="DebitCardCharge" message="tns:DebitCardCharge" />
+      <output name="DebitCardCharge_Result" message="tns:DebitCardCharge_Result" />
+    </operation>
+    <operation name="DebitCardCredit">
+      <input name="DebitCardCredit" message="tns:DebitCardCredit" />
+      <output name="DebitCardCredit_Result" message="tns:DebitCardCredit_Result" />
+    </operation>
+    <operation name="GiftCardActivate">
+      <input name="GiftCardActivate" message="tns:GiftCardActivate" />
+      <output name="GiftCardActivate_Result" message="tns:GiftCardActivate_Result" />
+    </operation>
+    <operation name="GiftCardAuthorize">
+      <input name="GiftCardAuthorize" message="tns:GiftCardAuthorize" />
+      <output name="GiftCardAuthorize_Result" message="tns:GiftCardAuthorize_Result" />
+    </operation>
+    <operation name="GiftCardBalanceIncrease">
+      <input name="GiftCardBalanceIncrease" message="tns:GiftCardBalanceIncrease" />
+      <output name="GiftCardBalanceIncrease_Result" message="tns:GiftCardBalanceIncrease_Result" />
+    </operation>
+    <operation name="GiftCardBalanceInquiry">
+      <input name="GiftCardBalanceInquiry" message="tns:GiftCardBalanceInquiry" />
+      <output name="GiftCardBalanceInquiry_Result" message="tns:GiftCardBalanceInquiry_Result" />
+    </operation>
+    <operation name="GiftCardCapture">
+      <input name="GiftCardCapture" message="tns:GiftCardCapture" />
+      <output name="GiftCardCapture_Result" message="tns:GiftCardCapture_Result" />
+    </operation>
+    <operation name="GiftCardCharge">
+      <input name="GiftCardCharge" message="tns:GiftCardCharge" />
+      <output name="GiftCardCharge_Result" message="tns:GiftCardCharge_Result" />
+    </operation>
+    <operation name="GiftCardCredit">
+      <input name="GiftCardCredit" message="tns:GiftCardCredit" />
+      <output name="GiftCardCredit_Result" message="tns:GiftCardCredit_Result" />
+    </operation>
+    <operation name="GiftCardDeactivate">
+      <input name="GiftCardDeactivate" message="tns:GiftCardDeactivate" />
+      <output name="GiftCardDeactivate_Result" message="tns:GiftCardDeactivate_Result" />
+    </operation>
+    <operation name="GiftCardRefund">
+      <input name="GiftCardRefund" message="tns:GiftCardRefund" />
+      <output name="GiftCardRefund_Result" message="tns:GiftCardRefund_Result" />
+    </operation>
+    <operation name="GiftCardReverse">
+      <input name="GiftCardReverse" message="tns:GiftCardReverse" />
+      <output name="GiftCardReverse_Result" message="tns:GiftCardReverse_Result" />
+    </operation>
+    <operation name="GiftCardSettle">
+      <input name="GiftCardSettle" message="tns:GiftCardSettle" />
+      <output name="GiftCardSettle_Result" message="tns:GiftCardSettle_Result" />
+    </operation>
+    <operation name="GiftCardVoid">
+      <input name="GiftCardVoid" message="tns:GiftCardVoid" />
+      <output name="GiftCardVoid_Result" message="tns:GiftCardVoid_Result" />
+    </operation>
+    <operation name="QueryTransactions">
+      <input name="QueryTransactions" message="tns:QueryTransactions" />
+      <output name="QueryTransactions_Result" message="tns:QueryTransactions_Result" />
+    </operation>
+    <operation name="BatchRelease">
+      <input name="BatchRelease" message="tns:BatchRelease" />
+      <output name="BatchRelease_Result" message="tns:BatchRelease_Result" />
+    </operation>
+    <operation name="SetupHostedCreditCardAVS">
+      <input name="SetupHostedCreditCardAVS" message="tns:SetupHostedCreditCardAVS" />
+      <output name="SetupHostedCreditCardAVS_Result" message="tns:SetupHostedCreditCardAVS_Result" />
+    </operation>
+    <operation name="SetupHostedCreditCardAuthorize">
+      <input name="SetupHostedCreditCardAuthorize" message="tns:SetupHostedCreditCardAuthorize" />
+      <output name="SetupHostedCreditCardAuthorize_Result" message="tns:SetupHostedCreditCardAuthorize_Result" />
+    </operation>
+    <operation name="SetupHostedCreditCardCapture">
+      <input name="SetupHostedCreditCardCapture" message="tns:SetupHostedCreditCardCapture" />
+      <output name="SetupHostedCreditCardCapture_Result" message="tns:SetupHostedCreditCardCapture_Result" />
+    </operation>
+    <operation name="SetupHostedCreditCardCharge">
+      <input name="SetupHostedCreditCardCharge" message="tns:SetupHostedCreditCardCharge" />
+      <output name="SetupHostedCreditCardCharge_Result" message="tns:SetupHostedCreditCardCharge_Result" />
+    </operation>
+    <operation name="SetupHostedCreditCardCredit">
+      <input name="SetupHostedCreditCardCredit" message="tns:SetupHostedCreditCardCredit" />
+      <output name="SetupHostedCreditCardCredit_Result" message="tns:SetupHostedCreditCardCredit_Result" />
+    </operation>
+    <operation name="SetupHostedCreditCardVoiceAuth">
+      <input name="SetupHostedCreditCardVoiceAuth" message="tns:SetupHostedCreditCardVoiceAuth" />
+      <output name="SetupHostedCreditCardVoiceAuth_Result" message="tns:SetupHostedCreditCardVoiceAuth_Result" />
+    </operation>
+    <operation name="SetupHostedCheckAuthorize">
+      <input name="SetupHostedCheckAuthorize" message="tns:SetupHostedCheckAuthorize" />
+      <output name="SetupHostedCheckAuthorize_Result" message="tns:SetupHostedCheckAuthorize_Result" />
+    </operation>
+    <operation name="SetupHostedCheckCharge">
+      <input name="SetupHostedCheckCharge" message="tns:SetupHostedCheckCharge" />
+      <output name="SetupHostedCheckCharge_Result" message="tns:SetupHostedCheckCharge_Result" />
+    </operation>
+    <operation name="SetupHostedCheckCredit">
+      <input name="SetupHostedCheckCredit" message="tns:SetupHostedCheckCredit" />
+      <output name="SetupHostedCheckCredit_Result" message="tns:SetupHostedCheckCredit_Result" />
+    </operation>
+    <operation name="RetrieveHostedCreditCardSetup">
+      <input name="RetrieveHostedCreditCardSetup" message="tns:RetrieveHostedCreditCardSetup" />
+      <output name="RetrieveHostedCreditCardSetup_Result" message="tns:RetrieveHostedCreditCardSetup_Result" />
+    </operation>
+    <operation name="RetrieveHostedPaymentID">
+      <input name="RetrieveHostedPaymentID" message="tns:RetrieveHostedPaymentID" />
+      <output name="RetrieveHostedPaymentID_Result" message="tns:RetrieveHostedPaymentID_Result" />
+    </operation>
+    <operation name="CompleteHostedCreditCardTran">
+      <input name="CompleteHostedCreditCardTran" message="tns:CompleteHostedCreditCardTran" />
+      <output name="CompleteHostedCreditCardTran_Result" message="tns:CompleteHostedCreditCardTran_Result" />
+    </operation>
+    <operation name="CompleteHostedCreditCardTran2">
+      <input name="CompleteHostedCreditCardTran2" message="tns:CompleteHostedCreditCardTran2" />
+      <output name="CompleteHostedCreditCardTran2_Result" message="tns:CompleteHostedCreditCardTran2_Result" />
+    </operation>
+    <operation name="CompleteHostedCreditCardTran3">
+      <input name="CompleteHostedCreditCardTran3" message="tns:CompleteHostedCreditCardTran3" />
+      <output name="CompleteHostedCreditCardTran3_Result" message="tns:CompleteHostedCreditCardTran3_Result" />
+    </operation>
+    <operation name="UnfinalizeOrder">
+      <input name="UnfinalizeOrder" message="tns:UnfinalizeOrder" />
+      <output name="UnfinalizeOrder_Result" message="tns:UnfinalizeOrder_Result" />
+    </operation>
+    <operation name="CompleteHostedCheckTran">
+      <input name="CompleteHostedCheckTran" message="tns:CompleteHostedCheckTran" />
+      <output name="CompleteHostedCheckTran_Result" message="tns:CompleteHostedCheckTran_Result" />
+    </operation>
+    <operation name="CompleteHostedCheckTran2">
+      <input name="CompleteHostedCheckTran2" message="tns:CompleteHostedCheckTran2" />
+      <output name="CompleteHostedCheckTran2_Result" message="tns:CompleteHostedCheckTran2_Result" />
+    </operation>
+    <operation name="CompleteHostedCheckTran3">
+      <input name="CompleteHostedCheckTran3" message="tns:CompleteHostedCheckTran3" />
+      <output name="CompleteHostedCheckTran3_Result" message="tns:CompleteHostedCheckTran3_Result" />
+    </operation>
+    <operation name="ShipOrder">
+      <input name="ShipOrder" message="tns:ShipOrder" />
+      <output name="ShipOrder_Result" message="tns:ShipOrder_Result" />
+    </operation>
+    <operation name="SetupHostedInvoice">
+      <input name="SetupHostedInvoice" message="tns:SetupHostedInvoice" />
+      <output name="SetupHostedInvoice_Result" message="tns:SetupHostedInvoice_Result" />
+    </operation>
+    <operation name="SetupHostedStatement">
+      <input name="SetupHostedStatement" message="tns:SetupHostedStatement" />
+      <output name="SetupHostedStatement_Result" message="tns:SetupHostedStatement_Result" />
+    </operation>
+    <operation name="QueryOrders">
+      <input name="QueryOrders" message="tns:QueryOrders" />
+      <output name="QueryOrders_Result" message="tns:QueryOrders_Result" />
+    </operation>
+    <operation name="QueryOrdersByPage">
+      <input name="QueryOrdersByPage" message="tns:QueryOrdersByPage" />
+      <output name="QueryOrdersByPage_Result" message="tns:QueryOrdersByPage_Result" />
+    </operation>
+    <operation name="QueryOrdersWithParams">
+      <input name="QueryOrdersWithParams" message="tns:QueryOrdersWithParams" />
+      <output name="QueryOrdersWithParams_Result" message="tns:QueryOrdersWithParams_Result" />
+    </operation>
+    <operation name="QueryOrder">
+      <input name="QueryOrder" message="tns:QueryOrder" />
+      <output name="QueryOrder_Result" message="tns:QueryOrder_Result" />
+    </operation>
+    <operation name="QueryGiftCardsByPage">
+      <input name="QueryGiftCardsByPage" message="tns:QueryGiftCardsByPage" />
+      <output name="QueryGiftCardsByPage_Result" message="tns:QueryGiftCardsByPage_Result" />
+    </operation>
+    <operation name="QueryGiftCard">
+      <input name="QueryGiftCard" message="tns:QueryGiftCard" />
+      <output name="QueryGiftCard_Result" message="tns:QueryGiftCard_Result" />
+    </operation>
+    <operation name="QueryCustomersByPage">
+      <input name="QueryCustomersByPage" message="tns:QueryCustomersByPage" />
+      <output name="QueryCustomersByPage_Result" message="tns:QueryCustomersByPage_Result" />
+    </operation>
+    <operation name="QueryCustomersByPageWithFilter">
+      <input name="QueryCustomersByPageWithFilter" message="tns:QueryCustomersByPageWithFilter" />
+      <output name="QueryCustomersByPageWithFilter_Result" message="tns:QueryCustomersByPageWithFilter_Result" />
+    </operation>
+    <operation name="QueryCampaignsByPageWithFilter">
+      <input name="QueryCampaignsByPageWithFilter" message="tns:QueryCampaignsByPageWithFilter" />
+      <output name="QueryCampaignsByPageWithFilter_Result" message="tns:QueryCampaignsByPageWithFilter_Result" />
+    </operation>
+    <operation name="QueryTaxAreasByPageWithFilter">
+      <input name="QueryTaxAreasByPageWithFilter" message="tns:QueryTaxAreasByPageWithFilter" />
+      <output name="QueryTaxAreasByPageWithFilter_Result" message="tns:QueryTaxAreasByPageWithFilter_Result" />
+    </operation>
+    <operation name="QueryItemsByPageWithFilter">
+      <input name="QueryItemsByPageWithFilter" message="tns:QueryItemsByPageWithFilter" />
+      <output name="QueryItemsByPageWithFilter_Result" message="tns:QueryItemsByPageWithFilter_Result" />
+    </operation>
+    <operation name="QueryItemsWithBarcode">
+      <input name="QueryItemsWithBarcode" message="tns:QueryItemsWithBarcode" />
+      <output name="QueryItemsWithBarcode_Result" message="tns:QueryItemsWithBarcode_Result" />
+    </operation>
+    <operation name="Sync">
+      <input name="Sync" message="tns:Sync" />
+      <output name="Sync_Result" message="tns:Sync_Result" />
+    </operation>
+    <operation name="PutCreditCardAccountNumber">
+      <input name="PutCreditCardAccountNumber" message="tns:PutCreditCardAccountNumber" />
+      <output name="PutCreditCardAccountNumber_Result" message="tns:PutCreditCardAccountNumber_Result" />
+    </operation>
+    <operation name="GetCreditCardAccountNumber">
+      <input name="GetCreditCardAccountNumber" message="tns:GetCreditCardAccountNumber" />
+      <output name="GetCreditCardAccountNumber_Result" message="tns:GetCreditCardAccountNumber_Result" />
+    </operation>
+    <operation name="PutDemandDepositAccountNumber">
+      <input name="PutDemandDepositAccountNumber" message="tns:PutDemandDepositAccountNumber" />
+      <output name="PutDemandDepositAccountNumber_Result" message="tns:PutDemandDepositAccountNumber_Result" />
+    </operation>
+    <operation name="GetDemandDepositAccountNumber">
+      <input name="GetDemandDepositAccountNumber" message="tns:GetDemandDepositAccountNumber" />
+      <output name="GetDemandDepositAccountNumber_Result" message="tns:GetDemandDepositAccountNumber_Result" />
+    </operation>
+  </portType>
+  <binding name="EFT_API_2_Binding" type="tns:EFT_API_2_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="CreditCardAuthorize">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardAuthorize" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardAuthorize">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardAuthorize_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedOrder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedOrder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedOrder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedOrder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FinalizeOrder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:FinalizeOrder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FinalizeOrder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FinalizeOrder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CheckCharge">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CheckCharge" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CheckCharge">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CheckCharge_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CheckRefund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CheckRefund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CheckRefund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CheckRefund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CheckVerify">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CheckVerify" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CheckVerify">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CheckVerify_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardAddressVerify">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardAddressVerify" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardAddressVerify">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardAddressVerify_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardAddressVerify2">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardAddressVerify2" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardAddressVerify2">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardAddressVerify2_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardCapture">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardCapture" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardCapture">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardCapture_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardCharge">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardCharge" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardCharge">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardCharge_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardCredit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardCredit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardCredit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardCredit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardRefund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardRefund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardRefund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardRefund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardReverse">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardReverse" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardReverse">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardReverse_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardSettle">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardSettle" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardSettle">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardSettle_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardVoiceAuthorize">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardVoiceAuthorize" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardVoiceAuthorize">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardVoiceAuthorize_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreditCardVoid">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CreditCardVoid" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreditCardVoid">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreditCardVoid_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DebitCardCharge">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:DebitCardCharge" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DebitCardCharge">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DebitCardCharge_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DebitCardCredit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:DebitCardCredit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DebitCardCredit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DebitCardCredit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardActivate">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardActivate" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardActivate">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardActivate_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardAuthorize">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardAuthorize" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardAuthorize">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardAuthorize_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardBalanceIncrease">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardBalanceIncrease" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardBalanceIncrease">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardBalanceIncrease_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardBalanceInquiry">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardBalanceInquiry" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardBalanceInquiry">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardBalanceInquiry_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardCapture">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardCapture" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardCapture">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardCapture_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardCharge">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardCharge" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardCharge">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardCharge_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardCredit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardCredit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardCredit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardCredit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardDeactivate">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardDeactivate" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardDeactivate">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardDeactivate_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardRefund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardRefund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardRefund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardRefund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardReverse">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardReverse" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardReverse">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardReverse_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardSettle">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardSettle" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardSettle">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardSettle_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GiftCardVoid">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GiftCardVoid" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GiftCardVoid">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GiftCardVoid_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryTransactions">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryTransactions" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryTransactions">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryTransactions_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="BatchRelease">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:BatchRelease" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="BatchRelease">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="BatchRelease_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCreditCardAVS">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCreditCardAVS" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCreditCardAVS">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCreditCardAVS_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCreditCardAuthorize">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCreditCardAuthorize" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCreditCardAuthorize">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCreditCardAuthorize_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCreditCardCapture">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCreditCardCapture" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCreditCardCapture">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCreditCardCapture_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCreditCardCharge">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCreditCardCharge" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCreditCardCharge">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCreditCardCharge_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCreditCardCredit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCreditCardCredit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCreditCardCredit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCreditCardCredit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCreditCardVoiceAuth">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCreditCardVoiceAuth" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCreditCardVoiceAuth">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCreditCardVoiceAuth_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCheckAuthorize">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCheckAuthorize" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCheckAuthorize">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCheckAuthorize_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCheckCharge">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCheckCharge" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCheckCharge">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCheckCharge_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedCheckCredit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedCheckCredit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedCheckCredit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedCheckCredit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="RetrieveHostedCreditCardSetup">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:RetrieveHostedCreditCardSetup" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="RetrieveHostedCreditCardSetup">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="RetrieveHostedCreditCardSetup_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="RetrieveHostedPaymentID">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:RetrieveHostedPaymentID" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="RetrieveHostedPaymentID">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="RetrieveHostedPaymentID_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CompleteHostedCreditCardTran">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CompleteHostedCreditCardTran" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CompleteHostedCreditCardTran">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CompleteHostedCreditCardTran_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CompleteHostedCreditCardTran2">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CompleteHostedCreditCardTran2" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CompleteHostedCreditCardTran2">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CompleteHostedCreditCardTran2_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CompleteHostedCreditCardTran3">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CompleteHostedCreditCardTran3" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CompleteHostedCreditCardTran3">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CompleteHostedCreditCardTran3_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UnfinalizeOrder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:UnfinalizeOrder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UnfinalizeOrder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UnfinalizeOrder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CompleteHostedCheckTran">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CompleteHostedCheckTran" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CompleteHostedCheckTran">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CompleteHostedCheckTran_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CompleteHostedCheckTran2">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CompleteHostedCheckTran2" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CompleteHostedCheckTran2">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CompleteHostedCheckTran2_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CompleteHostedCheckTran3">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:CompleteHostedCheckTran3" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CompleteHostedCheckTran3">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CompleteHostedCheckTran3_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ShipOrder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:ShipOrder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ShipOrder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ShipOrder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedInvoice">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedInvoice" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedInvoice">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedInvoice_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SetupHostedStatement">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:SetupHostedStatement" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SetupHostedStatement">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SetupHostedStatement_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryOrders">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryOrders" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryOrders">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryOrders_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryOrdersByPage">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryOrdersByPage" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryOrdersByPage">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryOrdersByPage_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryOrdersWithParams">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryOrdersWithParams" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryOrdersWithParams">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryOrdersWithParams_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryOrder">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryOrder" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryOrder">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryOrder_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryGiftCardsByPage">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryGiftCardsByPage" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryGiftCardsByPage">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryGiftCardsByPage_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryGiftCard">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryGiftCard" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryGiftCard">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryGiftCard_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryCustomersByPage">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryCustomersByPage" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryCustomersByPage">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryCustomersByPage_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryCustomersByPageWithFilter">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryCustomersByPageWithFilter" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryCustomersByPageWithFilter">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryCustomersByPageWithFilter_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryCampaignsByPageWithFilter">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryCampaignsByPageWithFilter" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryCampaignsByPageWithFilter">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryCampaignsByPageWithFilter_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryTaxAreasByPageWithFilter">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryTaxAreasByPageWithFilter" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryTaxAreasByPageWithFilter">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryTaxAreasByPageWithFilter_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryItemsByPageWithFilter">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryItemsByPageWithFilter" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryItemsByPageWithFilter">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryItemsByPageWithFilter_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="QueryItemsWithBarcode">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:QueryItemsWithBarcode" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="QueryItemsWithBarcode">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="QueryItemsWithBarcode_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Sync">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:Sync" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Sync">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Sync_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PutCreditCardAccountNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:PutCreditCardAccountNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PutCreditCardAccountNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PutCreditCardAccountNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetCreditCardAccountNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GetCreditCardAccountNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetCreditCardAccountNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetCreditCardAccountNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PutDemandDepositAccountNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:PutDemandDepositAccountNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PutDemandDepositAccountNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PutDemandDepositAccountNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetDemandDepositAccountNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/EFT_API_2:GetDemandDepositAccountNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetDemandDepositAccountNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetDemandDepositAccountNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EFT_API_2">
+    <port name="EFT_API_2_Port" binding="tns:EFT_API_2_Binding">
+      <address location="https://transact.chargelogic.com/ChargeLogic/WS/ChargeLogic/Codeunit/EFT_API_2" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

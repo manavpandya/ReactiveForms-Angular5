@@ -1,0 +1,53 @@
+﻿.prepagesub
+{
+    position: absolute; font-family: arial; font-size: 16; left: 0px;
+                        top: 0px; background-color: #000; opacity: 0.7; filter: alpha(opacity=70); layer-background-color: white;
+                        height: 100%; width: 100%; z-index: 1000; 
+}
+
+.prepageinner
+{
+    background: none repeat scroll 0 0 rgba(0, 0,0, 0.9) !important; border: 1px solid #ccc;
+                                            width: 10%; height: 3%; padding: 20px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+                                            border-radius: 10px;
+}
+
+.popupcontactsub
+{
+    z-index: 1000001; top: 30px; padding: 0px; width: 750px;
+}
+
+.popupsubinner
+{
+    float: left; background-color: transparent; left: -15px; top: -18px;
+            position: absolute;
+}
+
+.displaycss{
+    float: right; background-color: transparent; right: -11px; top: 49%;
+            position: absolute;
+}
+
+.displayinnercss
+{
+    float: left; background-color: transparent; left: -11px; top: 49%; position: absolute;
+}
+
+.subprepagequick
+{
+    position: absolute; font-family: arial; font-size: 16;
+            left: 0px; top: 0px; background-color: #000; opacity: 0.7; filter: alpha(opacity=70);
+            layer-background-color: white; height: 515px; width: 1015px; z-index: 1000;
+}
+
+.prepageinnerquick
+{
+    position: fixed; top: 50%; left: 50%; margin: -50px 0 0 -100px;
+}
+
+.prepageback
+{
+    background: none repeat scroll 0 0 rgba(0, 0,0, 0.9) !important; border: 1px solid #ccc;
+                                width: 10%; height: 3%; padding: 20px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+                                border-radius: 10px;
+}

@@ -1,0 +1,111 @@
+﻿ #blanket
+        {
+            background-color: #111;
+            opacity: 0.65;
+            filter: alpha(opacity=65);
+            position: absolute;
+            z-index: 9001;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+        #popUpDiv
+        {
+            position: absolute;
+            width: 320px;
+            height: 390px;
+            z-index: 9002;
+        }
+        #backgroundPopup
+        {
+            display: none;
+            position: fixed;
+            _position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #000000;
+            border: 1px solid #cecece;
+            z-index: 1;
+        }
+        #popupContact
+        {
+            display: none;
+            position: fixed;
+            _position: absolute;
+            width: 269px;
+            background: #FFFFFF;
+            border: 2px solid #cecece;
+            z-index: 2;
+            padding: 12px;
+            font-size: 13px;
+        }
+        #popupContact h1
+        {
+            text-align: left;
+            color: #6FA5FD;
+            font-size: 22px;
+            font-weight: 700;
+            border-bottom: 1px dotted #D3D3D3;
+            padding-bottom: 2px;
+            margin-bottom: 20px;
+        }
+        #popupContactClose
+        {
+            font-size: 14px;
+            line-height: 14px;
+            right: 6px;
+            top: 4px;
+            position: absolute;
+            color: #6fa5fd;
+            font-weight: 700;
+            display: block;
+        }
+        #button
+        {
+            text-align: center;
+            margin: 100px;
+        }
+        #btnreadmore
+        {
+            text-align: center;
+            margin: 100px;
+        }
+        #btnhelpdescri
+        {
+            text-align: center;
+            margin: 100px;
+        }
+        #popupContact1
+        {
+            display: none;
+            _position: absolute;
+            width: 750px;
+            background: #FFFFFF;
+            border: 2px solid #cecece;
+            z-index: 2;
+            padding: 12px;
+            font-size: 13px;
+        }
+        #popupContact1 h1
+        {
+            text-align: left;
+            color: #6FA5FD;
+            font-size: 22px;
+            font-weight: 700;
+            border-bottom: 1px dotted #D3D3D3;
+            padding-bottom: 2px;
+            margin-bottom: 20px;
+        }
+        #popupContactClose1
+        {
+            font-size: 14px;
+            line-height: 14px;
+            right: 6px;
+            top: 4px;
+            position: absolute;
+            color: #6fa5fd;
+            font-weight: 700;
+            display: block;
+        }

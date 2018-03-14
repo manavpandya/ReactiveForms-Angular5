@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <PartialFailure>
+    <Error id="230646312">
+      <Message>Invalid tracking number provided</Message>
+      <Type>INVALID_DATA</Type>
+    </Error>
+  </PartialFailure>
+</Response>

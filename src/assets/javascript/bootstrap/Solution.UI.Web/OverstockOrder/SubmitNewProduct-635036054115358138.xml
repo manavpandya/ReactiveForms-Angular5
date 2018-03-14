@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Failure>
+    <Error>
+      <Message>
+Invalid Request (Error):
+   Problem: cvc-length-valid: Value '' with length = '0' is not facet-valid with respect to length '5' for type 'zipCode'.
+      </Message>
+      <Type>INVALID_REQUEST</Type>
+    </Error>
+  </Failure>
+</Response>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NeweggEnvelope xsi:noNamespaceSchemaLocation="NeweggEnvelop.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <DocumentVersion>1.0</DocumentVersion>
+    </Header>
+    <MessageType>Inventory</MessageType>
+    <Overwrite>No</Overwrite>
+    <Message>
+        <Inventory>
+             ###Inventory###
+        </Inventory>
+    </Message>
+</NeweggEnvelope>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog-feed xmlns="http://seller.marketplace.sears.com/catalog/v10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://seller.marketplace.sears.com/catalog/v10 ../../../../../rest/catalog/import/v10/lmp-item.xsd">
+	<fbm-catalog>
+		<items>
+			###items###
+		</items>
+	</fbm-catalog>
+</catalog-feed>

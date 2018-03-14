@@ -1,0 +1,211 @@
+.kuContainer {
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .kuSortby {
+        width: 45%;
+    }
+
+    .kuView {
+        width: 50%;
+        text-align: right;
+    }
+
+    .kuPerPage {
+        width: 45%;
+        text-align: left;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .kuPagination {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .kuGridView ul li {
+        width: 31%;
+    }
+
+    .kuListView ul li .kuNameDesc {
+        width: 80%;
+    }
+
+    .kuListView ul li .kuPrice {
+        float: none !important;
+        width: 100%;
+    }
+
+        .kuListView ul li .kuPrice .kuSalePrice {
+            display: inline !important;
+        }
+
+        .kuListView ul li .kuPrice .kuOrigPrice {
+            display: inline !important;
+        }
+         .kuGridView img {
+        max-width: 120px !important;
+        max-height: 120px !important;
+    }
+
+    .kuGridView .klevuImgWrap {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .kuListView img {
+          max-width:100% !important;
+        max-height:120px !important;  
+    }
+    .kuListView .klevuImgWrap {
+       
+         width:15% !important;
+        height:120px !important;  
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .kuContainer {
+        width: 95% !important;
+    }
+
+    .kuListView ul li {
+        padding: 5px;
+        width: 98%;
+    }
+    .kuGridView img {
+        max-width: 120px !important;
+        max-height: 120px !important;
+    }
+
+    .kuGridView .klevuImgWrap {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .kuListView img {
+          max-width:100% !important;
+        max-height:120px !important;  
+    }
+    .kuListView .klevuImgWrap {
+       
+         width:15% !important;
+        height:120px !important;  
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .kuResultList {
+        width: 70%;
+    }
+
+    .kuGridView ul li {
+        width: 47%;
+    }
+
+        .kuGridView ul li:nth-child(2n+2) {
+            border-right: none !important;
+        }
+
+        .kuGridView ul li:nth-child(3n+3) {
+            border-right: 1px solid #eee;
+        }
+
+    .kuGridView img {
+        max-width: 120px !important;
+        max-height: 120px !important;
+    }
+
+    .kuGridView .klevuImgWrap {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .kuListView img {
+          max-width:100% !important;
+        max-height:120px !important;  
+    }
+    .kuListView .klevuImgWrap {
+       
+         width:15% !important;
+        height:120px !important;  
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .kuFilters {
+        display: none;
+        width: 100% !important;
+    }
+
+    .kuResultList {
+        float: none;
+        width: 98%;
+        margin-left: 0px;
+    }
+
+    .kuSortby {
+        width: 50%;
+        height: 50px;
+    }
+
+    .kuView {
+        width: 50%;
+        text-align: right;
+        height: 50px;
+    }
+
+    .kuPerPage {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .kuPagination {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .kuGridView ul li {
+        width: 47%;
+    }
+
+        .kuGridView ul li:nth-child(2n+2) {
+            border-right: none !important;
+        }
+
+        .kuGridView ul li:nth-child(3n+3) {
+            border-right: 1px solid #eee;
+        }
+
+    .kuBottomPagi .kuPerPage {
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .kuBottomPagi .kuPagination {
+        width: 100%;
+        float: none;
+    }
+    .kuGridView img {
+        max-width: 120px !important;
+        max-height: 120px !important;
+    }
+
+    .kuGridView .klevuImgWrap {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .kuListView img {
+          max-width:100% !important;
+        max-height:120px !important;  
+    }
+    .kuListView .klevuImgWrap {
+       
+         width:15% !important;
+        height:120px !important;  
+    }
+}

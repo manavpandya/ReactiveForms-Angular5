@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<flash_parameters copyright="socusoftFLVPlayerTheme" code="socusoftFLVPlayerThemeRegistered">
+  <preferences>
+    <global>
+      <basic_property movieWidth="306" movieHeight="218" html_title="" loadStyle="/res/style(circle1).swf" hideAdobeMenu="true" enableURL="true" autoPlay="true" autoRepeat="false" backgroundColor="0xffffff" bufferTime="5" defaultvolume="100" />
+      <panel_property panelbackgroundColor="0x808080" buttonColor="0x808080" dragbarColor="0x808080" bufferColor="0x008080" slideColor="0x00ff00" slidebgColor="0x808080" showTime="false" timeColor="0x808080" />
+      <video_property topPadding="2" bottomPadding="2" leftPadding="2" rightPadding="2" />
+      <title_property showTitle="false" titleColor="0x808080" />
+      <description_property enable="true" textColor="0x808080" backgroundColor="0x808080" backgroundAlpha="30" cssText="a:link{text-decoration: underline;} a:hover{color:#ff0000; text-decoration: none;} a:active{color:#0000ff;text-decoration: none;} .blue {color:#0000ff; font-size:15px; font-style:italic; text-decoration: underline;} .body{color:#ff5500;font-size:20px;}" align="top" />
+    </global>
+  </preferences>
+  <album>
+    <slide v_URL="/Resources/halfpricedraps/product/Video/37.flv?62" URLTarget="0" title="" url="">
+    </slide>
+  </album>
+</flash_parameters>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store-inventory xmlns="http://seller.marketplace.sears.com/catalog/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://seller.marketplace.sears.com/catalog/v4 ../../../../../rest/inventory/import/v4/store-inventory.xsd">
+	###Inventory####
+</store-inventory>

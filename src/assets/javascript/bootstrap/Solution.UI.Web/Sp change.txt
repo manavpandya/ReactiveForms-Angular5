@@ -1,0 +1,169 @@
+USE [HPD_Ecomm_DB]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Product_GetProductList]    Script Date: 3/5/2014 3:13:19 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[usp_Product_GetProductList]            
+ @StartIndex int,            
+@EndIndex int,            
+@SortBy varchar(50),            
+@ProductTypeID int,  
+@ProductTypeDeliveryId int,          
+ @CategoryId int,            
+ @StoreID int,            
+ @SearchBy varchar(20),            
+ @SearchValue varchar(50),            
+ @Status varchar(100)            
+             
+AS            
+BEGIN            
+DECLARE @sqlCount NVARCHAR(MAX)             
+declare @WhereCond varchar(2000)            
+declare @WhereString varchar(500)  
+declare @whereString2 varchar(500)          
+set @WhereString = ' where 1=1'            
+--Search By category            
+if(@CategoryId!=0)            
+set @WhereCond ='            
+INNER JOIN tb_productCategory ON             
+tb_product.ProductID = tb_productCategory.ProductID and tb_Product.ProductID in             
+ (select distinct ProductID from tb_ProductCategory) where CategoryID in             
+ (select * from Split(dbo.fn_GetChildCategoryIDList('+CONVERT(NVARCHAR,CONVERT(NVARCHAR,@CategoryId))+','+ CONVERT(NVARCHAR,CONVERT(NVARCHAR,@StoreID))+'),'',''))'            
+else            
+set @WhereCond =''            
+--Search By StoreID            
+if(@StoreID!=0)            
+if(@WhereCond is not null and @WhereCond !='')            
+set @WhereString =' and tb_Product.StoreID ='+ CONVERT(NVARCHAR,@StoreID)            
+else            
+set @WhereString =''+@WhereString+' and tb_Product.StoreID ='+ CONVERT(NVARCHAR,@StoreID)            
+            
+            
+--SearchBY ProductType            
+if(@ProductTypeID!=0)             
+if(@WhereCond is not null and @WhereCond !='')            
+set @WhereString = ' and ProductTypeID =' +CONVERT(NVARCHAR,@ProductTypeID)            
+else            
+set @WhereString = ''+@WhereString+' and ProductTypeID =' +CONVERT(NVARCHAR,@ProductTypeID)   
+
+----SearchBY ProductTypeDelivery 
+if(@ProductTypeDeliveryId!=0)             
+if(@WhereCond is not null and @WhereCond !='')            
+set @WhereString = ' and ProductTypeDeliveryID =' +CONVERT(NVARCHAR,@ProductTypeDeliveryId)            
+else            
+set @WhereString = ''+@WhereString+' and ProductTypeDeliveryID =' +CONVERT(NVARCHAR,@ProductTypeDeliveryId)   
+
+         
+          
+if(@SearchBy is not null and @SearchBy != '' and @SearchValue is not null and @SearchValue != '')            
+if(@WhereCond is not null and @WhereCond !='')      
+begin      
+if(lower(@SearchBy)='sku')
+begin
+set @WhereString =' and ((' +@SearchBy + ' like ''%' + @SearchValue +'%'' or OptionSku like ''%' + @SearchValue +'%'')'  
+end
+else
+begin
+set @WhereString = ' and (' +@SearchBy + ' like ''%' + @SearchValue +'%'''  
+end
+          
+end
+else            
+begin
+if(lower(@SearchBy)='sku')
+begin
+set @WhereString =''+@WhereString+ ' and ((' +@SearchBy + ' like ''%' + @SearchValue +'%'' or OptionSku like ''%' + @SearchValue +'%'')'  
+end
+else
+begin
+set @WhereString =''+@WhereString+ ' and (' +@SearchBy + ' like ''%' + @SearchValue +'%'''  
+end
+
+--set @WhereString =''+@WhereString+ ' and ' +@SearchBy + ' like ''%' + @SearchValue +'%'''            
+end  
+
+
+--for assembly sku
+if(@SearchBy is not null and @SearchBy != '' and @SearchValue is not null and @SearchValue != '')
+begin      
+
+set @WhereString2 = ' or tb_Product.ProductID in (select ProductID from tb_ProductVariantValue where (tb_ProductVariantValue.SKU like'''+'%'+ @SearchValue +'%'' OR tb_ProductVariantValue.UPC like'''+'%'+ @SearchValue +'%'')))' 
+--Print(@WhereString2)
+set @WhereString=@WhereString+@whereString2
+end
+
+--Print(@WhereString)
+
+
+
+
+
+         
+declare @EndWhereCond varchar(500)            
+if(@WhereCond is not null and @WhereCond !='')            
+set @EndWhereCond =@WhereString +' And tb_Product.ProductID not in(Select ProductID from tb_GiftCardProduct)'            
+else            
+set @EndWhereCond =@WhereString +' and tb_Product.ProductID not in(Select ProductID from tb_GiftCardProduct)'            
+            
+            
+if(@Status = 'Active')            
+set @Status =' and Isnull(tb_Product.Active,0) =1 and Isnull(tb_Product.Deleted,0) =0'            
+else if(@Status = 'InActive')            
+set @Status =' and Isnull(tb_Product.Active,0) =0 and Isnull(tb_Product.Deleted,0) =0'            
+else if(@Status ='Deleted')            
+set @Status =' and Isnull(tb_Product.Deleted,0) =1'
+else if(@Status ='DataVerify')            
+set @Status =' and Isnull(tb_Product.IsDataVerify,1) = 0'
+            
+set @EndWhereCond = @EndWhereCond +@Status   
+    Print(@EndWhereCond)
+declare @Query nvarchar(max)            
+set @Query='            
+With CTE as (            
+ SELECT            
+  ROW_NUMBER() OVER (ORDER BY '+ @SortBy+') AS RowNumber,            
+  tb_product.ProductID,            
+  tb_product.ProductTypeID,   
+  tb_product.ProductTypeDeliveryID,   
+ s.StoreName,            
+ tb_Product.SENAME,            
+tb_product.updatedon,            
+tb_product.UpdatedBy,           
+(admin.FirstName + '' '' +          
+admin.LastName) as AdminName,           
+tb_product.Inventory,            
+tb_product.CreatedOn,            
+tb_product.StoreID,            
+tb_product.Name,            
+tb_product.SKU,            
+tb_product.Weight,            
+isnull(tb_product.Price,0) as Price,            
+isnull(tb_product.SalePrice,0) as SalePrice,  
+isnull(eBayListingDay,0) as EbayListingDay,  
+eBayLastUpdated,  
+eBayStoreCategoryID,  
+eBayCategoryID,isnull(OptionSku,'''') as OptionSku,isnull(tb_product.UPC,'''') as UPC            
+FROM tb_product tb_product join tb_Store s on tb_product.StoreID =s.StoreID          
+left outer join tb_Admin admin on isnull(tb_Product.UpdatedBy,0) = admin.AdminID          
+' +''+@WhereCond +  '' +@EndWhereCond + ' )'+            
+'SELECT * FROM CTE WHERE RowNumber BETWEEN '             
+ +CONVERT(NVARCHAR,@StartIndex) + ' AND '             
+ + CONVERT(NVARCHAR,@EndIndex)   
+ -- + ' Order by ProductID desc'    
+             
+     SET @sqlCount = ' SELECT  Count(*) From tb_Product ' + '' + +@WhereCond +  '' +@EndWhereCond 
+	            
+    set @Query =@Query + @sqlCount       
+	
+	     
+           
+exec (@Query)            
+END  
+
+
+--exec [dbo].[usp_Product_GetProductList]  1,50,null,0,0,0,1,'','','Active'
+--SELECT  Count(*) From tb_Product  where 1=1 and tb_Product.StoreID =1 and ((SKU like '%PDCH-KBS11-96%' or OptionSku like '%PDCH-KBS11-96%') or tb_Product.ProductID in (select ProductID from tb_ProductVariantValue where tb_ProductVariantValue.SKU like'%PDCH-KBS11-96%')) and tb_Product.ProductID not in(Select ProductID from tb_GiftCardProduct) and Isnull(tb_Product.Active,0) =1 and Isnull(tb_Product.Deleted,0) =0
+--SELECT * FROM tb_Product 
+--where 1=1 and tb_Product.StoreID =1 and ((SKU like '%PDCH-KBS11-96%' or OptionSku like '%PDCH-KBS11-96%') or tb_Product.ProductID in (select ProductID from tb_ProductVariantValue where tb_ProductVariantValue.SKU like'%PDCH-KBS11-96%')) and tb_Product.ProductID not in(Select ProductID from tb_GiftCardProduct) and Isnull(tb_Product.Active,0) =1 and Isnull(tb_Product.Deleted,0) =0

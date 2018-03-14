@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Tables>
+  <Table SrcTable="tb_order,tb_country" DestTable="ECustomer">
+    <Field SrcField="CustomerID" SrcFieldType="Int" SrcFiledLimit="" DestField="No" DestFieldType="Code" DestFieldLimit="20" DefaultValue="" ConcatText="EC" />
+    <Field SrcField="BillingCompany" SrcFieldType="Varchar" SrcFiledLimit="100" DestField="Name" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="BillingAddress1" SrcFieldType="Varchar" SrcFiledLimit="500" DestField="Address" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="BillingAddress2" SrcFieldType="Varchar" SrcFiledLimit="500" DestField="Address_2" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="BillingCity" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="City" DestFieldType="Text" DestFieldLimit="30" DefaultValue="" ConcatText="" />
+    <Field SrcField="BillingFirstName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="Contact" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="BillingLastName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="Contact" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="BillingPhone" SrcFieldType="Varchar" SrcFiledLimit="20" DestField="Phone_No" DestFieldType="Text" DestFieldLimit="30" DefaultValue="" ConcatText="" />
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Fax_No" DestFieldType="Text" DestFieldLimit="20" DefaultValue="" ConcatText="" />
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Currency_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="USD" ConcatText=""/>
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Payment_Terms_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="CREDITCARD" ConcatText="" />
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Salesperson_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="E-COM" ConcatText="" />
+    <Field SrcField="TwoLetterISOCode" SrcFieldType="Varchar" SrcFiledLimit="2" DestField="Country_Region_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="" ConcatText=""/>
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Payments" DestFieldType="Decimal" DestFieldLimit="" DefaultValue="" ConcatText=""/>
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="VAT_Registration_No" DestFieldType="Text" DestFieldLimit="20" DefaultValue="" ConcatText=""/>
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Picture" DestFieldType="BLOB" DestFieldLimit="" DefaultValue="" ConcatText=""/>
+    <Field SrcField="BillingZip" SrcFieldType="Varchar" SrcFiledLimit="10" DestField="Post_Code" DestFieldType="Code" DestFieldLimit="20" DefaultValue="" ConcatText=""/>
+    <Field SrcField="BillingState" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="County" DestFieldType="Text" DestFieldLimit="30" DefaultValue="" ConcatText=""/>
+    <Field SrcField="Email" SrcFieldType="Varchar" SrcFiledLimit="100" DestField="E_Mail" DestFieldType="Text" DestFieldLimit="80" DefaultValue="" ConcatText=""/>
+    <!--<Field SrcField="FirstName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="Customer_Name" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="LastName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="Customer_Name" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />-->
+    <Field SrcField="BillingLastName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="Last_Name" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Middle_Name" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="BillingFirstName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="First_Name" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Sales_Channel" DestFieldType="Code" DestFieldLimit="20" DefaultValue="" ConcatText="" />
+    <!--<Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Old_Customer_ID" DestFieldType="Code" DestFieldLimit="30" DefaultValue="" ConcatText="" />-->
+  </Table>
+ 
+</Tables>

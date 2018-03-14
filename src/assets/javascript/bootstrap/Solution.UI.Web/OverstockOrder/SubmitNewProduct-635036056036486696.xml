@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Failure>
+    <Error>
+      <Message>
+Invalid Request (Error):
+   Problem: cvc-complex-type.2.4.a: Invalid content was found starting with element 'CountryOfOrigin'. One of '{"http://www.overstock.com/shoppingApi":LTL, "http://www.overstock.com/shoppingApi":ShipAlone, "http://www.overstock.com/shoppingApi":SourceZipCode}' is expected.
+      </Message>
+      <Type>INVALID_REQUEST</Type>
+    </Error>
+  </Failure>
+</Response>

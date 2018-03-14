@@ -1,0 +1,556 @@
+E:\Karan\Projects\TFSHPD\Source Code\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\Karan\Projects\TFSHPD\Source Code\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\Karan\Projects\TFSHPD\Source Code\Solution.Bussines.Entities\obj\Debug\ResolveAssemblyReference.cache
+E:\Karan\Projects\TFSHPD\Source Code\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\Karan\Projects\TFSHPD\Source Code\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Dec-2013\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\04-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\17-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPD\17-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPD\17-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\17-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPD\17-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\17-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\29-Feb-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-march-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\09-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\21-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\24-March-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\03-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\12-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-Apr-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\05-may-2014-1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPD\05-may-2014-1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPD\05-may-2014-1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPD\05-may-2014-1\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPD\05-may-2014-1\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\05-05-2014-1\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\15-05-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\23-05-2014-Latest\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\06062014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\16-06-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\27-06-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\10-07-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\14-07-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-08-2014-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\18-08-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-08-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\11-09-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\01-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\20-10-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\02-12-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E\Karan\Projects\TFSHPD\Source Code\25-Dec-2014\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\01-09-2015-live-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\01-24-2015-live-admin-charge-logic\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+E:\HPDNew\Live\Admin\02-03-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPDNew\Live\Admin\02-03-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\Admin\02-03-2015\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\Admin\02-03-2015\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\Admin\02-03-2015\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\02-12-2015-live-admin-updated\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\Admin\02-14-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPDNew\Live\Admin\02-14-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\Admin\02-14-2015\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\Admin\02-14-2015\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\02-14-2015-live-admin-bulkcouponapply\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\Live\23-03-2015-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\hpd-karan\Live\23-03-2015-admin-live-updated\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\Live\01-april-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\Live\01-april-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\Live\01-april-2015\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\Live\01-april-2015\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\Live\01-april-2015\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\Live\01-april-2015-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\07-july-2015-admin-integration\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-07-2015-admin-phoneorder\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\15-07-2015-admin-replenishment\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-07-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\05-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\18-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-aug-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\04-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\16-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\23-sep-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-oct-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\30-oct-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\07-jan-2016-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\09-jan-2016-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\11-jan-2015-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\11-jan-2015-new-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-jan-2016-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\03-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\19-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\22-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\23-feb-2016-admin-email changes\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-feb-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\04-march-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\21-march-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-april-2016-admin-live-integration with eff\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\08-april-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\18-april-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\27-april-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\29-april-2016-admin-live-b1g1\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\02-may-2016-admin-live-trade\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\14-may-2016-admin-live-image-compression\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\17-may-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\24-may-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\26-may-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\31-may-2016-admin-admin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\02-june-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\06-june-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\HPDNew\bootstrap\10-june-2016-admin-live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\Projects\HPD-Live\Admin\22-07-2016\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\Projects\HPD-Live\Admin\301-12-2016-Coupon-category\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+E:\HPDNew\HPD-Admin\13-07-2017\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+D:\E Drive\HPDNew\HPD-Admin\22-Nov-2017-Amazon-Live\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll.config
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\bin\Debug\Solution.Bussines.Entities.pdb
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\bin\Debug\Newtonsoft.Json.xml
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.csprojResolveAssemblyReference.cache
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.dll
+C:\Prakash Data\KaushalamProjects\2018\Karan\HPDAdmin\Solution.Bussines.Entities\obj\Debug\Solution.Bussines.Entities.pdb

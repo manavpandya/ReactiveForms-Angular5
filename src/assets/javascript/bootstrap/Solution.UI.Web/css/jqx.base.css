@@ -1,0 +1,1617 @@
+.jqx-rc-tl {
+	border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px;
+}
+.jqx-rc-tr {
+	border-top-right-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px;
+}
+.jqx-rc-bl {
+	border-bottom-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px;
+}
+.jqx-rc-br {
+	border-bottom-right-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px;
+}
+.jqx-rc-t {
+	border-top-left-radius: 3px; border-top-right-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px;
+}
+.jqx-rc-b {
+	border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px;
+}
+.jqx-rc-r {
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px;
+}
+.jqx-rc-l {
+	border-top-left-radius: 3px; border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px;
+}
+.jqx-rc-all {
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.jqx-rc-reset {
+	border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;
+}
+.jqx-reset {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+.jqx-position-reset {
+	position: static !important;
+}
+.jqx-disableselect {
+	-webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; -ms-user-select: none; -webkit-touch-callout: none;
+}
+.jqx-hideborder {
+	border: currentColor !important;
+}
+.jqx-hidescrollbars {
+	overflow: hidden !important;
+}
+.jqx-button {
+	margin: 0px; padding: 3px; border: 1px solid transparent; text-align: center; cursor: default;
+}
+.jqx-buttongroup {
+	
+}
+.jqx-group-button-normal {
+	text-align: center; vertical-align: middle;
+}
+.jqx-link {
+	color: rgb(17, 17, 17); text-decoration: none;
+}
+.jqx-visible {
+	display: block;
+}
+.jqx-hidden {
+	display: none;
+}
+.jqx-widget {
+	line-height: 1.231;
+}
+.jqx-widget-content {
+	line-height: 1.231;
+}
+.jqx-widget-header {
+	line-height: 1.231;
+}
+.jqx-fill-state-normal {
+	line-height: 1.231;
+}
+.jqx-gauge-label {
+	color: rgb(51, 51, 51); font-family: Verdana; font-size: 11px; fill: #333333;
+}
+.jqx-gauge-caption {
+	color: rgb(51, 51, 51); font-family: Verdana; font-size: 11px; fill: #333333;
+}
+.jqx-chart-axis-text {
+	color: rgb(51, 51, 51); font-family: Verdana; font-size: 11px; fill: #333333;
+}
+.jqx-chart-label-text {
+	color: rgb(51, 51, 51); font-family: Verdana; font-size: 11px; fill: #333333;
+}
+.jqx-chart-tooltip-text {
+	color: rgb(51, 51, 51); font-family: Verdana; font-size: 11px; fill: #333333;
+}
+.jqx-chart-legend-text {
+	color: rgb(51, 51, 51); font-family: Verdana; font-size: 11px; fill: #333333;
+}
+.jqx-chart-axis-description {
+	color: rgb(85, 85, 85); font-family: Verdana; font-size: 11px; fill: #555555;
+}
+.jqx-chart-title-text {
+	color: rgb(17, 17, 17); font-family: Verdana; font-size: 14px; font-weight: bold; fill: #111111;
+}
+.jqx-chart-title-description {
+	color: rgb(17, 17, 17); font-family: Verdana; font-size: 12px; font-weight: normal; fill: #111111;
+}
+.jqx-grid {
+	border-width: 1px; border-style: solid; overflow: hidden;
+}
+.jqx-grid-pager {
+	border-width: 1px medium medium; border-style: solid none none; border-color: transparent currentColor currentColor;
+}
+.jqx-grid-pager-top {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor transparent;
+}
+.jqx-grid-pager-number {
+	margin: 1px; padding: 2px 5px; border: 1px solid transparent; color: inherit; text-decoration: none;
+}
+.jqx-grid-bottomright {
+	
+}
+.jqx-grid-header {
+	border-width: 0px 0px 1px; border-style: solid; border-color: transparent; margin: 0px; padding: 0px; overflow: hidden;
+}
+.jqx-grid-column-header {
+	border-width: 0px 1px 0px 0px; border-style: solid; border-color: transparent; margin: 0px; padding: 0px; text-align: left; overflow: hidden; font-weight: normal; white-space: nowrap;
+}
+.jqx-grid-columngroup-header {
+	border-width: 0px 1px 0px 0px; border-style: solid; border-color: transparent; margin: 0px; padding: 0px; text-align: left; overflow: hidden; font-weight: normal; white-space: nowrap;
+}
+.jqx-grid-column-header-rtl {
+	border-width: 0px 0px 0px 1px;
+}
+.jqx-grid-columngroup-header-rtl {
+	border-width: 0px 0px 0px 1px;
+}
+.jqx-grid-columngroup-header {
+	border-bottom-width: 1px; border-left-width: 1px;
+}
+.jqx-grid-column-menubutton {
+	background-position: center; border-width: 0px 0px 0px 1px; border-style: solid; border-color: transparent; cursor: pointer; background-image: url("images/menubutton.png"); background-repeat: no-repeat;
+}
+.jqx-grid-column-menubutton-rtl {
+	border-width: 0px 1px 0px 0px;
+}
+.jqx-grid-column-sortascbutton {
+	background-position: center; border: currentColor; cursor: pointer; background-image: url("images/sortascbutton.png"); background-repeat: no-repeat;
+}
+.jqx-grid-column-sortdescbutton {
+	background-position: center; border: currentColor; cursor: pointer; background-image: url("images/sortdescbutton.png"); background-repeat: no-repeat;
+}
+.jqx-grid-column-filterbutton {
+	background-position: center; border: currentColor; background-image: url("images/filter.png"); background-repeat: no-repeat;
+}
+.jqx-grid-column-resizeline {
+	border-right-color: rgb(85, 85, 85); border-right-width: 1px; border-right-style: dotted;
+}
+.jqx-grid-validation {
+	background: rgb(223, 34, 39); padding: 4px 8px; color: rgb(255, 255, 255);
+}
+.jqx-grid-validation-arrow-up {
+	background-position: center; background-image: url("images/red_arrow_up.png"); background-repeat: no-repeat;
+}
+.jqx-grid-validation-arrow-down {
+	background-position: center; background-image: url("images/red_arrow_down.png"); background-repeat: no-repeat;
+}
+.jqx-grid-column-resizestartline {
+	border-right-color: rgb(68, 68, 68); border-right-width: 1px; border-right-style: solid;
+}
+.jqx-grid-sortasc-icon {
+	background-position: left; width: 16px; height: 16px; margin-right: 4px; margin-left: -4px; float: left; background-image: url("images/sortasc.png"); background-repeat: no-repeat;
+}
+.jqx-grid-sortdesc-icon {
+	background-position: left; width: 16px; height: 16px; margin-right: 4px; margin-left: -4px; float: left; background-image: url("images/sortdesc.png"); background-repeat: no-repeat;
+}
+.jqx-grid-sortremove-icon {
+	background-position: left; width: 16px; height: 16px; margin-right: 4px; margin-left: -4px; float: left; background-image: url("images/sortremove.png"); background-repeat: no-repeat;
+}
+.jqx-grid-drag-icon {
+	background-position: left; width: 16px; height: 16px; background-image: url("images/drag.png"); background-repeat: no-repeat;
+}
+.jqx-grid-dragcancel-icon {
+	background-position: left; width: 16px; height: 16px; background-image: url("images/dragcancel.png"); background-repeat: no-repeat;
+}
+.jqx-grid-groupby-icon {
+	background-position: left; width: 16px; height: 16px; margin-right: 4px; margin-left: -4px; float: left; background-repeat: no-repeat;
+}
+.jqx-grid-column-header a:link {
+	margin: 4px; outline: 0px; height: 18px; color: inherit; line-height: 18px !important; text-decoration: none; display: block; cursor: pointer;
+}
+.jqx-grid-column-header a:visited {
+	margin: 4px; outline: 0px; height: 18px; color: inherit; line-height: 18px !important; text-decoration: none; display: block; cursor: pointer;
+}
+.jqx-grid-toolbar a:link {
+	margin: 4px; outline: 0px; height: 18px; color: inherit; line-height: 18px !important; text-decoration: none; cursor: pointer;
+}
+.jqx-grid-toolbar a:visited {
+	margin: 4px; outline: 0px; height: 18px; color: inherit; line-height: 18px !important; text-decoration: none; cursor: pointer;
+}
+.jqx-grid-groups-header {
+	border-width: 0px 0px 1px; border-style: solid; border-color: rgb(170, 170, 170); margin: 0px; padding: 0px; text-align: left; overflow: hidden; white-space: nowrap;
+}
+.jqx-grid-toolbar {
+	border-width: 0px 0px 1px; border-style: solid; border-color: rgb(170, 170, 170); margin: 0px; padding: 0px; text-align: left; overflow: hidden; white-space: nowrap;
+}
+.jqx-grid-groups-row {
+	padding: 0px; top: 50%; text-align: left; font-weight: bold; margin-top: -8px; white-space: nowrap;
+}
+.jqx-grid-groups-row-details {
+	font-weight: normal;
+}
+.jqx-grid-group-column {
+	margin: 0px; padding: 0px; border: 1px solid transparent; text-align: left; overflow: hidden; font-weight: normal; white-space: nowrap;
+}
+.jqx-grid-group-column-line {
+	background: rgb(170, 170, 170);
+}
+.jqx-grid-group-drag-line {
+	background: rgb(128, 190, 9);
+}
+.jqx-grid-group-column a:link {
+	margin: 4px; outline: 0px; height: 18px; color: inherit; line-height: 18px !important; text-decoration: none; display: block; cursor: pointer;
+}
+.jqx-grid-group-column a:visited {
+	margin: 4px; outline: 0px; height: 18px; color: inherit; line-height: 18px !important; text-decoration: none; display: block; cursor: pointer;
+}
+.jqx-grid-cell {
+	background: rgb(255, 255, 255); border-width: 0px 1px 1px 0px; border-style: solid; border-color: transparent; height: 100%; overflow: hidden; font-size: inherit; font-weight: normal; margin-right: 1px; margin-bottom: 1px; white-space: nowrap; position: absolute !important;
+}
+.jqx-grid-group-cell {
+	background: rgb(255, 255, 255); height: 100%; overflow: hidden; position: absolute !important;
+}
+.jqx-grid-cell-sort {
+	background-color: rgb(240, 240, 240);
+}
+.jqx-grid-cell-filter {
+	background-color: rgb(230, 230, 230);
+}
+.jqx-grid-content {
+	border: 0px solid transparent; overflow: hidden; white-space: nowrap;
+}
+.jqx-grid-group-cell {
+	border-width: 0px 0px 1px; border-style: solid; font-weight: normal; white-space: nowrap;
+}
+.jqx-grid-empty-cell {
+	border-width: 0px 0px 1px; border-style: solid; font-weight: normal; white-space: nowrap;
+}
+.jqx-widget .jqx-grid-cleared-cell {
+	border: transparent !important;
+}
+.jqx-grid-cleared-cell {
+	border: transparent !important;
+}
+.jqx-grid-cell-wrap {
+	white-space: normal;
+}
+.jqx-cell {
+	border-width: 0px 1px 1px 0px; border-style: solid; border-color: transparent; margin: 0px; padding: 3px; overflow: hidden; white-space: normal; border-collapse: separate; text-overflow: ellipsis; min-height: 23px; box-sizing: border-box; border-spacing: 0px; -moz-box-sizing: border-box;
+}
+.jqx-left-align {
+	text-align: left;
+}
+.jqx-center-align {
+	text-align: center;
+}
+.jqx-right-align {
+	text-align: right;
+}
+.jqx-grid-table .jqx-grid-cell {
+	position: static !important;
+}
+.jqx-grid-table {
+	margin: 0px; padding: 0px; border-bottom-color: transparent; border-bottom-width: 1px; border-bottom-style: solid; border-collapse: collapse; table-layout: fixed; border-spacing: 0px; -webkit-overflow-scrolling: touch;
+}
+.jqx-grid-group-details-cell {
+	
+}
+.jqx-grid-details-cell {
+	border-width: 0px 1px 0px 0px;
+}
+.jqx-grid-cell-alt {
+	background: rgb(249, 249, 249);
+}
+.jqx-grid-cell-sort-alt {
+	background-color: rgb(229, 229, 229);
+}
+.jqx-grid-cell-filter-alt {
+	background-color: rgb(240, 240, 240);
+}
+.jqx-grid-cell-pinned {
+	background-color: rgb(229, 229, 229);
+}
+.jqx-grid-cell-pinned-alt {
+	background-color: rgb(229, 229, 229);
+}
+.jqx-grid-cell-selected {
+	border-left-color: transparent; border-left-width: 0px; border-left-style: solid;
+}
+.jqx-grid-cell-rtl {
+	border-width: 0px 0px 1px 1px;
+}
+.jqx-grid-selectionarea {
+	border: 1px solid transparent; filter: alpha(opacity=50); opacity: 0.5;
+}
+.jqx-grid-cell-hover {
+	border-color: transparent;
+}
+.jqx-grid-empty-cell {
+	overflow: visible; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.jqx-grid-load {
+	background-position: 50% 50%; padding-right: 0px; z-index: 9999; background-image: url("images/loader.gif"); background-repeat: no-repeat;
+}
+.jqx-grid-group-collapse {
+	background-position: 50% 50%; padding-right: 0px; cursor: pointer; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-grid-group-collapse-rtl {
+	background-position: 50% 50%; padding-right: 0px; cursor: pointer; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-grid-group-expand {
+	background-position: 50% 50%; padding-right: 0px; cursor: pointer; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-grid-group-expand-rtl {
+	background-position: 50% 50%; padding-right: 0px; cursor: pointer; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-progressbar {
+	border: 1px solid transparent; height: 2em; overflow: hidden;
+}
+.jqx-progressbar-value {
+	border: 0px solid transparent; height: 100%;
+}
+.jqx-progressbar-value-vertical {
+	border: 0px solid transparent; height: 100%;
+}
+.jqx-progressbar-text {
+	border: currentColor; font-size: 10px;
+}
+.jqx-progressbar-disabled {
+	border: 1px solid transparent; height: 2em;
+}
+.jqx-menu {
+	margin: 0px; padding: 0px; border: 1px solid transparent; height: 100%; text-align: left; overflow: hidden; float: none;
+}
+.jqx-menu-dropdown-column {
+	float: left;
+}
+.jqx-menu-horizontal {
+	margin: 0px; padding: 0px; text-align: center; overflow: hidden;
+}
+.jqx-menu-vertical {
+	text-align: left;
+}
+.jqx-menu-dropdown {
+	border-width: 1px; border-style: solid; margin: 0px; padding: 2px; left: 100%; width: 150px; text-align: left; right: 0px; overflow: hidden; float: none; display: none;
+}
+.jqx-menu-dropdown ul {
+	margin: 0px; padding: 0px; border: currentColor; left: 100%; right: 0px; overflow: hidden;
+}
+.jqx-menu ul {
+	margin: 0px; padding: 2px; border: currentColor; left: 100%; right: 0px; overflow: hidden; background-color: transparent;
+}
+.jqx-menu li {
+	line-height: 1.3 !important;
+}
+.jqx-menu-dropdown li {
+	line-height: 1.3 !important;
+}
+.jqx-menu-item-top {
+	list-style: none; margin: 0px 1px; padding: 4px 8px; border: 1px solid transparent; left: 100%; right: 0px; color: inherit; text-indent: 0px; overflow: hidden; cursor: pointer;
+}
+.jqx-menu-item {
+	list-style: none; margin: 1px; padding: 4px 8px; left: 100%; text-align: left; right: 0px; color: inherit; text-indent: 0px; overflow: hidden; float: none; cursor: pointer;
+}
+.jqx-menu-item-hover {
+	list-style: none; margin: 1px; padding: 4px 8px; left: 100%; text-align: left; right: 0px; color: inherit; cursor: pointer;
+}
+.jqx-menu-item-top-hover {
+	list-style: none; margin: 0px 1px; padding: 4px 8px; left: 100%; top: 50%; right: 0px; color: inherit; cursor: pointer;
+}
+.jqx-menu-item-selected {
+	list-style: none; margin: 1px; padding: 4px 8px; left: 100%; text-align: left; right: 0px; cursor: pointer;
+}
+.jqx-menu-item-disabled {
+	
+}
+.jqx-menu-item-top-selected {
+	list-style: none; margin: 0px 1px; padding: 4px 8px; left: 100%; right: 0px; cursor: pointer;
+}
+.jqx-menu-item-separator {
+	list-style: none; margin: 1px 2px; padding: 0px; border: currentColor; left: 100%; height: 1px; right: 0px; color: inherit; line-height: 0 !important; text-indent: 0px; overflow: hidden; font-size: 1px; float: none; background-color: rgb(221, 221, 221);
+}
+.jqx-menu-item-arrow-right {
+	background-position: 100% 50%; width: 17px; height: 15px; padding-right: 0px; margin-right: -8px; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-down {
+	background-position: 100% 50%; width: 17px; height: 15px; padding-right: 0px; margin-right: -8px; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-up {
+	background-position: 100% 50%; width: 17px; height: 15px; padding-right: 0px; margin-right: -8px; background-image: url("images/icon-up.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-left {
+	background-position: 0px 50%; width: 17px; height: 15px; padding-right: 0px; padding-left: 5px; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-right-selected {
+	background-position: 100% 50%; width: 17px; height: 15px; padding-right: 0px; margin-right: -8px; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-down-selected {
+	background-position: 100% 50%; width: 17px; height: 15px; padding-right: 0px; margin-right: -8px; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-up-selected {
+	background-position: 100% 50%; width: 17px; height: 15px; padding-right: 0px; margin-right: -8px; background-image: url("images/icon-up.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-left-selected {
+	background-position: 0px 50%; width: 17px; height: 15px; padding-right: 0px; padding-left: 5px; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-top-right {
+	background-position: 100% 50%; width: 17px; height: 15px; padding-right: 0px; margin-right: -8px; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item-arrow-top-left {
+	background-position: 0px 50%; width: 17px; height: 15px; padding-right: 0px; padding-left: 5px; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-menu-item a:link {
+	border: currentColor; color: inherit; text-decoration: none; background-color: transparent;
+}
+.jqx-menu-item a:visited {
+	border: currentColor; color: inherit; text-decoration: none; background-color: transparent;
+}
+.jqx-menu-item a:hover {
+	color: inherit; text-decoration: none; background-color: transparent;
+}
+.jqx-menu-item-top a:link {
+	border: currentColor; color: inherit; text-decoration: none; background-color: transparent;
+}
+.jqx-menu-item-top a:visited {
+	border: currentColor; color: inherit; text-decoration: none; background-color: transparent;
+}
+.jqx-menu-item-top a:hover {
+	border: currentColor; color: inherit; text-decoration: none; background-color: transparent;
+}
+.jqx-menu-disabled {
+	cursor: default;
+}
+.jqx-menu-disabled a:link {
+	text-decoration: none; cursor: default;
+}
+.jqx-menu-disabled a:visited {
+	text-decoration: none; cursor: default;
+}
+.jqx-menu-disabled a:hover {
+	cursor: default;
+}
+.jqx-menu-dropdown {
+	right: -1px;
+}
+.jqx-tree {
+	border-width: 1px; border-style: solid; margin: 0px; padding: 0px; left: 100%; text-align: left; right: 0px; line-height: 14px !important; overflow: hidden; float: none; white-space: nowrap;
+}
+.jqx-tree-dropdown-root {
+	margin: 0px; padding: 0px 5px; border: 0px solid rgb(255, 255, 255); left: 100%; text-align: left; right: 0px; float: none; display: block; white-space: nowrap; background-color: transparent;
+}
+.jqx-tree-dropdown-root-rtl {
+	margin: 0px; padding: 0px 5px 0px 0px; text-align: right; float: right;
+}
+.jqx-tree-dropdown {
+	margin: 0px; padding: 0px 0px 0px 10px; border: 0px solid transparent; left: 100%; text-align: left; right: 0px; float: none; display: block; background-color: transparent;
+}
+.jqx-tree-dropdown-rtl {
+	padding: 0px; text-align: right;
+}
+.jqx-tree-item {
+	list-style: none; margin: 0px; padding: 3px; left: 100%; text-align: left; right: 0px; text-indent: 0px; overflow: hidden; text-decoration: none; float: none; cursor: default;
+}
+.jqx-tree-item-li {
+	list-style: none; margin: 1px 0px 0px; padding: 0px; border: 0px solid transparent; left: 100%; text-align: left; right: 0px; text-indent: 0px; background-color: transparent;
+}
+.jqx-tree-item-u-last {
+	margin: 0px;
+}
+.jqx-tree-item-hover {
+	list-style: none; margin: 0px; padding: 3px; left: 100%; right: 0px; color: inherit; text-decoration: none; cursor: pointer;
+}
+.jqx-tree-item-selected {
+	list-style: none; margin: 0px; padding: 3px; left: 100%; right: 0px; color: inherit; text-decoration: none; cursor: pointer;
+}
+.jqx-tree-item-rtl {
+	text-align: right;
+}
+.jqx-tree-item-li-rtl {
+	text-align: right;
+}
+.jqx-tree-item a:link {
+	list-style: none; margin: 0px; padding: 0px; border: 0px solid transparent; left: 100%; text-align: left; right: 0px; color: inherit; text-indent: 0px; overflow: hidden; text-decoration: none; float: none; cursor: pointer; background-color: transparent;
+}
+.jqx-tree-item a:visited {
+	list-style: none; margin: 0px; padding: 0px; border: 0px solid transparent; left: 100%; text-align: left; right: 0px; color: inherit; text-indent: 0px; overflow: hidden; text-decoration: none; float: none; cursor: pointer; background-color: transparent;
+}
+.jqx-tree-item-selected {
+	color: inherit;
+}
+.jqx-tree-item-hover a:hover {
+	color: inherit;
+}
+.jqx-tree-item-selected {
+	color: inherit;
+}
+.jqx-tree-item-hover a:visited {
+	color: inherit;
+}
+.jqx-tree-item-disabled {
+	
+}
+.jqx-tree-item-arrow-collapse {
+	background-position: 100% 50%; width: 17px; height: 17px; padding-right: 0px; cursor: pointer; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-tree-item-arrow-collapse-hover {
+	background-position: 100% 50%; width: 17px; height: 17px; padding-right: 0px; cursor: pointer; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-tree-item-arrow-collapse-rtl {
+	background-image: url("images/icon-left.png");
+}
+.jqx-tree-item-arrow-collapse-hover-rtl {
+	background-image: url("images/icon-left.png");
+}
+.jqx-tree-item-arrow-expand {
+	background-position: 100% 50%; width: 17px; height: 17px; padding-right: 0px; cursor: pointer; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-tree-item-arrow-expand-hover {
+	background-position: 100% 50%; width: 17px; height: 17px; padding-right: 0px; cursor: pointer; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-tree-disabled {
+	cursor: default;
+}
+.jqx-tree-disabled a:link {
+	text-decoration: none; cursor: default;
+}
+.jqx-tree-disabled a:visited {
+	text-decoration: none; cursor: default;
+}
+.jqx-tree-disabled a:hover {
+	cursor: default;
+}
+.jqx-tabs {
+	margin: 0px; padding: 0px; border: 1px solid transparent; overflow: hidden;
+}
+.jqx-tabs-close-button {
+	margin: 0px; padding: 0px; left: 5px; position: relative; cursor: pointer; background-image: url("images/close.png");
+}
+.jqx-tabs-close-button-selected {
+	margin: 0px; padding: 0px; cursor: pointer; background-image: url("images/close.png");
+}
+.jqx-tabs-close-button-hover {
+	margin: 0px; padding: 0px; cursor: pointer; background-image: url("images/close.png");
+}
+.jqx-tabs-arrow-left {
+	background-position: center; margin: 0px; padding: 0px; float: left; position: relative; z-index: 15; cursor: pointer; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-tabs-arrow-right {
+	background-position: center; margin: 0px; padding: 0px; float: left; position: relative; z-index: 15; cursor: pointer; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-tabs-arrow-background {
+	background: rgb(238, 238, 238);
+}
+.jqx-tabs-title {
+	list-style: none; margin: 0px 2px 0px 0px; padding: 5px 13px; border: 1px solid transparent; left: 100%; height: auto; right: 0px; text-indent: 0px; overflow: hidden; display: block; white-space: nowrap; position: relative; z-index: 1; cursor: pointer;
+}
+.jqx-tabs-title-bottom {
+	
+}
+.jqx-tabs-title a:link {
+	color: inherit; text-decoration: none;
+}
+.jqx-tabs-title a:hover {
+	color: inherit; text-decoration: none;
+}
+.jqx-tabs-title a:active {
+	color: inherit; text-decoration: none;
+}
+.jqx-tabs-title a:visited {
+	color: inherit; text-decoration: none;
+}
+.jqx-tabs-title-selected-top {
+	border-width: 1px; border-style: solid; border-color: transparent transparent rgb(255, 255, 255); padding-bottom: 7px; z-index: 99; background-color: rgb(255, 255, 255);
+}
+.jqx-tabs-title-selected-bottom {
+	border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) transparent transparent; padding-top: 7px; padding-bottom: 5px; margin-top: -2px; background-color: rgb(255, 255, 255);
+}
+.jqx-tabs-title-hover-top {
+	border: 1px solid transparent; padding-bottom: 5px;
+}
+.jqx-tabs-title-hover-bottom {
+	border: 1px solid transparent; padding-top: 5px;
+}
+.jqx-tabs-title-disable {
+	
+}
+.jqx-tabs-header {
+	background: rgb(238, 238, 238); border-width: 0px 0px 1px; border-style: solid; border-color: transparent transparent rgb(170, 170, 170); margin: 0px; padding: 3px 0px 1px;
+}
+.jqx-tabs-header-bottom {
+	border-width: 0px 0px 1px; border-style: solid; border-color: rgb(170, 170, 170) transparent transparent; padding-top: 1px; padding-bottom: 3px;
+}
+.jqx-tabs-header-collapsed {
+	border: 1px solid rgb(170, 170, 170);
+}
+.jqx-tabs-header-collapsed-bottom {
+	border: 1px solid rgb(170, 170, 170);
+}
+.jqx-tabs-collapsed {
+	border: 0px solid transparent;
+}
+.jqx-tabs-collapsed-bottom {
+	border: 0px solid transparent;
+}
+.jqx-tabs-selection-tracker-container {
+	margin: 0px; padding: 0px; width: 100%; height: 0px; text-indent: 0px; position: relative;
+}
+.jqx-tabs-selection-tracker-top {
+	padding-bottom: 2px; border-top-color: transparent; border-right-color: transparent; border-left-color: transparent; border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-left-style: solid; position: absolute; z-index: 10; background-color: rgb(255, 255, 255);
+}
+.jqx-tabs-selection-tracker-bottom {
+	padding-bottom: 2px; margin-top: -1px; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute; z-index: 10; background-color: rgb(255, 255, 255);
+}
+.jqx-tabs-content {
+	border: 0px solid transparent; text-align: left; clear: both;
+}
+.jqx-tabs-content-element {
+	height: 100%; overflow: auto;
+}
+.jqx-checkbox {
+	margin: 0px; border: currentColor; text-align: left; white-space: nowrap; text-overflow: ellipsis;
+}
+.jqx-checkbox-default {
+	margin: 0px 3px; padding: 0px; border: 1px solid transparent; text-align: left; float: left;
+}
+.jqx-checkbox-hover {
+	margin: 0px 3px; padding: 0px; border: 1px solid transparent; float: left; cursor: pointer;
+}
+.jqx-checkbox-disabled {
+	margin: 0px; padding: 0px; border: currentColor; cursor: default;
+}
+.jqx-checkbox-disabled-box {
+	margin: 0px 3px; padding: 0px; border: 1px solid transparent; float: left;
+}
+.jqx-checkbox-check-checked {
+	background: url("images/check_black.png") no-repeat center; margin: 0px; padding: 0px; border: currentColor; float: left;
+}
+.jqx-checkbox-check-disabled {
+	background: url("images/check_disabled.png") no-repeat center; margin: 0px; padding: 0px; border: currentColor; float: left;
+}
+.jqx-checkbox-check-indeterminate {
+	background: url("images/check_indeterminate_black.png") no-repeat center; margin: 0px; padding: 0px; border: currentColor; float: left;
+}
+.jqx-checkbox-check-indeterminate-disabled {
+	background: url("images/check_indeterminate_disabled.png") no-repeat center; margin: 0px; padding: 0px; border: currentColor; float: left;
+}
+.jqx-checkbox-rtl {
+	float: right;
+}
+.jqx-radiobutton {
+	margin: 0px; border: currentColor; white-space: nowrap; text-overflow: ellipsis;
+}
+.jqx-radiobutton-default {
+	background: url("images/roundbg_classic_normal.png") repeat-x left; margin: 1px 3px 0px; padding: 0px; border-radius: 100%; border: 1px solid transparent; float: left; cursor: pointer; -moz-border-radius: 100%; -webkit-border-radius: 100%;
+}
+.jqx-radiobutton-hover {
+	margin: 1px 3px 0px; padding: 0px; border-radius: 100%; border: 1px solid transparent; float: left; cursor: pointer; -moz-border-radius: 100%; -webkit-border-radius: 100%;
+}
+.jqx-radiobutton-disabled {
+	cursor: default;
+}
+.jqx-radiobutton-disabled-box {
+	
+}
+.jqx-radiobutton-check-checked {
+	background: url("images/roundbg_check_black.png") no-repeat left top; margin: 2px 0px 0px 2px; padding: 0px; border-radius: 100%; border: 1px solid transparent; width: 7px; height: 7px; float: left; -moz-border-radius: 100%; -webkit-border-radius: 100%;
+}
+.jqx-radiobutton-check-disabled {
+	
+}
+.jqx-radiobutton-check-indeterminate {
+	background: url("images/roundbg_check_indeterminate.png") no-repeat left top; margin: 2px 0px 0px 2px; padding: 0px; border-radius: 100%; border: currentColor; width: 6px; height: 6px; float: left; -moz-border-radius: 100%; -webkit-border-radius: 100%;
+}
+.jqx-radiobutton-check-indeterminate-disabled {
+	
+}
+.jqx-radiobutton-rtl {
+	float: right;
+}
+.jqx-rating {
+	margin: 0px; padding: 0px; overflow: hidden;
+}
+.jqx-rating-image {
+	border-width: 0px;
+}
+.jqx-rating-image-default {
+	margin: 0px; padding: 0px; overflow: hidden; cursor: pointer; background-image: url("images/star.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-rating-image-hover {
+	padding: 0px; overflow: hidden; cursor: pointer; background-image: url("images/star_hover.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-rating-image-backward {
+	padding: 0px; overflow: hidden; cursor: pointer; background-image: url("images/star_disabled.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-calendar {
+	margin: 0px; padding: 0px; border: 1px solid transparent; overflow: hidden; border-collapse: separate; cursor: default; -webkit-appearance: none;
+}
+.jqx-calendar td {
+	padding-top: 0px; padding-bottom: 0px; border-collapse: separate; border-spacing: 1px;
+}
+.jqx-calendar table {
+	margin: 0px; padding: 0px; border-collapse: separate; border-spacing: 1px;
+}
+.jqx-calendar-row-header {
+	margin: 0px; padding: 0px; border: 0px solid rgb(242, 242, 242); cursor: default;
+}
+.jqx-calendar-column-header {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor transparent; margin: 0px; padding: 3px; text-align: right; cursor: default;
+}
+.jqx-calendar-top-left-header {
+	margin: 0px; border: 0px solid rgb(242, 242, 242); cursor: default;
+}
+.jqx-calendar-title-navigation {
+	margin: 0px; padding: 0px; border: currentColor; width: 25px; height: 25px; cursor: pointer; background-color: transparent;
+}
+.jqx-calendar-month {
+	margin: 0px; padding: 0px; border: currentColor; width: 100%;
+}
+.jqx-calendar-title-content {
+	cursor: pointer;
+}
+.jqx-calendar-title-header {
+	border-width: medium medium 1px; border-style: none none solid; margin: 0px; border-top-color: currentColor; border-right-color: currentColor; border-left-color: currentColor;
+}
+.jqx-calendar-title-header td {
+	padding-right: 0px; padding-left: 0px;
+}
+.jqx-calendar-title-header-disabled {
+	border-width: 0px 0px 1px; border-style: solid; margin: 0px; border-top-color: transparent; border-right-color: transparent; border-left-color: transparent;
+}
+.jqx-calendar-cell {
+	margin: 0px; padding: 1px; border: 1px solid transparent; text-align: center; cursor: pointer; background-color: transparent;
+}
+.jqx-calendar-cell td {
+	margin: 0px; padding: 0px;
+}
+.jqx-calendar-cell-decade {
+	text-align: center;
+}
+.jqx-calendar-cell-year {
+	text-align: center;
+}
+.jqx-calendar .jqx-fill-state-normal {
+	border: 1px solid transparent;
+}
+.jqx-calendar-cell-hidden {
+	margin: 0px; visibility: hidden; cursor: default;
+}
+.jqx-calendar-cell-weekend {
+	margin: 0px; color: rgb(137, 137, 137); cursor: pointer;
+}
+.jqx-calendar-cell-specialDate {
+	margin: 0px; border: 1px solid rgb(255, 255, 255); color: rgb(255, 0, 0) !important; cursor: pointer; background-color: transparent;
+}
+.jqx-calendar-cell-today {
+	margin: 0px; border: 1px solid rgb(253, 192, 102); color: rgb(137, 137, 137); cursor: pointer; background-color: rgb(255, 255, 219);
+}
+.jqx-calendar-cell-hover {
+	margin: 0px; cursor: pointer;
+}
+.jqx-calendar-cell-selected {
+	margin: 0px; cursor: pointer;
+}
+.jqx-calendar-cell-othermonth {
+	margin: 0px; color: rgb(137, 137, 137); cursor: pointer;
+}
+.jqx-calendar-cell-disabled {
+	color: rgb(204, 204, 204);
+}
+.jqx-calendar-row-cell {
+	margin: 0px; border: 1px solid transparent; text-align: center; cursor: default;
+}
+.jqx-calendar-row-cell-disabled {
+	
+}
+.jqx-calendar-footer {
+	margin: 5px; color: inherit; font-size: 13px;
+}
+.jqx-calendar-title-container {
+	overflow: hidden;
+}
+.jqx-calendar-column-cell {
+	margin: 0px; padding: 1px; border: 1px solid transparent; text-align: center; overflow: hidden; font-weight: normal; cursor: default;
+}
+.jqx-calendar-column-cell-disabled {
+	
+}
+.jqx-calendar-view {
+	margin: 0px; padding: 0px; border: 0px solid rgb(255, 255, 255); cursor: default; -webkit-appearance: none;
+}
+.jqx-expander {
+	
+}
+.jqx-expander-header {
+	outline: 0px; padding-top: 5px; padding-bottom: 5px; border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+.jqx-expander-content {
+	outline: 0px; padding-top: 5px; padding-bottom: 5px; border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+.jqx-expander-header-content {
+	padding-left: 3px;
+}
+.jqx-expander-header-content-rtl {
+	padding-right: 3px;
+}
+.jqx-expander-content {
+	outline: 0px; overflow: auto; padding-top: 0px; padding-bottom: 0px;
+}
+.jqx-expander-header {
+	border-top-width: 1px; border-top-style: solid;
+}
+.jqx-expander-content-top {
+	border-top-width: 1px; border-top-style: solid;
+}
+.jqx-expander-header {
+	border-bottom-width: 1px; border-bottom-style: solid;
+}
+.jqx-expander-content-bottom {
+	border-bottom-width: 1px; border-bottom-style: solid;
+}
+.jqx-expander-header {
+	overflow: hidden; cursor: pointer;
+}
+.jqx-expander-header-disabled {
+	cursor: default;
+}
+.jqx-expander-arrow {
+	width: 17px; height: 17px; position: relative;
+}
+.jqx-expander-content-empty {
+	border-width: 0px; padding: 0px;
+}
+.jqx-navigationbar {
+	margin: 0px; border: currentColor; -webkit-appearance: none;
+}
+.jqx-panel {
+	margin: 0px; padding: 0px; border: 1px solid transparent; overflow: hidden; cursor: default; -webkit-appearance: none;
+}
+.jqx-panel-bottomright {
+	
+}
+.jqx-dropdownbutton-popup {
+	border: 1px solid transparent; -webkit-appearance: none;
+}
+.jqx-listbox {
+	margin: 0px; padding: 0px; border: 1px solid transparent; overflow: hidden; cursor: default; -webkit-appearance: none;
+}
+.jqx-listbox-bottomright {
+	
+}
+.jqx-listitem-state-group {
+	padding: 4px 2px; text-align: left; overflow: hidden; font-weight: bold; vertical-align: middle; white-space: nowrap; cursor: default;
+}
+.jqx-listitem-state-normal {
+	margin: 1px; padding: 3px; border: 1px solid transparent; left: 0px; top: 0px; text-align: left; overflow: hidden; display: inherit; white-space: nowrap; visibility: inherit; position: absolute; cursor: default;
+}
+.jqx-listitem-state-hover {
+	margin: 1px; padding: 3px 3px 2px; border: 1px solid transparent; white-space: nowrap;
+}
+.jqx-listitem-state-selected {
+	margin: 1px; padding: 3px 3px 2px; border: 1px solid transparent; white-space: nowrap;
+}
+.jqx-listbox-feedback {
+	height: 1px; border-top-color: rgb(0, 0, 0); border-top-width: 1px; border-top-style: dashed;
+}
+.jqx-listitem-element {
+	border: currentColor; width: 100%; height: 100%; position: absolute; -ms-touch-action: none; align: left; valign: top;
+}
+.jqx-combobox-content {
+	border-width: medium 1px medium medium; border-style: none solid none none; border-color: currentColor transparent currentColor currentColor; margin: 0px; padding: 0px; text-align: left; overflow: hidden; vertical-align: middle; white-space: nowrap; border-top-left-radius: 3px; border-bottom-left-radius: 3px; background-clip: padding-box; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; -webkit-appearance: none; -moz-background-clip: padding; -webkit-background-clip: padding-box;
+}
+.jqx-combobox-content-rtl {
+	border-width: medium medium medium 1px; border-style: none none none solid; border-color: currentColor currentColor currentColor transparent; border-radius: 0px 3px 3px 0px; background-clip: padding-box; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 0px; -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 0px; -moz-background-clip: padding; -webkit-background-clip: padding-box;
+}
+.jqx-combobox-input {
+	padding: 0px; border: 0px solid rgb(170, 170, 170); background-clip: padding-box; -webkit-border-radius: 0px; -webkit-appearance: none; -moz-background-clip: padding; -webkit-background-clip: padding-box;
+}
+.jqx-combobox-content-disabled {
+	color: rgb(170, 170, 170);
+}
+.jqx-combobox-arrow-normal {
+	margin: 0px; border: currentColor; overflow: hidden; cursor: pointer; -webkit-appearance: none;
+}
+.jqx-combobox-arrow-hover {
+	margin: 0px; overflow: hidden; -webkit-appearance: none;
+}
+.jqx-combobox-arrow-selected {
+	margin: 0px; overflow: hidden; -webkit-appearance: none;
+}
+.jqx-combobox-state-normal {
+	margin: 0px; border: 1px solid transparent; overflow: hidden; -webkit-appearance: none;
+}
+.jqx-combobox-state-hover {
+	margin: 0px; border: 1px solid transparent; overflow: hidden;
+}
+.jqx-combobox-state-selected {
+	margin: 0px; border: 1px solid transparent; overflow: hidden;
+}
+.jqx-combobox-state-focus {
+	border: 1px solid transparent;
+}
+.jqx-combobox-multi-item {
+	border-style: solid; margin: 2px; padding: 1px 3px; text-align: left; overflow: hidden; font-weight: normal; white-space: nowrap;
+}
+.jqx-combobox-multi-item a:link {
+	outline: 0px; color: inherit; text-decoration: none; display: block; cursor: pointer;
+}
+.jqx-combobox-multi-item a:visited {
+	outline: 0px; color: inherit; text-decoration: none; display: block; cursor: pointer;
+}
+.jqx-combobox-state-disabled {
+	margin: 0px; color: rgb(170, 170, 170); white-space: nowrap;
+}
+.jqx-select {
+	margin: 0px; outline: 0px; overflow: hidden; padding-top: 0px; padding-bottom: 0px; padding-left: 3px; -webkit-appearance: none;
+}
+.jqx-select-content {
+	cursor: pointer; text-overflow: ellipsis;
+}
+.jqx-select-container {
+	padding: 0px;
+}
+.jqx-select-item {
+	margin: 1px; padding: 3px; white-space: normal !important; cursor: default;
+}
+.jqx-dropdownlist-content {
+	margin: 0px; padding: 0px 0px 0px 3px; outline: 0px; border: currentColor; text-align: left; overflow: hidden; vertical-align: middle; white-space: nowrap; -webkit-appearance: none;
+}
+.jqx-dropdownlist-content-rtl {
+	padding-right: 3px; padding-left: 0px;
+}
+.jqx-dropdownlist-content-disabled {
+	
+}
+.jqx-dropdownlist-state-normal {
+	margin: 0px; border: 1px solid transparent; overflow: hidden; cursor: pointer; -webkit-appearance: none;
+}
+.jqx-dropdownlist-state-hover {
+	margin: 0px; border: 1px solid transparent; overflow: hidden; cursor: pointer;
+}
+.jqx-dropdownlist-state-selected {
+	margin: 0px; border: 1px solid transparent; overflow: hidden; cursor: pointer; background-color: transparent;
+}
+.jqx-dropdownlist-state-focus {
+	border: 1px solid rgb(144, 144, 144);
+}
+.jqx-dropdownlist-state-disabled {
+	
+}
+.jqx-scrollbar {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+.jqx-scrollbar-state-normal {
+	background: rgb(239, 239, 239); margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-button-state-normal {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-button-state-hover {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-button-state-pressed {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-thumb-state-normal-horizontal {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-thumb-state-hover-horizontal {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-thumb-state-pressed-horizontal {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-thumb-state-normal {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-thumb-state-hover {
+	margin: 0px; padding: 0px; border: 1px solid transparent;
+}
+.jqx-scrollbar-thumb-state-pressed {
+	background: rgb(209, 209, 209); margin: 0px; padding: 0px; border: 1px solid rgb(144, 144, 144);
+}
+.jqx-window {
+	border: 1px solid transparent; overflow: hidden; position: absolute;
+}
+.jqx-window-disabled {
+	
+}
+.jqx-window-header {
+	border-width: 0px 0px 1px; padding: 5px; height: auto; overflow: hidden; border-bottom-color: transparent; border-bottom-style: solid; white-space: nowrap;
+}
+.jqx-window-header-disabled {
+	
+}
+.jqx-window-content {
+	padding: 5px; text-align: left; overflow: auto; background-clip: padding-box; background-color: transparent; -webkit-background-clip: padding-box;
+}
+.jqx-window-content-disabled {
+	padding: 5px; text-align: left; overflow: auto;
+}
+.jqx-window-close-button {
+	cursor: pointer; background-image: url("images/close.png"); background-repeat: no-repeat;
+}
+.jqx-window-collapse-button {
+	cursor: pointer; background-image: url("images/icon-up.png");
+}
+.jqx-window-collapse-button-collapsed {
+	cursor: pointer; background-image: url("/images/icon-down.png");
+}
+.jqx-window-modal {
+	background-color: black;
+}
+.jqx-window-close-button-hover {
+	
+}
+.jqx-docking {
+	overflow: hidden;
+}
+.jqx-docking-panel {
+	margin: 0px; padding: 0px; min-height: 100px;
+}
+.jqx-docking-drop-indicator {
+	border-width: 1px; border-style: dashed; margin: 0px;
+}
+.jqx-docking-window {
+	margin: 0px;
+}
+.jqx-slider {
+	clear: both;
+}
+.jqx-slider-tick {
+	border-left-color: transparent; border-left-width: 1px; border-left-style: solid; z-index: 9;
+}
+.jqx-slider-tick-horizontal {
+	width: 1px; margin-top: 1px; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.jqx-slider-tick-vertical {
+	height: 1px; border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.jqx-slider-tickscontainer {
+	margin-top: 0px; margin-bottom: 0px; position: relative; z-index: 9;
+}
+.jqx-slider-slider {
+	border-radius: 100%; left: 0px; top: 0px; width: 16px; height: 16px; position: absolute; z-index: 15; cursor: pointer; -moz-border-radius: 100%; -webkit-border-radius: 100%;
+}
+.jqx-slider-button {
+	border-radius: 100%; -moz-border-radius: 100%; -webkit-border-radius: 100%;
+}
+.jqx-slider-slider-horizontal {
+	border-radius: 7px; border: 1px solid transparent; margin-top: -5px; background-image: url("images/slider_horizontal_classic.png"); background-repeat: no-repeat; -moz-border-radius: 7px; -webkit-border-radius: 7px;
+}
+.jqx-slider-slider-vertical {
+	border-radius: 7px; border: 1px solid transparent; margin-left: -5px; background-image: url("images/slider_vertical_classic.png"); background-repeat: no-repeat; -moz-border-radius: 7px; -webkit-border-radius: 7px;
+}
+.jqx-slider-track {
+	height: 8px; float: left; position: relative; z-index: 20;
+}
+.jqx-slider-track-horizontal {
+	height: 8px; margin-top: 2px;
+}
+.jqx-slider-track-vertical {
+	width: 8px;
+}
+.jqx-slider-rangebar {
+	
+}
+.jqx-splitter {
+	border: 1px solid transparent; overflow: hidden; position: relative;
+}
+.jqx-splitter-splitbar-vertical {
+	border-width: 0px 1px; border-style: solid; border-color: transparent; position: absolute; cursor: col-resize;
+}
+.jqx-splitter-splitbar-hover {
+	background-color: transparent;
+}
+.jqx-splitter-splitbar-horizontal {
+	border-width: 1px 0px; border-style: solid; border-color: transparent; position: absolute; cursor: row-resize;
+}
+.jqx-splitter-splitbar-invalid {
+	background: rgb(255, 0, 0) !important;
+}
+.jqx-splitter-collapse-button-horizontal {
+	width: 45px; height: 5px; cursor: pointer;
+}
+.jqx-splitter-collapse-button-vertical {
+	width: 5px; height: 45px; cursor: pointer;
+}
+.jqx-splitter-splitbar-collapsed {
+	cursor: default;
+}
+.jqx-splitter-panel {
+	border: currentColor; overflow: hidden; position: absolute;
+}
+.jqx-splitter-nested {
+	border: currentColor; overflow: hidden;
+}
+.jqx-splitter-panel-nested {
+	border: currentColor; overflow: hidden;
+}
+.jqx-draggable {
+	
+}
+.jqx-draggable-dragging {
+	border: 0px solid black;
+}
+.jqx-draggable-disabled {
+	cursor: default;
+}
+.jqx-validator-hint {
+	border: 1px solid rgb(110, 0, 0); width: auto; height: 18px; color: rgb(255, 255, 255); padding-right: 5px; padding-left: 5px; font-family: Verdana; font-size: 13px; display: inline-block; white-space: nowrap; z-index: 99999; cursor: pointer; background-color: rgb(148, 39, 36);
+}
+.jqx-validator-hint-arrow {
+	margin: 0px; padding: 0px; width: 9px; height: 9px; z-index: 99999; background-image: url("images/multi-arrow.gif"); background-color: transparent;
+}
+.jqx-validator-error-label {
+	text-align: left; color: rgb(221, 75, 57); line-height: 17px; vertical-align: top; display: block; cursor: default;
+}
+.jqx-validator-error-element {
+	border-color: rgb(221, 75, 57) !important;
+}
+.jqx-switchbutton {
+	border-radius: 5px; border: 1px solid rgb(204, 204, 204); overflow: hidden; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+.jqx-switchbutton-thumb {
+	border: 1px solid rgb(204, 204, 204); display: inline-block; cursor: pointer;
+}
+.jqx-switchbutton-label {
+	text-align: center; text-transform: uppercase; font-family: Sans-Serif; font-size: 15px; font-weight: bold;
+}
+.jqx-switchbutton-wrapper {
+	
+}
+.jqx-switchbutton-label-on {
+	
+}
+.jqx-switchbutton-label-off {
+	
+}
+.jqx-left-arrow {
+	background: url("left.png"); cursor: pointer;
+}
+.jqx-right-arrow {
+	background: url("right.png"); cursor: pointer;
+}
+.jqx-icon-arrow-up {
+	background-position: center; background-image: url("images/icon-up.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-down {
+	background-position: center; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-left {
+	background-position: center; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-right {
+	background-position: center; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-first {
+	background-position: center; background-image: url("images/icon-first.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-last {
+	background-position: center; background-image: url("images/icon-last.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-up-hover {
+	background-position: center; background-image: url("images/icon-up.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-down-hover {
+	background-position: center; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-left-hover {
+	background-position: center; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-right-hover {
+	background-position: center; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-up-selected {
+	background-position: center; background-image: url("images/icon-up.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-down-selected {
+	background-position: center; background-image: url("/images/icon-down.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-left-selected {
+	background-position: center; background-image: url("images/icon-left.png"); background-repeat: no-repeat;
+}
+.jqx-icon-arrow-right-selected {
+	background-position: center; background-image: url("images/icon-right.png"); background-repeat: no-repeat;
+}
+.jqx-icon-close {
+	background-position: center; cursor: pointer; background-image: url("images/close.png"); background-repeat: no-repeat;
+}
+.jqx-icon-close-hover {
+	background-position: center; cursor: pointer; background-image: url("images/close.png"); background-repeat: no-repeat;
+}
+.jqx-icon-search {
+	background-position: center; width: 16px; height: 16px; cursor: pointer; background-image: url("images/search.png"); background-repeat: no-repeat; background-size: 16px;
+}
+.jqx-icon-plus {
+	background-position: center; width: 16px; height: 16px; cursor: pointer; background-image: url("images/plus.png"); background-repeat: no-repeat; background-size: 16px;
+}
+.jqx-scrollview-button {
+	margin: 2px; border-radius: 10px; width: 10px; height: 10px; display: inline-block; cursor: pointer; background-color: rgb(170, 174, 175); -moz-border-radius: 10px; -webkit-border-radius: 10px;
+}
+.jqx-scrollview {
+	background-color: rgb(0, 0, 0);
+}
+.jqx-input {
+	border-color: rgb(199, 199, 199); overflow: hidden; background-color: inherit; -webkit-user-modify: inherit; -moz-user-modify: inherit;
+}
+.jqx-input-group {
+	overflow: hidden;
+}
+.jqx-input-group-addon {
+	padding: 2px 8px !important; border: 1px solid transparent; vertical-align: middle; float: left; white-space: nowrap; position: relative; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+:first-child.jqx-input-group-addon {
+	border-right-width: 0px; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important;
+}
+:last-child.jqx-input-group-addon {
+	border-left-width: 0px; border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important;
+}
+:not(:last-child):not(:first-child).jqx-input-group-addon {
+	border-radius: 0px !important; border-left-width: 0px;
+}
+.jqx-input-group .jqx-input {
+	padding: 2px 1px !important; border-right-width: 1px !important; border-left-width: 1px !important;
+}
+.jqx-widget {
+	color: rgb(0, 0, 0); font-family: Verdana,Arial,sans-serif; font-size: 13px; font-style: normal; direction: ltr; zoom: 1; -ms-text-size-adjust: none; background-clip: padding-box; -webkit-appearance: none; -ms-touch-action: none; -moz-background-clip: padding; -webkit-background-clip: padding-box; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.jqx-item {
+	border: 1px solid transparent; color: inherit; -ms-touch-action: none; -webkit-text-size-adjust: none;
+}
+.jqx-widget-content {
+	background: rgb(255, 255, 255); border-color: rgb(199, 199, 199); font-family: Verdana,Arial,sans-serif; font-size: 13px; font-style: normal; -ms-touch-action: none; -moz-background-clip: padding; -webkit-background-clip: padding-box; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.jqx-widget-header {
+	background: rgb(232, 232, 232); border-color: rgb(197, 197, 197); -ms-touch-action: none; -moz-background-clip: padding; -webkit-background-clip: padding-box; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.jqx-fill-state-normal {
+	background: rgb(239, 239, 239); border-color: rgb(170, 170, 170); font-family: Verdana,Arial,sans-serif; font-size: 13px; font-style: normal; -ms-touch-action: none;
+}
+.jqx-fill-state-hover {
+	background: rgb(232, 232, 232); border-color: rgb(153, 153, 153);
+}
+.jqx-fill-state-pressed {
+	background: rgb(209, 209, 209); border-color: rgb(153, 153, 153);
+}
+.jqx-fill-state-focus {
+	border-color: rgb(85, 85, 85);
+}
+.jqx-fill-state-disabled {
+	color: rgb(0, 0, 0); filter: Alpha(Opacity=45); cursor: default; opacity: 0.55;
+}
+.jqx-listmenu-widget {
+	-ms-touch-action: auto;
+}
+.jqx-listmenu-widget .jqx-widget-content {
+	-ms-touch-action: auto;
+}
+.jqx-listmenu-widget .jqx-widget-header {
+	-ms-touch-action: auto;
+}
+.jqx-listmenu-widget li {
+	-ms-touch-action: auto;
+}
+.jqx-widget .jqx-grid-cell {
+	border-color: rgb(170, 170, 170);
+}
+.jqx-widget .jqx-grid-column-header {
+	border-color: rgb(170, 170, 170);
+}
+.jqx-widget .jqx-grid-group-cell {
+	border-color: rgb(170, 170, 170);
+}
+.jqx-widget .jqx-grid-column-menubutton {
+	border-color: rgb(170, 170, 170); background-color: transparent;
+}
+.jqx-widget .jqx-grid-column-sortascbutton {
+	border-color: rgb(170, 170, 170); background-color: transparent;
+}
+.jqx-widget .jqx-grid-column-sortdescbutton {
+	border-color: rgb(170, 170, 170); background-color: transparent;
+}
+.jqx-widget .jqx-grid-column-filterbutton {
+	border-color: rgb(170, 170, 170); background-color: transparent;
+}
+.jqx-grid-column-header a:link {
+	
+}
+.jqx-grid-column-header a:visited {
+	
+}
+.jqx-grid-bottomright {
+	background-color: rgb(229, 229, 229);
+}
+.jqx-panel-bottomright {
+	background-color: rgb(229, 229, 229);
+}
+.jqx-listbox-bottomright {
+	background-color: rgb(229, 229, 229);
+}
+.jqx-tabs-title-selected-top {
+	border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+.jqx-tabs-title-selected-bottom {
+	border-color: rgb(255, 255, 255) rgb(170, 170, 170) rgb(170, 170, 170); border-top-width: 1px; border-top-style: solid; background-color: rgb(255, 255, 255);
+}
+.jqx-tabs-selection-tracker-top {
+	border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.jqx-tabs-selection-tracker-bottom {
+	border-color: rgb(255, 255, 255) rgb(170, 170, 170) rgb(170, 170, 170); border-top-width: 1px; border-top-style: solid;
+}
+.jqx-input {
+	border-width: 1px; border-style: solid; padding: 0px; background-clip: padding-box; -webkit-appearance: none; -moz-background-clip: padding; -webkit-background-clip: padding-box;
+}
+input[type=text].jqx-input {
+	border-width: 1px; border-style: solid; margin: 0px; padding: 0px; font-size: 13px; min-height: 16px; min-width: 16px;
+}
+input[type=password].jqx-input {
+	border-width: 1px; border-style: solid; margin: 0px; padding: 0px; font-size: 13px; min-height: 16px; min-width: 16px;
+}
+.jqx-input-invalid {
+	border-color: rgb(221, 75, 57) !important;
+}
+.jqx-input-content {
+	padding: 1px; outline: 0px; background-clip: padding-box; -webkit-appearance: none; -moz-background-clip: padding; -webkit-background-clip: padding-box; -webkit-user-modify: inherit; -moz-user-modify: inherit; resize: none;
+}
+.jqx-input-disabled {
+	outline: 0px; -webkit-appearance: none; resize: none;
+}
+.jqx-input-button-header {
+	border-width: 1px; border-style: solid; padding: 0px; height: 3px; cursor: pointer; -webkit-appearance: none;
+}
+.jqx-input-button-innerHeader {
+	padding: 0px; border: 0px solid rgb(255, 255, 255); width: 3px; height: 3px; cursor: pointer; -webkit-appearance: none;
+}
+.jqx-input-button-content {
+	border-width: 0px 1px 1px; border-style: solid; padding: 0px; text-align: center; font-size: 10px; font-style: normal; vertical-align: middle; cursor: pointer; -webkit-appearance: none;
+}
+.jqx-menu-popup {
+	
+}
+.jqx-menu-vertical {
+	background-color: rgb(239, 239, 239);
+}
+.jqx-color-picker {
+	
+}
+.jqx-color-picker-panel {
+	
+}
+.jqx-color-picker-map {
+	border: 1px solid rgb(160, 160, 160); overflow: hidden; background-image: url("images/colorpicker/map-saturation.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-color-picker-map-hue {
+	border: 1px solid rgb(160, 160, 160); overflow: hidden; background-image: url("images/colorpicker/map-hue.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-color-picker-map-overlay {
+	background-image: url("images/colorpicker/map-saturation-overlay.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-color-picker-bar {
+	border: 1px solid rgb(160, 160, 160); background-image: url("images/colorpicker/bar-saturation.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-color-picker-bar-hue {
+	border: 1px solid rgb(160, 160, 160); background-image: url("images/colorpicker/bar-hue.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.jqx-color-picker-preview {
+	border: 1px solid rgb(160, 160, 160);
+}
+.jqx-color-picker-pointer {
+	width: 16px; height: 16px; background-image: url("images/crosshair.png"); background-repeat: no-repeat;
+}
+.jqx-color-picker-pointer-alt {
+	width: 16px; height: 16px; background-image: url("images/crosshair-white.png"); background-repeat: no-repeat;
+}
+.jqx-color-picker-bar-pointer {
+	background-position: right top; height: 15px; margin-left: 6px; background-image: url("images/pointer.png"); background-repeat: no-repeat;
+}
+.jqx-icon {
+	margin: -8px auto 0px; top: 50%; width: 16px; height: 16px; position: relative;
+}
+.jqx-input-icon {
+	margin: 0px auto; width: 13px; height: 13px;
+}
+.jqx-scrollbar-thumb-state-normal-touch {
+	background: rgb(195, 195, 195); border-color: rgb(195, 195, 195);
+}
+.jqx-touch {
+	
+}
+.jqx-touch .jqx-fill-state-normal {
+	
+}
+.jqx-touch .jqx-widget-content {
+	
+}
+.jqx-touch .jqx-widget-header {
+	
+}
+.jqx-touch a:link {
+	
+}
+.jqx-scrollbar .jqx-icon-arrow-up {
+	width: 100%; height: 100%;
+}
+.jqx-scrollbar .jqx-icon-arrow-down {
+	width: 100%; height: 100%;
+}
+.jqx-scrollbar .jqx-icon-arrow-left {
+	width: 100%; height: 100%;
+}
+.jqx-scrollbar .jqx-icon-arrow-right {
+	width: 100%; height: 100%;
+}
+.jqx-listmenu-widget {
+	border-width: 1px; border-style: solid;
+}
+ol.jqx-listmenu {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; line-height: 1; font-size: 100%; vertical-align: baseline; counter-reset: section;
+}
+ul.jqx-listmenu {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; line-height: 1; font-size: 100%; vertical-align: baseline; counter-reset: section;
+}
+.jqx-listmenu li {
+	list-style: none; line-height: 1; margin-left: 0px;
+}
+.jqx-listmenu {
+	width: 100%;
+}
+.jqx-listmenu-header {
+	padding: 15px;
+}
+.jqx-listmenu-item {
+	padding: 15px; text-align: left; overflow: hidden; float: none; position: relative; cursor: pointer;
+}
+.jqx-listmenu-separator {
+	padding: 10px; counter-reset: section;
+}
+.jqx-listmenu-header-label {
+	margin-left: 30px;
+}
+.jqx-listmenu-arrow-right {
+	top: 50%; width: 16px; height: 16px; right: 7px; margin-top: -7px; position: absolute;
+}
+.jqx-listmenu-arrow-rtl {
+	left: 7px; right: 0px;
+}
+.jqx-listmenu-arrow-right-pressed {
+	width: 16px; height: 16px;
+}
+.jqx-listmenu-header .jqx-button {
+	padding: 6px 10px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px;
+}
+.jqx-listmenu-filter-input {
+	padding: 3px 10px; border-radius: 3px; border: 1px solid rgb(199, 199, 199); width: 97%; height: 25px; font-size: 20px; min-height: 25px !important; background-color: rgb(255, 255, 255); -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.jqx-listmenu-filter {
+	padding: 4px; text-align: center;
+}
+ol li .jqx-listmenu-item-label::before {
+	content: counter(section) ". "; counter-increment: section;
+}
+.jqx-listmenu div {
+	clear: both;
+}
+.jqx-listmenu-auto-separator {
+	
+}
+.jqx-listmenu-item-readonly {
+	cursor: default;
+}
+.jqx-tooltip {
+	width: auto; height: auto; position: absolute;
+}
+.jqx-tooltip-main {
+	border-width: 1px; border-style: solid; width: 100%; height: 100%; text-align: center; filter: inherit; position: relative;
+}
+.jqx-tooltip-text {
+	padding: 5px 8px; overflow: hidden; filter: inherit;
+}
+.jqx-tooltip {
+	border-radius: 5px; background-clip: padding-box; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-background-clip: padding; -webkit-background-clip: padding-box;
+}
+.jqx-tooltip-text {
+	border-radius: 5px; background-clip: padding-box; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-background-clip: padding; -webkit-background-clip: padding-box;
+}
+.jqx-tooltip-main {
+	border-radius: 5px; background-clip: padding-box; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-background-clip: padding; -webkit-background-clip: padding-box;
+}
+.jqx-tooltip-arrow {
+	border-style: solid; margin: -6px 0px 0px -7px; width: 0px; height: 0px; display: block; filter: inherit; position: absolute;
+}
+.jqx-tooltip-arrow-t-b {
+	border-right-color: transparent !important; border-left-color: transparent !important;
+}
+.jqx-tooltip-arrow-l-r {
+	border-top-color: transparent !important; border-bottom-color: transparent !important;
+}
+.jqx-rtl {
+	text-align: right !important;
+}
+.jqx-shadow {
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.15) !important; -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .15); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .15); -o-box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
+}
+.jqx-noshadow {
+	box-shadow: none !important; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none;
+}
+.jqx-passwordinput-password-icon {
+	width: 12px; height: 9px; background-image: url("images/icon-showpassword.png") !important; background-repeat: no-repeat !important;
+}
+.jqx-passwordinput-password-icon-rtl {
+	width: 12px; height: 9px; background-image: url("images/icon-showpassword.png") !important; background-repeat: no-repeat !important;
+}
+.jqx-passwordinput-password-icon-ltr {
+	background-position: right !important;
+}
+.jqx-passwordinput-password-icon-rtl {
+	background-position: left !important;
+}
+.jqx-passwordinput-password-strength-inicator {
+	width: 20%; height: 5px; margin-top: 5px;
+}
+.jqx-rc-t-expanded {
+	border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; -moz-border-radius-topleft: 0px; -webkit-border-top-left-radius: 0px; -moz-border-radius-topright: 0px; -webkit-border-top-right-radius: 0px;
+}
+.jqx-rc-b-expanded {
+	border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px; -moz-border-radius-bottomright: 0px; -webkit-border-bottom-right-radius: 0px;
+}
+.jqx-treemap-rectangle {
+	border: 1px solid rgb(85, 85, 85); color: rgb(34, 34, 34); overflow: hidden; font-size: 13px; font-weight: normal; text-overflow: ellipsis; text-shadow: 0px 0px 0px;
+}
+.jqx-treemap-label {
+	overflow: hidden; text-overflow: ellipsis;
+}
+.jqx-treemap-rectangle-parent {
+	color: rgb(34, 34, 34); font-family: Verdana; font-size: 15px; font-weight: bold;
+}
+.jqx-treemap-legend-label {
+	color: rgb(255, 255, 255);
+}
+.jqx-treemap-legend {
+	width: 350px; overflow: hidden; z-index: 41; background-color: rgba(0, 0, 0, 0.1);
+}
+.jqx-treemap-legend-table {
+	width: 100%; table-layout: fixed;
+}
+.jqx-treemap-legend-color {
+	height: 3px;
+}
+.jqx-treemap-legend-values {
+	width: 100%; height: 12px;
+}
+.jqx-treemap-legend-value {
+	color: rgb(255, 255, 255); font-size: 9px; position: absolute;
+}
+.jqx-treemap-rectangle-hover {
+	z-index: 40; box-shadow: 0px 0px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.jqx-rangeselector {
+	margin: 50px;
+}
+.jqx-rangeselector-content {
+	position: absolute;
+}
+.jqx-rangeselector-ticks-container {
+	width: 100%; height: 100%;
+}
+.jqx-rangeselector-slider {
+	width: 100%; height: 100%;
+}
+.jqx-rangeselector-ticks-container {
+	position: relative; background-color: transparent;
+}
+.jqx-rangeselector-slider {
+	border-right-color: black; border-left-color: black; border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; opacity: 0.3; background-color: aqua;
+}
+.jqx-rangeselector-ticks {
+	width: 1px; height: 100%; position: absolute; background-color: black;
+}
+.jqx-rangeselector-labels {
+	width: auto; height: auto; position: absolute;
+}
+.jqx-rangeselector-markers {
+	padding: 5px; width: auto; height: 20px; position: absolute; background-color: gray;
+}
+.jqx-rangeselector-marker-arrow {
+	border-style: solid; margin: -6px 0px 0px -7px; width: 0px; height: 0px; border-top-color: gray; border-right-color: transparent !important; border-bottom-color: transparent !important; border-left-color: transparent !important; border-top-width: 5px; border-bottom-width: 5px; display: block; filter: inherit; position: absolute; background-repeat: repeat; background-clip: border-box; background-color: transparent !important;
+}
+.jqx-rangeselector-markers-alert {
+	border-color: red; color: white; background-color: red;
+}
+.jqx-rangeselector-marker-left-arrow {
+	border-right-width: 0px; border-left-width: 5px;
+}
+.jqx-rangeselector-marker-right-arrow {
+	border-right-width: 5px; border-left-width: 0px;
+}
+.jqx-rangeselector-markers-value {
+	width: 100%; height: 100%;
+}
+.jqx-filter-editor-group {
+	color: rgb(219, 52, 18) !important; white-space: nowrap !important;
+}
+.jqx-filter-editor-column {
+	color: rgb(16, 134, 212) !important; white-space: nowrap !important;
+}
+.jqx-filter-editor-condition {
+	color: rgb(111, 177, 17) !important; white-space: nowrap !important;
+}
+.jqx-filter-editor-value {
+	color: gray !important; white-space: nowrap !important;
+}

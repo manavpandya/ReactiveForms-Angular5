@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <PartialFailure>
+    <Error id="25734">
+      <Message>Option failed validation because option does not exist for this vendor</Message>
+      <Type>INVALID_DATA</Type>
+    </Error>
+  </PartialFailure>
+</Response>

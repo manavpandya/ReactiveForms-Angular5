@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pricing-feed xmlns="http://seller.marketplace.sears.com/pricing/v3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://seller.marketplace.sears.com/pricing/v3 ../../../../../rest/pricing/import/v3/pricing.xsd">
+	<fbm-pricing>
+		###Price####
+	</fbm-pricing>
+</pricing-feed>

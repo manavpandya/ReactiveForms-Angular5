@@ -1,0 +1,36 @@
+﻿.error{color:red;font-size:12px;}
+.message{font:arial;font-size:12px;font-weight:bold;text-align:center;margin:20px;padding-top:20px;display:none;height:470px;}
+#popupup_docwidth1 {margin:0 auto;padding:10px;width:550px;overflow:hidden;}
+#popup_bg1 {background:none repeat scroll 0 0 #ffffff;margin:0 0 0px;width:549px;}
+#popup_header {background:none repeat scroll 0 0 #000000;border:1px solid #000000;float:left;height:35px;margin:0;width:550px;padding-top:5px;}
+.addonProduct {float:left;text-align:center;width:100%;}
+.description h2{font-size:12px;}
+.descDetail {float:left;margin: 10px 15px 10px 10px;;width:95%;}
+.description {color:#000000;font-size:12px;padding:0;text-align:justify;float:left;padding-left:10px;width:95%; margin:0px;padding-top:0px;}
+.description .description .product {}
+.title {color:#555555;float:left;font-size:14px;font-weight:bold;margin:8px;text-align:left;text-transform:uppercase;vertical-align:middle;width:550px;}
+.productDetail {}
+.img_center {float:left;margin:5px;text-align:center;vertical-align:middle;}
+.productName {color:#555555;font-size:14px;font-weight:bold;padding:0;text-align:left;}
+.img_center img {display:inline;width:164px;text-align:center;vertical-align:middle;border:1px solid #909090;}
+#header1{width:505px;height:47px;padding:4px 0 0 0;text-align:center;font-family:Arial,Tahoma,verdana,Helvetica,sans-serif;}
+#header img{margin-bottom:10px;}
+.textfield_medium{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#2e2d2d; border:1px solid #d8d8d8; padding-left:2px; height:16px; background-color:#ffffff;}
+body {background:none repeat scroll 0 0 #F6F1EB;color:#2E2D2D;font-family:Arial,Helvetica,sans-serif;font-size:12px;margin:0 auto;padding:0;}
+
+.table td {
+    border: 1px solid #EEECF7;
+    color: #2E2D2D;
+    font: 12px/18px Arial,Helvetica,sans-serif;
+}
+
+#popup_content h1 {
+    color: #555555;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding: 0px 0 0px 10px;
+    text-align: left;
+}
+
+a{color:red; text-decoration: none;}
+a:hover {color:#2E2D2D; text-decoration:underline;}

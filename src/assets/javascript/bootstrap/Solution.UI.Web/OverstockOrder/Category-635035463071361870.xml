@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <GetProduct2Response />
+  <PartialFailure>
+    <Error id="12283667-000-000">
+      <Message>The product you submitted does not exist</Message>
+      <Type>INVALID_DATA</Type>
+    </Error>
+  </PartialFailure>
+</Response>

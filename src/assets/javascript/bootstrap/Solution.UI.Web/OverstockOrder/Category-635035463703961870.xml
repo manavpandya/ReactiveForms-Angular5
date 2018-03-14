@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Success />
+  <GetProduct2Response>
+    <Product>
+      <ProductSku>12283667</ProductSku>
+      <Name>Signature Embroidered Colonial Blue Faux Silk Taffeta 120-inch Curtain Panel</Name>
+      <ShortName>Signature Embroidered Blue Taffeta Curtain Panel</ShortName>
+      <Summary>These drapes feature a crisp, smooth finish in brilliant colors. This window panel is constructed of heavy faux silk taffeta with high-quality flannel interlining and cotton lining. This curtain has a unique sheen and fine weave.</Summary>
+      <Description>These drapes feature a crisp, smooth finish in brilliant colors. This window panel is constructed of heavy faux silk taffeta with high-quality flannel interlining and cotton lining. This curtain has a unique sheen and fine weave.              &lt;br&gt;&lt;br&gt;    &lt;ul&gt;  &lt;li&gt;Exclusive 115 GSM heavy polyester taffeta&lt;/li&gt;  &lt;li&gt;High-quality cotton lining&lt;/li&gt;  &lt;li&gt;Heavy flannel interlining&lt;/li&gt;  &lt;li&gt;Finished width: 50 inches&lt;/li&gt;  &lt;li&gt;3-inch pole pocket&lt;/li&gt;  &lt;li&gt;Weighted corners&lt;/li&gt;  &lt;li&gt;Curtain tieback shown in image not included&lt;/li&gt;  &lt;li&gt;Made of 100-percent polyester&lt;/li&gt;  &lt;li&gt;Dry clean&lt;/li&gt;  &lt;li&gt;Sold per panel&lt;/li&gt;  &lt;/ul&gt; </Description>
+      <Status>DISCONTINUED</Status>
+      <CategoryId>6420</CategoryId>
+      <ProductDimensions>50 inches wide x 120 inches long</ProductDimensions>
+      <LTL>FALSE</LTL>
+      <ShipAlone>FALSE</ShipAlone>
+      <SourceZipCode />
+      <CountryOfOrigin>IN</CountryOfOrigin>
+      <Condition>NEW</Condition>
+      <Brand>0</Brand>
+      <Pricing>
+        <MSRP>239.00</MSRP>
+        <MSRPSalesLocation>N/A</MSRPSalesLocation>
+        <StreetPrice>239.00</StreetPrice>
+        <NormalWholesalePrice>80.00</NormalWholesalePrice>
+        <SuggestedSellingPrice>159.99</SuggestedSellingPrice>
+      </Pricing>
+      <PackageDimensions>
+        <Length>30</Length>
+        <Width>14</Width>
+        <Height>7</Height>
+      </PackageDimensions>
+      <Options>
+        <Option>
+          <VendorSku>TAFCEKSA712B2150X120</VendorSku>
+          <OptionSku>12283667-000-000</OptionSku>
+          <Description>N/A</Description>
+          <Cost>94.20</Cost>
+          <Quantity>0</Quantity>
+          <Weight>6.0</Weight>
+        </Option>
+      </Options>
+      <Manufacturer>
+        <Name>Exclusive Fabrics</Name>
+        <PartNumber>TAFCEKSA712B2150X120</PartNumber>
+        <ModelNumber>TAFCEKSA712B2150X120</ModelNumber>
+      </Manufacturer>
+      <Warranty>
+        <Provider>N</Provider>
+      </Warranty>
+      <Specifications>
+        <Materials>100% Polyester Taffeta</Materials>
+      </Specifications>
+      <Images>
+        <Thumbnail>http://images.overstock.com/f/102/3117/8h/www.overstock.com/images/products/T12283667.jpg</Thumbnail>
+        <Main>http://images.overstock.com/f/102/3117/8h/www.overstock.com/images/products/P12283667.jpg</Main>
+        <Large>http://images.overstock.com/f/102/3117/8h/www.overstock.com/images/products/L12283667.jpg</Large>
+      </Images>
+    </Product>
+  </GetProduct2Response>
+</Response>

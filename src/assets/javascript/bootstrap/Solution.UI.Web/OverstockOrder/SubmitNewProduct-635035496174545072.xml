@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Failure>
+    <Error>
+      <Message>
+Invalid Request (Error):
+   Problem: cvc-enumeration-valid: Value '' is not facet-valid with respect to enumeration '[NEW, REFURBISHED]'. It must be a value from the enumeration.
+      </Message>
+      <Type>INVALID_REQUEST</Type>
+    </Error>
+  </Failure>
+</Response>

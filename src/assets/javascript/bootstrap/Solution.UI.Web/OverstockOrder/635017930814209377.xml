@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Failure>
+    <Error>
+      <Message>
+Invalid Request (Fatal Error):
+   Problem: The processing instruction target matching "[xX][mM][lL]" is not allowed.
+      </Message>
+      <Type>INVALID_REQUEST</Type>
+    </Error>
+  </Failure>
+</Response>

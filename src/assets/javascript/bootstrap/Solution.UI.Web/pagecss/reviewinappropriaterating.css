@@ -1,0 +1,55 @@
+﻿ body
+        {
+            background: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #2a2a2a;
+        }
+        a, img
+        {
+            border: none;
+            outline: none;
+        }
+        .table_border
+        {
+            border: 1px solid #D5D4D4;
+            margin: 0 auto;
+        }
+        .checkout-red
+        {
+            color: #fe0000;
+        }
+        .name-input
+        {
+            border: 1px solid #E4E4E4;
+            height: 18px;
+            width: 210px;
+            font-size: 12px;
+            padding: 1px 5px;
+        }
+        .logo
+        {
+            float: left;
+            width: 480px;
+            background: #fff;
+            padding: 10px 0 10px;
+            margin: 0;
+        }
+        .close-bg
+        {
+            float: right;
+            width: 30px;
+            padding: 15px 40px 12px 0;
+            text-align: left;
+            background: #fff;
+            margin: 0;
+        }
+        .contact-textaria
+        {
+            border: 1px solid #DDDDDD;
+            font-size: 12px;
+            height: 90px;
+            padding: 1px 5px;
+            resize: none;
+            width: 250px;
+        }

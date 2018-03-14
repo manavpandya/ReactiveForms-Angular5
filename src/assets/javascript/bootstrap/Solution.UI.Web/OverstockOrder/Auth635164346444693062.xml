@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<Response xmlns="http://www.overstock.com/shoppingApi">
+  <Success />
+  <GetCredentialsResponse>
+    <AuthenticationKey>8144B987-4D5D-4106-9208-801E747F4D7F</AuthenticationKey>
+    <LoginUrl>https://sapi.overstock.com/login?key=3416EEFD-D935-49FC-A594-4841CD062B39</LoginUrl>
+  </GetCredentialsResponse>
+</Response>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog-feed xmlns="http://seller.marketplace.sears.com/catalog/v10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://seller.marketplace.sears.com/catalog/v10 ../../../../../rest/catalog/import/v10/lmp-item.xsd">
+	<fbm-catalog>
+		<items>
+			<item item-id="BOCH-201303-50X96">
+<title>Marigold Blackout Curtain 50 X 96</title>
+<short-desc>You will instantly fall in love with our blackout curtains &amp; drapes. The fabric is super soft with a refined texture made with a special polyester yarn. These curtains keep the light out and provides optimal thermal insulation.</short-desc>
+<mature-content>false</mature-content>
+<upc>799665815011</upc>
+<item-class id="4939">
+<name>Drapes &amp; Panels 
+</name>
+</item-class>
+<your-categorization></your-categorization>
+<long-desc><![CDATA[<p>
+	You will instantly fall in love with our blackout curtains &amp; drapes. The fabric is super soft with a refined texture made with a special polyester yarn. These curtains keep the light out and provides optimal thermal insulation.</p>]]></long-desc>
+<model-number>BOCH-201303-50X96</model-number>
+<standard-price>69.00</standard-price>
+<sale>
+<sale-price>34.00</sale-price>
+<sale-start-date>2013-06-19</sale-start-date>
+<sale-end-date>2013-06-27</sale-end-date>
+<promotional-text></promotional-text>
+</sale>
+ <shipping-override>
+<shipping-method-ground status="enabled">
+</shipping-method-ground>
+<shipping-method-expedited status="enabled">
+</shipping-method-expedited>
+<shipping-method-premium status="enabled">
+</shipping-method-premium>
+</shipping-override>
+<map-price-indicator></map-price-indicator>
+<brand>Exclusive Fabrics & Furnishings, LLC</brand>
+<shipping-length>16</shipping-length>
+<shipping-width>16</shipping-width>
+<shipping-height>36</shipping-height>
+<shipping-weight>1.00</shipping-weight>
+<local-marketplace-flags>
+<is-restricted>false</is-restricted>
+<perishable>false</perishable>
+</local-marketplace-flags>
+<image-url><url>/Resources/HPDSears/Product/Large/BOCH-201303-50X96_5566.jpg</url></image-url>
+<feature-image-url>
+<url>/Resources/HPDSears/Product/Large/BOCH-201303-50X96_5566_1.jpg</url>
+</feature-image-url>
+<feature-image-url>
+<url>/Resources/HPDSears/Product/Large/BOCH-201303-50X96_5566_2.jpg</url>
+</feature-image-url>
+<attributes>
+</attributes>
+</item>
+
+		</items>
+	</fbm-catalog>
+</catalog-feed>

@@ -1,0 +1,81 @@
+html, body, div, span, a,
+h1, img, ul, li, form{margin:0;padding:0;border:0;outline:0;font-size:14px;text-align:center;font-family:Arial, Helvetica, sans-serif;vertical-align:baseline;background:transparent;}
+a{text-decoration:none;}
+ul li{list-style:none;}
+body{padding:20px 0;font:medium/1.3 Helvetica, Arial, sans-serif;color:#222;background-color:#5d5d5d;}  
+form{margin-top:1em;}
+ul, form ul li{margin-bottom:0.5em;}
+strong{font-weight:bold;}
+h1{margin-bottom:1em;color:#444444;text-align:center;padding:15px 0px 0px 0px;}
+#wrapper{width:520px;margin:0 auto;}
+#img{position:relative;width:510px;margin-bottom:1em;}
+#gallery{/*height:84px;*/}
+#wrapper, #img, #gallery li{background:#FFFFFF;padding:2px 0px 20px 0px;}
+#gallery li{float:left;padding:1px;background:transparent url(/images/ajax-loader-small.gif) 50% 50% no-repeat;border-color:#345;cursor:pointer;}
+
+.jcarousel-container{position:relative;}
+.jcarousel-clip{z-index:2;padding:0;margin:0;overflow:hidden;position:relative;}
+.jcarousel-list{z-index:1;overflow:hidden;position:relative;top:0;left:0;margin:0;padding:0;}
+.jcarousel-list li,
+.jcarousel-item{float:left;list-style:none;/* We set the width/height explicitly. No width/height causes infinite loops. */
+    width:75px;height:75px;}
+.jcarousel-next{z-index:3;display:none;}
+.jcarousel-prev{z-index:3;display:none;}
+.jcarousel-skin-tango .jcarousel-container{background:#FFFFFF;border-bottom:1px #c8c8c8 solid;border-top:1px #c8c8c8 solid;}
+.jcarousel-skin-tango .jcarousel-container-horizontal{width:420px;padding:10px 50px 0px 50px;text-align:left;}
+.jcarousel-skin-tango .jcarousel-clip-horizontal{height:84px;width:420px;text-align:left;}
+.jcarousel-skin-tango .jcarousel-item{width:72px;height:70px;border:1px #999999 solid;}
+.jcarousel-skin-tango .jcarousel-item-horizontal{margin-right:10px;}
+.jcarousel-skin-tango .jcarousel-item-placeholder{background:#fff;color:#000;}
+.jcarousel-skin-tango .jcarousel-next-horizontal{position:absolute;top:31px;right:5px;width:32px;height:32px;cursor:pointer;background:url(/Images/next-horizontal.jpg);}
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover{background-position:-32px 0;}
+.jcarousel-skin-tango .jcarousel-next-horizontal:active{background-position:-64px 0;}
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active{cursor:default;background-position:-96px 0;}
+.jcarousel-skin-tango .jcarousel-prev-horizontal{position:absolute;top:31px;left:10px;width:32px;height:32px;cursor:pointer;background:url(/Images/prev-horizontal.jpg);}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover{background-position:-32px 0;}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active{background-position:-64px 0;}
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active{cursor:default;background-position:-96px 0;}
+.close{text-align:right;float:right;padding:1px 3px 0px 0px}
+.caption  {
+background-color:#000000;
+bottom:0;
+color:#FFFFFF;
+display:none !important;
+font-family:"Arial Narrow";
+font-size:25px;
+left:0;
+letter-spacing:1px;
+line-height:30px;
+padding:0;
+position:absolute;
+text-align:center;
+width:100%;
+}
+
+
+.galleria_wrapper
+{
+	/*width:500px;
+	height:380px;*/
+}
+.jcarousel-skin-tango
+{
+	padding-top:0px;
+}
+
+.replaced
+{
+	/*max-height:380px;
+	max-width:500px;*/
+	max-height:600px;
+	max-width:700px;
+	padding-left:6px;
+}
+.galleria_container
+{/*width:510px;*/}
+
+

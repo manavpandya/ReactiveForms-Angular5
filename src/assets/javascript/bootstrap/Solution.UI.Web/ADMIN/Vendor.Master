@@ -1,0 +1,618 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Vendor.master.cs" Inherits="Solution.UI.Web.ADMIN.Vendor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <script src="/App_Themes/Gray/js/menu.js" type="text/javascript"></script>
+    <script src="/App_Themes/Gray/js/menu2.js" type="text/javascript"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function MenuSelection(id, flg) {
+
+            if (document.getElementById(id) != null) {
+
+                var imgSrc = document.getElementById(id).src;
+                if (flg == true) {
+
+                    if ('<%= ViewState["Strimage"] %>' != null && id.toLowerCase() == '<%= ViewState["Strimage"] %>'.toString().toLowerCase()) {
+                        if (imgSrc.toLowerCase().indexOf('-hover') > -1) {
+
+                        }
+                        else {
+                            document.getElementById(id).src = imgSrc.toString().replace('.png', '-hover.png');
+                        }
+
+                    }
+                    else {
+                        if (imgSrc.toLowerCase().indexOf('-hover') <= -1) {
+                            document.getElementById(id).src = imgSrc.toString().replace('.png', '-hover.png');
+                        }
+                    }
+                }
+                else {
+
+                    if ('<%= ViewState["Strimage"] %>' != null && id.toLowerCase() == '<%= ViewState["Strimage"] %>'.toString().toLowerCase()) {
+
+                        if (imgSrc.toLowerCase().indexOf('-hover') > -1) {
+
+                        }
+                        else {
+                            document.getElementById(id).src = imgSrc.toString().replace('.png', '-hover.png');
+                        }
+                    }
+                    else {
+
+                        document.getElementById(id).src = imgSrc.toString().replace('-hover', '');
+                    }
+                }
+                // document.getElementById(id).src = imgSrc;
+            }
+        }
+    </script>
+    <form id="form1" runat="server">
+    <div id="doc-width">
+        <div id="header">
+            <div class="header-row">
+                <div class="logo">
+                    <a title="logo">
+                        <img title="Half Price Drapes" alt="Half Price Drapes" src="/App_Themes/<%=Page.Theme %>/images/logo.png"></a>
+                </div>
+                <div class="header-pt">
+                    <p>
+                        <strong>
+                            <%=Session["AdminName"]%>
+                            <img title="" alt="" src="/App_Themes/<%=Page.Theme %>/images/login-name-icon.png"></strong>
+                        <img height="3" width="5" title="" alt="" src="/App_Themes/<%=Page.Theme %>/images/bottom-arrow.png"></p>
+                    <div class="top-link">
+                        <a title="Logout" href="/Admin/Logout.aspx">Logout</a> | <a title="Help" href="javascript:void(0);">
+                            Help</a>
+                    </div>
+                    <p>
+                        <asp:Literal ID="litDate" runat="server"></asp:Literal></p>
+                </div>
+            </div>
+            <div id="header-row2">
+                <ul id="menu" class="menu1">
+                    <iframe id="FirstMenu" class="level2 dropdown" style="position: absolute; top: 0px;
+                        left: 0px; visibility: hidden; width: 147px; border-width: 0px; border-style: none;">
+                    </iframe>
+                    <iframe id="SubMenu" style="position: absolute; top: 0px; left: 0px; visibility: hidden;
+                        border-width: 0px; border-style: none;"></iframe>
+                    <li id="trmaindashboard" runat="server" visible="false"><a href="/admin/dashboard.aspx">
+                        <img runat="server" onmouseover="MenuSelection('Image1',true);" onmouseout="MenuSelection('Image1',false);"
+                            alt="" id="Image1" src="/App_Themes/gray/Images/dashboard.png" /></a> </li>
+                    <li runat="server" id="trOrder" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image2',true);" onmouseout="MenuSelection('Image2',false);"
+                            runat="server" id="Image2" src="/App_Themes/gray/Images/order.png" /></a>
+                        <ul onmouseover="MenuSelection('Image2',true);" onmouseout="MenuSelection('Image2',false);">
+                            <li id="liOrderList" runat="server">
+                                <img title="Order List " runat="server" id="ImgOrderList" name="Order List " alt="Order List "
+                                    src="/App_Themes/gray/Images/order-list-icon.png" /><a href="/Admin/Orders/OrderList.aspx">Order
+                                        List</a>
+                                <ul>
+                                    <asp:Literal ID="ltorderlist" runat="server"></asp:Literal></ul>
+                            </li>
+                            <li>
+                                <img title="Add Customer Quote" runat="server" id="imgAddCustomerQuote" name="Add Customer Quote"
+                                    alt="Add Customer Quote" src="/App_Themes/gray/Images/add-product-icon.png" /><a
+                                        href="/Admin/Orders/CustomerQuote.aspx">Add Customer Quote</a></li>
+                            <li>
+                                <img title="Customer Quote List" runat="server" id="imgCustomerQuoteList" name="Customer Quote List"
+                                    alt="Customer Quote List" src="/App_Themes/gray/Images/customer-list-icon.png" /><a
+                                        href="/Admin/Orders/CustomerQuoteList.aspx">Customer Quote List</a></li>
+                            <li id="liPhoneOrder" runat="server">
+                                <img title="Create Sale order" runat="server" id="Img8" name="Create Sale order"
+                                    alt="Create Sale order" src="/App_Themes/gray/Images/Phoneorder.png" /><a href="/Admin/orders/PhoneOrder.aspx">
+                                        Create Sale order</a>
+                                <ul>
+                                    <asp:Literal ID="ltrSalesOrderStorelist" runat="server"></asp:Literal></ul>
+                            </li>
+                            <li id="liBulkOrderPrint" runat="server">
+                                <img title="Bulk Sale Order Print" runat="server" id="Img26" name="Bulk Sale Order Print"
+                                    alt="Bulk Sale Order Print" src="/App_Themes/gray/Images/order-list-icon.png" /><a
+                                        href="/Admin/orders/BulkOrderPrint.aspx"> Bulk Sale Order Print</a></li>
+                            <li id="liBulkOrderSlipPrint" runat="server">
+                                <img title="Bulk Packing Slip Print" runat="server" id="Img34" name="Bulk Packing Slip Print"
+                                    alt="Bulk Packing Slip Print" src="/App_Themes/gray/Images/order-list-icon.png" /><a
+                                        href="/Admin/Orders/ListBulkPrinting.aspx">Bulk Packing Slip Print</a></li>
+                            <li id="liFaildTransaction" runat="server">
+                                <img title="Failed Transactions List" runat="server" id="Img9" name="Failed Transactions List"
+                                    alt="Failed Transactions List" src="/App_Themes/gray/Images/FailedTran.png" /><a
+                                        href="/Admin/orders/FailedTransaction.aspx">Failed Transactions List</a></li>
+                            <li id="liOrderExport" runat="server">
+                                <img title="Order Export Backend" runat="server" id="Img5" name="Order Export Backend"
+                                    alt="Order Export Backend" src="/App_Themes/gray/Images/order-list-icon.png" /><a
+                                        href="/Admin/orders/OrderExporttoBackend.aspx"> Order Export Backend</a></li>
+                            <li id="liMultiCapture" runat="server" visible="false">
+                                <img title="Multiple Capture " runat="server" id="Img33" name="Multiple Capture "
+                                    alt="Multiple Capture " src="/App_Themes/gray/Images/order-list-icon.png" /><a href="/Admin/Orders/ListMutipleCapture.aspx">Multiple
+                                        Capture </a></li>
+                            <li id="liWareHousePO" runat="server" visible="false">
+                                <img title="Warehouse P.O." runat="server" id="Img24" name="Warehouse P.O. " alt="Warehouse P.O."
+                                    src="/App_Themes/gray/Images/add-product-icon.png" /><a href="/Admin/orders/WareHousePO.aspx">
+                                        Warehouse P.O.</a></li>
+                            <li id="liReturnItemList" runat="server" visible="false">
+                                <img title="Return Item List" runat="server" id="Img25" name="Return Item List "
+                                    alt="Return Item List" src="/App_Themes/gray/Images/customer-list-icon.png" /><a
+                                        href="/Admin/orders/ListReturnItem.aspx">Return Item List </a></li>
+                            <%--  <li>
+                                <img title="Failed Transactions Summary" runat="server" id="Img30" name="Failed Transactions Summary"
+                                    alt="Failed Transactions Summary" src="/App_Themes/gray/Images/FailedTran.png" /><a
+                                        href="/Admin/orders/FiledTransactionSummary.aspx">Failed Txn Summary</a></li>--%>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trproduct" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image3',true);" onmouseout="MenuSelection('Image3',false);"
+                            runat="server" id="Image3" name="Image3" alt="Product" src="/App_Themes/gray/Images/product.png" /></a>
+                        <ul onmouseover="MenuSelection('Image3',true);" onmouseout="MenuSelection('Image3',false);">
+                            <li id="liVdnrPortal" runat="server">
+                                <img title="Vendor Fabric Portal" runat="server" id="ImgVdnrPortal" name="Vendor Fabric Portal"
+                                    alt="Vendor Fabric Portal" src="/App_Themes/gray/Images/add-category-icon.png" /><a
+                                        href="/Admin/Products/FabricVendorPortal.aspx">Vendor Fabric Portal</a></li>
+                            <li id="ImgVdnrPortalOrder" runat="server">
+                                <img title="Vendor Fabric Order" runat="server" id="Img6" name="Vendor Fabric Order"
+                                    alt="Vendor Fabric Order" src="/App_Themes/gray/Images/add-category-icon.png" /><a
+                                        href="/Admin/Products/FabricVendorOrder.aspx">Vendor Fabric Order</a></li>
+                            <%-- <li id="liProductList" runat="server">
+                                <img title="Manage Products" runat="server" id="ImgListProduct" name="Manage Products"
+                                    src="/App_Themes/gray/Images/list-product-icon.png" /><a href="/Admin/Products/ProductList.aspx?StoreID=1">
+                                        Manage Products</a>
+                                <ul>
+                                    <asp:Literal ID="ltStoreListProduct" runat="server"></asp:Literal></ul>
+                            </li>
+                            <li id="liAddProduct" runat="server" visible="false">
+                                <img title="Add Product" runat="server" id="ImgAddProdcut" name="Add Product" alt="Product"
+                                    src="/App_Themes/gray/Images/add-product-icon.png" /><a href="/Admin/Products/Product.aspx?StoreId=1">Add
+                                        Product </a>
+                                <ul>
+                                    <asp:Literal ID="ltStoreAddProduct" runat="server"></asp:Literal></ul>
+                            </li>--%>
+                            <%--<li id="liAddCategory" runat="server">
+                                <img title="Manage Categories" runat="server" id="ImgAddCategory" name="Manage Categories"
+                                    alt="Manage Categories" src="/App_Themes/gray/Images/add-category-icon.png" /><a
+                                        href="/Admin/Products/Category.aspx">Manage Categories</a></li>
+                            <li>
+                                <img title="Product Features List" runat="server" id="Img42" name="Product Features List"
+                                    alt="Product Features List" src="/App_Themes/gray/Images/add-category-icon.png" /><a
+                                        href="/Admin/Products/FeatureList.aspx">Product Features List</a></li>
+                            <li id="liManufacture" runat="server">
+                                <img title="Manage Product Brand" runat="server" id="ImgManufacture" name="Manage Product Brand"
+                                    alt="Manage Product Brand" src="/App_Themes/gray/Images/add-product-icon.png" /><a
+                                        href="/Admin/Products/ListManufacturer.aspx"> Manage Product Brand </a>
+                            </li>
+                            <li id="liVendorDropShipperList" runat="server">
+                                <img title="Manage Vendor/DropShipper List" runat="server" id="ImgListVendor" name="Manage Vendor/DropShipper List"
+                                    alt="Vendor/DropShipper List" src="/App_Themes/gray/Images/vendor-list-icon.png" /><a
+                                        href="/Admin/Products/VendorList.aspx">Manage Vendor/DropShipper List</a></li>
+                            <li id="liDropShipperSKUList" runat="server" visible="false">
+                                <img title="DropShipper SKU List " runat="server" id="Img30" name="DropShipper SKU List "
+                                    alt="DropShipper SKU List " src="/App_Themes/gray/Images/vendor-list-icon.png" /><a
+                                        href="/Admin/Products/VendorSkuList.aspx">DropShipper SKU List</a></li>
+                            <li id="liVendorDropShipperPaymentList" runat="server" visible="false">
+                                <img title="Vendor/DropShipper Payment List " runat="server" id="Img28" name="Vendor/DropShipper Payment List "
+                                    alt="Vendor Payment List " src="/App_Themes/gray/Images/vendor-list-icon.png" /><a
+                                        href="/Admin/Products/VendorPaymentList.aspx">Vendor/DropShipper Payment List</a></li>
+                            <li id="liProductReview" runat="server">
+                                <img title="Manage Product Reviews" runat="server" id="ImgProductRating" name="Manage Product Reviews"
+                                    alt="Manage Product Reviews" src="/App_Themes/gray/Images/product-rating-icon.png" /><a
+                                        href="/Admin/Products/ProductRating.aspx">Manage Product Reviews</a></li>
+                            <li id="liWareHouseList" runat="server">
+                                <img title="Manage Warehouse" runat="server" id="ImgWarehouselist" name="Manage Warehouse"
+                                    alt="Manage Warehouse" src="/App_Themes/gray/Images/topic-list-icon.png" /><a href="/Admin/Products/WarehouseList.aspx">
+                                        Manage Warehouse</a> </li>
+                            <li id="liSEO" runat="server" visible="false">
+                                <img title="SEO" runat="server" id="ImgSEO" name="SEO" alt="SEO" src="/App_Themes/gray/Images/seo-icon.png" /><a
+                                    href="#">SEO</a>
+                                <ul>
+                                    <li><a href="/Admin/Products/GenerateGoogleXML.aspx">Generate Google XML</a> </li>
+                                    <li><a href="/Admin/Products/GenerateRSS.aspx">Generate RSS</a> </li>
+                                </ul>
+                            </li>
+                            <li id="liImportExport" runat="server">
+                                <img title="Product Import/Export" runat="server" id="Img15" name="Import/Export"
+                                    alt="Product Import/Export" src="/App_Themes/gray/Images/product_export.png" /><a
+                                        href="#">Product Import/Export</a>
+                                <ul>
+                                    <li><a href="/Admin/Products/ExportProduct.aspx">Export Products</a></li>
+                                    <li><a href="/Admin/Products/ImportPriceCSV.aspx">Price, Inventory, Weight CSV</a>
+                                    </li>
+                                    <li><a href="/Admin/Products/GenerateYahooCSV.aspx">Generate Yahoo CSV</a> </li>
+                                </ul>
+                            </li>
+                            <li id="liProductsearch" runat="server">
+                                <img title="Manage Product Search Type" runat="server" id="Img36" name="Manage Product Search Type"
+                                    alt="Manage Product Search Type" src="/App_Themes/gray/Images/add-product-icon.png" /><a
+                                        href="/Admin/Products/SearchProductTypeList.aspx">Manage Product Search Type
+                                </a></li>
+                            <li>
+                                <img title="Manage Product Color" runat="server" id="Img38" name="Manage Product Color"
+                                    alt="Manage Product Color" src="/App_Themes/gray/Images/add-product-icon.png" /><a
+                                        href="/Admin/Products/ProductVariantColorList.aspx">Manage Product Color</a></li>
+                            <li>
+                                <img title="Manage Vendor Fabric" runat="server" id="Img41" name="Manage Vendor Fabric"
+                                    alt="Manage Vendor Fabric" src="/App_Themes/gray/Images/add-product-icon.png" /><a
+                                        href="#">Manage Vendor Fabric</a>
+                                <ul>
+                                    <li><a href="/Admin/Products/ProductFabricSettings.aspx">Vendor Fabric Product</a></li>
+                                    <li><a href="/Admin/Products/FabricVendorPortal.aspx">Vendor Fabric Portal</a> </li>
+                                    <li><a href="/Admin/Products/FabricVendorOrder.aspx">Vendor Fabric Order</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img title="Manage Yardage Availability" runat="server" id="Img40" name="Manage Yardage Availability"
+                                    alt="Manage Yardage Availability" src="/App_Themes/gray/Images/add-product-icon.png" /><a
+                                        href="/Admin/Products/AddYardageAvailability.aspx">Manage Yardage Availability</a></li>
+                            <li>
+                                <img title="Manage Roman Shades" runat="server" id="Img39" name="Manage Roman Shades"
+                                    alt="Manage Roman Shades" src="/App_Themes/gray/Images/add-product-icon.png" /><a
+                                        href="/Admin/Products/ProductRomanShadeYardageList.aspx">Manage Roman Shades</a>
+                                <ul>
+                                    <li><a href="/Admin/Products/ProductRomanShadeYardageList.aspx">Roman Shade Calculator</a>
+                                    </li>
+                                    <li><a href="/Admin/Products/ProductRomanShipping.aspx">Roman Shade Shipping Table</a>
+                                    </li>
+                                </ul>
+                            </li>--%>
+                            <%-- <li>
+                                <img title="Export Products" runat="server" id="Img13" name="Export Products" alt="Product Reviews"
+                                    src="/App_Themes/gray/Images/product_export.png" /><a href="/Admin/Products/ExportProduct.aspx">Export
+                                        Products</a></li>--%>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trcustomer" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image4',true);" onmouseout="MenuSelection('Image4',false);"
+                            runat="server" id="Image4" alt="Customer" src="/App_Themes/gray/Images/customer.png" /></a>
+                        <ul onmouseover="MenuSelection('Image4',true);" onmouseout="MenuSelection('Image4',false);">
+                            <li>
+                                <img title="Manage Customer" runat="server" id="ImgCustomerList" name="Manage Customer"
+                                    alt="Manage Customer" src="/App_Themes/gray/Images/customer-list-icon.png" /><a href="/Admin/Customers/CustomerList.aspx">Manage
+                                        Customer </a></li>
+                            <li>
+                                <img title="View Abandoned Shopping Cart" runat="server" id="ImgAbandonedShoppingCart"
+                                    name="View Abandoned Shopping Cart" alt="View Abandoned Shopping Cart" src="/App_Themes/gray/Images/topic-list-icon.png" /><a
+                                        href="/Admin/Customers/AbandonedShoppingCart.aspx">View Abandoned Shopping Cart</a></li>
+                            <li>
+                                <img title="Manage customer Wishlist" runat="server" id="imgWishList" name="Manage customer Wishlist"
+                                    alt="Manage customer Wishlist" src="/App_Themes/gray/Images/topic-list-icon.png" /><a
+                                        href="/Admin/Customers/WishList.aspx"> Manage customer Wishlist</a></li>
+                            <li>
+                                <img title="Manage Customer Inquiries" runat="server" id="ImgContactInquiry" name="Manage Customer Inquiries"
+                                    alt="Manage Customer Inquiries" src="/App_Themes/gray/Images/contact-inquiry-icon.png" /><a
+                                        href="/Admin/Customers/ContactInquiries.aspx">Manage Customer Inquiries</a></li>
+                            <li>
+                                <img title="Manage Price Quote Request" runat="server" id="Img3" name="Manage Price Quote Request"
+                                    alt="Manage Price Quote Request" src="/App_Themes/gray/Images/mail-log-icon.png" /><a
+                                        href="/Admin/Reports/PricequoteList.aspx">Manage Price Quote Request</a></li>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trcontent" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image5',true);" onmouseout="MenuSelection('Image5',false);"
+                            runat="server" id="Image5" alt="content" src="/App_Themes/gray/Images/content.png" /></a>
+                        <ul onmouseover="MenuSelection('Image5',true);" onmouseout="MenuSelection('Image5',false);">
+                            <li>
+                                <img title="Topic List" runat="server" id="ImgTopicList" name="Topic List" alt="Topic List"
+                                    src="/App_Themes/gray/Images/topic-list-icon.png" /><a href="/Admin/Content/TopicList.aspx">Topic
+                                        List</a></li>
+                            <li>
+                                <img title="Add Topic" runat="server" id="Img7" name="Topic List" alt="Topic List"
+                                    src="/App_Themes/gray/Images/add-topic-icon.png" /><a href="/Admin/Content/Topic.aspx">Add
+                                        Topic</a></li>
+                            <li>
+                                <img title="News Letter Subscription" runat="server" id="Img10" name="News Letter Subscription"
+                                    alt="News Letter Subscription" src="/App_Themes/gray/Images/topic-list-icon.png" /><a
+                                        href="/Admin/Content/NewsLetterSubscription.aspx">News Letter Subscription</a></li>
+                            <li>
+                                <img title="Testimonial List" runat="server" id="Img32" name="Testimonial List" alt="Testimonial List"
+                                    src="/App_Themes/gray/Images/topic-list-icon.png" /><a href="/Admin/Content/TestimonialList.aspx">Testimonial
+                                        List</a></li>
+                            <li>
+                                <img title="Index Page Configuration" runat="server" id="ImgIndexPageConfiguration"
+                                    name="Index Page Configuration" alt="Index Page Configuration" src="/App_Themes/gray/Images/index-page-configuration-icon.png" /><a
+                                        href="/Admin/Settings/IndexPageConfig.aspx" class="fly">Index Page Configuration</a></li>
+                            <li>
+                                <img title="Home Page Banner" runat="server" id="ImgHomePageBanner" name="Home Page Banner"
+                                    alt="Home Page Banner" src="/App_Themes/gray/Images/home-page-banner-icon.png" /><a
+                                        href="/Admin/Settings/HomePagebannerlist.aspx" class="fly">Home Page Banner</a></li>
+                            <li>
+                                <img title="Item Page Banner" runat="server" id="Img37" name="Item Page Banner" alt="Item Page Banner"
+                                    src="/App_Themes/gray/Images/home-page-banner-icon.png" /><a href="/Admin/Settings/ItemPageBanner.aspx"
+                                        class="fly">Item Page Banner</a></li>
+                            <li>
+                                <img title="Header Links" runat="server" id="ImgHeaderLinks" name="Header Links"
+                                    alt="Header Links" src="/App_Themes/gray/Images/header-links-icon.png" /><a href="/Admin/Settings/HeaderLinkList.aspx"
+                                        class="fly">Header Links</a></li>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trPromotions" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image9',true);" onmouseout="MenuSelection('Image9',false);"
+                            runat="server" id="Image9" alt="configuration" src="/App_Themes/gray/Images/promotions.png" /></a>
+                        <ul onmouseover="MenuSelection('Image9',true);" onmouseout="MenuSelection('Image9',false);">
+                            <li>
+                                <img title="Quantity Discount" runat="server" id="Img1" name="Quantity Discount"
+                                    alt="Quantity Discount" src="/App_Themes/gray/Images/quantity-discount-icon.png" /><a
+                                        href="/Admin/Promotions/QuantityDiscountList.aspx">Quantity Discount</a></li>
+                            <li>
+                                <img title="Coupon Discount" runat="server" id="Img2" name="Coupon Discount" alt="Coupon Discount"
+                                    src="/App_Themes/gray/Images/coupon-discount-icon.png" /><a href="/Admin/Promotions/CouponsList.aspx">Coupon
+                                        Discount</a></li>
+                            <%-- <li>
+                                <img title="Customer Level List" runat="server" id="Img3" name="Customer Level List"
+                                    alt="Customer Level List" src="/App_Themes/gray/Images/customer-level-list-icon.png" /><a
+                                        href="/Admin/Promotions/CustomerLevelList.aspx">Customer Level List</a>
+                            </li>
+                            <li>
+                                <img title="Gift Card Product List" runat="server" id="Img23" name="Customer Level List"
+                                    alt="Gift Card Product List" src="/App_Themes/gray/Images/customer-level-list-icon.png" /><a
+                                        href="/Admin/Promotions/GiftCardProductList.aspx">Gift Card Product List</a>
+                            </li>--%>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trSetting" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image6',true);" onmouseout="MenuSelection('Image6',false);"
+                            title="Settings" runat="server" id="Image6" src="/App_Themes/gray/Images/Settings.png" /></a>
+                        <ul onmouseover="MenuSelection('Image6',true);" onmouseout="MenuSelection('Image6',false);">
+                            <li>
+                                <img title="Manage Store" runat="server" id="ImgStoreList" name="Manage Store" alt="Manage Store"
+                                    src="/App_Themes/gray/Images/store-list-icon.png" /><a href="/Admin/Settings/StoreList.aspx"
+                                        class="fly">Manage Store</a></li>
+                            <li>
+                                <img title="Manage System User" runat="server" id="ImgAdminList" name="Manage System User"
+                                    alt="Manage System User" src="/App_Themes/gray/Images/admin-list-icon.png" /><a href="/Admin/Settings/AdminList.aspx"
+                                        class="fly">Manage System User</a></li>
+                            <li>
+                                <img title="Manage User Rights" runat="server" id="ImgAdminRights" name="Manage User Rights"
+                                    alt="Manage User Rights" src="/App_Themes/gray/Images/admin-rights-icon.png" /><a
+                                        href="/Admin/Settings/AdminRights.aspx" class="fly">Manage User Rights</a></li>
+                            <li>
+                                <img title="Manage User Templates" runat="server" id="Img43" name="Manage User Templates"
+                                    alt="Manage User Templates" src="/App_Themes/gray/Images/admin-rights-icon.png" /><a
+                                        href="/Admin/Settings/AdminTemplateRights.aspx" class="fly">Manage User Templates</a></li>
+                            <li>
+                                <img title="Dashboard Configuration" runat="server" id="ImgDashboardConfiguration"
+                                    name="Dashboard Configuration" alt="Dashboard Configuration" src="/App_Themes/gray/Images/dashboard-configuration-icon.png" /><a
+                                        href="/Admin/Settings/DashboardSetting.aspx" class="fly">Dashboard Configuration</a></li>
+                            <li>
+                                <img title="One Page Configuration" runat="server" id="Img13" name="One Page Configuration"
+                                    alt="One Page Configuration" src="/App_Themes/gray/Images/seo-icon.png" /><a href="#">One
+                                        Page Configuration</a>
+                                <ul>
+                                    <li>
+                                        <img title="Application" runat="server" id="Img14" name="Application Configuration"
+                                            alt="Application" src="/App_Themes/gray/Images/mail-configuration-icon.png" /><a
+                                                href="/Admin/Settings/OnePageAppConfig.aspx" class="fly">Application</a></li>
+                                    <li>
+                                        <img title="Mail Configuration" runat="server" id="ImgMailConfiguration" name="Mail Configuration"
+                                            alt="Mail Configuration" src="/App_Themes/gray/Images/mail-configuration-icon.png" /><a
+                                                href="/Admin/Settings/MailConfig.aspx" class="fly">Mail Configuration</a></li>
+                                    <li>
+                                        <img title="Image Configuration" runat="server" id="ImgImageConfiguration" name="Image Configuration"
+                                            alt="Image Configuration" src="/App_Themes/gray/Images/image-configuration-icon.png" /><a
+                                                href="/Admin/Settings/ImageSize.aspx" class="fly">Image Configuration</a></li>
+                                    <li>
+                                        <img title="Page Configuration" runat="server" id="ImgPageConfiguration" name="Page Configuration"
+                                            alt="Page Configuration" src="/App_Themes/gray/Images/image-configuration-icon.png" /><a
+                                                href="/Admin/Settings/ProductPageConfiguration.aspx" class="fly">Page Configuration</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img title="Application Configuration" runat="server" id="ImgApplicationConfiguration"
+                                    name="Application Configuration" alt="Application Configuration" src="/App_Themes/gray/Images/application-configuration-icon.png" /><a
+                                        href="/Admin/Settings/AppConfigList.aspx" class="fly">Application Configuration</a></li>
+                            <%--<li>
+                                <img title="Item Page Banner" runat="server" id="Img36" name="Home Page Banner" alt="Item Page Banner"
+                                    src="/App_Themes/gray/Images/home-page-banner-icon.png" /><a href="/Admin/Settings/ItemPageBanner.aspx"
+                                        class="fly">Item Page Banner</a></li>--%>
+                            <li>
+                                <img title="Email Templates" runat="server" id="Img11" name="Email Templates" alt="Email Templates"
+                                    src="/App_Themes/gray/Images/emailTemplate.png" /><a href="/Admin/Settings/EmailTemplateList.aspx"
+                                        class="fly">Email Templates</a></li>
+                            <li id="liDatabaseBackup" runat="server" visible="false">
+                                <img title="Database Backup" runat="server" id="Img12" name="Database Backup" alt="Database Backup"
+                                    src="/App_Themes/gray/Images/header-links-icon.png" /><a href="/Admin/Settings/DataBackup.aspx"
+                                        class="fly">Database Backup</a></li>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trreports" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image7',true);" onmouseout="MenuSelection('Image7',false);"
+                            runat="server" id="Image7" alt="reports" src="/App_Themes/gray/Images/reports.png" /></a>
+                        <ul onmouseover="MenuSelection('Image7',true);" onmouseout="MenuSelection('Image7',false);">
+                            <%-- <li>
+                                <img title="Sales Report" runat="server" id="ImgSalesReport" name="Sales Report"
+                                    alt="Sales Report" src="/App_Themes/gray/Images/sales-report-icon.png" /><a href="/Admin/Reports/SalesReport.aspx">Sales
+                                        Report</a></li>--%>
+                            <%-- <li>
+                                <img title="Sales Graph" runat="server" id="imgSalesGraph" name="Sales Graph" alt="Sales Graph"
+                                    src="/App_Themes/gray/Images/sales-report-icon.png" /><a href="/Admin/Reports/SalesGraph.aspx">Sales
+                                        Graph</a></li>--%>
+                            <li>
+                                <img title="Customer Reports" runat="server" id="img23" name="Customer Reports" alt="Customer Reports"
+                                    src="/App_Themes/gray/Images/sales-report-icon.png" /><a href="/Admin/Reports/OrderStatistic.aspx">
+                                        Customer Reports</a>
+                                <ul>
+                                    <li><a href="/Admin/Reports/CustomerListwithExport.aspx">Customer List with Export functionality</a></li>
+                                    <li><a>Customer Sale Report Product wise</a></li>
+                                    <li><a>Top 10 Customer by Sale</a> </li>
+                                    <li><a>Top 10 Customer by Margin</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img title="Inventory Reports" runat="server" id="img44" name="Inventory Reports"
+                                    alt="Inventory Reports" src="/App_Themes/gray/Images/sales-report-icon.png" /><a
+                                        href="/Admin/Reports/OrderStatistic.aspx"> Inventory Reports</a>
+                                <ul>
+                                    <li><a>Inventory Analysis by Product</a></li>
+                                    <li><a>Business Intelligent Snap Shot</a></li>
+                                    <li><a>Inventory Lock Quantity</a></li>
+                                    <li><a>Inventory Additional Hemming Allowance</a></li>
+                                    <li><a>Inventory Buy 1 Get 1 Report</a></li>
+                                    <li><a>Inventory Sale Reports</a></li>
+                                    <li><a href="/Admin/Reports/LowInventory.aspx">Low Inventory</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img title="Order Statistics" runat="server" id="img4" name="Order Statistics" alt="Order Statistics"
+                                    src="/App_Themes/gray/Images/sales-report-icon.png" /><a href="/Admin/Reports/OrderStatistic.aspx">Order
+                                        Statistics</a> </li>
+                            <%--   <li>
+                                <img title="Sales Representative Report" runat="server" id="ImgSalesRepresentativeReport"
+                                    name="Sales Representative Report" alt="Sales Representative Report" src="/App_Themes/gray/Images/sales-representative-report-icon.png" /><a
+                                        href="/Admin/Reports/salesRepresentiveReport.aspx">Sales Representative Report</a></li>--%>
+                            <li>
+                                <img title="Log" runat="server" id="Img45" name="Log" alt="Log" src="/App_Themes/gray/Images/mail-log-icon.png" /><a
+                                    href="/Admin/Reports/MaillogList.aspx">Log </a>
+                                <ul>
+                                    <li><a href="/Admin/Reports/MaillogList.aspx">Mail Log</a></li>
+                                    <li><a href="/Admin/Reports/SearchlogList.aspx">Search Log</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img title="Sales Agent Order Statistics" runat="server" id="Img27" name="Sales Agent Order Statistics"
+                                    alt=" Sales Agent Order Statistics" src="/App_Themes/gray/Images/mail-log-icon.png" /><a
+                                        href="/Admin/Reports/SalesAgentOrderStatistic.aspx">Sales Agent Order Statistics</a></li>
+                            <li>
+                                <img title="Sales Order Tax Report" runat="server" id="Img29" name="Sales Order Tax Report"
+                                    alt="Sales Order Tax Report" src="/App_Themes/gray/Images/mail-log-icon.png" /><a
+                                        href="/Admin/Reports/OrderTaxReport.aspx"> Sales Order Tax Report</a></li>
+                            <li>
+                                <img title="Sales Report" runat="server" id="ImgSalesReport" name="Sales Report"
+                                    alt="Sales Report" src="/App_Themes/gray/Images/mail-log-icon.png" /><a href="/Admin/Reports/ItemwiseSalesReport.aspx">Sales
+                                        Report</a></li>
+                            <%--<li>
+                                <img title="Price Quote List" runat="server" id="Img3" name="Price Quote List" alt="Price Quote List"
+                                    src="/App_Themes/gray/Images/mail-log-icon.png" /><a href="/Admin/Reports/PricequoteList.aspx">Price
+                                        Quote List</a></li>
+                            <li>
+                                <img title="Profitable Customers" runat="server" id="Img5" name="Profitable Customers"
+                                    alt="Profitable Customers" src="/App_Themes/gray/Images/mail-log-icon.png" /><a href="/Admin/Reports/CustomerProfitableReport.aspx">Profitable
+                                        Customers</a></li>
+                            <li>
+                                <img title="Best Selling Items" runat="server" id="Img6" name="Best Selling Items"
+                                    alt="Best Selling Items" src="/App_Themes/gray/Images/mail-log-icon.png" /><a href="/Admin/Reports/ItemsBySales.aspx">Best
+                                        Selling Items</a></li>
+                            <li>
+                                <img title="Gift Card Usage List" runat="server" id="Img22" name="Best Selling Items"
+                                    alt=" Gift Card Usage List" src="/App_Themes/gray/Images/mail-log-icon.png" /><a
+                                        href="/Admin/Reports/GiftCardUsageList.aspx"> Gift Card Usage List</a></li>
+                            <li>
+                                <img title="Yahoo Reports" runat="server" id="imgYahooReports" name="Yahoo Reports"
+                                    alt="Yahoo Reports" src="/App_Themes/gray/Images/sales-report-icon.png" /><a href="/Admin/Reports/YahooReports.aspx">Yahoo
+                                        Reports</a></li>
+                            <li>
+                                <img title="Latest Product Inquiry" runat="server" id="Img31" name="Order Tax Report"
+                                    alt="Latest Product Inquiry" src="/App_Themes/gray/Images/mail-log-icon.png" /><a
+                                        href="/Admin/Reports/LatestProductInquiryList.aspx">Latest Product Inquiry</a></li>
+                            <li>
+                                <img title="PO List w/ Balances" runat="server" id="Img35" name="PO List w/ Balances"
+                                    alt="PO List w/ Balances" src="/App_Themes/gray/Images/mail-log-icon.png" /><a href="/Admin/Reports/POPaymentDetailRpt.aspx">PO
+                                        List w/ Balances</a></li>--%>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trconfiguration" visible="false"><a class="menulink" href="javascript:void(0);">
+                        <img onmouseover="MenuSelection('Image8',true);" onmouseout="MenuSelection('Image8',false);"
+                            runat="server" id="Image8" alt="configuration" src="/App_Themes/gray/Images/configuration.png" /></a>
+                        <ul onmouseover="MenuSelection('Image8',true);" onmouseout="MenuSelection('Image8',false);">
+                            <li>
+                                <img title="Payment Option" runat="server" id="ImgPaymentOption" name="Payment Option"
+                                    alt="Payment Option" src="/App_Themes/gray/Images/payment-option-icon.png" /><a href="/Admin/configuration/PaymentTypeList.aspx">Payment
+                                        Option</a></li>
+                            <li>
+                                <img title="Credit Card Type" runat="server" id="ImgCreditCardList" name="Credit Card Type"
+                                    alt="Credit Card Type" src="/App_Themes/gray/Images/credit-card-list-icon.png" /><a
+                                        href="/Admin/configuration/CreditcardTypeList.aspx">Credit Card Type</a></li>
+                            <li>
+                                <img title="Shipping Services" runat="server" id="ImgShippingServices" name="Shipping Services"
+                                    alt="Shipping Services" src="/App_Themes/gray/Images/shipping-services-icon.png" /><a
+                                        href="/Admin/configuration/ShippingServicesList.aspx">Shipping Services</a></li>
+                            <li>
+                                <img title="Shipping Methods" runat="server" id="ImgShippingMethods" name="Shipping Methods"
+                                    alt="Shipping Methods" src="/App_Themes/gray/Images/shipping-methods-icon.png" /><a
+                                        href="/Admin/configuration/ShippingMethodList.aspx">Shipping Methods</a></li>
+                            <li>
+                                <img title="Tax Class List" runat="server" id="ImgTaxClassList" name="Tax Class List"
+                                    alt="Tax Class List" src="/App_Themes/gray/Images/tax-class-list-icon.png" /><a href="/Admin/configuration/TaxClassList.aspx">Tax
+                                        Class List</a></li>
+                            <li>
+                                <img title="State Tax Rate" runat="server" id="ImgStateTaxRate" name="State Tax Rate"
+                                    alt="State Tax Rate" src="/App_Themes/gray/Images/state-tax-rate-icon.png" /><a href="/Admin/configuration/TaxRatesByState.aspx">State
+                                        Tax Rate</a></li>
+                            <li>
+                                <img title="Zip Code Tax Rate" runat="server" id="ImgZipCodeTaxRate" name="Zip Code Tax Rate"
+                                    alt="Zip Code Tax Rate" src="/App_Themes/gray/Images/zip-code-tax-rate-icon.png" /><a
+                                        href="/Admin/configuration/TaxRatesByZipCode.aspx">Zip Code Tax Rate</a></li>
+                            <li>
+                                <img title="Country List" runat="server" id="ImgCountryList" name="Country List"
+                                    alt="Country List" src="/App_Themes/gray/Images/country-list-icon.png" /><a href="/Admin/configuration/CountryList.aspx"
+                                        class="fly">Country List </a></li>
+                            <li>
+                                <img title="State List" runat="server" id="ImgStateList" name="State List" alt="State List"
+                                    src="/App_Themes/gray/Images/state-list-icon.png" /><a href="/Admin/configuration/StateList.aspx"
+                                        class="fly">State List</a></li>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trFeed" visible="false"><a href="javascript:void(0);">
+                        <img runat="server" onmouseover="MenuSelection('imgwebmail10',true);" onmouseout="MenuSelection('imgwebmail10',false);"
+                            alt="" id="imgwebmail10" src="/App_Themes/gray/Images/feed.png" /></a>
+                        <ul onmouseover="MenuSelection('imgwebmail10',true);" onmouseout="MenuSelection('imgwebmail10',false);">
+                            <li>
+                                <img title="Feed Master List" runat="server" id="Img17" name="Feed Master List" alt="Feed Master List"
+                                    src="/App_Themes/gray/Images/list-product-icon.png" />
+                                <a href="/Admin/FeedManagement/ListFeedMaster.aspx" class="fly">Feed Master List</a></li>
+                            <li>
+                                <img title="Feed Field Master" runat="server" id="Img18" name="Feed Field Master"
+                                    alt="Feed Field Master" src="/App_Themes/gray/Images/list-product-icon.png" /><a
+                                        href="/Admin/FeedManagement/ListFeedFieldMaster.aspx" class="fly">Feed Field Master</a></li>
+                            <li>
+                                <img title="Product - Base Mapping" runat="server" id="Img19" name="Product - Base Mapping"
+                                    alt="Feed Field Master" src="/App_Themes/gray/Images/add-product-icon.png" /><a href="/Admin/FeedManagement/ProductBaseMapping.aspx"
+                                        class="fly">Product - Base Mapping</a></li>
+                            <li>
+                                <img title="Base - Related Mapping" runat="server" id="Img20" name="Base - Related Mapping"
+                                    alt="Feed Field Master" src="/App_Themes/gray/Images/add-product-icon.png" /><a href="/Admin/FeedManagement/BaseRelatedMapping.aspx"
+                                        class="fly">Base - Related Mapping</a></li>
+                            <li>
+                                <img title="Feed Product List" runat="server" id="Img21" name="Feed Product List"
+                                    alt="Feed Product List" src="/App_Themes/gray/Images/list-product-icon.png" /><a
+                                        href="/Admin/FeedManagement/ListFeedProduct.aspx" class="fly"> Feed Product List</a></li>
+                            <li>
+                                <img title="Export Data" runat="server" id="Img16" name="Export Data" alt="Feed Product List"
+                                    src="/App_Themes/gray/Images/list-product-icon.png" /><a href="/Admin/FeedManagement/FeedExport.aspx"
+                                        class="fly">Export Data</a></li>
+                        </ul>
+                    </li>
+                    <li runat="server" id="trwebmail" visible="false"><a href="/admin/WebMail/EmailManagement.aspx">
+                        <img runat="server" onmouseover="MenuSelection('imgwebmail',true);" onmouseout="MenuSelection('imgwebmail',false);"
+                            alt="" id="imgwebmail" src="/App_Themes/gray/Images/web-mail.png" /></a>
+                    </li>
+                    <li runat="server" id="trMemo" visible="false"><a href="/admin/Memo/MemoView.aspx">
+                        <img runat="server" onmouseover="MenuSelection('imgmemo',true);" onmouseout="MenuSelection('imgmemo',false);"
+                            alt="" id="imgmemo" src="/App_Themes/gray/Images/internal-memo.png" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content-width">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div id="SpaceDashboard" runat="server" visible="false">
+    </div>
+    <div id="footer">
+        <div id="footer-main">
+            <p>
+                Copyright &copy;
+                <%=System.DateTime.Now.Year.ToString() %>, Half Price Drapes, All rights reserved.</p>
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        var menu = new menu.dd("menu");
+        menu.init("menu", "menuhover");
+    </script>
+</body>
+</html>

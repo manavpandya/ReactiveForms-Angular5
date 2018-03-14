@@ -1,0 +1,15 @@
+CustomerID,Email,Name,Active,BillingAddressName,BillingCompany,BillingAddress1,BillingAddress2,BillingSuite,BillingCity,BillingCountry,BillingState,BillingZipCode,BillingPhone,BillingFax,ShippingAddressName,ShippingCompany,ShippingAddress1,ShippingAddress2,ShippingSuite,ShippingCity,ShippingCountry,ShippingState,ShippingZipCode,ShippingPhone,ShippingFax
+25909,"karan@kaushalam.com","karan bhati","Yes","karan Bhati","Kaushalam","Street 356","","","Waltham","United States","California","90662","111-111-1111","","bhati Karan","","Street 356","","","Waltham","United States","Massachusetts","02451","111-111-1111",""
+1,"karan@kaushalam.com","Kristen Nakamura","No","bhati Karan","","Street 356","","","Waltham","United States","Massachusetts","02451","111-111-1111","","","","","","","","","","","",""
+11158,"karan@kaushalam.com","Karan Bhati","No","","","","","","","","","","","","","","","","","","","","","",""
+11452,"karan@kaushalam.com","Karan Bhati","No","","","","","","","","","","","","","","","","","","","","","",""
+11454,"karan@kaushalam.com","Karan Bhati","No","","","","","","","","","","","","","","","","","","","","","",""
+529338,"karan@kaushalam.com","Karan bhati","No","bhati Karan","","Street 356","","","Waltham","United States","Massachusetts","02451","111-111-1111","","Karan bhati","","Street 356","","","Waltham","United States","Massachusetts","02451","111-111-1111",""
+532338,"karan@kaushalam.com","Karan Bhati","No","Bhati Karan","","kalanala","","","Waltham","United States","Massachusetts","02451","111-111-1111","","Karan Bhati","","356 street","","","Waltham","United States","Massachusetts","02451","111-111-1111",""
+559490,"karan@kaushalam.com","Saiyam Kapoor","No","Saiyam Kapoor","","356","","","Waltham","United States","Massachusetts","02451","111-111-1111","","Saiyam Kapoor","","356","","","Waltham","United States","Massachusetts","02451","111-111-1111",""
+571683,"karan@kaushalam.com","karan kapoor","No","karan kapoor","","356 street","","","Walthum","United States","Massachusetts","02451","111-111-1111","","karan kapoor","","356","","","wal","United States","Massachusetts","02451","111-111-1111",""
+572714,"karan@kaushalam.com","Karan Bhati","No","Karan Bhati","","356 Street","","","waltham","United States","Massachusetts","02451","111-111-1111","","Karan Bhati","","356 Street","","","waltham","United States","Massachusetts","02451","111-111-1111",""
+572715,"karan@kaushalam.com","Karan Bhati","No","Karan Bhati","","356 Street","","","waltham","United States","Massachusetts","02451","111-111-1111","","Karan Bhati","","356 Street","","","waltham","United States","Massachusetts","02451","111-111-1111",""
+575840,"nn@ymail1.com","jully Bebe","Yes","bhati Karan","","Street 356","","","Waltham","United States","Massachusetts","02451","111-111-1111","","jully Bebe","","356,lincon street","","","waltham","United States","Massachusetts","02451","123-456-7890",""
+575842,"jj@bb.com","birva shah","Yes","bhati Karan","","Street 356","","","Waltham","United States","Massachusetts","02451","111-111-1111","","birva shah","","356 Street","","","waltham","United States","Hawaii","02451","111-111-1111",""
+

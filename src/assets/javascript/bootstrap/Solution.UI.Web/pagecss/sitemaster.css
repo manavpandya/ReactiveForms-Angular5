@@ -1,0 +1,67 @@
+﻿ #divInventoryCart {
+            color: #393939;
+            font-family: "museo_sans_300",Helvetica, "Helvetica Neue",Arial,sans-serif;
+            font-size: 12px;
+        }
+
+
+
+ .inventorycart{
+     z-index: 1000001; top: 148px; width: 565px; height: 130px; background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.3) ! important; padding: 10px ! important; border: medium none ! important; position: fixed; bottom: 5px; left: 509px;
+ }
+
+
+ .freeshipping{
+     z-index: 1000001; top: 100px; width: 1010px; height: 500px; background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.3) ! important; padding: 10px ! important; border: medium none ! important; position: fixed; bottom: 5px; left: 305px; 
+ }
+
+ .tradepartner{
+     z-index: 1000001; top: 100px; width: 1010px; height: 500px; background: none repeat scroll 0px 0px rgba(3, 3, 3, 0.3) ! important; padding: 10px ! important; border: medium none ! important; position: fixed; bottom: 5px; left: 305px; 
+ }
+
+.backgroundfree {
+    z-index: 1000;
+    
+    position: fixed;
+    _position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    border: 1px solid #cecece;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.tradepartnercss
+{
+    float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;
+}
+
+.divtradehtmlcss{
+    height: 500px;
+    width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+
+.popupContactpricequotecss
+{
+    z-index: 1000001; top: 30px; padding: 0px; width: 1440px; background: #fff;
+
+
+}
+
+.divfreehtmlcss
+{
+    height: 500px;width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+
+.popupContactpricequoteinnercss
+{
+    float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;
+}
+
+.freeshippingcss
+{
+    float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;
+}

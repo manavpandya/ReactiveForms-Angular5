@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Tables>
+  <Table SrcTable="tb_order,tb_country" DestTable="EShipTo">
+    <Field SrcField="CustomerID" SrcFieldType="Int" SrcFiledLimit="" DestField="Customer_No" DestFieldType="Code" DestFieldLimit="20" DefaultValue="" ConcatText="EC" />
+    <Field SrcField="ShippingZip" SrcFieldType="Varchar" SrcFiledLimit="20" DestField="Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingCompany" SrcFieldType="Varchar" SrcFiledLimit="100" DestField="Name" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+     <Field SrcField="ShippingAddress1" SrcFieldType="Varchar" SrcFiledLimit="500" DestField="Address" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingAddress2" SrcFieldType="Varchar" SrcFiledLimit="500" DestField="Address_2" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingCity" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="City" DestFieldType="Text" DestFieldLimit="30" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingFirstName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="Contact" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingLastName" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="Contact" DestFieldType="Text" DestFieldLimit="50" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingPhone" SrcFieldType="Varchar" SrcFiledLimit="20" DestField="Phone_No" DestFieldType="Text" DestFieldLimit="30" DefaultValue="" ConcatText="" />
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Shipping_Agent_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="FED EX" />
+    <Field SrcField="TwoLetterISOCode" SrcFieldType="Varchar" SrcFiledLimit="2" DestField="Country_Region_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="" ConcatText=""/>
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Location_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="ATL or CA" ConcatText="" />
+    <Field SrcField="ShippingZip" SrcFieldType="Varchar" SrcFiledLimit="20" DestField="Post_Code" DestFieldType="Code" DestFieldLimit="20" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingState" SrcFieldType="Varchar" SrcFiledLimit="50" DestField="County" DestFieldType="Text" DestFieldLimit="30" DefaultValue="" ConcatText="" />
+    <Field SrcField="ShippingEmail" SrcFieldType="Varchar" SrcFiledLimit="100" DestField="E_Mail" DestFieldType="Text" DestFieldLimit="80" DefaultValue="" ConcatText="" />
+    <Field SrcField="NaN" SrcFieldType="NaN" SrcFiledLimit="NaN" DestField="Shipping_Agent_Service_Code" DestFieldType="Code" DestFieldLimit="10" DefaultValue="FedEx" ConcatText="" />
+  </Table>
+ 
+</Tables>

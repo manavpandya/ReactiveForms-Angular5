@@ -1,0 +1,145 @@
+﻿ .shades-cat-main
+        {
+            float: left;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .shades-cat-row1
+        {
+            float: left;
+            width: 100%;
+            padding: 0 0 10px 0;
+        }
+        /*.shades-cat-row1 img{float:left; width:100%;}*/
+        .shades-cat-pt1
+        {
+            float: left;
+            width: 49.5%;
+            padding: 10px 0 0 0;
+        }
+        .shades-cat-pt2
+        {
+            float: right;
+            width: 49.5%;
+            padding: 10px 0 0 0;
+        }
+        .shades-cat-bg
+        {
+            float: left;
+            width: 48%;
+            background: #e8e8e8;
+            padding: 0;
+        }
+        .shades-cat-box
+        {
+            float: left;
+            width: 65%;
+            background: #e8e8e8;
+            padding: 28px 20% 5px 15%;
+        }
+        
+         .shades-cat-box h2
+        {
+            float: left;
+            font-family: 'Telex' ,sans-serif;
+            text-align: left;
+            border-bottom: 1px solid #808080;
+            font-size: 28px;
+            line-height: 35px;
+            padding: 0 0 10px 0;
+        }
+
+            .shades-cat-box h3
+        {
+            float: left;
+            font-family: 'Telex' ,sans-serif;
+            text-align: left;
+            border-bottom: 1px solid #808080;
+            font-size: 28px;
+            line-height: 35px;
+            padding: 0 0 10px 0;
+        }
+         .shades-cat-box h4
+        {
+            float: left;
+            font-family: 'Telex' ,sans-serif;
+            text-align: left;
+            border-bottom: 1px solid #808080;
+            font-size: 28px;
+            line-height: 35px;
+            padding: 0 0 10px 0;
+        }
+
+            .shades-cat-box h5
+        {
+            float: left;
+            font-family: 'Telex' ,sans-serif;
+            text-align: left;
+            border-bottom: 1px solid #808080;
+            font-size: 28px;
+            line-height: 35px;
+            padding: 0 0 10px 0;
+        }
+
+               .shades-cat-box h6
+        {
+            float: left;
+            font-family: 'Telex' ,sans-serif;
+            text-align: left;
+            border-bottom: 1px solid #808080;
+            font-size: 28px;
+            line-height: 35px;
+            padding: 0 0 10px 0;
+        }
+        .shades-cat-box p
+        {
+            float: left;
+            font-family: 'Telex' ,sans-serif;
+            font-size: 14px;
+            color: #000404;
+            line-height: 18px;
+            padding: 15px 0 0 0;
+            mini-height: 20px;
+            overflow: hidden;
+        }
+        .shades-color-box
+        {
+            float: left;
+            width: 86%;
+            min-height:20px !important;
+            overflow: hidden;
+            background: #fff;
+            margin: 16px 0 0 0;
+            padding: 0 1% 5px;
+        }
+        .shades-color-box a img
+        {
+            width: 33px;
+            height: 33px;
+            margin: 5px 0 0 3px;
+        }
+        /*.shades-cat-pro{float:right; width:50%; background:#000;}*/
+        .shades-cat-pro
+        {
+            float: right;
+            width: 50%;
+            background: #fff;
+        }
+        .shades-cat-pro a img
+        {
+            height: auto;
+        }
+        .shades-cat-box p a
+        {
+            float: left;
+            font-family: 'Telex' ,sans-serif;
+            font-size: 14px;
+            color: #000404;
+            text-decoration: none;
+            margin: 0;
+        }
+        .shades-cat-row1 a img
+        {
+            float: left;
+            width: 100%;
+        }

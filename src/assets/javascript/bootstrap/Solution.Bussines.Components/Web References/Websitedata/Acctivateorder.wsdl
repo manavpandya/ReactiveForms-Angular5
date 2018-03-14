@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetOrderDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetOrderDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetShoppingcartDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="StoreId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetShoppingcartDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetShoppingcartDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderDetailsByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderDetailsByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderDetailsByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDecryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDecryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDecryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Updateorderfiled">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="flagback" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderGuid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateorderfiledResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetproductUPC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strStoreId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetproductUPCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetproductUPCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetproductSaleType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetproductSaleTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetproductSaleTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStateCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Statename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStateCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStateCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderDetailsForShipping">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetOrderDetailsForShippingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderDetailsForShippingResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportShippingDetailsByOrderNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsShipping">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StoreID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportShippingDetailsByOrderNumberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateInventory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DsInventory">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInventoryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateInventoryNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DsInventory">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInventoryNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateInventoryNewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePartnerOrderNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StoreID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strpartNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePartnerOrderNumberResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetOrderDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetShoppingcartDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetShoppingcartDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetShoppingcartDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetShoppingcartDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetShoppingcartDetailsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsByID" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsByIDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDecryptText" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDecryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDecryptTextAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateorderfiledSoapIn">
+    <wsdl:part name="parameters" element="tns:Updateorderfiled" />
+  </wsdl:message>
+  <wsdl:message name="UpdateorderfiledSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateorderfiledResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateorderfiledAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetproductUPCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetproductUPC" />
+  </wsdl:message>
+  <wsdl:message name="GetproductUPCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetproductUPCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetproductUPCAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetproductSaleTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetproductSaleType" />
+  </wsdl:message>
+  <wsdl:message name="GetproductSaleTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetproductSaleTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetproductSaleTypeAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetStateCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStateCode" />
+  </wsdl:message>
+  <wsdl:message name="GetStateCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStateCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStateCodeAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsForShippingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsForShipping" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsForShippingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailsForShippingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderDetailsForShippingAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="ImportShippingDetailsByOrderNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportShippingDetailsByOrderNumber" />
+  </wsdl:message>
+  <wsdl:message name="ImportShippingDetailsByOrderNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportShippingDetailsByOrderNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportShippingDetailsByOrderNumberAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInventorySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInventory" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInventorySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInventoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInventoryAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInventoryNewSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInventoryNew" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInventoryNewSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInventoryNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInventoryNewAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePartnerOrderNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerOrderNumber" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePartnerOrderNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerOrderNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePartnerOrderNumberAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="AcctivateorderSoap">
+    <wsdl:operation name="GetOrderDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get OrderDetails</wsdl:documentation>
+      <wsdl:input message="tns:GetOrderDetailsSoapIn" />
+      <wsdl:output message="tns:GetOrderDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingcartDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Shoppingcart Details</wsdl:documentation>
+      <wsdl:input message="tns:GetShoppingcartDetailsSoapIn" />
+      <wsdl:output message="tns:GetShoppingcartDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsByID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Order Details By ID</wsdl:documentation>
+      <wsdl:input message="tns:GetOrderDetailsByIDSoapIn" />
+      <wsdl:output message="tns:GetOrderDetailsByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptText">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Decrypt Text</wsdl:documentation>
+      <wsdl:input message="tns:GetDecryptTextSoapIn" />
+      <wsdl:output message="tns:GetDecryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Updateorderfiled">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Decrypt Text</wsdl:documentation>
+      <wsdl:input message="tns:UpdateorderfiledSoapIn" />
+      <wsdl:output message="tns:UpdateorderfiledSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetproductUPC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get SKU Text</wsdl:documentation>
+      <wsdl:input message="tns:GetproductUPCSoapIn" />
+      <wsdl:output message="tns:GetproductUPCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetproductSaleType">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get product Sale Type</wsdl:documentation>
+      <wsdl:input message="tns:GetproductSaleTypeSoapIn" />
+      <wsdl:output message="tns:GetproductSaleTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get SKU Text</wsdl:documentation>
+      <wsdl:input message="tns:GetStateCodeSoapIn" />
+      <wsdl:output message="tns:GetStateCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsForShipping">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Order For Shipp</wsdl:documentation>
+      <wsdl:input message="tns:GetOrderDetailsForShippingSoapIn" />
+      <wsdl:output message="tns:GetOrderDetailsForShippingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportShippingDetailsByOrderNumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Import Shipping Details</wsdl:documentation>
+      <wsdl:input message="tns:ImportShippingDetailsByOrderNumberSoapIn" />
+      <wsdl:output message="tns:ImportShippingDetailsByOrderNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Inventory</wsdl:documentation>
+      <wsdl:input message="tns:UpdateInventorySoapIn" />
+      <wsdl:output message="tns:UpdateInventorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventoryNew">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Inventory</wsdl:documentation>
+      <wsdl:input message="tns:UpdateInventoryNewSoapIn" />
+      <wsdl:output message="tns:UpdateInventoryNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartnerOrderNumber">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Partner Order Number</wsdl:documentation>
+      <wsdl:input message="tns:UpdatePartnerOrderNumberSoapIn" />
+      <wsdl:output message="tns:UpdatePartnerOrderNumberSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AcctivateorderSoap" type="tns:AcctivateorderSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOrderDetails">
+      <soap:operation soapAction="http://tempuri.org/GetOrderDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetOrderDetailsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingcartDetails">
+      <soap:operation soapAction="http://tempuri.org/GetShoppingcartDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetShoppingcartDetailsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsByID">
+      <soap:operation soapAction="http://tempuri.org/GetOrderDetailsByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetOrderDetailsByIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptText">
+      <soap:operation soapAction="http://tempuri.org/GetDecryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetDecryptTextAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updateorderfiled">
+      <soap:operation soapAction="http://tempuri.org/Updateorderfiled" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateorderfiledAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetproductUPC">
+      <soap:operation soapAction="http://tempuri.org/GetproductUPC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetproductUPCAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetproductSaleType">
+      <soap:operation soapAction="http://tempuri.org/GetproductSaleType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetproductSaleTypeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStateCode">
+      <soap:operation soapAction="http://tempuri.org/GetStateCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStateCodeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsForShipping">
+      <soap:operation soapAction="http://tempuri.org/GetOrderDetailsForShipping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetOrderDetailsForShippingAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportShippingDetailsByOrderNumber">
+      <soap:operation soapAction="http://tempuri.org/ImportShippingDetailsByOrderNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ImportShippingDetailsByOrderNumberAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventory">
+      <soap:operation soapAction="http://tempuri.org/UpdateInventory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateInventoryAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventoryNew">
+      <soap:operation soapAction="http://tempuri.org/UpdateInventoryNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateInventoryNewAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartnerOrderNumber">
+      <soap:operation soapAction="http://tempuri.org/UpdatePartnerOrderNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdatePartnerOrderNumberAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AcctivateorderSoap12" type="tns:AcctivateorderSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetOrderDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetOrderDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetOrderDetailsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingcartDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetShoppingcartDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetShoppingcartDetailsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsByID">
+      <soap12:operation soapAction="http://tempuri.org/GetOrderDetailsByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetOrderDetailsByIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDecryptText">
+      <soap12:operation soapAction="http://tempuri.org/GetDecryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetDecryptTextAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updateorderfiled">
+      <soap12:operation soapAction="http://tempuri.org/Updateorderfiled" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateorderfiledAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetproductUPC">
+      <soap12:operation soapAction="http://tempuri.org/GetproductUPC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetproductUPCAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetproductSaleType">
+      <soap12:operation soapAction="http://tempuri.org/GetproductSaleType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetproductSaleTypeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStateCode">
+      <soap12:operation soapAction="http://tempuri.org/GetStateCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetStateCodeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetailsForShipping">
+      <soap12:operation soapAction="http://tempuri.org/GetOrderDetailsForShipping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetOrderDetailsForShippingAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportShippingDetailsByOrderNumber">
+      <soap12:operation soapAction="http://tempuri.org/ImportShippingDetailsByOrderNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ImportShippingDetailsByOrderNumberAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventory">
+      <soap12:operation soapAction="http://tempuri.org/UpdateInventory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateInventoryAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventoryNew">
+      <soap12:operation soapAction="http://tempuri.org/UpdateInventoryNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateInventoryNewAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartnerOrderNumber">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePartnerOrderNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdatePartnerOrderNumberAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Acctivateorder">
+    <wsdl:port name="AcctivateorderSoap" binding="tns:AcctivateorderSoap">
+      <soap:address location="http://www.halfpricedrapes.com/Acctivateorder.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AcctivateorderSoap12" binding="tns:AcctivateorderSoap12">
+      <soap12:address location="http://www.halfpricedrapes.com/Acctivateorder.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,40 @@
+<chart caption="" yAxisName="RANK" bgColor="F7F7F7, E9E9E9" numVDivLines="10" divLineAlpha="30" labelPadding="5" yAxisValuesPadding="5" showValues="1" rotateValues="1" valuePosition="auto">
+<categories>
+<category label="Week1"/>
+<category label="Week2"/>
+<category label="Week3"/>
+<category label="Week4"/>
+<category label="Week5"/>
+<category label="Week6"/>
+<category label="Week7"/>
+<category label="Week8"/>
+<category label="Week9"/>
+<category label="Week10"/>
+<category label="Week11"/>
+<category label="Week12"/>
+<category label="Week13"/>
+<category label="Week14"/>
+<category label="Week15"/>
+<category label="Week16"/>
+<category label="Week17"/>
+</categories>
+<dataset seriesName="WEEK" color="A66EDD">
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="22"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+<set value="0"/>
+</dataset>
+</chart>
